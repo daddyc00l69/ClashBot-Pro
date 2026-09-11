@@ -53,17 +53,17 @@
     "omni_reconstructed": 0,
     "nbc_files": 3,
     "modules_disassembled": 0,
-    "output_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\staticaly",
+    "output_dir": "./analysis_scratch\\staticaly",
     "nbc_only": true,
     "nbc_placeholders": 3
   },
   "ai_ready_nbc": {
-    "output_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC",
-    "nbc_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC\\nbc",
-    "context_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC\\context",
+    "output_dir": "./analysis_scratch\\AI_READY_NBC",
+    "nbc_dir": "./analysis_scratch\\AI_READY_NBC\\nbc",
+    "context_dir": "./analysis_scratch\\AI_READY_NBC\\context",
     "files": 3,
     "with_ops": 0,
     "without_ops": 3,
-    "manifest": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC\\NBC_MANIFEST.json"
+    "manifest": "./analysis_scratch\\AI_READY_NBC\\NBC_MANIFEST.json"
   }
 }

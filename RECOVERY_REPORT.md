@@ -2,11 +2,11 @@
 
 ## 1. Executive Statement of Recovery
 
-This report documents the results, methodology, and technical boundaries of the decompilation, extraction, and source recovery process conducted on **AutoClash** (`AutoClash.exe`, 97,402,368 bytes) located at `C:\Users\aradh\Desktop\Auto Clash Test`.
+This report documents the results, methodology, and technical boundaries of the decompilation, extraction, and source recovery process conducted on **AutoClash** (`AutoClash.exe`, 97,402,368 bytes).
 
 In strict adherence to the project guidelines:
 - **No redesign or reimagining:** The application was analyzed as-is, recovering its exact architecture and operational logic rather than generating a new clone.
-- **Integrity of the original binary:** All analysis was performed on copied buffers and scratch environments. The original executable file at `c:\Users\aradh\Desktop\Auto Clash Test\AutoClash.exe` remains strictly untouched with identical byte size (97,402,368 bytes) and SHA-256 hash.
+- **Integrity of the original binary:** All analysis was performed on copied buffers and scratch environments. The original executable file remains strictly untouched with identical byte size (97,402,368 bytes) and SHA-256 hash.
 - **Truthful representation:** We explicitly document where information stems from verified original metadata versus static reconstruction, and what information was irreversibly lost during ahead-of-time (AOT) C compilation.
 
 ---
@@ -105,5 +105,5 @@ Static inspection of strings and network modules reveals references to the follo
 ## 8. Summary & Verification
 
 - **Syntax Validation:** All 77 Python files in `Recovered_Source/Source/` compile cleanly with 0 syntax errors via `python -m py_compile`.
-- **Integrity:** `AutoClash.exe` in `C:\Users\aradh\Desktop\Auto Clash Test` remains 100% untouched.
-- **Deliverable:** The complete recovered project, assets, configs, dependencies, metadata, and documentation are organized and ready in `C:\Users\aradh\Desktop\Auto Clash clone Vip\`.
+- **Integrity:** The original binary remains 100% untouched.
+- **Deliverable:** The complete recovered project, assets, configs, dependencies, metadata, and documentation are organized and ready in `./Recovered_Source`.

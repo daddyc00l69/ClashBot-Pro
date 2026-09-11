@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary
 
-This report provides a comprehensive technical analysis of the Windows executable **AutoClash** (`AutoClash.exe`, 97,402,368 bytes) located at `C:\Users\aradh\Desktop\Auto Clash Test`.
+This report provides a comprehensive technical analysis of the Windows executable **AutoClash** (`AutoClash.exe`, 97,402,368 bytes).
 
 Through static analysis, PE header inspection, resource carving, and Nuitka/PyArmor introspection, the application has been determined to be a **Python 3.10-based automation platform** compiled to native x86-64 machine code using **Nuitka**, packaged as a **Nuitka Onefile** self-extracting payload, and protected by **PyArmor 7/8**.
 
