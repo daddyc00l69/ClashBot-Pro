@@ -1,0 +1,20 @@
+[
+  {
+    "section": "__main__",
+    "rel_path": "__main__.nbc",
+    "nbc_only": true,
+    "reason": "not_in_module_table"
+  },
+  {
+    "section": "__parents_main__",
+    "rel_path": "__parents_main__.nbc",
+    "nbc_only": true,
+    "reason": "not_in_module_table"
+  },
+  {
+    "section": "pyarmor_runtime_015394",
+    "rel_path": "pyarmor_runtime_015394.nbc",
+    "nbc_only": true,
+    "reason": "not_in_module_table"
+  }
+]

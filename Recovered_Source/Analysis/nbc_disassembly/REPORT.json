@@ -1,0 +1,69 @@
+{
+  "target": "gui.dll",
+  "timestamp": "2026-09-11T18:51:37.925799",
+  "python_version": "3.10",
+  "nuitka_edition": "opensource",
+  "encrypted": false,
+  "modules": [],
+  "bytecode_count": 0,
+  "secrets": [],
+  "code_objects": [],
+  "stats": {
+    "total_modules": 876,
+    "nuitka_const_modules": 0,
+    "nbc_only": true,
+    "bytecode_pyc": 0,
+    "modules_with_constants": 0,
+    "total_code_objects": 0,
+    "main_code_objects": 0,
+    "total_secrets": 0,
+    "total_strings": 0
+  },
+  "embedded_source_scan": {
+    "resource_entries": 0,
+    "section_blocks": 0,
+    "high_conf_total": 0,
+    "candidates": []
+  },
+  "module_table": {
+    "start_va": "0x34F5453C0",
+    "total_entries": 865,
+    "bytecode_entries": 601,
+    "compiled_entries": 254,
+    "extension_entries": 10
+  },
+  "embedded_source_summary": {
+    "skipped": true,
+    "reason": "--nbc-only"
+  },
+  "decompilation": {
+    "skipped": true,
+    "reason": "--nbc-only"
+  },
+  "c_source_reconstruction": {
+    "skipped": true,
+    "reason": "--nbc-only"
+  },
+  "staticaly": {
+    "target_python": "3.10",
+    "xdis_available": false,
+    "capstone_available": true,
+    "sections": 875,
+    "raw_scan_pyc": 0,
+    "omni_reconstructed": 0,
+    "nbc_files": 3,
+    "modules_disassembled": 0,
+    "output_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\staticaly",
+    "nbc_only": true,
+    "nbc_placeholders": 3
+  },
+  "ai_ready_nbc": {
+    "output_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC",
+    "nbc_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC\\nbc",
+    "context_dir": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC\\context",
+    "files": 3,
+    "with_ops": 0,
+    "without_ops": 3,
+    "manifest": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\AI_READY_NBC\\NBC_MANIFEST.json"
+  }
+}

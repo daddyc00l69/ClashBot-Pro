@@ -1,0 +1,41 @@
+[LOG]Session log started: \AutoClash\logs\
+[STARTUP]Launching bot + Starting ADB server
+[STARTUP] MuMu config not marked as applied; running one-time config
+[STARTUP] Closing MuMu before config
+[STARTUP] Applying MuMu config (1600x900, 300 DPI)
+[STARTUP] MuMu config step finished
+[STARTUP]Launching MuMu instance 0
+[ADB] Connecting to mumu at 127.0.0.1:16384
+[ADB] Successfully connected to 127.0.0.1:16384
+[ADB]Checking adb devices
+[ADB] Target device ready (127.0.0.1:16384)
+[STARTUP] Checking game state
+[ADB] Launching Clash of Clans
+[STARTUP] Waiting for app to start
+[STARTUP]App ready
+[BOT]Main loop started
+[MAIN]Loading village...
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[DONATIONS]Checking for donations
+[DONATIONS] Request Found. Donating now
+[DONATIONS] Request Found. Donating now
+[DONATIONS]No troop/spell slots active, swiping to siege row
+[DONATIONS] Request Found. Donating now
+[ARMY]Opening army menu
+[ARMY]Setting army to (valkyrie)
+[ARMY](valkyrie) Successfully selected
+[ARMY]Activating super troop
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== VALKYRIE ATTACK START ===
+[VISION] Troop bar scale : 100%
+[VALK] Troop/Spell Counts:
+[VALK] EVENT: -
+[VALK] TROOPS: balloon=9
+[VALK] SPELLS: freeze=3, rage=2, skeleton=4
+[VALK] SIEGE: none
+[ATTACK] TH accepted: th15
+=== VALKYRIE ATTACK FINISHED ===
+[BATTLE]Stars: 0

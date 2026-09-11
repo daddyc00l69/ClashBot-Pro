@@ -1,0 +1,43 @@
+[LOG]Session log started: \AutoClash\logs\
+[STARTUP]Launching bot + Starting ADB server
+[ADB] Connecting to mumu at 127.0.0.1:16384
+[ADB] Successfully connected to 127.0.0.1:16384
+[ADB]Checking adb devices
+[ADB] Target device ready (127.0.0.1:16384)
+[STARTUP] Checking game state
+[STARTUP]App ready
+[BOT]Main loop started
+[MAIN]Loading village...
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[ARMY]Opening army menu
+[ARMY]Setting army to (edragon)
+[ARMY](edragon) Successfully selected
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[VISION] Troop bar scale : 100%
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=10, bdragon=3, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: slammer
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=10, bdragon=3, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: slammer
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0

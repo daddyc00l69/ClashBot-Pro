@@ -1,0 +1,21 @@
+{
+  "nuitka_version": "1.8 - 2.x / 4.x Compatible",
+  "edition": "opensource",
+  "python_runtime": "3.10.11 AMD64",
+  "packaging_mode": "onefile (Zstandard payload)",
+  "onefile_magic": "KAY (0x4B 0x41 0x59)",
+  "onefile_compression": "Zstandard Frame (0xFD2FB528)",
+  "embedded_archive_resource": "RT_RCDATA / ID 27 (AutoClash.exe)",
+  "constants_blob_resource": "RT_RCDATA / ID 3 (gui.dll)",
+  "constants_blob_size": 14788499,
+  "constants_blob_crc32": "0xA06EA24D",
+  "total_modules_in_blob": 876,
+  "compiled_modules_count": 254,
+  "bytecode_modules_count": 601,
+  "extension_modules_count": 10,
+  "obfuscation_layers": [
+    "Nuitka native C-compilation (AST to native C/C++ machine code)",
+    "PyArmor 7/8 bytecode encryption (Runtime: pyarmor_runtime_015394)",
+    "Asset encryption: fixed_points_data.enc"
+  ]
+}

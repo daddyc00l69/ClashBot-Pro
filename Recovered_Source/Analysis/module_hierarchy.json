@@ -1,0 +1,1370 @@
+{
+  "__main__": {
+    "name": "__main__",
+    "payload_size": 15415,
+    "status": "error: No module named 'ui'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "__parents_main__": {
+    "name": "__parents_main__",
+    "payload_size": 15533,
+    "status": "error: No module named 'ui'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "actions": {
+    "name": "actions",
+    "payload_size": 7528,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "adb": {
+    "name": "adb",
+    "payload_size": 30507,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "army_update": {
+    "name": "army_update",
+    "payload_size": 22487,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.attacklogic": {
+    "name": "attack.attacklogic",
+    "payload_size": 36046,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.barchgob": {
+    "name": "attack.barchgob",
+    "payload_size": 5073,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack": {
+    "name": "attack",
+    "payload_size": 226,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "attack.dragon": {
+    "name": "attack.dragon",
+    "payload_size": 3574,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.edragon": {
+    "name": "attack.edragon",
+    "payload_size": 4041,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.fourside_coords": {
+    "name": "attack.fourside_coords",
+    "payload_size": 2811,
+    "status": "error: No module named 'attack.geometry'; 'attack' is not a package",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.geometry": {
+    "name": "attack.geometry",
+    "payload_size": 647,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.sbarb": {
+    "name": "attack.sbarb",
+    "payload_size": 2950,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.sminion": {
+    "name": "attack.sminion",
+    "payload_size": 3010,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.threeside_coords": {
+    "name": "attack.threeside_coords",
+    "payload_size": 2472,
+    "status": "error: No module named 'attack.geometry'; 'attack' is not a package",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.thrower": {
+    "name": "attack.thrower",
+    "payload_size": 12415,
+    "status": "error: No module named 'multitouch'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.valkyrie": {
+    "name": "attack.valkyrie",
+    "payload_size": 3107,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.valkyrie_1side": {
+    "name": "attack.valkyrie_1side",
+    "payload_size": 11163,
+    "status": "error: No module named 'multitouch'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.war_onestar": {
+    "name": "attack.war_onestar",
+    "payload_size": 4211,
+    "status": "error: No module named 'multitouch'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.war_twothreestar": {
+    "name": "attack.war_twothreestar",
+    "payload_size": 5240,
+    "status": "error: No module named 'multitouch'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "auto_place_building": {
+    "name": "auto_place_building",
+    "payload_size": 17977,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "auto_place_walls": {
+    "name": "auto_place_walls",
+    "payload_size": 11219,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "bb_obstacle_removal": {
+    "name": "bb_obstacle_removal",
+    "payload_size": 16260,
+    "status": "error: No module named 'defaults'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base": {
+    "name": "builder_base",
+    "payload_size": 244,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "builder_base.functions": {
+    "name": "builder_base.functions",
+    "payload_size": 34573,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base.main": {
+    "name": "builder_base.main",
+    "payload_size": 22358,
+    "status": "error: No module named 'control'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base.vision_builder": {
+    "name": "builder_base.vision_builder",
+    "payload_size": 24296,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base.walls": {
+    "name": "builder_base.walls",
+    "payload_size": 22353,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_boat": {
+    "name": "builder_boat",
+    "payload_size": 1522,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "capital_raid": {
+    "name": "capital_raid",
+    "payload_size": 72646,
+    "status": "error: No module named 'control'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "clangames": {
+    "name": "clangames",
+    "payload_size": 33165,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "collect_achievements": {
+    "name": "collect_achievements",
+    "payload_size": 3028,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "control": {
+    "name": "control",
+    "payload_size": 2911,
+    "status": "loaded",
+    "classes": {
+      "BotControl": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "continue_clicked": {
+            "signature": "()",
+            "doc": null
+          },
+          "emit_config": {
+            "signature": "(cfg, profile=None)",
+            "doc": null
+          },
+          "wait_for_continue": {
+            "signature": "(title, message)",
+            "doc": null
+          },
+          "wait_for_enter": {
+            "signature": "()",
+            "doc": null
+          }
+        },
+        "class_vars": {
+          "continue_event": "<threading.Event object at 0x00000176C99716C0>",
+          "enter_pressed": "False",
+          "paused": "False",
+          "running": "True",
+          "worker": "None"
+        }
+      }
+    },
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "threading": "<module 'threading'>",
+      "time": "<module 'time'>"
+    }
+  },
+  "create_profile": {
+    "name": "create_profile",
+    "payload_size": 12207,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "defaults": {
+    "name": "defaults",
+    "payload_size": 7632,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "ACCOUNT_CREATION_COUNT": "1",
+      "ACCOUNT_CREATION_NAME": "'Account'",
+      "ACCOUNT_CREATION_NUMERAL_SUFFIX": "True",
+      "ACCOUNT_CREATION_SUFFIX_COUNTER": "1",
+      "ACTIVE_HOURS_ENABLED": "False",
+      "ACTIVE_HOURS_END": "'23:59'",
+      "ACTIVE_HOURS_START": "'00:00'",
+      "AIR_TROOP_WIDTH": "60",
+      "AIR_TROOP_WIDTH_ENABLED": "False",
+      "AIR_TROOP_WIDTH_IS_PERCENT": "True",
+      "ATTACK_MIN_DARK": "0",
+      "ATTACK_MIN_ELIXIR": "0",
+      "ATTACK_MIN_GOLD": "0",
+      "BB_OBSTACLE_REMOVAL_LAST_TIME": "0",
+      "BB_REMOVE_OBSTACLES": "False",
+      "BB_RESEARCH_ENABLED": "False",
+      "BB_RESEARCH_PERFORM_SUGGESTED": "False",
+      "BB_RESEARCH_SLOT": "''",
+      "BB_RESEARCH_SLOTS": "['', '', '', '']",
+      "BB_RESEARCH_SUGGESTED_ROTATE": "False",
+      "BB_SAVE_1_BUILDER": "False",
+      "BB_UPGRADE_ENABLED": "False",
+      "BB_UPGRADE_PERFORM_SUGGESTED": "False",
+      "BB_UPGRADE_SLOTS": "['', '', '', '', '', '']",
+      "BB_UPGRADE_SUGGESTED_ROTATE": "False",
+      "BOT_END_CONDITION_ENABLED": "False",
+      "BOT_END_CONDITION_TYPE": "'loot_full_all'",
+      "BOT_END_TIME_MINUTES": "120",
+      "BUILDERBASE_UPGRADE_WALLS": "False",
+      "BUILDER_ARMY_TROOP": "'Baby Dragon'",
+      "BUILDER_BOOST_CLOCK_TOWER": "True",
+      "BUILDER_COLLECT_GEM_MINE": "True",
+      "BUILDER_COLLECT_RESOURCES": "True",
+      "BUILDER_ENABLED": "False",
+      "BUILDER_END_AFTER_TROOP_DROP": "False",
+      "BUILDER_MAX_ATTACKS": "10",
+      "BUILDER_RETURN_HOME_WHEN": "'Gold + Elixir Full'",
+      "BUILDER_TARGET_STARS": "1",
+      "CC_LOOT_CYCLE_START": "0",
+      "CC_LOOT_DARK_DONE": "False",
+      "CC_LOOT_ELIXIR_DONE": "False",
+      "CC_LOOT_GOLD_DONE": "False",
+      "CG_CHALLENGE_NAME_OVERRIDES": "{'cg_buildingsmasher': 'Building Smasher', 'cg_championhunter': 'Champion Hunter', 'cg_darkchallenge': 'Dark Elixir Challenge', 'cg_darkgrab': 'Dark Elixir Grab', 'cg_darkpump': 'Destroy Dark Elixir Drills', 'cg_destroyairdefence': 'Destroy Air Defenses', 'cg_destroyairsweeper': 'Destroy Air Sweepers', 'cg_destroyarchertower': 'Destroy Archer Towers', 'cg_destroyarmycamp': 'Destroy Army Camps', 'cg_destroycannon': 'Destroy Cannons', 'cg_destroydarkspell': 'Destroy Dark Spell Factories', 'cg_dest",
+      "CG_CLAIM_REWARDS_FOR_GEMS": "False",
+      "CG_DISABLED_CHALLENGES": "['cghero_duke', 'cghero_king', 'cghero_minion_prince', 'cghero_queen', 'cghero_warden']",
+      "CG_TROOP_CHALLENGES": "False",
+      "CLAN_CAPITAL": "False",
+      "CLAN_CAPITAL_DUMP_GOLD_TREASURY_IF_FULL": "False",
+      "CLAN_CAPITAL_TROOP": "'Miner'",
+      "CLAN_GAMES": "False",
+      "CLEAR_TOMBSTONES": "False",
+      "COLLECT_ACHIEVEMENTS": "False",
+      "COLLECT_CART": "False",
+      "COLLECT_CC_LOOT": "False",
+      "COLLECT_COLLECTORS": "False",
+      "DONATE_ONLY_ENABLED": "False",
+      "DONATE_ONLY_SPEED_DARK_COST": "900",
+      "DONATE_ONLY_SPEED_ELIXIR_COST": "132000",
+      "DONATE_ONLY_SPEED_MODE": "False",
+      "DONATE_ONLY_SPEED_SPELLS": "1",
+      "DONATE_ONLY_SPEED_TROOPS": "5",
+      "DONATION_MODE": "'hybrid'",
+      "EMULATOR_INSTALL_PATHS": "{'bluestacks': '', 'ldplayer': '', 'other': ''}",
+      "EMULATOR_INSTANCE": "''",
+      "EMULATOR_IP": "'127.0.0.1'",
+      "EMULATOR_PORT": "'5556'",
+      "EMULATOR_SELECTION": "'bluestacks'",
+      "ENABLE_DONATIONS": "True",
+      "END_BATTLE_ON_STARS": "True",
+      "FARMING_ENABLED": "True",
+      "HERO_TAP_DELAY_ENABLED": "False",
+      "HERO_TAP_DELAY_SECONDS": "1",
+      "HOME_RESEARCH_ENABLED": "False",
+      "HOME_RESEARCH_PERFORM_SUGGESTED": "False",
+      "HOME_RESEARCH_PETS": "False",
+      "HOME_RESEARCH_PET_TARGET": "'pet_upgrade_angry_jelly'",
+      "HOME_RESEARCH_SLOT": "''",
+      "HOME_RESEARCH_SLOTS": "['', '', '', '']",
+      "HOME_RESEARCH_SUGGESTED_ROTATE": "False",
+      "HOME_RESEARCH_USE_1_GEM_HELPER": "False",
+      "HOME_RUSH_TH_ENABLED": "False",
+      "HOME_RUSH_TH_PHASE": "'sweep'",
+      "HOME_RUSH_TH_TH_UPGRADE_STARTED": "False",
+      "HOME_SAVE_1_BUILDER": "False",
+      "HOME_UPGRADE_ENABLED": "False",
+      "HOME_UPGRADE_PERFORM_SUGGESTED": "False",
+      "HOME_UPGRADE_SLOTS": "['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']",
+      "HOME_UPGRADE_SUGGESTED_IGNORE_TOWNHALL": "False",
+      "HOME_UPGRADE_SUGGESTED_ROTATE": "False",
+      "HOME_WALL_EXHAUSTED_STREAK": "0",
+      "HOME_WALL_RECHECK_AFTER": "0",
+      "HUMANIZED_BREAKS_ENABLED": "False",
+      "HUMANIZED_BREAK_MAX_MINUTES": "50",
+      "HUMANIZED_BREAK_MIN_MINUTES": "5",
+      "HUMANIZED_RUN_MAX_MINUTES": "90",
+      "HUMANIZED_RUN_MIN_MINUTES": "30",
+      "MULTI_VILLAGE_ENABLED": "False",
+      "OBSTACLE_REMOVAL_LAST_TIME": "0",
+      "PROFILE_MATCH_THRESHOLD": "0.92",
+      "RANKED_ARMY_SLOT": "0",
+      "RANKED_ATTACK_STRATEGY": "'edragon'",
+      "RANKED_REQUEST_DONATIONS": "False",
+      "RANKED_WAIT_FOR_CC_TROOPS": "False",
+      "RANK_FIRST": "False",
+      "REMOVE_OBSTACLES": "False",
+      "REQUEST_AND_LEAVE_ARMY_LINK": "''",
+      "REQUEST_AND_LEAVE_CLAN_TAG": "'#'",
+      "REQUEST_AND_LEAVE_ENABLED": "False",
+      "REQUEST_AND_LEAVE_JOIN": "False",
+      "REQUEST_AND_LEAVE_JOIN_LEAVE": "False",
+      "REQUEST_AND_LEAVE_LEAVE": "False",
+      "REQUEST_AND_LEAVE_SET_ARMY_SLOT1": "False",
+      "REQUEST_AND_LEAVE_WAIT_FOR_COOLDOWN": "False",
+      "REQUEST_DONATIONS": "False",
+      "SELECTED_ARMY_SLOT": "1",
+      "SELECTED_ATTACK_STRATEGY": "'valkyrie'",
+      "START_HELPERS": "False",
+      "START_PROFILE": "''",
+      "TARGET_STARS": "2",
+      "TEMPLATES_DIR": "'templates'",
+      "UI_LANGUAGE": "'en'",
+      "UPGRADE_WALLS": "False",
+      "USE_ROOT_PROFILE_SWAP": "False",
+      "VALKYRIE_1SIDE_MULTITOUCH_EXTRA_MS_PER_TROOP": "10",
+      "VILLAGE_COUNT": "10",
+      "VILLAGE_SWITCH_CONDITION": "'after_time'",
+      "VILLAGE_SWITCH_MINUTES": "10",
+      "WAIT_FOR_CC_TROOPS": "False",
+      "WALL_STOP_LEVEL": "18",
+      "WAR_ATTACK1_STARS": "3",
+      "WAR_ATTACK1_TARGET": "'Any'",
+      "WAR_ATTACK2_STARS": "3",
+      "WAR_ATTACK2_TARGET": "'Any'",
+      "WAR_ATTACKS_ENABLED": "False",
+      "WAR_MODE": "'FWA'",
+      "WAR_ONE_ATTACK_PER_SESSION": "False",
+      "WAR_REQUEST_CC": "False",
+      "WAR_WAIT_FOR_CC": "False",
+      "__doc__": "None"
+    }
+  },
+  "donations": {
+    "name": "donations",
+    "payload_size": 59566,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "error_popup_watcher": {
+    "name": "error_popup_watcher",
+    "payload_size": 8862,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "farming": {
+    "name": "farming",
+    "payload_size": 47740,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "findblacksmith": {
+    "name": "findblacksmith",
+    "payload_size": 4096,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "findcc": {
+    "name": "findcc",
+    "payload_size": 6343,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "fixed_points": {
+    "name": "fixed_points",
+    "payload_size": 75996,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "license_manager": {
+    "name": "license_manager",
+    "payload_size": 20361,
+    "status": "error: No module named 'cryptography.exceptions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "main": {
+    "name": "main",
+    "payload_size": 49816,
+    "status": "error: No module named 'startup'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "main_window": {
+    "name": "main_window",
+    "payload_size": 232072,
+    "status": "error: No module named 'license_manager'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "multitouch": {
+    "name": "multitouch",
+    "payload_size": 4481,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "obstacle_removal": {
+    "name": "obstacle_removal",
+    "payload_size": 14942,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "process": {
+    "name": "process",
+    "payload_size": 642,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "name": "'Antigravity IDE.exe'",
+      "proc": "psutil.Process(pid=25008, name='Antigravity IDE.exe', status='running', started='18:42:26')",
+      "psutil": "<module 'psutil'>"
+    }
+  },
+  "profiles.config_manager": {
+    "name": "profiles.config_manager",
+    "payload_size": 8974,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "profiles": {
+    "name": "profiles",
+    "payload_size": 232,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "profiles.profile_manager": {
+    "name": "profiles.profile_manager",
+    "payload_size": 35463,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ranked": {
+    "name": "ranked",
+    "payload_size": 7835,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "recovery": {
+    "name": "recovery",
+    "payload_size": 1180,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "request_and_leave": {
+    "name": "request_and_leave",
+    "payload_size": 14498,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "rush_th": {
+    "name": "rush_th",
+    "payload_size": 7130,
+    "status": "error: No module named 'fixed_points'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "startup": {
+    "name": "startup",
+    "payload_size": 65067,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "stats": {
+    "name": "stats",
+    "payload_size": 5582,
+    "status": "loaded",
+    "classes": {
+      "Stats": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self)",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "elapsed_hhmmss": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "pause_timer": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "record_research_done": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "record_stars": {
+            "signature": "(self, stars)",
+            "doc": null
+          },
+          "record_upgrade_done": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "reset_timer": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "resume_timer": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "update_hourly_rates": {
+            "signature": "(self)",
+            "doc": null
+          }
+        },
+        "class_vars": {
+          "elapsed_seconds": "<property object at 0x00000176C9C3B790>"
+        }
+      }
+    },
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "time": "<module 'time'>"
+    }
+  },
+  "ui.account_creation_worker": {
+    "name": "ui.account_creation_worker",
+    "payload_size": 3357,
+    "status": "error: No module named 'create_profile'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.activation_window": {
+    "name": "ui.activation_window",
+    "payload_size": 16457,
+    "status": "error: No module named 'license_manager'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.bot_worker": {
+    "name": "ui.bot_worker",
+    "payload_size": 8923,
+    "status": "error: No module named 'main'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui": {
+    "name": "ui",
+    "payload_size": 214,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "ui.gui": {
+    "name": "ui.gui",
+    "payload_size": 15425,
+    "status": "error: No module named 'ui.activation_window'; 'ui' is not a package",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.i18n": {
+    "name": "ui.i18n",
+    "payload_size": 2179,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.main_window": {
+    "name": "ui.main_window",
+    "payload_size": 232078,
+    "status": "error: No module named 'license_manager'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.mini_window": {
+    "name": "ui.mini_window",
+    "payload_size": 42135,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.stats_store": {
+    "name": "ui.stats_store",
+    "payload_size": 22202,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui2_zoom": {
+    "name": "ui2_zoom",
+    "payload_size": 11340,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "updater_helper": {
+    "name": "updater_helper",
+    "payload_size": 17398,
+    "status": "error: No module named 'utils'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "upgrades_research": {
+    "name": "upgrades_research",
+    "payload_size": 105864,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "utils": {
+    "name": "utils",
+    "payload_size": 223,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "utils.multitouch": {
+    "name": "utils.multitouch",
+    "payload_size": 25493,
+    "status": "loaded",
+    "classes": {
+      "MultiTouchCapabilities": {
+        "doc": "MultiTouchCapabilities(event_device: Optional[str] = None, supports_multitouch: bool = False, max_slot: int = 0, max_touches: int = 1, has_pressure: bool = False, has_touch_major: bool = False, touch_x_min: int = 0, touch_x_max: int = 0, touch_y_min: int = 0, touch_y_max: int = 0, display_width: int = 0, display_height: int = 0)",
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, event_device: Optional[str] = None, supports_multitouch: bool = False, max_slot: int = 0, max_touches: int = 1, has_pressure: bool = False, has_touch_major: bool = False, touch_x_min: int = 0, touch_x_max: int = 0, touch_y_min: int = 0, touch_y_max: int = 0, display_width: int = 0, display_height: int = 0) -> None",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          }
+        },
+        "class_vars": {
+          "display_height": "0",
+          "display_width": "0",
+          "event_device": "None",
+          "has_pressure": "False",
+          "has_touch_major": "False",
+          "max_slot": "0",
+          "max_touches": "1",
+          "supports_multitouch": "False",
+          "touch_x_max": "0",
+          "touch_x_min": "0",
+          "touch_y_max": "0",
+          "touch_y_min": "0"
+        }
+      },
+      "MultiTouchInput": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, adb_path_getter, target_getter, run_subprocess, emulator_getter=None, logger=None)",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "_append_release_all_commands": {
+            "signature": "(self, commands, caps, slots=None)",
+            "doc": null
+          },
+          "_append_restore_default_slot": {
+            "signature": "(self, commands, caps)",
+            "doc": null
+          },
+          "_append_slot_release": {
+            "signature": "(self, commands, caps, slot)",
+            "doc": null
+          },
+          "_delay_cmd": {
+            "signature": "(self, delay_ms)",
+            "doc": null
+          },
+          "_detect_display_metrics": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_emit": {
+            "signature": "(self, commands, device, ev_type, ev_code, ev_value)",
+            "doc": null
+          },
+          "_needs_rotation": {
+            "signature": "(self, x_range, y_range, app_w, app_h)",
+            "doc": null
+          },
+          "_next_tracking_id": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_normalize_actions": {
+            "signature": "(self, actions, max_touches)",
+            "doc": null
+          },
+          "_parse_getevent_capabilities": {
+            "signature": "(self, output)",
+            "doc": null
+          },
+          "_parse_recording": {
+            "signature": "(self, raw)",
+            "doc": null
+          },
+          "_resample_path": {
+            "signature": "(self, path, steps)",
+            "doc": null
+          },
+          "_run_release_all_with_caps": {
+            "signature": "(self, caps, timeout=8)",
+            "doc": null
+          },
+          "_run_shell_script": {
+            "signature": "(self, script, timeout)",
+            "doc": null
+          },
+          "_shell": {
+            "signature": "(self, command, timeout=8)",
+            "doc": null
+          },
+          "_transform_point": {
+            "signature": "(self, x, y, caps)",
+            "doc": null
+          },
+          "detect_capabilities": {
+            "signature": "(self, force=False)",
+            "doc": null
+          },
+          "hold_multi": {
+            "signature": "(self, points, duration_ms)",
+            "doc": null
+          },
+          "invalidate_capabilities": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "multi_touch": {
+            "signature": "(self, actions)",
+            "doc": null
+          },
+          "pinch": {
+            "signature": "(self, center, distance_start, distance_end, duration_ms)",
+            "doc": null
+          },
+          "record_multitouch": {
+            "signature": "(self, duration_ms=2500)",
+            "doc": null
+          },
+          "release_all": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "replay_recording": {
+            "signature": "(self, payload)",
+            "doc": null
+          },
+          "swipe_multi": {
+            "signature": "(self, paths, duration_ms)",
+            "doc": null
+          },
+          "tap_multi": {
+            "signature": "(self, points)",
+            "doc": null
+          }
+        },
+        "class_vars": {}
+      },
+      "TouchAction": {
+        "doc": "TouchAction(points: List[utils.multitouch.TouchPoint], slot: Optional[int] = None, tracking_id: Optional[int] = None)",
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, points: List[utils.multitouch.TouchPoint], slot: Optional[int] = None, tracking_id: Optional[int] = None) -> None",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          }
+        },
+        "class_vars": {
+          "slot": "None",
+          "tracking_id": "None"
+        }
+      },
+      "TouchPoint": {
+        "doc": "TouchPoint(t_ms: int, x: Optional[int] = None, y: Optional[int] = None, pressure: int = 50, state: str = 'move')",
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, t_ms: int, x: Optional[int] = None, y: Optional[int] = None, pressure: int = 50, state: str = 'move') -> None",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          }
+        },
+        "class_vars": {
+          "pressure": "50",
+          "state": "'move'",
+          "x": "None",
+          "y": "None"
+        }
+      }
+    },
+    "functions": {
+      "dataclass": {
+        "signature": "(cls=None, /, *, init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False, match_args=True, kw_only=False, slots=False)",
+        "doc": "Returns the same class as was passed in, with dunder methods\nadded based on the fields defined in the class.\n\nExamines PEP 526 __annotations__ to determine fields.\n\nIf init is true, an __init__() method is added to the class. If\nrepr is true, a __repr__() method is added. If order is true, rich\ncomparison dunder methods are added. If unsafe_hash is true, a\n__hash__() method function is added. If frozen is true, fields may\nnot be assigned to after instance creation. If match_args is true,\nthe __match_args__ tuple is added. If kw_only is true, then by\ndefault all fields are keyword-only. If slots is true, an\n__slots__ attribute is added."
+      },
+      "field": {
+        "signature": "(*, default=<dataclasses._MISSING_TYPE object at 0x00000176C7E65C30>, default_factory=<dataclasses._MISSING_TYPE object at 0x00000176C7E65C30>, init=True, repr=True, hash=None, compare=True, metadata=None, kw_only=<dataclasses._MISSING_TYPE object at 0x00000176C7E65C30>)",
+        "doc": "Return an object to identify dataclass fields.\n\ndefault is the default value of the field.  default_factory is a\n0-argument function called to initialize a field's value.  If init\nis true, the field will be a parameter to the class's __init__()\nfunction.  If repr is true, the field will be included in the\nobject's repr().  If hash is true, the field will be included in the\nobject's hash().  If compare is true, the field will be used in\ncomparison functions.  metadata, if specified, must be a mapping\nwhich is stored but not otherwise examined by dataclass.  If kw_only\nis true, the field will become a keyword-only parameter to\n__init__().\n\nIt is an error to specify both default and default_factory."
+      }
+    },
+    "variables": {
+      "ABS_MT_POSITION_X": "53",
+      "ABS_MT_POSITION_Y": "54",
+      "ABS_MT_PRESSURE": "58",
+      "ABS_MT_SLOT": "47",
+      "ABS_MT_TOUCH_MAJOR": "48",
+      "ABS_MT_TRACKING_ID": "57",
+      "BTN_TOOL_FINGER": "325",
+      "BTN_TOUCH": "330",
+      "Callable": "typing.Callable",
+      "Dict": "typing.Dict",
+      "EV_ABS": "3",
+      "EV_KEY": "1",
+      "EV_SYN": "0",
+      "List": "typing.List",
+      "Optional": "typing.Optional",
+      "SYN_REPORT": "0",
+      "Sequence": "typing.Sequence",
+      "TRACKING_ID_MAX": "1000000",
+      "TRACKING_ID_MIN": "1000",
+      "Tuple": "typing.Tuple",
+      "__doc__": "None",
+      "re": "<module 're'>",
+      "subprocess": "<module 'subprocess'>"
+    }
+  },
+  "utils.profile_backup": {
+    "name": "utils.profile_backup",
+    "payload_size": 9079,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "utils.runtime_paths": {
+    "name": "utils.runtime_paths",
+    "payload_size": 4030,
+    "status": "loaded",
+    "classes": {
+      "Path": {
+        "doc": "PurePath subclass that can make system calls.\n\nPath represents a filesystem path but unlike PurePath, also offers\nmethods to do system calls on path objects. Depending on your system,\ninstantiating a Path will return either a PosixPath or a WindowsPath\nobject. You can also instantiate a PosixPath or WindowsPath directly,\nbut cannot instantiate a WindowsPath on a POSIX system or vice versa.",
+        "bases": [
+          "PurePath"
+        ],
+        "methods": {
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          },
+          "__str__": {
+            "signature": "(self)",
+            "doc": "Return the string representation of the path, suitable for\npassing to system calls."
+          },
+          "_format_parsed_parts": {
+            "signature": "(drv, root, parts)",
+            "doc": null
+          },
+          "_from_parsed_parts": {
+            "signature": "(drv, root, parts)",
+            "doc": null
+          },
+          "_from_parts": {
+            "signature": "(args)",
+            "doc": null
+          },
+          "_make_child": {
+            "signature": "(self, args)",
+            "doc": null
+          },
+          "_make_child_relpath": {
+            "signature": "(self, part)",
+            "doc": null
+          },
+          "_parse_args": {
+            "signature": "(args)",
+            "doc": null
+          },
+          "absolute": {
+            "signature": "(self)",
+            "doc": "Return an absolute version of this path.  This function works\neven if the path doesn't point to anything.\n\nNo normalization is done, i.e. all '.' and '..' will be kept along.\nUse resolve() to get the canonical path to a file."
+          },
+          "as_posix": {
+            "signature": "(self)",
+            "doc": "Return the string representation of the path with forward (/)\nslashes."
+          },
+          "as_uri": {
+            "signature": "(self)",
+            "doc": "Return the path as a 'file' URI."
+          },
+          "chmod": {
+            "signature": "(self, mode, *, follow_symlinks=True)",
+            "doc": "Change the permissions of the path, like os.chmod()."
+          },
+          "cwd": {
+            "signature": "()",
+            "doc": "Return a new path pointing to the current working directory\n(as returned by os.getcwd())."
+          },
+          "exists": {
+            "signature": "(self)",
+            "doc": "Whether this path exists."
+          },
+          "expanduser": {
+            "signature": "(self)",
+            "doc": "Return a new path with expanded ~ and ~user constructs\n(as returned by os.path.expanduser)"
+          },
+          "glob": {
+            "signature": "(self, pattern)",
+            "doc": "Iterate over this subtree and yield all existing files (of any\nkind, including directories) matching the given relative pattern."
+          },
+          "group": {
+            "signature": "(self)",
+            "doc": "Return the group name of the file gid."
+          },
+          "hardlink_to": {
+            "signature": "(self, target)",
+            "doc": "Make this path a hard link pointing to the same file as *target*.\n\nNote the order of arguments (self, target) is the reverse of os.link's."
+          },
+          "home": {
+            "signature": "()",
+            "doc": "Return a new path pointing to the user's home directory (as\nreturned by os.path.expanduser('~'))."
+          },
+          "is_absolute": {
+            "signature": "(self)",
+            "doc": "True if the path is absolute (has both a root and, if applicable,\na drive)."
+          },
+          "is_block_device": {
+            "signature": "(self)",
+            "doc": "Whether this path is a block device."
+          },
+          "is_char_device": {
+            "signature": "(self)",
+            "doc": "Whether this path is a character device."
+          },
+          "is_dir": {
+            "signature": "(self)",
+            "doc": "Whether this path is a directory."
+          },
+          "is_fifo": {
+            "signature": "(self)",
+            "doc": "Whether this path is a FIFO."
+          },
+          "is_file": {
+            "signature": "(self)",
+            "doc": "Whether this path is a regular file (also True for symlinks pointing\nto regular files)."
+          },
+          "is_mount": {
+            "signature": "(self)",
+            "doc": "Check if this path is a POSIX mount point"
+          },
+          "is_relative_to": {
+            "signature": "(self, *other)",
+            "doc": "Return True if the path is relative to another path or False.\n        "
+          },
+          "is_reserved": {
+            "signature": "(self)",
+            "doc": "Return True if the path contains one of the special names reserved\nby the system, if any."
+          },
+          "is_socket": {
+            "signature": "(self)",
+            "doc": "Whether this path is a socket."
+          },
+          "is_symlink": {
+            "signature": "(self)",
+            "doc": "Whether this path is a symbolic link."
+          },
+          "iterdir": {
+            "signature": "(self)",
+            "doc": "Iterate over the files in this directory.  Does not yield any\nresult for the special paths '.' and '..'."
+          },
+          "joinpath": {
+            "signature": "(self, *args)",
+            "doc": "Combine this path with one or several arguments, and return a\nnew path representing either a subpath (if all arguments are relative\npaths) or a totally different path (if one of the arguments is\nanchored)."
+          },
+          "lchmod": {
+            "signature": "(self, mode)",
+            "doc": "Like chmod(), except if the path points to a symlink, the symlink's\npermissions are changed, rather than its target's."
+          },
+          "link_to": {
+            "signature": "(self, target)",
+            "doc": "Make the target path a hard link pointing to this path.\n\nNote this function does not make this path a hard link to *target*,\ndespite the implication of the function and argument names. The order\nof arguments (target, link) is the reverse of Path.symlink_to, but\nmatches that of os.link.\n\nDeprecated since Python 3.10 and scheduled for removal in Python 3.12.\nUse `hardlink_to()` instead."
+          },
+          "lstat": {
+            "signature": "(self)",
+            "doc": "Like stat(), except if the path points to a symlink, the symlink's\nstatus information is returned, rather than its target's."
+          },
+          "match": {
+            "signature": "(self, path_pattern)",
+            "doc": "Return True if this path matches the given pattern."
+          },
+          "mkdir": {
+            "signature": "(self, mode=511, parents=False, exist_ok=False)",
+            "doc": "Create a new directory at this given path."
+          },
+          "open": {
+            "signature": "(self, mode='r', buffering=-1, encoding=None, errors=None, newline=None)",
+            "doc": "Open the file pointed by this path and return a file object, as\nthe built-in open() function does."
+          },
+          "owner": {
+            "signature": "(self)",
+            "doc": "Return the login name of the file owner."
+          },
+          "read_bytes": {
+            "signature": "(self)",
+            "doc": "Open the file in bytes mode, read it, and close the file."
+          },
+          "read_text": {
+            "signature": "(self, encoding=None, errors=None)",
+            "doc": "Open the file in text mode, read it, and close the file."
+          },
+          "readlink": {
+            "signature": "(self)",
+            "doc": "Return the path to which the symbolic link points."
+          },
+          "relative_to": {
+            "signature": "(self, *other)",
+            "doc": "Return the relative path to another path identified by the passed\narguments.  If the operation is not possible (because this is not\na subpath of the other path), raise ValueError."
+          },
+          "rename": {
+            "signature": "(self, target)",
+            "doc": "Rename this path to the target path.\n\nThe target path may be absolute or relative. Relative paths are\ninterpreted relative to the current working directory, *not* the\ndirectory of the Path object.\n\nReturns the new Path instance pointing to the target path."
+          },
+          "replace": {
+            "signature": "(self, target)",
+            "doc": "Rename this path to the target path, overwriting if that path exists.\n\nThe target path may be absolute or relative. Relative paths are\ninterpreted relative to the current working directory, *not* the\ndirectory of the Path object.\n\nReturns the new Path instance pointing to the target path."
+          },
+          "resolve": {
+            "signature": "(self, strict=False)",
+            "doc": "Make the path absolute, resolving all symlinks on the way and also\nnormalizing it (for example turning slashes into backslashes under\nWindows)."
+          },
+          "rglob": {
+            "signature": "(self, pattern)",
+            "doc": "Recursively yield all existing files (of any kind, including\ndirectories) matching the given relative pattern, anywhere in\nthis subtree."
+          },
+          "rmdir": {
+            "signature": "(self)",
+            "doc": "Remove this directory.  The directory must be empty."
+          },
+          "samefile": {
+            "signature": "(self, other_path)",
+            "doc": "Return whether other_path is the same or not as this file\n(as returned by os.path.samefile())."
+          },
+          "stat": {
+            "signature": "(self, *, follow_symlinks=True)",
+            "doc": "Return the result of the stat() system call on this path, like\nos.stat() does."
+          },
+          "symlink_to": {
+            "signature": "(self, target, target_is_directory=False)",
+            "doc": "Make this path a symlink pointing to the target path.\nNote the order of arguments (link, target) is the reverse of os.symlink."
+          },
+          "touch": {
+            "signature": "(self, mode=438, exist_ok=True)",
+            "doc": "Create this file with the given access mode, if it doesn't exist."
+          },
+          "unlink": {
+            "signature": "(self, missing_ok=False)",
+            "doc": "Remove this file or link.\nIf the path is a directory, use rmdir() instead."
+          },
+          "with_name": {
+            "signature": "(self, name)",
+            "doc": "Return a new path with the file name changed."
+          },
+          "with_stem": {
+            "signature": "(self, stem)",
+            "doc": "Return a new path with the stem changed."
+          },
+          "with_suffix": {
+            "signature": "(self, suffix)",
+            "doc": "Return a new path with the file suffix changed.  If the path\nhas no suffix, add given suffix.  If the given suffix is an empty\nstring, remove the suffix from the path."
+          },
+          "write_bytes": {
+            "signature": "(self, data)",
+            "doc": "Open the file in bytes mode, write to it, and close the file."
+          },
+          "write_text": {
+            "signature": "(self, data, encoding=None, errors=None, newline=None)",
+            "doc": "Open the file in text mode, write to it, and close the file."
+          }
+        },
+        "class_vars": {
+          "_accessor": "<pathlib._NormalAccessor object at 0x00000176ACA2CDF0>",
+          "_cached_cparts": "<member '_cached_cparts' of 'PurePath' objects>",
+          "_cparts": "<property object at 0x00000176B0680B30>",
+          "_drv": "<member '_drv' of 'PurePath' objects>",
+          "_hash": "<member '_hash' of 'PurePath' objects>",
+          "_parts": "<member '_parts' of 'PurePath' objects>",
+          "_pparts": "<member '_pparts' of 'PurePath' objects>",
+          "_root": "<member '_root' of 'PurePath' objects>",
+          "_str": "<member '_str' of 'PurePath' objects>",
+          "anchor": "<property object at 0x00000176B0680C20>",
+          "drive": "<property object at 0x00000176B0680B80>",
+          "name": "<property object at 0x00000176B0680C70>",
+          "parent": "<property object at 0x00000176B0680E00>",
+          "parents": "<property object at 0x00000176B0680E50>",
+          "parts": "<property object at 0x00000176B0680DB0>",
+          "root": "<property object at 0x00000176B0680BD0>",
+          "stem": "<property object at 0x00000176B0680D60>",
+          "suffix": "<property object at 0x00000176B0680CC0>",
+          "suffixes": "<property object at 0x00000176B0680D10>"
+        }
+      }
+    },
+    "functions": {
+      "app_root": {
+        "signature": "()",
+        "doc": null
+      },
+      "bundle_root": {
+        "signature": "()",
+        "doc": null
+      },
+      "cleanup_stale_onefile_tempdirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "ensure_runtime_dirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "is_frozen": {
+        "signature": "()",
+        "doc": null
+      },
+      "resolve_resource_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "__doc__": "None",
+      "os": "<module 'os'>",
+      "sys": "<module 'sys'>"
+    }
+  },
+  "vision": {
+    "name": "vision",
+    "payload_size": 80892,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "walls": {
+    "name": "walls",
+    "payload_size": 24484,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "war": {
+    "name": "war",
+    "payload_size": 39444,
+    "status": "error: No module named 'adb'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "weekly_deal": {
+    "name": "weekly_deal",
+    "payload_size": 17894,
+    "status": "error: No module named 'actions'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  }
+}

@@ -1,0 +1,728 @@
+[LOG]Session log started: \AutoClash\logs\
+[STARTUP]Launching bot + Starting ADB server
+[ADB] Connecting to mumu at 127.0.0.1:16384
+[ADB] Successfully connected to 127.0.0.1:16384
+[ADB]Checking adb devices
+[ADB] Target device ready (127.0.0.1:16384)
+[STARTUP] Checking game state
+[STARTUP]App ready
+[BOT]Main loop started
+[MAIN]Loading village...
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[ARMY]Opening army menu
+[ARMY]edragon already active
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[VISION] Troop bar scale : 100%
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: none
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE] Fast Forwarding
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE] Fast Forwarding
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE] Fast Forwarding
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE] Fast Forwarding
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE] Fast Forwarding
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th13
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th14
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 0
+[BATTLE]Stars: 1
+[BATTLE]Battle ended
+[HOME]Home Village confirmed
+[ZOOM] Zooming out
+[SEARCH]Finding battle
+[SEARCH]Searching
+[SEARCH]Base found. Attacking
+=== EDRAGON ATTACK START ===
+[EDRAGON] Troop/Spell Counts:
+[EDRAGON] EVENT: -
+[EDRAGON] TROOPS: balloon=12, bdragon=2, edragon=8
+[EDRAGON] SPELLS: freeze=3, rage=4
+[EDRAGON] SIEGE: blimp
+[ATTACK] TH accepted: th15
+=== EDRAGON ATTACK FINISHED ===
+[BATTLE]Stars: 1
+[BATTLE]Stars: 2

@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-09-11T18:53:33.826577",
+  "source_tree": "C:\\Users\\aradh\\.gemini\\antigravity-ide\\brain\\4d50a989-d169-4b3e-a126-78abcd4e70ca\\scratch\\nuitka_out\\staticaly\\omni_reconstructed",
+  "nbc_files": 3,
+  "with_ops": 0,
+  "without_ops": 3,
+  "entries": [
+    {
+      "module": "__main__",
+      "path": "__main__.nbc",
+      "bytes": 68147,
+      "sha256": "60784e61935bc4b1b54af4ec92bdadbc8a3f46f3ef59260c23f243e193b11278",
+      "constants": null,
+      "has_ops": false,
+      "has_no_ops": true
+    },
+    {
+      "module": "__parents_main__",
+      "path": "__parents_main__.nbc",
+      "bytes": 68568,
+      "sha256": "3edbca3968a5f6d1bf835df05adba7e7656118203be2a686b3a062317332a78c",
+      "constants": null,
+      "has_ops": false,
+      "has_no_ops": true
+    },
+    {
+      "module": "pyarmor_runtime_015394",
+      "path": "pyarmor_runtime_015394.nbc",
+      "bytes": 1721,
+      "sha256": "1a2263386d3a306fcf8b33574a95bb6f477fe972f485e36ca6148a2ddecdb8eb",
+      "constants": 10,
+      "has_ops": false,
+      "has_no_ops": true
+    }
+  ]
+}

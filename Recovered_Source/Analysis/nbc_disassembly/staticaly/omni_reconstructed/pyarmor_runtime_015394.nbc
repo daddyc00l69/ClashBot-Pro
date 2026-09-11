@@ -1,0 +1,42 @@
+# Nuitka static reconstruction. Feed this .nbc file to an LLM.
+# Format version: NBC/2 full self-contained module record.
+# c[N]=mod_consts[N]   r#N=runtime_helper_rank   capi:=Python C API
+# Multiple @OPS blocks = one per disassembled function (module entry + every internal call target reached via BFS).
+
+@NBC 2
+@MOD pyarmor_runtime_015394
+@VER 3.10
+
+@RAW_CHUNK
+  size: 232
+  sha256: ce8bb677e53792c550c813be9351c990d3cc851aa444a3c418e26f7da07f12b2
+  encoding: base64
+  data:
+    CgBhZW52aXJvbgBUAmFOVUlUS0FfUEFDS0FHRV9weWFybW9yX3J1bnRpbWVfMDE1Mzk0AHVcbm90X2V4aXN0aW5nAGFvcmlnaW4AYWhhc19sb2NhdGlvbgBh
+    c3VibW9kdWxlX3NlYXJjaF9sb2NhdGlvbnMAYXB5YXJtb3JfcnVudGltZQBUAWFfX3B5YXJtb3JfXwBhX19weWFybW9yX18AdXB5YXJtb3JfcnVudGltZV8w
+    MTUzOTRcX19pbml0X18ucHkAdTxtb2R1bGUgcHlhcm1vcl9ydW50aW1lXzAxNTM5ND4ALg==
+
+@CONSTS 10 mode=full_repr
+  0 s 'environ'
+  1 T ('NUITKA_PACKAGE_pyarmor_runtime_015394', '\\not_existing')
+  2 s 'origin'
+  3 s 'has_location'
+  4 s 'submodule_search_locations'
+  5 s 'pyarmor_runtime'
+  6 T ('__pyarmor__',)
+  7 s '__pyarmor__'
+  8 s 'pyarmor_runtime_015394\\__init__.py'
+  9 s '<module pyarmor_runtime_015394>'
+
+
+@FUNCS_DETECTED
+  pyarmor_runtime(__pyarmor__)
+
+
+@NO_OPS
+  reason: this specific module was not present in the module table fragment the analyser recovered — other modules in this run may still have @OPS.
+  consequence: function bodies cannot be rebuilt literally — any LLM fed this file can only emit signatures + # UNCERTAIN bodies.
+  fix: re-run with
+       pip install capstone
+       python nuitka_decompiler.py --source <target.exe> --output <dir> --all
+       (make sure the run logs show "Staticaly modules disassembled: N > 0")
