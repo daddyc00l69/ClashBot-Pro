@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚔️ AutoClash VIP
+# ⚔️ ClashBot-Pro
 
 ### *Next-Generation Autonomous Automation & Intelligence Suite for Clash of Clans*
 
@@ -9,7 +9,7 @@
 [![Vision](https://img.shields.io/badge/Vision-OpenCV%20%26%20Tesseract-5C3EE8.svg?logo=opencv&logoColor=white)](https://opencv.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(64--bit)-0078D6.svg?logo=windows&logoColor=white)](https://microsoft.com/windows)
 [![Maintained by](https://img.shields.io/badge/Maintained%20by-AradhyeTushar-ff69b4.svg?logo=github&logoColor=white)](https://github.com/AradhyeTushar)
-[![Repository](https://img.shields.io/badge/GitHub-Auto--Clash--clone--Vip-181717.svg?logo=github&logoColor=white)](https://github.com/AradhyeTushar/Auto-Clash-clone-Vip)
+[![Repository](https://img.shields.io/badge/GitHub-ClashBot--Pro-181717.svg?logo=github&logoColor=white)](https://github.com/AradhyeTushar/ClashBot-Pro)
 
 <p align="center">
   <b>High-performance desktop automation suite featuring OpenCV visual pattern matching, OCR resource parsing, intelligent troop deployment mechanics, Clan War coordination, and multi-village management.</b>
@@ -36,7 +36,7 @@
 
 ## 🌟 Overview
 
-**AutoClash VIP** is a reverse-engineered, reconstructed Python 3.10 and PySide6 (Qt 6) automation architecture engineered for complete autonomous lifecycle management in *Clash of Clans*. 
+**ClashBot-Pro** is a reverse-engineered, reconstructed Python 3.10 and PySide6 (Qt 6) automation architecture engineered for complete autonomous lifecycle management in *Clash of Clans*. 
 
 The system operates externally through Android Debug Bridge (`ADB`) and screen capture technologies—ensuring native client integrity without direct in-memory manipulation. It integrates 990+ high-precision computer vision templates, hardware-accelerated OCR, and adaptive battle state machines to deliver an enterprise-grade automation platform.
 
@@ -103,7 +103,7 @@ graph TD
 ## 📁 Directory Structure
 
 ```text
-AutoClash-VIP/
+ClashBot-Pro/
 ├── Recovered_Source/
 │   ├── Source/                           # Application source code
 │   │   ├── attack/                       # Combat deployment scripts & coordinates
@@ -166,8 +166,8 @@ AutoClash-VIP/
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/AradhyeTushar/Auto-Clash-clone-Vip.git
-   cd Auto-Clash-clone-Vip
+   git clone https://github.com/AradhyeTushar/ClashBot-Pro.git
+   cd ClashBot-Pro
    ```
 2. Double-click **`run_bot.bat`** or run:
    ```cmd
@@ -237,7 +237,7 @@ Maintained and developed by:
 
 **Aradhye Tushar**  
 - **GitHub:** [@AradhyeTushar](https://github.com/AradhyeTushar)  
-- **Repository:** [Auto-Clash-clone-Vip](https://github.com/AradhyeTushar/Auto-Clash-clone-Vip)
+- **Repository:** [ClashBot-Pro](https://github.com/AradhyeTushar/ClashBot-Pro)
 
 ---
 
