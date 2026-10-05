@@ -101,16 +101,16 @@ The system operates externally through Android Debug Bridge (`ADB`) and screen c
 
 ---
 
-## 💎 New Application Modules
+## 💎 New Application Modules (v2.1 Update)
 
-The latest update introduces 4 dedicated modules located in [`New_Application_Modules/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/New_Application_Modules):
+The latest update introduces 4 dedicated modules integrated directly into [`Source/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/Source):
 
 1. **`equipment_upgrade.py`**: Blacksmith hero equipment auto-upgrader supporting all 5 heroes (including Supercell's new Minion Prince), utilizing multi-scale template matching and ore cost evaluation.
 2. **`rush_bh.py`**: Builder Hall rushing algorithm designed to unlock the 6th builder (B.O.B) in minimum time through prioritized upgrade queues.
 3. **`startup_checks.py`**: Automated startup modal and event resolver that dismisses promotional banners, claims WWE event chests, and clears return reward popups.
 4. **`ranked_unlock.py`**: Macro sequence handling new account ranked battle dialogues and unlocking competitive gameplay.
 
-For technical specifications, state machines, and implementation details, see [`New_Application_Modules/README.md`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/New_Application_Modules/README.md).
+For technical specifications, state machines, and implementation details, see [`docs/NEW_MODULES_SPECIFICATION.md`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/docs/NEW_MODULES_SPECIFICATION.md).
 
 ---
 
@@ -151,13 +151,6 @@ ClashBot-Pro/
 │   ├── ranked_unlock.py          # Ranked battle unlock macro
 │   └── fixed_points_source.py    # 906 decrypted screen coordinate anchors
 │
-├── New_Application_Modules/      # Showcase & documentation for 4 new modules
-│   ├── equipment_upgrade.py      # Hero equipment upgrade automation
-│   ├── rush_bh.py                # Builder Hall rushing logic
-│   ├── startup_checks.py         # Pre-village event chest resolver
-│   ├── ranked_unlock.py          # Ranked unlock sequence
-│   └── README.md                 # Deep-dive module documentation
-│
 ├── Resources/                    # Runtime game assets & visual data
 │   ├── templates/                # 1,026 OpenCV pattern matching templates
 │   ├── assets/                   # UI styling, SVGs, icons, fixed_points_data.enc
@@ -179,6 +172,7 @@ ClashBot-Pro/
 ├── docs/                         # Technical documentation & recovery audits
 │   ├── ANALYSIS.md               # Reverse engineering technical report
 │   ├── DEPENDENCIES.md           # Dependencies & toolchain audit
+│   ├── NEW_MODULES_SPECIFICATION.md # Specifications for 4 new v2.1 modules
 │   ├── RECOVERY_REPORT_v1.0.md   # Base release recovery audit report
 │   └── RECOVERY_REPORT_v2.1.md   # Update comparative recovery report
 │

@@ -1,6 +1,6 @@
 # 🌟 New Application Modules (Update v2.1)
 
-This directory isolates and documents the **4 brand new application modules** introduced in this update, introduced in the latest ClashBot-Pro v2.1 update.
+This document provides technical specifications and architecture details for the **4 new application modules** introduced in the ClashBot-Pro v2.1 update, located directly in [`Source/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/Source).
 
 ---
 
@@ -129,4 +129,4 @@ Executes the dialogue taps and menu interactions needed to initialize and unlock
 
 ## 🔗 Integration
 
-These modules reside alongside the existing 76 modules in `releases\v2.1-update\Source\`. They are loaded dynamically by `ui\bot_worker.py` and invoked based on user configuration in `profiles/config.json`.
+These modules reside alongside the existing 76 modules in [`Source/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/Source). They are loaded dynamically by `ui.bot_worker` and invoked based on user configuration in `Config/profiles/`.
