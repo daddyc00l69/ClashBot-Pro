@@ -34,9 +34,3 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 
-# Runtime resource junctions inside Source/
-Source/assets/
-Source/locales/
-Source/templates/
-Source/Tools/
-Source/treasureloot/
