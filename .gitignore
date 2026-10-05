@@ -2,7 +2,17 @@
 *.log
 launch.log
 
-# Visual Studio & IDE files
+# Build & Dist artifacts
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+dist/
+binaries/
+releases/
+New_Updated_exe/
+
+# IDE & Editor files
 .vs/
 .vscode/
 *.suo
@@ -10,16 +20,13 @@ launch.log
 *.userosscache
 *.sln.docstates
 
-# Build artifacts
-[Bb]in/
-[Oo]bj/
-[Dd]ebug/
-[Rr]elease/
-
-# Python
+# Python artifacts
 __pycache__/
 *.py[cod]
 *$py.class
+*.manifest
+venv/
+.env
 
 # OS generated files
 .DS_Store
@@ -28,8 +35,8 @@ ehthumbs.db
 [Dd]esktop.ini
 
 # Runtime resource junctions inside Source/
-releases/*/Source/assets/
-releases/*/Source/locales/
-releases/*/Source/templates/
-releases/*/Source/Tools/
-releases/*/Source/treasureloot/
+Source/assets/
+Source/locales/
+Source/templates/
+Source/Tools/
+Source/treasureloot/

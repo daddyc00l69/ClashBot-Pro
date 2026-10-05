@@ -1,8 +1,8 @@
 @echo off
-title Auto Clash - Release v2.1 (Update) Launcher
-echo =========================================================
-echo   Launching Auto Clash Release v2.1 (Update) from Source
-echo =========================================================
-cd /d "%~dp0releases\v2.1-update\Source"
-python "%~dp0releases\v2.1-update\Project\run.py"
+title ClashBot-Pro Launcher
+echo ===================================================
+echo   Launching ClashBot-Pro from Python Source
+echo ===================================================
+cd /d "%~dp0Source"
+python "%~dp0Project\run.py"
 pause
