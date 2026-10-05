@@ -1,0 +1,18 @@
+{
+  "module": "pywin.mfc",
+  "chunk_size": 198,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_pywin",
+    "u\\not_existing",
+    "amfc",
+    "aNUITKA_PACKAGE_pywin_mfc",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "upywin\\mfc\\__init__.py",
+    "u<module pywin.mfc>"
+  ]
+}

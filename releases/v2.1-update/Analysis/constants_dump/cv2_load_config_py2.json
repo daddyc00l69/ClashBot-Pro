@@ -1,0 +1,11 @@
+{
+  "module": "cv2.load_config_py2",
+  "chunk_size": 84,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "asys",
+    "ucv2\\load_config_py2.py",
+    "u<module cv2.load_config_py2>"
+  ]
+}

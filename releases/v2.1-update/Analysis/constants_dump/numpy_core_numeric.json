@@ -1,0 +1,23 @@
+{
+  "module": "numpy.core.numeric",
+  "chunk_size": 265,
+  "strings": [
+    "unumpy._core",
+    "anumeric",
+    "anumeric",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core.numeric' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a__getattr__",
+    "unumpy\\core\\numeric.py",
+    "u<module numpy.core.numeric>",
+    "aattr_name",
+    "anumeric",
+    "a_raise_warning",
+    "asentinel",
+    "aret"
+  ]
+}

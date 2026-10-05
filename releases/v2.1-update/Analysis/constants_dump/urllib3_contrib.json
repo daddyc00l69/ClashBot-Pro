@@ -1,0 +1,18 @@
+{
+  "module": "urllib3.contrib",
+  "chunk_size": 222,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_urllib3",
+    "u\\not_existing",
+    "acontrib",
+    "aNUITKA_PACKAGE_urllib3_contrib",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "uurllib3\\contrib\\__init__.py",
+    "u<module urllib3.contrib>"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "module": "numpy.typing.tests.data.pass.ma",
+  "chunk_size": 208,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aAny",
+    "anumpy",
+    "anp",
+    "unumpy.ma",
+    "ama",
+    "amasked_array",
+    "tFtT",
+    "amask",
+    "wmaMaskedArray",
+    "adtype",
+    "afloat64",
+    "unumpy\\typing\\tests\\data\\pass\\ma.py",
+    "u<module numpy.typing.tests.data.pass.ma>"
+  ]
+}

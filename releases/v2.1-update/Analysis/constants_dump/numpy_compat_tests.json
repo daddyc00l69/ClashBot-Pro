@@ -1,0 +1,21 @@
+{
+  "module": "numpy.compat.tests",
+  "chunk_size": 287,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "ucompat\\tests",
+    "aNUITKA_PACKAGE_numpy_compat",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy_compat_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\compat\\tests\\__init__.py",
+    "u<module numpy.compat.tests>"
+  ]
+}

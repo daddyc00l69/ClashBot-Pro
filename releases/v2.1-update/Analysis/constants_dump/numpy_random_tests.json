@@ -1,0 +1,21 @@
+{
+  "module": "numpy.random.tests",
+  "chunk_size": 287,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "urandom\\tests",
+    "aNUITKA_PACKAGE_numpy_random",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy_random_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\random\\tests\\__init__.py",
+    "u<module numpy.random.tests>"
+  ]
+}

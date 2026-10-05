@@ -1,0 +1,3465 @@
+{
+  "__main__": {
+    "name": "__main__",
+    "payload_size": 15330,
+    "status": "loaded",
+    "classes": {
+      "AppFinder": {
+        "doc": "Abstract base class for import finders on sys.meta_path.",
+        "bases": [
+          "MetaPathFinder"
+        ],
+        "methods": {
+          "find_module": {
+            "signature": "(self, fullname, path)",
+            "doc": "Return a loader for the module.\n\nIf no module is found, return None.  The fullname is a str and\nthe path is a list of strings or None.\n\nThis method is deprecated since Python 3.4 in favor of\nfinder.find_spec(). If find_spec() exists then backwards-compatible\nfunctionality is provided for this method."
+          },
+          "find_spec": {
+            "signature": "(self, fullname, path, target=None)",
+            "doc": null
+          },
+          "invalidate_caches": {
+            "signature": "(self)",
+            "doc": "An optional method for clearing the finder's cache, if any.\nThis method is used by importlib.invalidate_caches()."
+          }
+        },
+        "class_vars": {
+          "_abc_impl": "<_abc._abc_data object at 0x0000021AC68B4040>"
+        }
+      },
+      "AppLoader": {
+        "doc": "Abstract base class for import loaders.",
+        "bases": [
+          "Loader"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, name, payload, is_pkg)",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "create_module": {
+            "signature": "(self, spec)",
+            "doc": "Return a module to initialize and into which to load.\n\nThis method should raise ImportError if anything prevents it\nfrom creating a new module.  It may return None to indicate\nthat the spec should create the new module."
+          },
+          "exec_module": {
+            "signature": "(self, module)",
+            "doc": null
+          },
+          "load_module": {
+            "signature": "(self, fullname)",
+            "doc": "Return the loaded module.\n\nThe module must be added to sys.modules and have import-related\nattributes set properly.  The fullname is a str.\n\nImportError is raised on failure.\n\nThis method is deprecated in favor of loader.exec_module(). If\nexec_module() exists then it is used to provide a backwards-compatible\nfunctionality for this method."
+          },
+          "module_repr": {
+            "signature": "(self, module)",
+            "doc": "Return a module's repr.\n\nUsed by the module type when the method does not raise\nNotImplementedError.\n\nThis method is deprecated."
+          }
+        },
+        "class_vars": {
+          "_abc_impl": "<_abc._abc_data object at 0x0000021AC68AFF00>"
+        }
+      }
+    },
+    "functions": {
+      "extract_pyarmor_payload": {
+        "signature": "(chunk)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "__doc__": "None",
+      "blob_data": "b'\\xf1\\x7fF\\xa5\\xc8\\x83\\xe3\\x00.bytecode\\x00v\\xd4h\\x00Y\\x02X\\xff\\x1f\\xe3\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x04\\x00\\x00\\x00@\\x00\\x00\\x00s\\xc8\\x00\\x00\\x00d\\x00Z\\x00g\\x00d\\x01\\xa2\\x01Z\\x01d\\x02g\\x01e\\x01\\x17\\x00Z\\x02d\\x03Z\\x03d\\x04Z\\x04d\\x05Z\\x05d\\x06Z\\x06d\\x07Z\\x07d\\x08Z\\x08d\\tZ\\td\\nZ\\nd\\x0bZ\\x0bd\\x0cZ\\x0cG\\x00d\\rd\\x0e\\x84\\x00d\\x0e\\x83\\x02Z\\re\\rd\\x0fd\\x10e\\x03\\x83\\x03Z\\x0ee\\rd\\x11d\\x12e\\x04\\x83\\x03Z\\x0fe\\rd\\x13d\\x14e\\x05\\x83\\x03Z\\x10e\\rd\\x15d\\x14e\\x06\\x83\\x03Z\\x11e\\rd",
+      "blob_offset": "79773520",
+      "blob_size": "14910416",
+      "chunk": "b'\\x0b8l\\xff\\xff\\x03aFACILITY_WIN32\\x00l\\x10G\\x02\\x01\\x00q\\x80\\x80\\x80\\x80\\x02aFACILITY_SETUPAPI\\x00aHRESULT_FROM_WIN32\\x00D\\x0caERROR_INSTALL_SERVICE\\x00aERROR_BAD_DATABASE_VERSION\\x00awin16_E_NOTIMPL\\x00awin16_E_OUTOFMEMORY\\x00awin16_E_INVALIDARG\\x00awin16_E_NOINTERFACE\\x00awin16_E_POINTER\\x00awin16_E_HANDLE\\x00awin16_E_ABORT\\x00awin16_E_FAIL\\x00awin16_E_ACCESSDENIED\\x00aCERTDB_E_JET_ERROR\\x00l\\xc1\\x0cl\\xcd\\x0cG\\x01\\xff\\xff\\xff\\xff\\x07q\\xfe\\xff\\xff\\xff\\x07q\\xfd\\xff\\xff\\xff\\x07q\\xfc\\xff\\xff\\xff",
+      "chunk_size": "243160",
+      "data": "b'.bytecode\\x00v\\xd4h\\x00Y\\x02X\\xff\\x1f\\xe3\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x04\\x00\\x00\\x00@\\x00\\x00\\x00s\\xc8\\x00\\x00\\x00d\\x00Z\\x00g\\x00d\\x01\\xa2\\x01Z\\x01d\\x02g\\x01e\\x01\\x17\\x00Z\\x02d\\x03Z\\x03d\\x04Z\\x04d\\x05Z\\x05d\\x06Z\\x06d\\x07Z\\x07d\\x08Z\\x08d\\tZ\\td\\nZ\\nd\\x0bZ\\x0bd\\x0cZ\\x0cG\\x00d\\rd\\x0e\\x84\\x00d\\x0e\\x83\\x02Z\\re\\rd\\x0fd\\x10e\\x03\\x83\\x03Z\\x0ee\\rd\\x11d\\x12e\\x04\\x83\\x03Z\\x0fe\\rd\\x13d\\x14e\\x05\\x83\\x03Z\\x10e\\rd\\x15d\\x14e\\x06\\x83\\x03Z\\x11e\\rd\\x15d\\x16e\\x07\\x83\\x03Z\\x12e\\",
+      "f": "<_io.BufferedReader name='C:\\\\Users\\\\aradh\\\\.gemini\\\\antigravity-ide\\\\brain\\\\5c11f88e-a51c-4c62-aeaa-379755a040e8\\\\scratch\\\\extracted_payload\\\\gui.dll'>",
+      "finder": "<__main__.AppFinder object at 0x0000021AC68A8820>",
+      "gui_dll_path": "'C:\\\\Users\\\\aradh\\\\.gemini\\\\antigravity-ide\\\\brain\\\\5c11f88e-a51c-4c62-aeaa-379755a040e8\\\\scratch\\\\extracted_payload\\\\gui.dll'",
+      "importlib": "<module 'importlib'>",
+      "inspect": "<module 'inspect'>",
+      "json": "<module 'json'>",
+      "mod": "<module '__main__'>",
+      "modules_raw": "{'__main__': b'PY015394\\x00\\x03\\n\\x00o\\r\\r\\n\\x80\\x00\\x01\\x00\\x08\\x00\\x00\\x00\\x04\\x00\\x00\\x00@\\x00\\x00\\x00\\xa2;\\x00\\x00\\x10\\t\\x06\\x00\\xeb\\xd9\\x02d\\xcb\\xf95\\x95\\x94\\x9a&D=&L\\xd5\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xe4\\x18\\xc5\\xdb\\xabb\\n\\x18\\xed\\xaa\\xe7\\xc4@\\xbfP\\'Xc\\x19\\x9e(\\xf8\\xb1Z@3|\\xf8\\xd7\\xf2\\xc02qZ\\xf0\\x8b`]ZR\\xf6\\x8c\\xed\\xef\\xb8\\xde+\\x95(\\xe0\\x92S\\xe0B\\x87:J\\xe1\\xcf\\xa7\\x98\\x81\\xa2\\xa3T\\x99\\x14JP\\xdc\\xea\\xce\\xcer\\xbc\\xe7xFF\\x11U\\xc5\\x0b]s\\xb3G\\x9f\\xa5\\x9a\\x97T(\\r\\x8e\\xf0\\xf0\\xc81\\xad\\xe9\\xf6Bp",
+      "name": "'__main__'",
+      "name_end": "14667243",
+      "offset": "14910408",
+      "os": "<module 'os'>",
+      "p": "None",
+      "packages": "['ui', 'utils', 'profiles', 'attack', 'builder_base']",
+      "payload_dir": "'C:\\\\Users\\\\aradh\\\\.gemini\\\\antigravity-ide\\\\brain\\\\5c11f88e-a51c-4c62-aeaa-379755a040e8\\\\scratch\\\\extracted_payload'",
+      "pkg": "'builder_base'",
+      "pr": "<module 'pyarmor_runtime_015394.pyarmor_runtime'>",
+      "raw_name": "b'winerror'",
+      "res": "{'name': '__main__', 'payload_size': 15330, 'status': 'loaded', 'classes': {'AppFinder': {'doc': 'Abstract base class for import finders on sys.meta_path.', 'bases': ['MetaPathFinder'], 'methods': {'find_module': {'signature': '(self, fullname, path)', 'doc': 'Return a loader for the module.\\n\\nIf no module is found, return None.  The fullname is a str and\\nthe path is a list of strings or None.\\n\\nThis method is deprecated since Python 3.4 in favor of\\nfinder.find_spec(). If find_spec() exists ",
+      "results": "{}",
+      "struct": "<module 'struct'>",
+      "sys": "<module 'sys'>",
+      "types": "<module 'types'>"
+    }
+  },
+  "__parents_main__": {
+    "name": "__parents_main__",
+    "payload_size": 15330,
+    "status": "loaded",
+    "classes": {
+      "LicenseSplash": {
+        "doc": "QDialog(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None",
+        "bases": [
+          "QDialog"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, auto_activate=False)",
+            "doc": "__init__(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None\n\nInitialize self.  See help(type(self)) for accurate signature."
+          },
+          "_apply_key_format": {
+            "signature": "(self, raw)",
+            "doc": null
+          },
+          "_on_key_changed": {
+            "signature": "(self, text)",
+            "doc": null
+          },
+          "_on_validation_result": {
+            "signature": "(self, key, details)",
+            "doc": null
+          },
+          "_show_error": {
+            "signature": "(self, title, text)",
+            "doc": null
+          },
+          "_show_warning": {
+            "signature": "(self, title, text)",
+            "doc": null
+          },
+          "activate": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "eventFilter": {
+            "signature": "(self, watched, event)",
+            "doc": "eventFilter(self, arg__1: PySide6.QtCore.QObject, arg__2: PySide6.QtCore.QEvent, /) -> bool"
+          }
+        },
+        "class_vars": {
+          "DialogCode": "<enum 'DialogCode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "_KEY_GROUPS": "(2, 5, 5, 5, 5)",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"LicenseSplash\" inherits \"QDialog\":\nMethods:\n  #41 type=Signal, signature=validation_ready(QString,QVariantMap), parameters=QString, QVariantMap\n)"
+        }
+      },
+      "QApplication": {
+        "doc": "QApplication(self, arguments: collections.abc.Sequence[str], /, *, cursorFlashTime: int | None = None, doubleClickInterval: int | None = None, keyboardInputInterval: int | None = None, wheelScrollLines: int | None = None, startDragTime: int | None = None, startDragDistance: int | None = None, styleSheet: str | None = None, autoSipEnabled: bool | None = None) -> None\nQApplication(self, /, *, cursorFlashTime: int | None = None, doubleClickInterval: int | None = None, keyboardInputInterval: int | None = None, wheelScrollLines: int | None = None, startDragTime: int | None = None, startDragDistance: int | None = None, styleSheet: str | None = None, autoSipEnabled: bool | None = None) -> None",
+        "bases": [
+          "QGuiApplication"
+        ],
+        "methods": {},
+        "class_vars": {
+          "ApplicationFlags": "396034",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QApplication\" inherits \"QGuiApplication\":\nProperties:\n  #13 \"cursorFlashTime\", int [writeable] [designable]\n  #14 \"doubleClickInterval\", int [writeable] [designable]\n  #15 "
+        }
+      },
+      "QCheckBox": {
+        "doc": "QCheckBox(self, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, tristate: bool | None = None) -> None\nQCheckBox(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, tristate: bool | None = None) -> None",
+        "bases": [
+          "QAbstractButton"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QCheckBox\" inherits \"QAbstractButton\":\nProperties:\n  #72 \"tristate\", bool [writeable] [designable]\nMethods:\n  #43 type=Signal, signature=stateChanged(int), parameters=int\n "
+        }
+      },
+      "QDialog": {
+        "doc": "QDialog(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None",
+        "bases": [
+          "QWidget"
+        ],
+        "methods": {},
+        "class_vars": {
+          "DialogCode": "<enum 'DialogCode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QDialog\" inherits \"QWidget\":\nEnumerators:\n  #0 \"DialogCode\" {Rejected, Accepted}\nProperties:\n  #61 \"sizeGripEnabled\", bool [writeable] [designable]\n  #62 \"modal\", bool [wri"
+        }
+      },
+      "QMessageBox": {
+        "doc": "QMessageBox(self, icon: PySide6.QtWidgets.QMessageBox.Icon, title: str, text: str, /, buttons: PySide6.QtWidgets.QMessageBox.StandardButton = Instance(QMessageBox.StandardButton.NoButton), parent: PySide6.QtWidgets.QWidget | None = None, flags: PySide6.QtCore.Qt.WindowType = Instance(Qt.Dialog | Qt.MSWindowsFixedSizeDialogHint), *, iconPixmap: PySide6.QtGui.QPixmap | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, standardButtons: PySide6.QtWidgets.QMessageBox.StandardButton | None = None, detailedText: str | None = None, informativeText: str | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, options: PySide6.QtWidgets.QMessageBox.Option | None = None) -> None\nQMessageBox(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, text: str | None = None, icon: PySide6.QtWidgets.QMessageBox.Icon | None = None, iconPixmap: PySide6.QtGui.QPixmap | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, standardButtons: PySide6.QtWidgets.QMessageBox.StandardButton | None = None, detailedText: str | None = None, informativeText: str | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, options: PySide6.QtWidgets.QMessageBox.Option | None = None) -> None",
+        "bases": [
+          "QDialog"
+        ],
+        "methods": {},
+        "class_vars": {
+          "ButtonRole": "<enum 'ButtonRole'>",
+          "DialogCode": "<enum 'DialogCode'>",
+          "Icon": "<enum 'Icon'>",
+          "Option": "<enum 'Option'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "StandardButton": "<enum 'StandardButton'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QMessageBox\" inherits \"QDialog\":\nEnumerators:\n  #1 \"Option\" {DontUseNativeDialog}\n  #2 \"Icon\" {NoIcon, Information, Warning, Critical, Question}\n  #3 \"ButtonRole\" {InvalidR"
+        }
+      },
+      "QPoint": {
+        "doc": "QPoint(self, /) -> None\nQPoint(self, QPoint: PySide6.QtCore.QPoint, /) -> None\nQPoint(self, xpos: int, ypos: int, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "QSettings": {
+        "doc": "QSettings(self, format: PySide6.QtCore.QSettings.Format, scope: PySide6.QtCore.QSettings.Scope, organization: str, /, application: str = '', parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, scope: PySide6.QtCore.QSettings.Scope, organization: str, /, application: str = '', parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, scope: PySide6.QtCore.QSettings.Scope, /, parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, fileName: str, format: PySide6.QtCore.QSettings.Format, /, parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, organization: str, /, application: str = '', parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, /, parent: PySide6.QtCore.QObject | None = None) -> None",
+        "bases": [
+          "QObject"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Format": "<enum 'Format'>",
+          "Scope": "<enum 'Scope'>",
+          "Status": "<enum 'Status'>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QSettings\" inherits \"QObject\":\nEnumerators:\n  #0 \"Status\" {NoError, AccessError, FormatError}\n  #1 \"Format\" {NativeFormat, IniFormat, Registry32Format, Registry64Format, In"
+        }
+      },
+      "QStyleFactory": {
+        "doc": "QStyleFactory(self, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "Qt": {
+        "doc": "Object(self, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "AlignmentFlag": "<enum 'AlignmentFlag'>",
+          "AnchorPoint": "<enum 'AnchorPoint'>",
+          "ApplicationAttribute": "<enum 'ApplicationAttribute'>",
+          "ApplicationState": "<enum 'ApplicationState'>",
+          "ArrowType": "<enum 'ArrowType'>",
+          "AspectRatioMode": "<enum 'AspectRatioMode'>",
+          "Axis": "<enum 'Axis'>",
+          "BGMode": "<enum 'BGMode'>",
+          "BrushStyle": "<enum 'BrushStyle'>",
+          "CaseSensitivity": "<enum 'CaseSensitivity'>",
+          "CheckState": "<enum 'CheckState'>",
+          "ChecksumType": "<enum 'ChecksumType'>",
+          "ClipOperation": "<enum 'ClipOperation'>",
+          "ColorScheme": "<enum 'ColorScheme'>",
+          "ConnectionType": "<enum 'ConnectionType'>",
+          "ContextMenuPolicy": "<enum 'ContextMenuPolicy'>",
+          "ContextMenuTrigger": "<enum 'ContextMenuTrigger'>",
+          "ContrastPreference": "<enum 'ContrastPreference'>",
+          "CoordinateSystem": "<enum 'CoordinateSystem'>",
+          "Corner": "<enum 'Corner'>",
+          "CursorMoveStyle": "<enum 'CursorMoveStyle'>",
+          "CursorShape": "<enum 'CursorShape'>",
+          "DateFormat": "<enum 'DateFormat'>",
+          "DayOfWeek": "<enum 'DayOfWeek'>",
+          "DockWidgetArea": "<enum 'DockWidgetArea'>",
+          "DockWidgetAreaSizes": "<enum 'DockWidgetAreaSizes'>",
+          "DropAction": "<enum 'DropAction'>",
+          "Edge": "<enum 'Edge'>",
+          "EnterKeyType": "<enum 'EnterKeyType'>",
+          "EventPriority": "<enum 'EventPriority'>",
+          "FillRule": "<enum 'FillRule'>",
+          "FindChildOption": "<enum 'FindChildOption'>",
+          "FocusPolicy": "<enum 'FocusPolicy'>",
+          "FocusReason": "<enum 'FocusReason'>",
+          "GestureFlag": "<enum 'GestureFlag'>",
+          "GestureState": "<enum 'GestureState'>",
+          "GestureType": "<enum 'GestureType'>",
+          "GlobalColor": "<enum 'GlobalColor'>",
+          "HighDpiScaleFactorRoundingPolicy": "<enum 'HighDpiScaleFactorRoundingPolicy'>",
+          "HitTestAccuracy": "<enum 'HitTestAccuracy'>",
+          "ImageConversionFlag": "<enum 'ImageConversionFlag'>",
+          "InputMethodHint": "<enum 'InputMethodHint'>",
+          "InputMethodQuery": "<enum 'InputMethodQuery'>",
+          "ItemDataRole": "<enum 'ItemDataRole'>",
+          "ItemFlag": "<enum 'ItemFlag'>",
+          "ItemSelectionMode": "<enum 'ItemSelectionMode'>",
+          "ItemSelectionOperation": "<enum 'ItemSelectionOperation'>",
+          "Key": "<enum 'Key'>",
+          "KeyboardModifier": "<enum 'KeyboardModifier'>",
+          "LayoutDirection": "<enum 'LayoutDirection'>",
+          "MaskMode": "<enum 'MaskMode'>",
+          "MatchFlag": "<enum 'MatchFlag'>",
+          "Modifier": "<enum 'Modifier'>",
+          "MouseButton": "<enum 'MouseButton'>",
+          "MouseEventFlag": "<enum 'MouseEventFlag'>",
+          "MouseEventSource": "<enum 'MouseEventSource'>",
+          "NativeGestureType": "<enum 'NativeGestureType'>",
+          "NavigationMode": "<enum 'NavigationMode'>",
+          "Orientation": "<enum 'Orientation'>",
+          "PenCapStyle": "<enum 'PenCapStyle'>",
+          "PenJoinStyle": "<enum 'PenJoinStyle'>",
+          "PenStyle": "<enum 'PenStyle'>",
+          "PermissionStatus": "<enum 'PermissionStatus'>",
+          "ReturnByValueConstant": "<enum 'ReturnByValueConstant'>",
+          "ScreenOrientation": "<enum 'ScreenOrientation'>",
+          "ScrollBarPolicy": "<enum 'ScrollBarPolicy'>",
+          "ScrollPhase": "<enum 'ScrollPhase'>",
+          "ShortcutContext": "<enum 'ShortcutContext'>",
+          "SizeHint": "<enum 'SizeHint'>",
+          "SizeMode": "<enum 'SizeMode'>",
+          "SortOrder": "<enum 'SortOrder'>",
+          "SplitBehaviorFlags": "<enum 'SplitBehaviorFlags'>",
+          "TabFocusBehavior": "<enum 'TabFocusBehavior'>",
+          "TextElideMode": "<enum 'TextElideMode'>",
+          "TextFlag": "<enum 'TextFlag'>",
+          "TextFormat": "<enum 'TextFormat'>",
+          "TextInteractionFlag": "<enum 'TextInteractionFlag'>",
+          "TileRule": "<enum 'TileRule'>",
+          "TimeSpec": "<enum 'TimeSpec'>",
+          "TimerId": "<enum 'TimerId'>",
+          "TimerType": "<enum 'TimerType'>",
+          "ToolBarArea": "<enum 'ToolBarArea'>",
+          "ToolBarAreaSizes": "<enum 'ToolBarAreaSizes'>",
+          "ToolButtonStyle": "<enum 'ToolButtonStyle'>",
+          "TouchPointState": "<enum 'TouchPointState'>",
+          "TransformationMode": "<enum 'TransformationMode'>",
+          "UIEffect": "<enum 'UIEffect'>",
+          "WhiteSpaceMode": "<enum 'WhiteSpaceMode'>",
+          "WidgetAttribute": "<enum 'WidgetAttribute'>",
+          "WindowFrameSection": "<enum 'WindowFrameSection'>",
+          "WindowModality": "<enum 'WindowModality'>",
+          "WindowState": "<enum 'WindowState'>",
+          "WindowType": "<enum 'WindowType'>"
+        }
+      },
+      "datetime": {
+        "doc": "datetime(year, month, day[, hour[, minute[, second[, microsecond[,tzinfo]]]]])\n\nThe year, month and day arguments are required. tzinfo may be None, or an\ninstance of a tzinfo subclass. The remaining arguments may be ints.",
+        "bases": [
+          "date"
+        ],
+        "methods": {},
+        "class_vars": {
+          "day": "<attribute 'day' of 'datetime.date' objects>",
+          "fold": "<attribute 'fold' of 'datetime.datetime' objects>",
+          "hour": "<attribute 'hour' of 'datetime.datetime' objects>",
+          "max": "datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)",
+          "microsecond": "<attribute 'microsecond' of 'datetime.datetime' objects>",
+          "min": "datetime.datetime(1, 1, 1, 0, 0)",
+          "minute": "<attribute 'minute' of 'datetime.datetime' objects>",
+          "month": "<attribute 'month' of 'datetime.date' objects>",
+          "resolution": "datetime.timedelta(microseconds=1)",
+          "second": "<attribute 'second' of 'datetime.datetime' objects>",
+          "tzinfo": "<attribute 'tzinfo' of 'datetime.datetime' objects>",
+          "year": "<attribute 'year' of 'datetime.date' objects>"
+        }
+      },
+      "timezone": {
+        "doc": "Fixed offset from UTC implementation of tzinfo.",
+        "bases": [
+          "tzinfo"
+        ],
+        "methods": {},
+        "class_vars": {
+          "max": "datetime.timezone(datetime.timedelta(seconds=86340))",
+          "min": "datetime.timezone(datetime.timedelta(days=-1, seconds=60))",
+          "utc": "datetime.timezone.utc"
+        }
+      }
+    },
+    "functions": {
+      "_clamp_window_pos": {
+        "signature": "(app, x, y, w, h)",
+        "doc": null
+      },
+      "_int_setting": {
+        "signature": "(settings, key, default=None)",
+        "doc": null
+      },
+      "_legacy_window_settings": {
+        "signature": "()",
+        "doc": null
+      },
+      "_load_any_window_geometry": {
+        "signature": "(mode, include_legacy=False)",
+        "doc": null
+      },
+      "_load_bot_config_last_mode": {
+        "signature": "()",
+        "doc": null
+      },
+      "_load_bot_config_window_geometry": {
+        "signature": "(mode)",
+        "doc": null
+      },
+      "_load_window_bot_config": {
+        "signature": "()",
+        "doc": null
+      },
+      "_load_window_geometry": {
+        "signature": "(settings, mode, include_legacy=False)",
+        "doc": null
+      },
+      "_patch_dummy_thread_finalizer": {
+        "signature": "()",
+        "doc": null
+      },
+      "_position_splash_from_last_window": {
+        "signature": "(app, splash)",
+        "doc": null
+      },
+      "_restore_last_window_position": {
+        "signature": "(app, win, mode)",
+        "doc": null
+      },
+      "_save_bot_config_window_geometry": {
+        "signature": "(win, mode)",
+        "doc": null
+      },
+      "_save_last_window_position": {
+        "signature": "(win, mode)",
+        "doc": null
+      },
+      "_save_window_bot_config": {
+        "signature": "(data)",
+        "doc": null
+      },
+      "_window_key": {
+        "signature": "(mode, field)",
+        "doc": null
+      },
+      "_window_settings": {
+        "signature": "()",
+        "doc": null
+      },
+      "_window_settings_app_name": {
+        "signature": "()",
+        "doc": null
+      },
+      "bootstrap_external_ui2_data": {
+        "signature": "()",
+        "doc": null
+      },
+      "cleanup_stale_onefile_tempdirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "ensure_runtime_dirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_app_icon": {
+        "signature": "()",
+        "doc": null
+      },
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "run": {
+        "signature": "()",
+        "doc": null
+      },
+      "set_windows_app_user_model_id": {
+        "signature": "()",
+        "doc": null
+      }
+    },
+    "variables": {
+      "BOT_CONFIG_PATH": "WindowsPath('C:/Users/aradh/Desktop/Auto Clash clone Vip/bot.config')",
+      "POPUP_STYLESHEET": "'\\nQMessageBox {\\n    background-color: #1D212A;\\n}\\nQMessageBox QLabel {\\n    color: #E6E6E6;\\n}\\nQMessageBox QPushButton {\\n    background-color: #242834;\\n    color: #C9CDD8;\\n    border: 1px solid #3A4053;\\n    border-radius: 6px;\\n    padding: 6px 12px;\\n    min-width: 90px;\\n}\\nQMessageBox QPushButton:hover {\\n    background-color: #313747;\\n    color: #F1F5F9;\\n}\\nQMessageBox QPushButton:pressed {\\n    background-color: #222733;\\n}\\n'",
+      "WINDOW_MODE_MAIN": "'main'",
+      "WINDOW_MODE_MINI": "'mini'",
+      "WINDOW_SETTINGS_APP": "'AutoClash'",
+      "WINDOW_SETTINGS_ORG": "'MysticTech'",
+      "__doc__": "None",
+      "base_dir": "''",
+      "ctypes": "<module 'ctypes'>",
+      "hashlib": "<module 'hashlib'>",
+      "json": "<module 'json'>",
+      "multiprocessing": "<module 'multiprocessing'>",
+      "os": "<module 'os'>",
+      "re": "<module 're'>",
+      "sys": "<module 'sys'>",
+      "threading": "<module 'threading'>"
+    }
+  },
+  "actions": {
+    "name": "actions",
+    "payload_size": 7494,
+    "status": "error: [Errno 2] No such file or directory: 'C:\\\\Users\\\\aradh\\\\Desktop\\\\Auto Clash clone Vip\\\\fixed_points_source.py'",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "adb": {
+    "name": "adb",
+    "payload_size": 30331,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "army_update": {
+    "name": "army_update",
+    "payload_size": 22358,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack": {
+    "name": "attack",
+    "payload_size": 188,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "attack.attacklogic": {
+    "name": "attack.attacklogic",
+    "payload_size": 35849,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.barchgob": {
+    "name": "attack.barchgob",
+    "payload_size": 5008,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.dragon": {
+    "name": "attack.dragon",
+    "payload_size": 3525,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.edragon": {
+    "name": "attack.edragon",
+    "payload_size": 3987,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.fourside_coords": {
+    "name": "attack.fourside_coords",
+    "payload_size": 2738,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.geometry": {
+    "name": "attack.geometry",
+    "payload_size": 597,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.sbarb": {
+    "name": "attack.sbarb",
+    "payload_size": 2903,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.sminion": {
+    "name": "attack.sminion",
+    "payload_size": 2959,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.threeside_coords": {
+    "name": "attack.threeside_coords",
+    "payload_size": 2397,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.thrower": {
+    "name": "attack.thrower",
+    "payload_size": 12512,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.valkyrie": {
+    "name": "attack.valkyrie",
+    "payload_size": 3054,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.valkyrie_1side": {
+    "name": "attack.valkyrie_1side",
+    "payload_size": 11068,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.war_onestar": {
+    "name": "attack.war_onestar",
+    "payload_size": 4143,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "attack.war_twothreestar": {
+    "name": "attack.war_twothreestar",
+    "payload_size": 5159,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "auto_place_building": {
+    "name": "auto_place_building",
+    "payload_size": 17865,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "auto_place_walls": {
+    "name": "auto_place_walls",
+    "payload_size": 11137,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "bb_obstacle_removal": {
+    "name": "bb_obstacle_removal",
+    "payload_size": 16162,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base": {
+    "name": "builder_base",
+    "payload_size": 194,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "builder_base.functions": {
+    "name": "builder_base.functions",
+    "payload_size": 36133,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base.main": {
+    "name": "builder_base.main",
+    "payload_size": 30928,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base.vision_builder": {
+    "name": "builder_base.vision_builder",
+    "payload_size": 23629,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_base.walls": {
+    "name": "builder_base.walls",
+    "payload_size": 22240,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "builder_boat": {
+    "name": "builder_boat",
+    "payload_size": 1472,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "capital_raid": {
+    "name": "capital_raid",
+    "payload_size": 82605,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "clangames": {
+    "name": "clangames",
+    "payload_size": 33037,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "collect_achievements": {
+    "name": "collect_achievements",
+    "payload_size": 2959,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "control": {
+    "name": "control",
+    "payload_size": 2862,
+    "status": "loaded",
+    "classes": {
+      "BotControl": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "continue_clicked": {
+            "signature": "()",
+            "doc": null
+          },
+          "emit_config": {
+            "signature": "(cfg, profile=None)",
+            "doc": null
+          },
+          "wait_for_continue": {
+            "signature": "(title, message)",
+            "doc": null
+          },
+          "wait_for_enter": {
+            "signature": "()",
+            "doc": null
+          }
+        },
+        "class_vars": {
+          "continue_event": "<threading.Event object at 0x0000021AE39BA5C0>",
+          "enter_pressed": "False",
+          "paused": "False",
+          "running": "True",
+          "worker": "None"
+        }
+      }
+    },
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "threading": "<module 'threading'>",
+      "time": "<module 'time'>"
+    }
+  },
+  "create_profile": {
+    "name": "create_profile",
+    "payload_size": 12105,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "defaults": {
+    "name": "defaults",
+    "payload_size": 7863,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "ACCOUNT_CREATION_COUNT": "1",
+      "ACCOUNT_CREATION_NAME": "'Account'",
+      "ACCOUNT_CREATION_NUMERAL_SUFFIX": "True",
+      "ACCOUNT_CREATION_SUFFIX_COUNTER": "1",
+      "ACTIVE_HOURS_ENABLED": "False",
+      "ACTIVE_HOURS_END": "'23:59'",
+      "ACTIVE_HOURS_START": "'00:00'",
+      "AIR_TROOP_WIDTH": "60",
+      "AIR_TROOP_WIDTH_ENABLED": "False",
+      "AIR_TROOP_WIDTH_IS_PERCENT": "True",
+      "ATTACK_MIN_DARK": "0",
+      "ATTACK_MIN_ELIXIR": "0",
+      "ATTACK_MIN_GOLD": "0",
+      "BB_OBSTACLE_REMOVAL_LAST_TIME": "0",
+      "BB_REMOVE_OBSTACLES": "False",
+      "BB_RESEARCH_ENABLED": "False",
+      "BB_RESEARCH_PERFORM_SUGGESTED": "False",
+      "BB_RESEARCH_SLOT": "''",
+      "BB_RESEARCH_SLOTS": "['', '', '', '']",
+      "BB_RESEARCH_SUGGESTED_ROTATE": "False",
+      "BB_RUSH_BH_ENABLED": "False",
+      "BB_SAVE_1_BUILDER": "False",
+      "BB_TIMED_MINUTES": "20",
+      "BB_UPGRADE_ENABLED": "False",
+      "BB_UPGRADE_PERFORM_SUGGESTED": "False",
+      "BB_UPGRADE_SLOTS": "['', '', '', '', '', '']",
+      "BB_UPGRADE_SUGGESTED_ROTATE": "False",
+      "BOT_END_CONDITION_ENABLED": "False",
+      "BOT_END_CONDITION_TYPE": "'loot_full_all'",
+      "BOT_END_TIME_MINUTES": "120",
+      "BUILDERBASE_UPGRADE_WALLS": "False",
+      "BUILDER_ARMY_TROOP": "'Baby Dragon'",
+      "BUILDER_BOOST_CLOCK_TOWER": "True",
+      "BUILDER_COLLECT_GEM_MINE": "True",
+      "BUILDER_COLLECT_RESOURCES": "True",
+      "BUILDER_ENABLED": "False",
+      "BUILDER_END_AFTER_TROOP_DROP": "False",
+      "BUILDER_MAX_ATTACKS": "10",
+      "BUILDER_RETURN_HOME_WHEN": "'Gold + Elixir Full'",
+      "BUILDER_TARGET_STARS": "1",
+      "CC_LOOT_CYCLE_START": "0",
+      "CC_LOOT_DARK_DONE": "False",
+      "CC_LOOT_ELIXIR_DONE": "False",
+      "CC_LOOT_GOLD_DONE": "False",
+      "CG_CHALLENGE_NAME_OVERRIDES": "{'cg_buildingsmasher': 'Building Smasher', 'cg_championhunter': 'Champion Hunter', 'cg_darkchallenge': 'Dark Elixir Challenge', 'cg_darkgrab': 'Dark Elixir Grab', 'cg_darkpump': 'Destroy Dark Elixir Drills', 'cg_destroyairdefence': 'Destroy Air Defenses', 'cg_destroyairsweeper': 'Destroy Air Sweepers', 'cg_destroyarchertower': 'Destroy Archer Towers', 'cg_destroyarmycamp': 'Destroy Army Camps', 'cg_destroycannon': 'Destroy Cannons', 'cg_destroydarkspell': 'Destroy Dark Spell Factories', 'cg_dest",
+      "CG_CLAIM_REWARDS_FOR_GEMS": "False",
+      "CG_DISABLED_CHALLENGES": "['cghero_duke', 'cghero_king', 'cghero_minion_prince', 'cghero_queen', 'cghero_warden']",
+      "CG_TROOP_CHALLENGES": "False",
+      "CLAN_CAPITAL": "False",
+      "CLAN_CAPITAL_CUSTOM_SPELLS": "[]",
+      "CLAN_CAPITAL_CUSTOM_TROOPS": "[]",
+      "CLAN_CAPITAL_DUMP_GOLD_TREASURY_IF_FULL": "False",
+      "CLAN_CAPITAL_TROOP": "'Miner'",
+      "CLAN_GAMES": "False",
+      "CLEAR_TOMBSTONES": "False",
+      "COLLECT_ACHIEVEMENTS": "False",
+      "COLLECT_CART": "False",
+      "COLLECT_CC_LOOT": "False",
+      "COLLECT_COLLECTORS": "False",
+      "DONATE_ONLY_ENABLED": "False",
+      "DONATE_ONLY_SPEED_DARK_COST": "900",
+      "DONATE_ONLY_SPEED_ELIXIR_COST": "132000",
+      "DONATE_ONLY_SPEED_MODE": "False",
+      "DONATE_ONLY_SPEED_SPELLS": "1",
+      "DONATE_ONLY_SPEED_TROOPS": "5",
+      "DONATION_MODE": "'hybrid'",
+      "EMULATOR_INSTALL_PATHS": "{'bluestacks': '', 'ldplayer': '', 'other': ''}",
+      "EMULATOR_INSTANCE": "''",
+      "EMULATOR_IP": "'127.0.0.1'",
+      "EMULATOR_PORT": "'5556'",
+      "EMULATOR_SELECTION": "'bluestacks'",
+      "ENABLE_DONATIONS": "True",
+      "END_BATTLE_ON_STARS": "True",
+      "EQUIPMENT_HERO_PRIORITY": "[]",
+      "EQUIPMENT_UPGRADE_ENABLED": "False",
+      "EQUIPMENT_UPGRADE_MODE": "'currently_equipped'",
+      "FARMING_ENABLED": "True",
+      "HERO_TAP_DELAY_ENABLED": "False",
+      "HERO_TAP_DELAY_SECONDS": "1",
+      "HOME_RESEARCH_ENABLED": "False",
+      "HOME_RESEARCH_PERFORM_SUGGESTED": "False",
+      "HOME_RESEARCH_PETS": "False",
+      "HOME_RESEARCH_PET_TARGET": "'pet_upgrade_angry_jelly'",
+      "HOME_RESEARCH_SLOT": "''",
+      "HOME_RESEARCH_SLOTS": "['', '', '', '']",
+      "HOME_RESEARCH_SUGGESTED_ROTATE": "False",
+      "HOME_RESEARCH_USE_1_GEM_HELPER": "False",
+      "HOME_RUSH_TH_ENABLED": "False",
+      "HOME_RUSH_TH_PHASE": "'sweep'",
+      "HOME_RUSH_TH_TH_UPGRADE_STARTED": "False",
+      "HOME_SAVE_1_BUILDER": "False",
+      "HOME_UPGRADE_ENABLED": "False",
+      "HOME_UPGRADE_PERFORM_SUGGESTED": "False",
+      "HOME_UPGRADE_SLOTS": "['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']",
+      "HOME_UPGRADE_SUGGESTED_IGNORE_TOWNHALL": "False",
+      "HOME_UPGRADE_SUGGESTED_ROTATE": "False",
+      "HOME_WALL_EXHAUSTED_STREAK": "0",
+      "HOME_WALL_RECHECK_AFTER": "0",
+      "HUMANIZED_BREAKS_ENABLED": "False",
+      "HUMANIZED_BREAK_MAX_MINUTES": "50",
+      "HUMANIZED_BREAK_MIN_MINUTES": "5",
+      "HUMANIZED_RUN_MAX_MINUTES": "90",
+      "HUMANIZED_RUN_MIN_MINUTES": "30",
+      "MULTI_VILLAGE_ENABLED": "False",
+      "OBSTACLE_REMOVAL_LAST_TIME": "0",
+      "PROFILE_MATCH_THRESHOLD": "0.92",
+      "RANKED_ARMY_SLOT": "0",
+      "RANKED_ATTACK_STRATEGY": "'edragon'",
+      "RANKED_REQUEST_DONATIONS": "False",
+      "RANKED_WAIT_FOR_CC_TROOPS": "False",
+      "RANK_FIRST": "False",
+      "REMOVE_OBSTACLES": "False",
+      "REQUEST_AND_LEAVE_ARMY_LINK": "''",
+      "REQUEST_AND_LEAVE_CLAN_TAG": "'#'",
+      "REQUEST_AND_LEAVE_ENABLED": "False",
+      "REQUEST_AND_LEAVE_JOIN": "False",
+      "REQUEST_AND_LEAVE_JOIN_LEAVE": "False",
+      "REQUEST_AND_LEAVE_LEAVE": "False",
+      "REQUEST_AND_LEAVE_SET_ARMY_SLOT1": "False",
+      "REQUEST_AND_LEAVE_WAIT_FOR_COOLDOWN": "False",
+      "REQUEST_DONATIONS": "False",
+      "SELECTED_ARMY_SLOT": "1",
+      "SELECTED_ATTACK_STRATEGY": "'valkyrie'",
+      "START_HELPERS": "False",
+      "START_PROFILE": "''",
+      "TARGET_STARS": "2",
+      "TEMPLATES_DIR": "'templates'",
+      "UI_LANGUAGE": "'en'",
+      "UPGRADE_WALLS": "False",
+      "USE_ROOT_PROFILE_SWAP": "False",
+      "VALKYRIE_1SIDE_MULTITOUCH_EXTRA_MS_PER_TROOP": "10",
+      "VILLAGE_COUNT": "10",
+      "VILLAGE_SWITCH_CONDITION": "'after_time'",
+      "VILLAGE_SWITCH_MINUTES": "10",
+      "WAIT_FOR_CC_TROOPS": "False",
+      "WALL_STOP_LEVEL": "18",
+      "WAR_ATTACK1_STARS": "3",
+      "WAR_ATTACK1_TARGET": "'Any'",
+      "WAR_ATTACK2_STARS": "3",
+      "WAR_ATTACK2_TARGET": "'Any'",
+      "WAR_ATTACKS_ENABLED": "False",
+      "WAR_CWL_TARGET": "'Any'",
+      "WAR_MODE": "'FWA'",
+      "WAR_ONE_ATTACK_PER_SESSION": "False",
+      "WAR_REQUEST_CC": "False",
+      "WAR_WAIT_FOR_CC": "False",
+      "__doc__": "None"
+    }
+  },
+  "donations": {
+    "name": "donations",
+    "payload_size": 61904,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "equipment_upgrade": {
+    "name": "equipment_upgrade",
+    "payload_size": 9489,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "error_popup_watcher": {
+    "name": "error_popup_watcher",
+    "payload_size": 8765,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "farming": {
+    "name": "farming",
+    "payload_size": 52102,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "findblacksmith": {
+    "name": "findblacksmith",
+    "payload_size": 4053,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "findcc": {
+    "name": "findcc",
+    "payload_size": 6293,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "fixed_points": {
+    "name": "fixed_points",
+    "payload_size": 79481,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "license_manager": {
+    "name": "license_manager",
+    "payload_size": 20212,
+    "status": "loaded",
+    "classes": {
+      "Ed25519PublicKey": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "from_public_bytes": {
+            "signature": "(data: 'bytes') -> 'Ed25519PublicKey'",
+            "doc": null
+          },
+          "public_bytes": {
+            "signature": "(self, encoding: '_serialization.Encoding', format: '_serialization.PublicFormat') -> 'bytes'",
+            "doc": "The serialized bytes of the public key."
+          },
+          "public_bytes_raw": {
+            "signature": "(self) -> 'bytes'",
+            "doc": "The raw bytes of the public key.\nEquivalent to public_bytes(Raw, Raw)."
+          },
+          "verify": {
+            "signature": "(self, signature: 'Buffer', data: 'Buffer') -> 'None'",
+            "doc": "Verify the signature."
+          }
+        },
+        "class_vars": {
+          "_abc_impl": "<_abc._abc_data object at 0x0000021ACCC4A000>"
+        }
+      },
+      "InvalidSignature": {
+        "doc": "Common base class for all non-exit exceptions.",
+        "bases": [
+          "Exception"
+        ],
+        "methods": {},
+        "class_vars": {
+          "args": "<attribute 'args' of 'BaseException' objects>"
+        }
+      }
+    },
+    "functions": {
+      "_build_validation_payload": {
+        "signature": "(key)",
+        "doc": null
+      },
+      "_cache_data_key": {
+        "signature": "(raw_b64)",
+        "doc": null
+      },
+      "_canonical_signed_bytes": {
+        "signature": "(fields)",
+        "doc": null
+      },
+      "_clean_hw_marker": {
+        "signature": "(value)",
+        "doc": null
+      },
+      "_collect_v3_markers": {
+        "signature": "()",
+        "doc": null
+      },
+      "_get_windows_machine_guid": {
+        "signature": "()",
+        "doc": null
+      },
+      "_hash_hwid_markers": {
+        "signature": "(markers)",
+        "doc": null
+      },
+      "_is_transient_validation_failure": {
+        "signature": "(result)",
+        "doc": null
+      },
+      "_is_valid_response": {
+        "signature": "(data)",
+        "doc": null
+      },
+      "_post_validate": {
+        "signature": "(payload)",
+        "doc": null
+      },
+      "_remove_legacy_session_file": {
+        "signature": "()",
+        "doc": null
+      },
+      "_validate_once": {
+        "signature": "(key)",
+        "doc": null
+      },
+      "_verify_signed_response": {
+        "signature": "(sent_nonce, key, data)",
+        "doc": null
+      },
+      "clear_key": {
+        "signature": "()",
+        "doc": null
+      },
+      "clear_saved_key": {
+        "signature": "()",
+        "doc": null
+      },
+      "format_remaining": {
+        "signature": "(seconds)",
+        "doc": null
+      },
+      "get_cached_data_key": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_hwid": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_hwid_legacy": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_hwid_v2": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_hwid_v3_components": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_license_error_message": {
+        "signature": "(result)",
+        "doc": null
+      },
+      "load_key": {
+        "signature": "()",
+        "doc": null
+      },
+      "load_license_meta": {
+        "signature": "()",
+        "doc": null
+      },
+      "load_saved_key": {
+        "signature": "()",
+        "doc": null
+      },
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "save_key": {
+        "signature": "(key)",
+        "doc": null
+      },
+      "save_license_meta": {
+        "signature": "(meta)",
+        "doc": null
+      },
+      "start_license_heartbeat": {
+        "signature": "(get_current_key, on_invalid=None, interval_seconds=10800)",
+        "doc": null
+      },
+      "stop_license_heartbeat": {
+        "signature": "()",
+        "doc": null
+      },
+      "validate_license": {
+        "signature": "(key)",
+        "doc": null
+      },
+      "validate_license_details": {
+        "signature": "(key)",
+        "doc": null
+      },
+      "version_tuple": {
+        "signature": "(v)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "BASE_PATH": "WindowsPath('C:/Users/aradh/Desktop/Auto Clash clone Vip')",
+      "CURRENT_VERSION": "'2.2.0'",
+      "LICENSE_FILE": "WindowsPath('C:/Users/aradh/Desktop/Auto Clash clone Vip/license.key')",
+      "SERVER_URL": "'https://api.autoclashbot.com/validate'",
+      "TRANSIENT_FAILURE_GRACE_SECONDS": "900",
+      "_DATA_KEY_ENV_VAR": "'AUTOCLASH_DATA_KEY'",
+      "_HWID_V3_PLACEHOLDER_VALUES": "{'', 'not specified', '0', 'base board serial number', 'system serial number', 'unknown', 'none', 'oem', 'not applicable', 'invalid', 'serialnumber', 'to be filled by o.e.m.', 'default string'}",
+      "_RETRY_INTERVAL_SECONDS": "180",
+      "_SERVER_PUBLIC_KEY": "<cryptography.hazmat.bindings._rust.openssl.ed25519.Ed25519PublicKey object at 0x0000021ACBA33470>",
+      "__doc__": "None",
+      "_data_key_cache": "None",
+      "_heartbeat_stop_event": "<threading.Event object at 0x0000021ACBB8DEA0>",
+      "_hwid_v3_components_cache": "None",
+      "base64": "<module 'base64'>",
+      "hashlib": "<module 'hashlib'>",
+      "json": "<module 'json'>",
+      "license_meta_cache": "{}",
+      "os": "<module 'os'>",
+      "platform": "<module 'platform'>",
+      "requests": "<module 'requests'>",
+      "secrets": "<module 'secrets'>",
+      "subprocess": "<module 'subprocess'>",
+      "threading": "<module 'threading'>",
+      "time": "<module 'time'>",
+      "uuid": "<module 'uuid'>"
+    }
+  },
+  "main": {
+    "name": "main",
+    "payload_size": 47671,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "main_window": {
+    "name": "main_window",
+    "payload_size": 269286,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "multitouch": {
+    "name": "multitouch",
+    "payload_size": 4411,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "obstacle_removal": {
+    "name": "obstacle_removal",
+    "payload_size": 14845,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "process": {
+    "name": "process",
+    "payload_size": 608,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "name": "'cmd.exe'",
+      "proc": "psutil.Process(pid=21460, name='cmd.exe', status='running', started='15:10:05')",
+      "psutil": "<module 'psutil'>"
+    }
+  },
+  "profiles": {
+    "name": "profiles",
+    "payload_size": 190,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None"
+    }
+  },
+  "profiles.config_manager": {
+    "name": "profiles.config_manager",
+    "payload_size": 8864,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "profiles.profile_manager": {
+    "name": "profiles.profile_manager",
+    "payload_size": 33595,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ranked": {
+    "name": "ranked",
+    "payload_size": 7865,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ranked_unlock": {
+    "name": "ranked_unlock",
+    "payload_size": 1497,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "recovery": {
+    "name": "recovery",
+    "payload_size": 1988,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "request_and_leave": {
+    "name": "request_and_leave",
+    "payload_size": 14585,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "rush_bh": {
+    "name": "rush_bh",
+    "payload_size": 839,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "rush_th": {
+    "name": "rush_th",
+    "payload_size": 7710,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "startup": {
+    "name": "startup",
+    "payload_size": 64784,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "startup_checks": {
+    "name": "startup_checks",
+    "payload_size": 3578,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "stats": {
+    "name": "stats",
+    "payload_size": 5519,
+    "status": "loaded",
+    "classes": {
+      "Stats": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self)",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "elapsed_hhmmss": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "pause_timer": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "record_research_done": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "record_stars": {
+            "signature": "(self, stars)",
+            "doc": null
+          },
+          "record_upgrade_done": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "reset_timer": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "resume_timer": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "update_hourly_rates": {
+            "signature": "(self)",
+            "doc": null
+          }
+        },
+        "class_vars": {
+          "elapsed_seconds": "<property object at 0x0000021AE3CFA0C0>"
+        }
+      }
+    },
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "time": "<module 'time'>"
+    }
+  },
+  "ui": {
+    "name": "ui",
+    "payload_size": 184,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "activation_window": "<module 'ui.activation_window'>"
+    }
+  },
+  "ui.account_creation_worker": {
+    "name": "ui.account_creation_worker",
+    "payload_size": 3270,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.activation_window": {
+    "name": "ui.activation_window",
+    "payload_size": 16355,
+    "status": "loaded",
+    "classes": {
+      "LicenseSplash": {
+        "doc": "QDialog(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None",
+        "bases": [
+          "QDialog"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, auto_activate=False)",
+            "doc": "__init__(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None\n\nInitialize self.  See help(type(self)) for accurate signature."
+          },
+          "_apply_key_format": {
+            "signature": "(self, raw)",
+            "doc": null
+          },
+          "_on_key_changed": {
+            "signature": "(self, text)",
+            "doc": null
+          },
+          "_on_validation_result": {
+            "signature": "(self, key, details)",
+            "doc": null
+          },
+          "_show_error": {
+            "signature": "(self, title, text)",
+            "doc": null
+          },
+          "_show_warning": {
+            "signature": "(self, title, text)",
+            "doc": null
+          },
+          "activate": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "eventFilter": {
+            "signature": "(self, watched, event)",
+            "doc": "eventFilter(self, arg__1: PySide6.QtCore.QObject, arg__2: PySide6.QtCore.QEvent, /) -> bool"
+          }
+        },
+        "class_vars": {
+          "DialogCode": "<enum 'DialogCode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "_KEY_GROUPS": "(2, 5, 5, 5, 5)",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"LicenseSplash\" inherits \"QDialog\":\nMethods:\n  #41 type=Signal, signature=validation_ready(QString,QVariantMap), parameters=QString, QVariantMap\n)"
+        }
+      },
+      "QCheckBox": {
+        "doc": "QCheckBox(self, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, tristate: bool | None = None) -> None\nQCheckBox(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, tristate: bool | None = None) -> None",
+        "bases": [
+          "QAbstractButton"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QCheckBox\" inherits \"QAbstractButton\":\nProperties:\n  #72 \"tristate\", bool [writeable] [designable]\nMethods:\n  #43 type=Signal, signature=stateChanged(int), parameters=int\n "
+        }
+      },
+      "QColor": {
+        "doc": "QColor(self, /) -> None\nQColor(self, color: PySide6.QtCore.Qt.GlobalColor, /) -> None\nQColor(self, QColor: PySide6.QtGui.QColor, /) -> None\nQColor(self, rgba64: PySide6.QtGui.QRgba64, /) -> None\nQColor(self, spec: PySide6.QtGui.QColor.Spec, a1: int, a2: int, a3: int, a4: int, /, a5: int | None = None) -> None\nQColor(self, name: str, /) -> None\nQColor(self, rgb: int, /) -> None\nQColor(self, r: int, g: int, b: int, /, a: int = 255) -> None\nQColor(self, color: Any, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "NameFormat": "<enum 'NameFormat'>",
+          "Spec": "<enum 'Spec'>"
+        }
+      },
+      "QDialog": {
+        "doc": "QDialog(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None",
+        "bases": [
+          "QWidget"
+        ],
+        "methods": {},
+        "class_vars": {
+          "DialogCode": "<enum 'DialogCode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QDialog\" inherits \"QWidget\":\nEnumerators:\n  #0 \"DialogCode\" {Rejected, Accepted}\nProperties:\n  #61 \"sizeGripEnabled\", bool [writeable] [designable]\n  #62 \"modal\", bool [wri"
+        }
+      },
+      "QEvent": {
+        "doc": "QEvent(self, type: PySide6.QtCore.QEvent.Type, /) -> None\nQEvent(self, arg__1: PySide6.QtCore.QEvent, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Type": "<enum 'Type'>"
+        }
+      },
+      "QFont": {
+        "doc": "QFont(self, /) -> None\nQFont(self, font: PySide6.QtGui.QFont, /) -> None\nQFont(self, family: str, /, pointSize: int = -1, weight: int = -1, italic: bool = False) -> None\nQFont(self, families: collections.abc.Sequence[str], /, pointSize: int = -1, weight: int = -1, italic: bool = False) -> None\nQFont(self, font: PySide6.QtGui.QFont | str | collections.abc.Sequence[str], pd: PySide6.QtGui.QPaintDevice, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Capitalization": "<enum 'Capitalization'>",
+          "HintingPreference": "<enum 'HintingPreference'>",
+          "SpacingType": "<enum 'SpacingType'>",
+          "Stretch": "<enum 'Stretch'>",
+          "Style": "<enum 'Style'>",
+          "StyleHint": "<enum 'StyleHint'>",
+          "StyleStrategy": "<enum 'StyleStrategy'>",
+          "Tag": "<class 'PySide6.QtGui.QFont.Tag'>",
+          "Weight": "<enum 'Weight'>"
+        }
+      },
+      "QFrame": {
+        "doc": "QFrame(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, frameShape: PySide6.QtWidgets.QFrame.Shape | None = None, frameShadow: PySide6.QtWidgets.QFrame.Shadow | None = None, lineWidth: int | None = None, midLineWidth: int | None = None, frameWidth: int | None = None, frameRect: PySide6.QtCore.QRect | None = None) -> None",
+        "bases": [
+          "QWidget"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "Shadow": "<enum 'Shadow'>",
+          "Shape": "<enum 'Shape'>",
+          "StyleMask": "<enum 'StyleMask'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QFrame\" inherits \"QWidget\":\nEnumerators:\n  #0 \"Shape\" {NoFrame, Box, Panel, WinPanel, HLine, VLine, StyledPanel}\n  #1 \"Shadow\" {Plain, Raised, Sunken}\nProperties:\n  #61 \"fr"
+        }
+      },
+      "QHBoxLayout": {
+        "doc": "QHBoxLayout(self, /) -> None\nQHBoxLayout(self, parent: PySide6.QtWidgets.QWidget, /) -> None",
+        "bases": [
+          "QBoxLayout"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Direction": "<enum 'Direction'>",
+          "SizeConstraint": "<enum 'SizeConstraint'>",
+          "align": "<attribute 'align' of 'PySide6.QtWidgets.QLayoutItem' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QHBoxLayout\" inherits \"QBoxLayout\":\n)"
+        }
+      },
+      "QIcon": {
+        "doc": "QIcon(self, /) -> None\nQIcon(self, other: PySide6.QtGui.QIcon, /) -> None\nQIcon(self, engine: PySide6.QtGui.QIconEngine, /) -> None\nQIcon(self, fileName: str, /) -> None\nQIcon(self, pixmap: PySide6.QtGui.QPixmap | PySide6.QtGui.QImage, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Mode": "<enum 'Mode'>",
+          "State": "<enum 'State'>",
+          "ThemeIcon": "<enum 'ThemeIcon'>"
+        }
+      },
+      "QLabel": {
+        "doc": "QLabel(self, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, pixmap: PySide6.QtGui.QPixmap | None = None, scaledContents: bool | None = None, alignment: PySide6.QtCore.Qt.AlignmentFlag | None = None, wordWrap: bool | None = None, margin: int | None = None, indent: int | None = None, openExternalLinks: bool | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, hasSelectedText: bool | None = None, selectedText: str | None = None) -> None\nQLabel(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, text: str | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, pixmap: PySide6.QtGui.QPixmap | None = None, scaledContents: bool | None = None, alignment: PySide6.QtCore.Qt.AlignmentFlag | None = None, wordWrap: bool | None = None, margin: int | None = None, indent: int | None = None, openExternalLinks: bool | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, hasSelectedText: bool | None = None, selectedText: str | None = None) -> None",
+        "bases": [
+          "QFrame"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "Shadow": "<enum 'Shadow'>",
+          "Shape": "<enum 'Shape'>",
+          "StyleMask": "<enum 'StyleMask'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QLabel\" inherits \"QFrame\":\nProperties:\n  #67 \"text\", QString [writeable] [designable]\n  #68 \"textFormat\", Qt::TextFormat [writeable] [designable]\n  #69 \"pixmap\", QPixmap [w"
+        }
+      },
+      "QLineEdit": {
+        "doc": "QLineEdit(self, arg__1: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, inputMask: str | None = None, text: str | None = None, maxLength: int | None = None, frame: bool | None = None, echoMode: PySide6.QtWidgets.QLineEdit.EchoMode | None = None, displayText: str | None = None, cursorPosition: int | None = None, alignment: PySide6.QtCore.Qt.AlignmentFlag | None = None, modified: bool | None = None, hasSelectedText: bool | None = None, selectedText: str | None = None, dragEnabled: bool | None = None, readOnly: bool | None = None, undoAvailable: bool | None = None, redoAvailable: bool | None = None, acceptableInput: bool | None = None, placeholderText: str | None = None, cursorMoveStyle: PySide6.QtCore.Qt.CursorMoveStyle | None = None, clearButtonEnabled: bool | None = None) -> None\nQLineEdit(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, inputMask: str | None = None, text: str | None = None, maxLength: int | None = None, frame: bool | None = None, echoMode: PySide6.QtWidgets.QLineEdit.EchoMode | None = None, displayText: str | None = None, cursorPosition: int | None = None, alignment: PySide6.QtCore.Qt.AlignmentFlag | None = None, modified: bool | None = None, hasSelectedText: bool | None = None, selectedText: str | None = None, dragEnabled: bool | None = None, readOnly: bool | None = None, undoAvailable: bool | None = None, redoAvailable: bool | None = None, acceptableInput: bool | None = None, placeholderText: str | None = None, cursorMoveStyle: PySide6.QtCore.Qt.CursorMoveStyle | None = None, clearButtonEnabled: bool | None = None) -> None",
+        "bases": [
+          "QWidget"
+        ],
+        "methods": {},
+        "class_vars": {
+          "ActionPosition": "<enum 'ActionPosition'>",
+          "EchoMode": "<enum 'EchoMode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QLineEdit\" inherits \"QWidget\":\nEnumerators:\n  #0 \"ActionPosition\" {LeadingPosition, TrailingPosition}\n  #1 \"EchoMode\" {Normal, NoEcho, Password, PasswordEchoOnEdit}\nPropert"
+        }
+      },
+      "QMessageBox": {
+        "doc": "QMessageBox(self, icon: PySide6.QtWidgets.QMessageBox.Icon, title: str, text: str, /, buttons: PySide6.QtWidgets.QMessageBox.StandardButton = Instance(QMessageBox.StandardButton.NoButton), parent: PySide6.QtWidgets.QWidget | None = None, flags: PySide6.QtCore.Qt.WindowType = Instance(Qt.Dialog | Qt.MSWindowsFixedSizeDialogHint), *, iconPixmap: PySide6.QtGui.QPixmap | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, standardButtons: PySide6.QtWidgets.QMessageBox.StandardButton | None = None, detailedText: str | None = None, informativeText: str | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, options: PySide6.QtWidgets.QMessageBox.Option | None = None) -> None\nQMessageBox(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, text: str | None = None, icon: PySide6.QtWidgets.QMessageBox.Icon | None = None, iconPixmap: PySide6.QtGui.QPixmap | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, standardButtons: PySide6.QtWidgets.QMessageBox.StandardButton | None = None, detailedText: str | None = None, informativeText: str | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, options: PySide6.QtWidgets.QMessageBox.Option | None = None) -> None",
+        "bases": [
+          "QDialog"
+        ],
+        "methods": {},
+        "class_vars": {
+          "ButtonRole": "<enum 'ButtonRole'>",
+          "DialogCode": "<enum 'DialogCode'>",
+          "Icon": "<enum 'Icon'>",
+          "Option": "<enum 'Option'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "StandardButton": "<enum 'StandardButton'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QMessageBox\" inherits \"QDialog\":\nEnumerators:\n  #1 \"Option\" {DontUseNativeDialog}\n  #2 \"Icon\" {NoIcon, Information, Warning, Critical, Question}\n  #3 \"ButtonRole\" {InvalidR"
+        }
+      },
+      "QPainter": {
+        "doc": "QPainter(self, /) -> None\nQPainter(self, arg__1: PySide6.QtGui.QPaintDevice, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "CompositionMode": "<enum 'CompositionMode'>",
+          "PixmapFragment": "<class 'PySide6.QtGui.QPainter.PixmapFragment'>",
+          "PixmapFragmentHint": "<enum 'PixmapFragmentHint'>",
+          "RenderHint": "<enum 'RenderHint'>"
+        }
+      },
+      "QPen": {
+        "doc": "QPen(self, /) -> None\nQPen(self, arg__1: PySide6.QtCore.Qt.PenStyle, /) -> None\nQPen(self, pen: PySide6.QtGui.QPen, /) -> None\nQPen(self, brush: PySide6.QtGui.QBrush | PySide6.QtCore.Qt.BrushStyle | PySide6.QtCore.Qt.GlobalColor | PySide6.QtGui.QColor | PySide6.QtGui.QGradient | PySide6.QtGui.QImage | PySide6.QtGui.QPixmap, width: float, /, s: PySide6.QtCore.Qt.PenStyle = Instance(Qt.SolidLine), c: PySide6.QtCore.Qt.PenCapStyle = Instance(Qt.SquareCap), j: PySide6.QtCore.Qt.PenJoinStyle = Instance(Qt.BevelJoin)) -> None\nQPen(self, color: Union[PySide6.QtGui.QColor, str, PySide6.QtGui.QRgba64, Any, PySide6.QtCore.Qt.GlobalColor, int], /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "QPixmap": {
+        "doc": "QPixmap(self, /) -> None\nQPixmap(self, image: PySide6.QtGui.QImage, /) -> None\nQPixmap(self, arg__1: PySide6.QtGui.QPixmap, /) -> None\nQPixmap(self, arg__1: PySide6.QtCore.QSize, /) -> None\nQPixmap(self, fileName: str | bytes | os.PathLike[str], /, format: bytes | bytearray | memoryview | None = None, flags: PySide6.QtCore.Qt.ImageConversionFlag = Instance(Qt.AutoColor)) -> None\nQPixmap(self, w: int, h: int, /) -> None\nQPixmap(self, xpm: collections.abc.Iterable, /) -> None",
+        "bases": [
+          "QPaintDevice"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>"
+        }
+      },
+      "QPointF": {
+        "doc": "QPointF(self, /) -> None\nQPointF(self, p: PySide6.QtCore.QPoint, /) -> None\nQPointF(self, QPointF: PySide6.QtCore.QPointF, /) -> None\nQPointF(self, xpos: float, ypos: float, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "QPushButton": {
+        "doc": "QPushButton(self, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, autoDefault: bool | None = None, default: bool | None = None, flat: bool | None = None) -> None\nQPushButton(self, icon: PySide6.QtGui.QIcon | PySide6.QtGui.QPixmap, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, autoDefault: bool | None = None, default: bool | None = None, flat: bool | None = None) -> None\nQPushButton(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, autoDefault: bool | None = None, default: bool | None = None, flat: bool | None = None) -> None",
+        "bases": [
+          "QAbstractButton"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QPushButton\" inherits \"QAbstractButton\":\nProperties:\n  #72 \"autoDefault\", bool [writeable] [designable]\n  #73 \"default\", bool [writeable] [designable]\n  #74 \"flat\", bool [w"
+        }
+      },
+      "QSize": {
+        "doc": "QSize(self, /) -> None\nQSize(self, QSize: PySide6.QtCore.QSize, /) -> None\nQSize(self, w: int, h: int, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "QTimer": {
+        "doc": "QTimer(self, /, parent: PySide6.QtCore.QObject | None = None, *, singleShot: bool | None = None, interval: int | None = None, remainingTime: int | None = None, timerType: PySide6.QtCore.Qt.TimerType | None = None, active: bool | None = None) -> None",
+        "bases": [
+          "QObject"
+        ],
+        "methods": {},
+        "class_vars": {
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QTimer\" inherits \"QObject\":\nProperties:\n  #1 \"singleShot\", bool [writeable] [designable]\n  #2 \"interval\", int [writeable] [designable]\n  #3 \"remainingTime\", int [designable"
+        }
+      },
+      "QToolButton": {
+        "doc": "QToolButton(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, popupMode: PySide6.QtWidgets.QToolButton.ToolButtonPopupMode | None = None, toolButtonStyle: PySide6.QtCore.Qt.ToolButtonStyle | None = None, autoRaise: bool | None = None, arrowType: PySide6.QtCore.Qt.ArrowType | None = None) -> None",
+        "bases": [
+          "QAbstractButton"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "ToolButtonPopupMode": "<enum 'ToolButtonPopupMode'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QToolButton\" inherits \"QAbstractButton\":\nEnumerators:\n  #0 \"ToolButtonPopupMode\" {DelayedPopup, MenuButtonPopup, InstantPopup}\nProperties:\n  #72 \"popupMode\", QToolButton::T"
+        }
+      },
+      "QVBoxLayout": {
+        "doc": "QVBoxLayout(self, /) -> None\nQVBoxLayout(self, parent: PySide6.QtWidgets.QWidget, /) -> None",
+        "bases": [
+          "QBoxLayout"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Direction": "<enum 'Direction'>",
+          "SizeConstraint": "<enum 'SizeConstraint'>",
+          "align": "<attribute 'align' of 'PySide6.QtWidgets.QLayoutItem' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QVBoxLayout\" inherits \"QBoxLayout\":\n)"
+        }
+      },
+      "Qt": {
+        "doc": "Object(self, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "AlignmentFlag": "<enum 'AlignmentFlag'>",
+          "AnchorPoint": "<enum 'AnchorPoint'>",
+          "ApplicationAttribute": "<enum 'ApplicationAttribute'>",
+          "ApplicationState": "<enum 'ApplicationState'>",
+          "ArrowType": "<enum 'ArrowType'>",
+          "AspectRatioMode": "<enum 'AspectRatioMode'>",
+          "Axis": "<enum 'Axis'>",
+          "BGMode": "<enum 'BGMode'>",
+          "BrushStyle": "<enum 'BrushStyle'>",
+          "CaseSensitivity": "<enum 'CaseSensitivity'>",
+          "CheckState": "<enum 'CheckState'>",
+          "ChecksumType": "<enum 'ChecksumType'>",
+          "ClipOperation": "<enum 'ClipOperation'>",
+          "ColorScheme": "<enum 'ColorScheme'>",
+          "ConnectionType": "<enum 'ConnectionType'>",
+          "ContextMenuPolicy": "<enum 'ContextMenuPolicy'>",
+          "ContextMenuTrigger": "<enum 'ContextMenuTrigger'>",
+          "ContrastPreference": "<enum 'ContrastPreference'>",
+          "CoordinateSystem": "<enum 'CoordinateSystem'>",
+          "Corner": "<enum 'Corner'>",
+          "CursorMoveStyle": "<enum 'CursorMoveStyle'>",
+          "CursorShape": "<enum 'CursorShape'>",
+          "DateFormat": "<enum 'DateFormat'>",
+          "DayOfWeek": "<enum 'DayOfWeek'>",
+          "DockWidgetArea": "<enum 'DockWidgetArea'>",
+          "DockWidgetAreaSizes": "<enum 'DockWidgetAreaSizes'>",
+          "DropAction": "<enum 'DropAction'>",
+          "Edge": "<enum 'Edge'>",
+          "EnterKeyType": "<enum 'EnterKeyType'>",
+          "EventPriority": "<enum 'EventPriority'>",
+          "FillRule": "<enum 'FillRule'>",
+          "FindChildOption": "<enum 'FindChildOption'>",
+          "FocusPolicy": "<enum 'FocusPolicy'>",
+          "FocusReason": "<enum 'FocusReason'>",
+          "GestureFlag": "<enum 'GestureFlag'>",
+          "GestureState": "<enum 'GestureState'>",
+          "GestureType": "<enum 'GestureType'>",
+          "GlobalColor": "<enum 'GlobalColor'>",
+          "HighDpiScaleFactorRoundingPolicy": "<enum 'HighDpiScaleFactorRoundingPolicy'>",
+          "HitTestAccuracy": "<enum 'HitTestAccuracy'>",
+          "ImageConversionFlag": "<enum 'ImageConversionFlag'>",
+          "InputMethodHint": "<enum 'InputMethodHint'>",
+          "InputMethodQuery": "<enum 'InputMethodQuery'>",
+          "ItemDataRole": "<enum 'ItemDataRole'>",
+          "ItemFlag": "<enum 'ItemFlag'>",
+          "ItemSelectionMode": "<enum 'ItemSelectionMode'>",
+          "ItemSelectionOperation": "<enum 'ItemSelectionOperation'>",
+          "Key": "<enum 'Key'>",
+          "KeyboardModifier": "<enum 'KeyboardModifier'>",
+          "LayoutDirection": "<enum 'LayoutDirection'>",
+          "MaskMode": "<enum 'MaskMode'>",
+          "MatchFlag": "<enum 'MatchFlag'>",
+          "Modifier": "<enum 'Modifier'>",
+          "MouseButton": "<enum 'MouseButton'>",
+          "MouseEventFlag": "<enum 'MouseEventFlag'>",
+          "MouseEventSource": "<enum 'MouseEventSource'>",
+          "NativeGestureType": "<enum 'NativeGestureType'>",
+          "NavigationMode": "<enum 'NavigationMode'>",
+          "Orientation": "<enum 'Orientation'>",
+          "PenCapStyle": "<enum 'PenCapStyle'>",
+          "PenJoinStyle": "<enum 'PenJoinStyle'>",
+          "PenStyle": "<enum 'PenStyle'>",
+          "PermissionStatus": "<enum 'PermissionStatus'>",
+          "ReturnByValueConstant": "<enum 'ReturnByValueConstant'>",
+          "ScreenOrientation": "<enum 'ScreenOrientation'>",
+          "ScrollBarPolicy": "<enum 'ScrollBarPolicy'>",
+          "ScrollPhase": "<enum 'ScrollPhase'>",
+          "ShortcutContext": "<enum 'ShortcutContext'>",
+          "SizeHint": "<enum 'SizeHint'>",
+          "SizeMode": "<enum 'SizeMode'>",
+          "SortOrder": "<enum 'SortOrder'>",
+          "SplitBehaviorFlags": "<enum 'SplitBehaviorFlags'>",
+          "TabFocusBehavior": "<enum 'TabFocusBehavior'>",
+          "TextElideMode": "<enum 'TextElideMode'>",
+          "TextFlag": "<enum 'TextFlag'>",
+          "TextFormat": "<enum 'TextFormat'>",
+          "TextInteractionFlag": "<enum 'TextInteractionFlag'>",
+          "TileRule": "<enum 'TileRule'>",
+          "TimeSpec": "<enum 'TimeSpec'>",
+          "TimerId": "<enum 'TimerId'>",
+          "TimerType": "<enum 'TimerType'>",
+          "ToolBarArea": "<enum 'ToolBarArea'>",
+          "ToolBarAreaSizes": "<enum 'ToolBarAreaSizes'>",
+          "ToolButtonStyle": "<enum 'ToolButtonStyle'>",
+          "TouchPointState": "<enum 'TouchPointState'>",
+          "TransformationMode": "<enum 'TransformationMode'>",
+          "UIEffect": "<enum 'UIEffect'>",
+          "WhiteSpaceMode": "<enum 'WhiteSpaceMode'>",
+          "WidgetAttribute": "<enum 'WidgetAttribute'>",
+          "WindowFrameSection": "<enum 'WindowFrameSection'>",
+          "WindowModality": "<enum 'WindowModality'>",
+          "WindowState": "<enum 'WindowState'>",
+          "WindowType": "<enum 'WindowType'>"
+        }
+      },
+      "Signal": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "datetime": {
+        "doc": "datetime(year, month, day[, hour[, minute[, second[, microsecond[,tzinfo]]]]])\n\nThe year, month and day arguments are required. tzinfo may be None, or an\ninstance of a tzinfo subclass. The remaining arguments may be ints.",
+        "bases": [
+          "date"
+        ],
+        "methods": {},
+        "class_vars": {
+          "day": "<attribute 'day' of 'datetime.date' objects>",
+          "fold": "<attribute 'fold' of 'datetime.datetime' objects>",
+          "hour": "<attribute 'hour' of 'datetime.datetime' objects>",
+          "max": "datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)",
+          "microsecond": "<attribute 'microsecond' of 'datetime.datetime' objects>",
+          "min": "datetime.datetime(1, 1, 1, 0, 0)",
+          "minute": "<attribute 'minute' of 'datetime.datetime' objects>",
+          "month": "<attribute 'month' of 'datetime.date' objects>",
+          "resolution": "datetime.timedelta(microseconds=1)",
+          "second": "<attribute 'second' of 'datetime.datetime' objects>",
+          "tzinfo": "<attribute 'tzinfo' of 'datetime.datetime' objects>",
+          "year": "<attribute 'year' of 'datetime.date' objects>"
+        }
+      },
+      "timezone": {
+        "doc": "Fixed offset from UTC implementation of tzinfo.",
+        "bases": [
+          "tzinfo"
+        ],
+        "methods": {},
+        "class_vars": {
+          "max": "datetime.timezone(datetime.timedelta(seconds=86340))",
+          "min": "datetime.timezone(datetime.timedelta(days=-1, seconds=60))",
+          "utc": "datetime.timezone.utc"
+        }
+      }
+    },
+    "functions": {
+      "_load_bot_config": {
+        "signature": "()",
+        "doc": null
+      },
+      "_make_mono_close_icon": {
+        "signature": "(size=16, color='#E6E6E6')",
+        "doc": null
+      },
+      "_save_bot_config": {
+        "signature": "(data)",
+        "doc": null
+      },
+      "get_app_icon": {
+        "signature": "()",
+        "doc": null
+      },
+      "is_frozen": {
+        "signature": "()",
+        "doc": null
+      },
+      "load_saved_key": {
+        "signature": "()",
+        "doc": null
+      },
+      "resolve_resource_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "save_key": {
+        "signature": "(key)",
+        "doc": null
+      },
+      "save_license_meta": {
+        "signature": "(meta)",
+        "doc": null
+      },
+      "validate_license_details": {
+        "signature": "(key)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "BOT_CONFIG_PATH": "WindowsPath('C:/Users/aradh/Desktop/Auto Clash clone Vip/bot.config')",
+      "__doc__": "None",
+      "json": "<module 'json'>",
+      "os": "<module 'os'>",
+      "re": "<module 're'>",
+      "sys": "<module 'sys'>",
+      "threading": "<module 'threading'>"
+    }
+  },
+  "ui.bot_worker": {
+    "name": "ui.bot_worker",
+    "payload_size": 8841,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.gui": {
+    "name": "ui.gui",
+    "payload_size": 15330,
+    "status": "loaded",
+    "classes": {
+      "LicenseSplash": {
+        "doc": "QDialog(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None",
+        "bases": [
+          "QDialog"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, auto_activate=False)",
+            "doc": "__init__(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None\n\nInitialize self.  See help(type(self)) for accurate signature."
+          },
+          "_apply_key_format": {
+            "signature": "(self, raw)",
+            "doc": null
+          },
+          "_on_key_changed": {
+            "signature": "(self, text)",
+            "doc": null
+          },
+          "_on_validation_result": {
+            "signature": "(self, key, details)",
+            "doc": null
+          },
+          "_show_error": {
+            "signature": "(self, title, text)",
+            "doc": null
+          },
+          "_show_warning": {
+            "signature": "(self, title, text)",
+            "doc": null
+          },
+          "activate": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "eventFilter": {
+            "signature": "(self, watched, event)",
+            "doc": "eventFilter(self, arg__1: PySide6.QtCore.QObject, arg__2: PySide6.QtCore.QEvent, /) -> bool"
+          }
+        },
+        "class_vars": {
+          "DialogCode": "<enum 'DialogCode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "_KEY_GROUPS": "(2, 5, 5, 5, 5)",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"LicenseSplash\" inherits \"QDialog\":\nMethods:\n  #41 type=Signal, signature=validation_ready(QString,QVariantMap), parameters=QString, QVariantMap\n)"
+        }
+      },
+      "QApplication": {
+        "doc": "QApplication(self, arguments: collections.abc.Sequence[str], /, *, cursorFlashTime: int | None = None, doubleClickInterval: int | None = None, keyboardInputInterval: int | None = None, wheelScrollLines: int | None = None, startDragTime: int | None = None, startDragDistance: int | None = None, styleSheet: str | None = None, autoSipEnabled: bool | None = None) -> None\nQApplication(self, /, *, cursorFlashTime: int | None = None, doubleClickInterval: int | None = None, keyboardInputInterval: int | None = None, wheelScrollLines: int | None = None, startDragTime: int | None = None, startDragDistance: int | None = None, styleSheet: str | None = None, autoSipEnabled: bool | None = None) -> None",
+        "bases": [
+          "QGuiApplication"
+        ],
+        "methods": {},
+        "class_vars": {
+          "ApplicationFlags": "396034",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QApplication\" inherits \"QGuiApplication\":\nProperties:\n  #13 \"cursorFlashTime\", int [writeable] [designable]\n  #14 \"doubleClickInterval\", int [writeable] [designable]\n  #15 "
+        }
+      },
+      "QCheckBox": {
+        "doc": "QCheckBox(self, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, tristate: bool | None = None) -> None\nQCheckBox(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, tristate: bool | None = None) -> None",
+        "bases": [
+          "QAbstractButton"
+        ],
+        "methods": {},
+        "class_vars": {
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QCheckBox\" inherits \"QAbstractButton\":\nProperties:\n  #72 \"tristate\", bool [writeable] [designable]\nMethods:\n  #43 type=Signal, signature=stateChanged(int), parameters=int\n "
+        }
+      },
+      "QDialog": {
+        "doc": "QDialog(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtCore.Qt.WindowType = Default(Qt.WindowFlags), *, sizeGripEnabled: bool | None = None, modal: bool | None = None) -> None",
+        "bases": [
+          "QWidget"
+        ],
+        "methods": {},
+        "class_vars": {
+          "DialogCode": "<enum 'DialogCode'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QDialog\" inherits \"QWidget\":\nEnumerators:\n  #0 \"DialogCode\" {Rejected, Accepted}\nProperties:\n  #61 \"sizeGripEnabled\", bool [writeable] [designable]\n  #62 \"modal\", bool [wri"
+        }
+      },
+      "QMessageBox": {
+        "doc": "QMessageBox(self, icon: PySide6.QtWidgets.QMessageBox.Icon, title: str, text: str, /, buttons: PySide6.QtWidgets.QMessageBox.StandardButton = Instance(QMessageBox.StandardButton.NoButton), parent: PySide6.QtWidgets.QWidget | None = None, flags: PySide6.QtCore.Qt.WindowType = Instance(Qt.Dialog | Qt.MSWindowsFixedSizeDialogHint), *, iconPixmap: PySide6.QtGui.QPixmap | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, standardButtons: PySide6.QtWidgets.QMessageBox.StandardButton | None = None, detailedText: str | None = None, informativeText: str | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, options: PySide6.QtWidgets.QMessageBox.Option | None = None) -> None\nQMessageBox(self, /, parent: PySide6.QtWidgets.QWidget | None = None, *, text: str | None = None, icon: PySide6.QtWidgets.QMessageBox.Icon | None = None, iconPixmap: PySide6.QtGui.QPixmap | None = None, textFormat: PySide6.QtCore.Qt.TextFormat | None = None, standardButtons: PySide6.QtWidgets.QMessageBox.StandardButton | None = None, detailedText: str | None = None, informativeText: str | None = None, textInteractionFlags: PySide6.QtCore.Qt.TextInteractionFlag | None = None, options: PySide6.QtWidgets.QMessageBox.Option | None = None) -> None",
+        "bases": [
+          "QDialog"
+        ],
+        "methods": {},
+        "class_vars": {
+          "ButtonRole": "<enum 'ButtonRole'>",
+          "DialogCode": "<enum 'DialogCode'>",
+          "Icon": "<enum 'Icon'>",
+          "Option": "<enum 'Option'>",
+          "PaintDeviceMetric": "<enum 'PaintDeviceMetric'>",
+          "RenderFlag": "<enum 'RenderFlag'>",
+          "StandardButton": "<enum 'StandardButton'>",
+          "painters": "<attribute 'painters' of 'PySide6.QtGui.QPaintDevice' objects>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QMessageBox\" inherits \"QDialog\":\nEnumerators:\n  #1 \"Option\" {DontUseNativeDialog}\n  #2 \"Icon\" {NoIcon, Information, Warning, Critical, Question}\n  #3 \"ButtonRole\" {InvalidR"
+        }
+      },
+      "QPoint": {
+        "doc": "QPoint(self, /) -> None\nQPoint(self, QPoint: PySide6.QtCore.QPoint, /) -> None\nQPoint(self, xpos: int, ypos: int, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "QSettings": {
+        "doc": "QSettings(self, format: PySide6.QtCore.QSettings.Format, scope: PySide6.QtCore.QSettings.Scope, organization: str, /, application: str = '', parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, scope: PySide6.QtCore.QSettings.Scope, organization: str, /, application: str = '', parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, scope: PySide6.QtCore.QSettings.Scope, /, parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, fileName: str, format: PySide6.QtCore.QSettings.Format, /, parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, organization: str, /, application: str = '', parent: PySide6.QtCore.QObject | None = None) -> None\nQSettings(self, /, parent: PySide6.QtCore.QObject | None = None) -> None",
+        "bases": [
+          "QObject"
+        ],
+        "methods": {},
+        "class_vars": {
+          "Format": "<enum 'Format'>",
+          "Scope": "<enum 'Scope'>",
+          "Status": "<enum 'Status'>",
+          "staticMetaObject": "PySide6.QtCore.QMetaObject(\"QSettings\" inherits \"QObject\":\nEnumerators:\n  #0 \"Status\" {NoError, AccessError, FormatError}\n  #1 \"Format\" {NativeFormat, IniFormat, Registry32Format, Registry64Format, In"
+        }
+      },
+      "QStyleFactory": {
+        "doc": "QStyleFactory(self, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {}
+      },
+      "Qt": {
+        "doc": "Object(self, /) -> None",
+        "bases": [
+          "Object"
+        ],
+        "methods": {},
+        "class_vars": {
+          "AlignmentFlag": "<enum 'AlignmentFlag'>",
+          "AnchorPoint": "<enum 'AnchorPoint'>",
+          "ApplicationAttribute": "<enum 'ApplicationAttribute'>",
+          "ApplicationState": "<enum 'ApplicationState'>",
+          "ArrowType": "<enum 'ArrowType'>",
+          "AspectRatioMode": "<enum 'AspectRatioMode'>",
+          "Axis": "<enum 'Axis'>",
+          "BGMode": "<enum 'BGMode'>",
+          "BrushStyle": "<enum 'BrushStyle'>",
+          "CaseSensitivity": "<enum 'CaseSensitivity'>",
+          "CheckState": "<enum 'CheckState'>",
+          "ChecksumType": "<enum 'ChecksumType'>",
+          "ClipOperation": "<enum 'ClipOperation'>",
+          "ColorScheme": "<enum 'ColorScheme'>",
+          "ConnectionType": "<enum 'ConnectionType'>",
+          "ContextMenuPolicy": "<enum 'ContextMenuPolicy'>",
+          "ContextMenuTrigger": "<enum 'ContextMenuTrigger'>",
+          "ContrastPreference": "<enum 'ContrastPreference'>",
+          "CoordinateSystem": "<enum 'CoordinateSystem'>",
+          "Corner": "<enum 'Corner'>",
+          "CursorMoveStyle": "<enum 'CursorMoveStyle'>",
+          "CursorShape": "<enum 'CursorShape'>",
+          "DateFormat": "<enum 'DateFormat'>",
+          "DayOfWeek": "<enum 'DayOfWeek'>",
+          "DockWidgetArea": "<enum 'DockWidgetArea'>",
+          "DockWidgetAreaSizes": "<enum 'DockWidgetAreaSizes'>",
+          "DropAction": "<enum 'DropAction'>",
+          "Edge": "<enum 'Edge'>",
+          "EnterKeyType": "<enum 'EnterKeyType'>",
+          "EventPriority": "<enum 'EventPriority'>",
+          "FillRule": "<enum 'FillRule'>",
+          "FindChildOption": "<enum 'FindChildOption'>",
+          "FocusPolicy": "<enum 'FocusPolicy'>",
+          "FocusReason": "<enum 'FocusReason'>",
+          "GestureFlag": "<enum 'GestureFlag'>",
+          "GestureState": "<enum 'GestureState'>",
+          "GestureType": "<enum 'GestureType'>",
+          "GlobalColor": "<enum 'GlobalColor'>",
+          "HighDpiScaleFactorRoundingPolicy": "<enum 'HighDpiScaleFactorRoundingPolicy'>",
+          "HitTestAccuracy": "<enum 'HitTestAccuracy'>",
+          "ImageConversionFlag": "<enum 'ImageConversionFlag'>",
+          "InputMethodHint": "<enum 'InputMethodHint'>",
+          "InputMethodQuery": "<enum 'InputMethodQuery'>",
+          "ItemDataRole": "<enum 'ItemDataRole'>",
+          "ItemFlag": "<enum 'ItemFlag'>",
+          "ItemSelectionMode": "<enum 'ItemSelectionMode'>",
+          "ItemSelectionOperation": "<enum 'ItemSelectionOperation'>",
+          "Key": "<enum 'Key'>",
+          "KeyboardModifier": "<enum 'KeyboardModifier'>",
+          "LayoutDirection": "<enum 'LayoutDirection'>",
+          "MaskMode": "<enum 'MaskMode'>",
+          "MatchFlag": "<enum 'MatchFlag'>",
+          "Modifier": "<enum 'Modifier'>",
+          "MouseButton": "<enum 'MouseButton'>",
+          "MouseEventFlag": "<enum 'MouseEventFlag'>",
+          "MouseEventSource": "<enum 'MouseEventSource'>",
+          "NativeGestureType": "<enum 'NativeGestureType'>",
+          "NavigationMode": "<enum 'NavigationMode'>",
+          "Orientation": "<enum 'Orientation'>",
+          "PenCapStyle": "<enum 'PenCapStyle'>",
+          "PenJoinStyle": "<enum 'PenJoinStyle'>",
+          "PenStyle": "<enum 'PenStyle'>",
+          "PermissionStatus": "<enum 'PermissionStatus'>",
+          "ReturnByValueConstant": "<enum 'ReturnByValueConstant'>",
+          "ScreenOrientation": "<enum 'ScreenOrientation'>",
+          "ScrollBarPolicy": "<enum 'ScrollBarPolicy'>",
+          "ScrollPhase": "<enum 'ScrollPhase'>",
+          "ShortcutContext": "<enum 'ShortcutContext'>",
+          "SizeHint": "<enum 'SizeHint'>",
+          "SizeMode": "<enum 'SizeMode'>",
+          "SortOrder": "<enum 'SortOrder'>",
+          "SplitBehaviorFlags": "<enum 'SplitBehaviorFlags'>",
+          "TabFocusBehavior": "<enum 'TabFocusBehavior'>",
+          "TextElideMode": "<enum 'TextElideMode'>",
+          "TextFlag": "<enum 'TextFlag'>",
+          "TextFormat": "<enum 'TextFormat'>",
+          "TextInteractionFlag": "<enum 'TextInteractionFlag'>",
+          "TileRule": "<enum 'TileRule'>",
+          "TimeSpec": "<enum 'TimeSpec'>",
+          "TimerId": "<enum 'TimerId'>",
+          "TimerType": "<enum 'TimerType'>",
+          "ToolBarArea": "<enum 'ToolBarArea'>",
+          "ToolBarAreaSizes": "<enum 'ToolBarAreaSizes'>",
+          "ToolButtonStyle": "<enum 'ToolButtonStyle'>",
+          "TouchPointState": "<enum 'TouchPointState'>",
+          "TransformationMode": "<enum 'TransformationMode'>",
+          "UIEffect": "<enum 'UIEffect'>",
+          "WhiteSpaceMode": "<enum 'WhiteSpaceMode'>",
+          "WidgetAttribute": "<enum 'WidgetAttribute'>",
+          "WindowFrameSection": "<enum 'WindowFrameSection'>",
+          "WindowModality": "<enum 'WindowModality'>",
+          "WindowState": "<enum 'WindowState'>",
+          "WindowType": "<enum 'WindowType'>"
+        }
+      },
+      "datetime": {
+        "doc": "datetime(year, month, day[, hour[, minute[, second[, microsecond[,tzinfo]]]]])\n\nThe year, month and day arguments are required. tzinfo may be None, or an\ninstance of a tzinfo subclass. The remaining arguments may be ints.",
+        "bases": [
+          "date"
+        ],
+        "methods": {},
+        "class_vars": {
+          "day": "<attribute 'day' of 'datetime.date' objects>",
+          "fold": "<attribute 'fold' of 'datetime.datetime' objects>",
+          "hour": "<attribute 'hour' of 'datetime.datetime' objects>",
+          "max": "datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)",
+          "microsecond": "<attribute 'microsecond' of 'datetime.datetime' objects>",
+          "min": "datetime.datetime(1, 1, 1, 0, 0)",
+          "minute": "<attribute 'minute' of 'datetime.datetime' objects>",
+          "month": "<attribute 'month' of 'datetime.date' objects>",
+          "resolution": "datetime.timedelta(microseconds=1)",
+          "second": "<attribute 'second' of 'datetime.datetime' objects>",
+          "tzinfo": "<attribute 'tzinfo' of 'datetime.datetime' objects>",
+          "year": "<attribute 'year' of 'datetime.date' objects>"
+        }
+      },
+      "timezone": {
+        "doc": "Fixed offset from UTC implementation of tzinfo.",
+        "bases": [
+          "tzinfo"
+        ],
+        "methods": {},
+        "class_vars": {
+          "max": "datetime.timezone(datetime.timedelta(seconds=86340))",
+          "min": "datetime.timezone(datetime.timedelta(days=-1, seconds=60))",
+          "utc": "datetime.timezone.utc"
+        }
+      }
+    },
+    "functions": {
+      "_clamp_window_pos": {
+        "signature": "(app, x, y, w, h)",
+        "doc": null
+      },
+      "_int_setting": {
+        "signature": "(settings, key, default=None)",
+        "doc": null
+      },
+      "_legacy_window_settings": {
+        "signature": "()",
+        "doc": null
+      },
+      "_load_any_window_geometry": {
+        "signature": "(mode, include_legacy=False)",
+        "doc": null
+      },
+      "_load_bot_config_last_mode": {
+        "signature": "()",
+        "doc": null
+      },
+      "_load_bot_config_window_geometry": {
+        "signature": "(mode)",
+        "doc": null
+      },
+      "_load_window_bot_config": {
+        "signature": "()",
+        "doc": null
+      },
+      "_load_window_geometry": {
+        "signature": "(settings, mode, include_legacy=False)",
+        "doc": null
+      },
+      "_patch_dummy_thread_finalizer": {
+        "signature": "()",
+        "doc": null
+      },
+      "_position_splash_from_last_window": {
+        "signature": "(app, splash)",
+        "doc": null
+      },
+      "_restore_last_window_position": {
+        "signature": "(app, win, mode)",
+        "doc": null
+      },
+      "_save_bot_config_window_geometry": {
+        "signature": "(win, mode)",
+        "doc": null
+      },
+      "_save_last_window_position": {
+        "signature": "(win, mode)",
+        "doc": null
+      },
+      "_save_window_bot_config": {
+        "signature": "(data)",
+        "doc": null
+      },
+      "_window_key": {
+        "signature": "(mode, field)",
+        "doc": null
+      },
+      "_window_settings": {
+        "signature": "()",
+        "doc": null
+      },
+      "_window_settings_app_name": {
+        "signature": "()",
+        "doc": null
+      },
+      "bootstrap_external_ui2_data": {
+        "signature": "()",
+        "doc": null
+      },
+      "cleanup_stale_onefile_tempdirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "ensure_runtime_dirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "get_app_icon": {
+        "signature": "()",
+        "doc": null
+      },
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "run": {
+        "signature": "()",
+        "doc": null
+      },
+      "set_windows_app_user_model_id": {
+        "signature": "()",
+        "doc": null
+      }
+    },
+    "variables": {
+      "BOT_CONFIG_PATH": "WindowsPath('C:/Users/aradh/Desktop/Auto Clash clone Vip/bot.config')",
+      "POPUP_STYLESHEET": "'\\nQMessageBox {\\n    background-color: #1D212A;\\n}\\nQMessageBox QLabel {\\n    color: #E6E6E6;\\n}\\nQMessageBox QPushButton {\\n    background-color: #242834;\\n    color: #C9CDD8;\\n    border: 1px solid #3A4053;\\n    border-radius: 6px;\\n    padding: 6px 12px;\\n    min-width: 90px;\\n}\\nQMessageBox QPushButton:hover {\\n    background-color: #313747;\\n    color: #F1F5F9;\\n}\\nQMessageBox QPushButton:pressed {\\n    background-color: #222733;\\n}\\n'",
+      "WINDOW_MODE_MAIN": "'main'",
+      "WINDOW_MODE_MINI": "'mini'",
+      "WINDOW_SETTINGS_APP": "'AutoClash'",
+      "WINDOW_SETTINGS_ORG": "'MysticTech'",
+      "__doc__": "None",
+      "base_dir": "''",
+      "ctypes": "<module 'ctypes'>",
+      "hashlib": "<module 'hashlib'>",
+      "json": "<module 'json'>",
+      "multiprocessing": "<module 'multiprocessing'>",
+      "os": "<module 'os'>",
+      "re": "<module 're'>",
+      "sys": "<module 'sys'>",
+      "threading": "<module 'threading'>"
+    }
+  },
+  "ui.i18n": {
+    "name": "ui.i18n",
+    "payload_size": 2133,
+    "status": "loaded",
+    "classes": {
+      "JsonI18n": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, language='en')",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "_load_messages": {
+            "signature": "(self, language)",
+            "doc": null
+          },
+          "tr": {
+            "signature": "(self, text)",
+            "doc": null
+          }
+        },
+        "class_vars": {}
+      }
+    },
+    "functions": {
+      "resolve_resource_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "__doc__": "None",
+      "json": "<module 'json'>"
+    }
+  },
+  "ui.main_window": {
+    "name": "ui.main_window",
+    "payload_size": 269286,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.mini_window": {
+    "name": "ui.mini_window",
+    "payload_size": 41961,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "ui.stats_store": {
+    "name": "ui.stats_store",
+    "payload_size": 22103,
+    "status": "loaded",
+    "classes": {
+      "Path": {
+        "doc": "PurePath subclass that can make system calls.\n\nPath represents a filesystem path but unlike PurePath, also offers\nmethods to do system calls on path objects. Depending on your system,\ninstantiating a Path will return either a PosixPath or a WindowsPath\nobject. You can also instantiate a PosixPath or WindowsPath directly,\nbut cannot instantiate a WindowsPath on a POSIX system or vice versa.",
+        "bases": [
+          "PurePath"
+        ],
+        "methods": {
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          },
+          "__str__": {
+            "signature": "(self)",
+            "doc": "Return the string representation of the path, suitable for\npassing to system calls."
+          },
+          "_format_parsed_parts": {
+            "signature": "(drv, root, parts)",
+            "doc": null
+          },
+          "_from_parsed_parts": {
+            "signature": "(drv, root, parts)",
+            "doc": null
+          },
+          "_from_parts": {
+            "signature": "(args)",
+            "doc": null
+          },
+          "_make_child": {
+            "signature": "(self, args)",
+            "doc": null
+          },
+          "_make_child_relpath": {
+            "signature": "(self, part)",
+            "doc": null
+          },
+          "_parse_args": {
+            "signature": "(args)",
+            "doc": null
+          },
+          "absolute": {
+            "signature": "(self)",
+            "doc": "Return an absolute version of this path.  This function works\neven if the path doesn't point to anything.\n\nNo normalization is done, i.e. all '.' and '..' will be kept along.\nUse resolve() to get the canonical path to a file."
+          },
+          "as_posix": {
+            "signature": "(self)",
+            "doc": "Return the string representation of the path with forward (/)\nslashes."
+          },
+          "as_uri": {
+            "signature": "(self)",
+            "doc": "Return the path as a 'file' URI."
+          },
+          "chmod": {
+            "signature": "(self, mode, *, follow_symlinks=True)",
+            "doc": "Change the permissions of the path, like os.chmod()."
+          },
+          "cwd": {
+            "signature": "()",
+            "doc": "Return a new path pointing to the current working directory\n(as returned by os.getcwd())."
+          },
+          "exists": {
+            "signature": "(self)",
+            "doc": "Whether this path exists."
+          },
+          "expanduser": {
+            "signature": "(self)",
+            "doc": "Return a new path with expanded ~ and ~user constructs\n(as returned by os.path.expanduser)"
+          },
+          "glob": {
+            "signature": "(self, pattern)",
+            "doc": "Iterate over this subtree and yield all existing files (of any\nkind, including directories) matching the given relative pattern."
+          },
+          "group": {
+            "signature": "(self)",
+            "doc": "Return the group name of the file gid."
+          },
+          "hardlink_to": {
+            "signature": "(self, target)",
+            "doc": "Make this path a hard link pointing to the same file as *target*.\n\nNote the order of arguments (self, target) is the reverse of os.link's."
+          },
+          "home": {
+            "signature": "()",
+            "doc": "Return a new path pointing to the user's home directory (as\nreturned by os.path.expanduser('~'))."
+          },
+          "is_absolute": {
+            "signature": "(self)",
+            "doc": "True if the path is absolute (has both a root and, if applicable,\na drive)."
+          },
+          "is_block_device": {
+            "signature": "(self)",
+            "doc": "Whether this path is a block device."
+          },
+          "is_char_device": {
+            "signature": "(self)",
+            "doc": "Whether this path is a character device."
+          },
+          "is_dir": {
+            "signature": "(self)",
+            "doc": "Whether this path is a directory."
+          },
+          "is_fifo": {
+            "signature": "(self)",
+            "doc": "Whether this path is a FIFO."
+          },
+          "is_file": {
+            "signature": "(self)",
+            "doc": "Whether this path is a regular file (also True for symlinks pointing\nto regular files)."
+          },
+          "is_mount": {
+            "signature": "(self)",
+            "doc": "Check if this path is a POSIX mount point"
+          },
+          "is_relative_to": {
+            "signature": "(self, *other)",
+            "doc": "Return True if the path is relative to another path or False.\n        "
+          },
+          "is_reserved": {
+            "signature": "(self)",
+            "doc": "Return True if the path contains one of the special names reserved\nby the system, if any."
+          },
+          "is_socket": {
+            "signature": "(self)",
+            "doc": "Whether this path is a socket."
+          },
+          "is_symlink": {
+            "signature": "(self)",
+            "doc": "Whether this path is a symbolic link."
+          },
+          "iterdir": {
+            "signature": "(self)",
+            "doc": "Iterate over the files in this directory.  Does not yield any\nresult for the special paths '.' and '..'."
+          },
+          "joinpath": {
+            "signature": "(self, *args)",
+            "doc": "Combine this path with one or several arguments, and return a\nnew path representing either a subpath (if all arguments are relative\npaths) or a totally different path (if one of the arguments is\nanchored)."
+          },
+          "lchmod": {
+            "signature": "(self, mode)",
+            "doc": "Like chmod(), except if the path points to a symlink, the symlink's\npermissions are changed, rather than its target's."
+          },
+          "link_to": {
+            "signature": "(self, target)",
+            "doc": "Make the target path a hard link pointing to this path.\n\nNote this function does not make this path a hard link to *target*,\ndespite the implication of the function and argument names. The order\nof arguments (target, link) is the reverse of Path.symlink_to, but\nmatches that of os.link.\n\nDeprecated since Python 3.10 and scheduled for removal in Python 3.12.\nUse `hardlink_to()` instead."
+          },
+          "lstat": {
+            "signature": "(self)",
+            "doc": "Like stat(), except if the path points to a symlink, the symlink's\nstatus information is returned, rather than its target's."
+          },
+          "match": {
+            "signature": "(self, path_pattern)",
+            "doc": "Return True if this path matches the given pattern."
+          },
+          "mkdir": {
+            "signature": "(self, mode=511, parents=False, exist_ok=False)",
+            "doc": "Create a new directory at this given path."
+          },
+          "open": {
+            "signature": "(self, mode='r', buffering=-1, encoding=None, errors=None, newline=None)",
+            "doc": "Open the file pointed by this path and return a file object, as\nthe built-in open() function does."
+          },
+          "owner": {
+            "signature": "(self)",
+            "doc": "Return the login name of the file owner."
+          },
+          "read_bytes": {
+            "signature": "(self)",
+            "doc": "Open the file in bytes mode, read it, and close the file."
+          },
+          "read_text": {
+            "signature": "(self, encoding=None, errors=None)",
+            "doc": "Open the file in text mode, read it, and close the file."
+          },
+          "readlink": {
+            "signature": "(self)",
+            "doc": "Return the path to which the symbolic link points."
+          },
+          "relative_to": {
+            "signature": "(self, *other)",
+            "doc": "Return the relative path to another path identified by the passed\narguments.  If the operation is not possible (because this is not\na subpath of the other path), raise ValueError."
+          },
+          "rename": {
+            "signature": "(self, target)",
+            "doc": "Rename this path to the target path.\n\nThe target path may be absolute or relative. Relative paths are\ninterpreted relative to the current working directory, *not* the\ndirectory of the Path object.\n\nReturns the new Path instance pointing to the target path."
+          },
+          "replace": {
+            "signature": "(self, target)",
+            "doc": "Rename this path to the target path, overwriting if that path exists.\n\nThe target path may be absolute or relative. Relative paths are\ninterpreted relative to the current working directory, *not* the\ndirectory of the Path object.\n\nReturns the new Path instance pointing to the target path."
+          },
+          "resolve": {
+            "signature": "(self, strict=False)",
+            "doc": "Make the path absolute, resolving all symlinks on the way and also\nnormalizing it (for example turning slashes into backslashes under\nWindows)."
+          },
+          "rglob": {
+            "signature": "(self, pattern)",
+            "doc": "Recursively yield all existing files (of any kind, including\ndirectories) matching the given relative pattern, anywhere in\nthis subtree."
+          },
+          "rmdir": {
+            "signature": "(self)",
+            "doc": "Remove this directory.  The directory must be empty."
+          },
+          "samefile": {
+            "signature": "(self, other_path)",
+            "doc": "Return whether other_path is the same or not as this file\n(as returned by os.path.samefile())."
+          },
+          "stat": {
+            "signature": "(self, *, follow_symlinks=True)",
+            "doc": "Return the result of the stat() system call on this path, like\nos.stat() does."
+          },
+          "symlink_to": {
+            "signature": "(self, target, target_is_directory=False)",
+            "doc": "Make this path a symlink pointing to the target path.\nNote the order of arguments (link, target) is the reverse of os.symlink."
+          },
+          "touch": {
+            "signature": "(self, mode=438, exist_ok=True)",
+            "doc": "Create this file with the given access mode, if it doesn't exist."
+          },
+          "unlink": {
+            "signature": "(self, missing_ok=False)",
+            "doc": "Remove this file or link.\nIf the path is a directory, use rmdir() instead."
+          },
+          "with_name": {
+            "signature": "(self, name)",
+            "doc": "Return a new path with the file name changed."
+          },
+          "with_stem": {
+            "signature": "(self, stem)",
+            "doc": "Return a new path with the stem changed."
+          },
+          "with_suffix": {
+            "signature": "(self, suffix)",
+            "doc": "Return a new path with the file suffix changed.  If the path\nhas no suffix, add given suffix.  If the given suffix is an empty\nstring, remove the suffix from the path."
+          },
+          "write_bytes": {
+            "signature": "(self, data)",
+            "doc": "Open the file in bytes mode, write to it, and close the file."
+          },
+          "write_text": {
+            "signature": "(self, data, encoding=None, errors=None, newline=None)",
+            "doc": "Open the file in text mode, write to it, and close the file."
+          }
+        },
+        "class_vars": {
+          "_accessor": "<pathlib._NormalAccessor object at 0x0000021ACA50A440>",
+          "_cached_cparts": "<member '_cached_cparts' of 'PurePath' objects>",
+          "_cparts": "<property object at 0x0000021ACA503510>",
+          "_drv": "<member '_drv' of 'PurePath' objects>",
+          "_hash": "<member '_hash' of 'PurePath' objects>",
+          "_parts": "<member '_parts' of 'PurePath' objects>",
+          "_pparts": "<member '_pparts' of 'PurePath' objects>",
+          "_root": "<member '_root' of 'PurePath' objects>",
+          "_str": "<member '_str' of 'PurePath' objects>",
+          "anchor": "<property object at 0x0000021ACA503600>",
+          "drive": "<property object at 0x0000021ACA503560>",
+          "name": "<property object at 0x0000021ACA503650>",
+          "parent": "<property object at 0x0000021ACA5037E0>",
+          "parents": "<property object at 0x0000021ACA503830>",
+          "parts": "<property object at 0x0000021ACA503790>",
+          "root": "<property object at 0x0000021ACA5035B0>",
+          "stem": "<property object at 0x0000021ACA503740>",
+          "suffix": "<property object at 0x0000021ACA5036A0>",
+          "suffixes": "<property object at 0x0000021ACA5036F0>"
+        }
+      },
+      "StatsStore": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self)",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "_coerce_snapshot": {
+            "signature": "(self, data)",
+            "doc": null
+          },
+          "_connect": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_day_key_from_timestamp": {
+            "signature": "(self, ts)",
+            "doc": null
+          },
+          "_extract_day_key_from_session_name": {
+            "signature": "(self, name)",
+            "doc": null
+          },
+          "_format_hhmmss": {
+            "signature": "(self, total_seconds)",
+            "doc": null
+          },
+          "_init_db": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_is_effectively_empty_session": {
+            "signature": "(self, snapshot)",
+            "doc": null
+          },
+          "_load_json": {
+            "signature": "(self, path)",
+            "doc": null
+          },
+          "_migrate_legacy_session_json_files": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_snapshot": {
+            "signature": "(self, stats)",
+            "doc": null
+          },
+          "_upsert_session_snapshot": {
+            "signature": "(self, session_key, day_key, snapshot)",
+            "doc": null
+          },
+          "_zero_summary": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "range_summary": {
+            "signature": "(self, range_key)",
+            "doc": null
+          },
+          "record": {
+            "signature": "(self, stats, min_interval_seconds=60)",
+            "doc": null
+          },
+          "session_summary": {
+            "signature": "(self)",
+            "doc": null
+          }
+        },
+        "class_vars": {}
+      }
+    },
+    "functions": {
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "__doc__": "None",
+      "datetime": "<module 'datetime'>",
+      "json": "<module 'json'>",
+      "sqlite3": "<module 'sqlite3'>",
+      "time": "<module 'time'>"
+    }
+  },
+  "ui2_zoom": {
+    "name": "ui2_zoom",
+    "payload_size": 13183,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "updater_helper": {
+    "name": "updater_helper",
+    "payload_size": 17284,
+    "status": "loaded",
+    "classes": {
+      "_SHELLEXECUTEINFOW": {
+        "doc": "Structure base class",
+        "bases": [
+          "Structure"
+        ],
+        "methods": {},
+        "class_vars": {
+          "_b_base_": "<member '_b_base_' of '_ctypes._CData' objects>",
+          "_b_needsfree_": "<member '_b_needsfree_' of '_ctypes._CData' objects>",
+          "_fields_": "[('cbSize', <class 'ctypes.c_ulong'>), ('fMask', <class 'ctypes.c_ulong'>), ('hwnd', <class 'ctypes.c_void_p'>), ('lpVerb', <class 'ctypes.c_wchar_p'>), ('lpFile', <class 'ctypes.c_wchar_p'>), ('lpPar",
+          "_objects": "<member '_objects' of '_ctypes._CData' objects>",
+          "cbSize": "<Field type=c_ulong, ofs=0, size=4>",
+          "dwHotKey": "<Field type=c_ulong, ofs=88, size=4>",
+          "fMask": "<Field type=c_ulong, ofs=4, size=4>",
+          "hIcon": "<Field type=c_void_p, ofs=96, size=8>",
+          "hInstApp": "<Field type=c_void_p, ofs=56, size=8>",
+          "hKeyClass": "<Field type=c_void_p, ofs=80, size=8>",
+          "hProcess": "<Field type=c_void_p, ofs=104, size=8>",
+          "hwnd": "<Field type=c_void_p, ofs=8, size=8>",
+          "lpClass": "<Field type=c_wchar_p, ofs=72, size=8>",
+          "lpDirectory": "<Field type=c_wchar_p, ofs=40, size=8>",
+          "lpFile": "<Field type=c_wchar_p, ofs=24, size=8>",
+          "lpIDList": "<Field type=c_void_p, ofs=64, size=8>",
+          "lpParameters": "<Field type=c_wchar_p, ofs=32, size=8>",
+          "lpVerb": "<Field type=c_wchar_p, ofs=16, size=8>",
+          "nShow": "<Field type=c_long, ofs=48, size=4>"
+        }
+      }
+    },
+    "functions": {
+      "_abspath": {
+        "signature": "(path)",
+        "doc": null
+      },
+      "_clear_readonly": {
+        "signature": "(path)",
+        "doc": null
+      },
+      "_download_new_executable": {
+        "signature": "(download_url, new_exe_path, status, progress)",
+        "doc": null
+      },
+      "_elevate_and_replace": {
+        "signature": "(new_exe_path, original_exe, status)",
+        "doc": null
+      },
+      "_extract_html_download_url": {
+        "signature": "(page_url, html_text)",
+        "doc": null
+      },
+      "_has_exe_header": {
+        "signature": "(path)",
+        "doc": null
+      },
+      "_is_html_content": {
+        "signature": "(content_type)",
+        "doc": null
+      },
+      "_is_probably_binary_content": {
+        "signature": "(content_type)",
+        "doc": null
+      },
+      "_replace_with_retry": {
+        "signature": "(new_exe_path, original_exe, status)",
+        "doc": null
+      },
+      "_resolve_binary_download_url": {
+        "signature": "(initial_url, status, max_hops=3)",
+        "doc": null
+      },
+      "_wait_for_parent_exit": {
+        "signature": "(parent_pid, status)",
+        "doc": null
+      },
+      "is_frozen": {
+        "signature": "()",
+        "doc": null
+      },
+      "launch_self_update": {
+        "signature": "(download_url, latest_version)",
+        "doc": null
+      },
+      "run_self_update": {
+        "signature": "(argv, status=<built-in function print>, progress=<function <lambda> at 0x0000021AE3F420E0>)",
+        "doc": null
+      },
+      "run_self_update_elevated_replace": {
+        "signature": "(original_exe, new_exe_path)",
+        "doc": null
+      },
+      "run_self_update_ui": {
+        "signature": "(argv)",
+        "doc": null
+      },
+      "unescape": {
+        "signature": "(s)",
+        "doc": "Convert all named and numeric character references (e.g. &gt;, &#62;,\n&x3e;) in the string s to the corresponding unicode characters.\nThis function uses the rules defined by the HTML 5 standard\nfor both valid and invalid character references, and the list of\nHTML 5 named character references defined in html.entities.html5."
+      },
+      "urljoin": {
+        "signature": "(base, url, allow_fragments=True)",
+        "doc": "Join a base URL and a possibly relative URL to form an absolute\ninterpretation of the latter."
+      }
+    },
+    "variables": {
+      "DOWNLOAD_TIMEOUT": "(10, 60)",
+      "REPLACE_RETRIES": "20",
+      "REPLACE_RETRY_DELAY_SECONDS": "0.5",
+      "WAIT_FOR_EXIT_DELAY_SECONDS": "0.5",
+      "WAIT_FOR_EXIT_RETRIES": "120",
+      "_SEE_MASK_NOCLOSEPROCESS": "64",
+      "_SW_HIDE": "0",
+      "_WAIT_TIMEOUT_MS": "30000",
+      "__doc__": "None",
+      "ctypes": "<module 'ctypes'>",
+      "os": "<module 'os'>",
+      "psutil": "<module 'psutil'>",
+      "re": "<module 're'>",
+      "requests": "<module 'requests'>",
+      "shutil": "<module 'shutil'>",
+      "stat": "<module 'stat'>",
+      "subprocess": "<module 'subprocess'>",
+      "sys": "<module 'sys'>",
+      "tempfile": "<module 'tempfile'>",
+      "time": "<module 'time'>",
+      "wintypes": "<module 'ctypes.wintypes'>"
+    }
+  },
+  "upgrades_research": {
+    "name": "upgrades_research",
+    "payload_size": 107896,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "utils": {
+    "name": "utils",
+    "payload_size": 187,
+    "status": "loaded",
+    "classes": {},
+    "functions": {},
+    "variables": {
+      "__doc__": "None",
+      "runtime_paths": "<module 'utils.runtime_paths'>"
+    }
+  },
+  "utils.multitouch": {
+    "name": "utils.multitouch",
+    "payload_size": 25348,
+    "status": "loaded",
+    "classes": {
+      "MultiTouchCapabilities": {
+        "doc": "MultiTouchCapabilities(event_device: Optional[str] = None, supports_multitouch: bool = False, max_slot: int = 0, max_touches: int = 1, has_pressure: bool = False, has_touch_major: bool = False, touch_x_min: int = 0, touch_x_max: int = 0, touch_y_min: int = 0, touch_y_max: int = 0, display_width: int = 0, display_height: int = 0)",
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, event_device: Optional[str] = None, supports_multitouch: bool = False, max_slot: int = 0, max_touches: int = 1, has_pressure: bool = False, has_touch_major: bool = False, touch_x_min: int = 0, touch_x_max: int = 0, touch_y_min: int = 0, touch_y_max: int = 0, display_width: int = 0, display_height: int = 0) -> None",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          }
+        },
+        "class_vars": {
+          "display_height": "0",
+          "display_width": "0",
+          "event_device": "None",
+          "has_pressure": "False",
+          "has_touch_major": "False",
+          "max_slot": "0",
+          "max_touches": "1",
+          "supports_multitouch": "False",
+          "touch_x_max": "0",
+          "touch_x_min": "0",
+          "touch_y_max": "0",
+          "touch_y_min": "0"
+        }
+      },
+      "MultiTouchInput": {
+        "doc": null,
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, adb_path_getter, target_getter, run_subprocess, emulator_getter=None, logger=None)",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "_append_release_all_commands": {
+            "signature": "(self, commands, caps, slots=None)",
+            "doc": null
+          },
+          "_append_restore_default_slot": {
+            "signature": "(self, commands, caps)",
+            "doc": null
+          },
+          "_append_slot_release": {
+            "signature": "(self, commands, caps, slot)",
+            "doc": null
+          },
+          "_delay_cmd": {
+            "signature": "(self, delay_ms)",
+            "doc": null
+          },
+          "_detect_display_metrics": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_emit": {
+            "signature": "(self, commands, device, ev_type, ev_code, ev_value)",
+            "doc": null
+          },
+          "_needs_rotation": {
+            "signature": "(self, x_range, y_range, app_w, app_h)",
+            "doc": null
+          },
+          "_next_tracking_id": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "_normalize_actions": {
+            "signature": "(self, actions, max_touches)",
+            "doc": null
+          },
+          "_parse_getevent_capabilities": {
+            "signature": "(self, output)",
+            "doc": null
+          },
+          "_parse_recording": {
+            "signature": "(self, raw)",
+            "doc": null
+          },
+          "_resample_path": {
+            "signature": "(self, path, steps)",
+            "doc": null
+          },
+          "_run_release_all_with_caps": {
+            "signature": "(self, caps, timeout=8)",
+            "doc": null
+          },
+          "_run_shell_script": {
+            "signature": "(self, script, timeout)",
+            "doc": null
+          },
+          "_shell": {
+            "signature": "(self, command, timeout=8)",
+            "doc": null
+          },
+          "_transform_point": {
+            "signature": "(self, x, y, caps)",
+            "doc": null
+          },
+          "detect_capabilities": {
+            "signature": "(self, force=False)",
+            "doc": null
+          },
+          "hold_multi": {
+            "signature": "(self, points, duration_ms)",
+            "doc": null
+          },
+          "invalidate_capabilities": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "multi_touch": {
+            "signature": "(self, actions)",
+            "doc": null
+          },
+          "pinch": {
+            "signature": "(self, center, distance_start, distance_end, duration_ms)",
+            "doc": null
+          },
+          "record_multitouch": {
+            "signature": "(self, duration_ms=2500)",
+            "doc": null
+          },
+          "release_all": {
+            "signature": "(self)",
+            "doc": null
+          },
+          "replay_recording": {
+            "signature": "(self, payload)",
+            "doc": null
+          },
+          "swipe_multi": {
+            "signature": "(self, paths, duration_ms)",
+            "doc": null
+          },
+          "tap_multi": {
+            "signature": "(self, points)",
+            "doc": null
+          }
+        },
+        "class_vars": {}
+      },
+      "TouchAction": {
+        "doc": "TouchAction(points: List[utils.multitouch.TouchPoint], slot: Optional[int] = None, tracking_id: Optional[int] = None)",
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, points: List[utils.multitouch.TouchPoint], slot: Optional[int] = None, tracking_id: Optional[int] = None) -> None",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          }
+        },
+        "class_vars": {
+          "slot": "None",
+          "tracking_id": "None"
+        }
+      },
+      "TouchPoint": {
+        "doc": "TouchPoint(t_ms: int, x: Optional[int] = None, y: Optional[int] = None, pressure: int = 50, state: str = 'move')",
+        "bases": [
+          "object"
+        ],
+        "methods": {
+          "__init__": {
+            "signature": "(self, t_ms: int, x: Optional[int] = None, y: Optional[int] = None, pressure: int = 50, state: str = 'move') -> None",
+            "doc": "Initialize self.  See help(type(self)) for accurate signature."
+          },
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          }
+        },
+        "class_vars": {
+          "pressure": "50",
+          "state": "'move'",
+          "x": "None",
+          "y": "None"
+        }
+      }
+    },
+    "functions": {
+      "dataclass": {
+        "signature": "(cls=None, /, *, init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False, match_args=True, kw_only=False, slots=False)",
+        "doc": "Returns the same class as was passed in, with dunder methods\nadded based on the fields defined in the class.\n\nExamines PEP 526 __annotations__ to determine fields.\n\nIf init is true, an __init__() method is added to the class. If\nrepr is true, a __repr__() method is added. If order is true, rich\ncomparison dunder methods are added. If unsafe_hash is true, a\n__hash__() method function is added. If frozen is true, fields may\nnot be assigned to after instance creation. If match_args is true,\nthe __match_args__ tuple is added. If kw_only is true, then by\ndefault all fields are keyword-only. If slots is true, an\n__slots__ attribute is added."
+      },
+      "field": {
+        "signature": "(*, default=<dataclasses._MISSING_TYPE object at 0x0000021AE37574F0>, default_factory=<dataclasses._MISSING_TYPE object at 0x0000021AE37574F0>, init=True, repr=True, hash=None, compare=True, metadata=None, kw_only=<dataclasses._MISSING_TYPE object at 0x0000021AE37574F0>)",
+        "doc": "Return an object to identify dataclass fields.\n\ndefault is the default value of the field.  default_factory is a\n0-argument function called to initialize a field's value.  If init\nis true, the field will be a parameter to the class's __init__()\nfunction.  If repr is true, the field will be included in the\nobject's repr().  If hash is true, the field will be included in the\nobject's hash().  If compare is true, the field will be used in\ncomparison functions.  metadata, if specified, must be a mapping\nwhich is stored but not otherwise examined by dataclass.  If kw_only\nis true, the field will become a keyword-only parameter to\n__init__().\n\nIt is an error to specify both default and default_factory."
+      }
+    },
+    "variables": {
+      "ABS_MT_POSITION_X": "53",
+      "ABS_MT_POSITION_Y": "54",
+      "ABS_MT_PRESSURE": "58",
+      "ABS_MT_SLOT": "47",
+      "ABS_MT_TOUCH_MAJOR": "48",
+      "ABS_MT_TRACKING_ID": "57",
+      "BTN_TOOL_FINGER": "325",
+      "BTN_TOUCH": "330",
+      "Callable": "typing.Callable",
+      "Dict": "typing.Dict",
+      "EV_ABS": "3",
+      "EV_KEY": "1",
+      "EV_SYN": "0",
+      "List": "typing.List",
+      "Optional": "typing.Optional",
+      "SYN_REPORT": "0",
+      "Sequence": "typing.Sequence",
+      "TRACKING_ID_MAX": "1000000",
+      "TRACKING_ID_MIN": "1000",
+      "Tuple": "typing.Tuple",
+      "__doc__": "None",
+      "re": "<module 're'>",
+      "subprocess": "<module 'subprocess'>"
+    }
+  },
+  "utils.profile_backup": {
+    "name": "utils.profile_backup",
+    "payload_size": 8989,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "utils.runtime_paths": {
+    "name": "utils.runtime_paths",
+    "payload_size": 3951,
+    "status": "loaded",
+    "classes": {
+      "Path": {
+        "doc": "PurePath subclass that can make system calls.\n\nPath represents a filesystem path but unlike PurePath, also offers\nmethods to do system calls on path objects. Depending on your system,\ninstantiating a Path will return either a PosixPath or a WindowsPath\nobject. You can also instantiate a PosixPath or WindowsPath directly,\nbut cannot instantiate a WindowsPath on a POSIX system or vice versa.",
+        "bases": [
+          "PurePath"
+        ],
+        "methods": {
+          "__repr__": {
+            "signature": "(self)",
+            "doc": "Return repr(self)."
+          },
+          "__str__": {
+            "signature": "(self)",
+            "doc": "Return the string representation of the path, suitable for\npassing to system calls."
+          },
+          "_format_parsed_parts": {
+            "signature": "(drv, root, parts)",
+            "doc": null
+          },
+          "_from_parsed_parts": {
+            "signature": "(drv, root, parts)",
+            "doc": null
+          },
+          "_from_parts": {
+            "signature": "(args)",
+            "doc": null
+          },
+          "_make_child": {
+            "signature": "(self, args)",
+            "doc": null
+          },
+          "_make_child_relpath": {
+            "signature": "(self, part)",
+            "doc": null
+          },
+          "_parse_args": {
+            "signature": "(args)",
+            "doc": null
+          },
+          "absolute": {
+            "signature": "(self)",
+            "doc": "Return an absolute version of this path.  This function works\neven if the path doesn't point to anything.\n\nNo normalization is done, i.e. all '.' and '..' will be kept along.\nUse resolve() to get the canonical path to a file."
+          },
+          "as_posix": {
+            "signature": "(self)",
+            "doc": "Return the string representation of the path with forward (/)\nslashes."
+          },
+          "as_uri": {
+            "signature": "(self)",
+            "doc": "Return the path as a 'file' URI."
+          },
+          "chmod": {
+            "signature": "(self, mode, *, follow_symlinks=True)",
+            "doc": "Change the permissions of the path, like os.chmod()."
+          },
+          "cwd": {
+            "signature": "()",
+            "doc": "Return a new path pointing to the current working directory\n(as returned by os.getcwd())."
+          },
+          "exists": {
+            "signature": "(self)",
+            "doc": "Whether this path exists."
+          },
+          "expanduser": {
+            "signature": "(self)",
+            "doc": "Return a new path with expanded ~ and ~user constructs\n(as returned by os.path.expanduser)"
+          },
+          "glob": {
+            "signature": "(self, pattern)",
+            "doc": "Iterate over this subtree and yield all existing files (of any\nkind, including directories) matching the given relative pattern."
+          },
+          "group": {
+            "signature": "(self)",
+            "doc": "Return the group name of the file gid."
+          },
+          "hardlink_to": {
+            "signature": "(self, target)",
+            "doc": "Make this path a hard link pointing to the same file as *target*.\n\nNote the order of arguments (self, target) is the reverse of os.link's."
+          },
+          "home": {
+            "signature": "()",
+            "doc": "Return a new path pointing to the user's home directory (as\nreturned by os.path.expanduser('~'))."
+          },
+          "is_absolute": {
+            "signature": "(self)",
+            "doc": "True if the path is absolute (has both a root and, if applicable,\na drive)."
+          },
+          "is_block_device": {
+            "signature": "(self)",
+            "doc": "Whether this path is a block device."
+          },
+          "is_char_device": {
+            "signature": "(self)",
+            "doc": "Whether this path is a character device."
+          },
+          "is_dir": {
+            "signature": "(self)",
+            "doc": "Whether this path is a directory."
+          },
+          "is_fifo": {
+            "signature": "(self)",
+            "doc": "Whether this path is a FIFO."
+          },
+          "is_file": {
+            "signature": "(self)",
+            "doc": "Whether this path is a regular file (also True for symlinks pointing\nto regular files)."
+          },
+          "is_mount": {
+            "signature": "(self)",
+            "doc": "Check if this path is a POSIX mount point"
+          },
+          "is_relative_to": {
+            "signature": "(self, *other)",
+            "doc": "Return True if the path is relative to another path or False.\n        "
+          },
+          "is_reserved": {
+            "signature": "(self)",
+            "doc": "Return True if the path contains one of the special names reserved\nby the system, if any."
+          },
+          "is_socket": {
+            "signature": "(self)",
+            "doc": "Whether this path is a socket."
+          },
+          "is_symlink": {
+            "signature": "(self)",
+            "doc": "Whether this path is a symbolic link."
+          },
+          "iterdir": {
+            "signature": "(self)",
+            "doc": "Iterate over the files in this directory.  Does not yield any\nresult for the special paths '.' and '..'."
+          },
+          "joinpath": {
+            "signature": "(self, *args)",
+            "doc": "Combine this path with one or several arguments, and return a\nnew path representing either a subpath (if all arguments are relative\npaths) or a totally different path (if one of the arguments is\nanchored)."
+          },
+          "lchmod": {
+            "signature": "(self, mode)",
+            "doc": "Like chmod(), except if the path points to a symlink, the symlink's\npermissions are changed, rather than its target's."
+          },
+          "link_to": {
+            "signature": "(self, target)",
+            "doc": "Make the target path a hard link pointing to this path.\n\nNote this function does not make this path a hard link to *target*,\ndespite the implication of the function and argument names. The order\nof arguments (target, link) is the reverse of Path.symlink_to, but\nmatches that of os.link.\n\nDeprecated since Python 3.10 and scheduled for removal in Python 3.12.\nUse `hardlink_to()` instead."
+          },
+          "lstat": {
+            "signature": "(self)",
+            "doc": "Like stat(), except if the path points to a symlink, the symlink's\nstatus information is returned, rather than its target's."
+          },
+          "match": {
+            "signature": "(self, path_pattern)",
+            "doc": "Return True if this path matches the given pattern."
+          },
+          "mkdir": {
+            "signature": "(self, mode=511, parents=False, exist_ok=False)",
+            "doc": "Create a new directory at this given path."
+          },
+          "open": {
+            "signature": "(self, mode='r', buffering=-1, encoding=None, errors=None, newline=None)",
+            "doc": "Open the file pointed by this path and return a file object, as\nthe built-in open() function does."
+          },
+          "owner": {
+            "signature": "(self)",
+            "doc": "Return the login name of the file owner."
+          },
+          "read_bytes": {
+            "signature": "(self)",
+            "doc": "Open the file in bytes mode, read it, and close the file."
+          },
+          "read_text": {
+            "signature": "(self, encoding=None, errors=None)",
+            "doc": "Open the file in text mode, read it, and close the file."
+          },
+          "readlink": {
+            "signature": "(self)",
+            "doc": "Return the path to which the symbolic link points."
+          },
+          "relative_to": {
+            "signature": "(self, *other)",
+            "doc": "Return the relative path to another path identified by the passed\narguments.  If the operation is not possible (because this is not\na subpath of the other path), raise ValueError."
+          },
+          "rename": {
+            "signature": "(self, target)",
+            "doc": "Rename this path to the target path.\n\nThe target path may be absolute or relative. Relative paths are\ninterpreted relative to the current working directory, *not* the\ndirectory of the Path object.\n\nReturns the new Path instance pointing to the target path."
+          },
+          "replace": {
+            "signature": "(self, target)",
+            "doc": "Rename this path to the target path, overwriting if that path exists.\n\nThe target path may be absolute or relative. Relative paths are\ninterpreted relative to the current working directory, *not* the\ndirectory of the Path object.\n\nReturns the new Path instance pointing to the target path."
+          },
+          "resolve": {
+            "signature": "(self, strict=False)",
+            "doc": "Make the path absolute, resolving all symlinks on the way and also\nnormalizing it (for example turning slashes into backslashes under\nWindows)."
+          },
+          "rglob": {
+            "signature": "(self, pattern)",
+            "doc": "Recursively yield all existing files (of any kind, including\ndirectories) matching the given relative pattern, anywhere in\nthis subtree."
+          },
+          "rmdir": {
+            "signature": "(self)",
+            "doc": "Remove this directory.  The directory must be empty."
+          },
+          "samefile": {
+            "signature": "(self, other_path)",
+            "doc": "Return whether other_path is the same or not as this file\n(as returned by os.path.samefile())."
+          },
+          "stat": {
+            "signature": "(self, *, follow_symlinks=True)",
+            "doc": "Return the result of the stat() system call on this path, like\nos.stat() does."
+          },
+          "symlink_to": {
+            "signature": "(self, target, target_is_directory=False)",
+            "doc": "Make this path a symlink pointing to the target path.\nNote the order of arguments (link, target) is the reverse of os.symlink."
+          },
+          "touch": {
+            "signature": "(self, mode=438, exist_ok=True)",
+            "doc": "Create this file with the given access mode, if it doesn't exist."
+          },
+          "unlink": {
+            "signature": "(self, missing_ok=False)",
+            "doc": "Remove this file or link.\nIf the path is a directory, use rmdir() instead."
+          },
+          "with_name": {
+            "signature": "(self, name)",
+            "doc": "Return a new path with the file name changed."
+          },
+          "with_stem": {
+            "signature": "(self, stem)",
+            "doc": "Return a new path with the stem changed."
+          },
+          "with_suffix": {
+            "signature": "(self, suffix)",
+            "doc": "Return a new path with the file suffix changed.  If the path\nhas no suffix, add given suffix.  If the given suffix is an empty\nstring, remove the suffix from the path."
+          },
+          "write_bytes": {
+            "signature": "(self, data)",
+            "doc": "Open the file in bytes mode, write to it, and close the file."
+          },
+          "write_text": {
+            "signature": "(self, data, encoding=None, errors=None, newline=None)",
+            "doc": "Open the file in text mode, write to it, and close the file."
+          }
+        },
+        "class_vars": {
+          "_accessor": "<pathlib._NormalAccessor object at 0x0000021ACA50A440>",
+          "_cached_cparts": "<member '_cached_cparts' of 'PurePath' objects>",
+          "_cparts": "<property object at 0x0000021ACA503510>",
+          "_drv": "<member '_drv' of 'PurePath' objects>",
+          "_hash": "<member '_hash' of 'PurePath' objects>",
+          "_parts": "<member '_parts' of 'PurePath' objects>",
+          "_pparts": "<member '_pparts' of 'PurePath' objects>",
+          "_root": "<member '_root' of 'PurePath' objects>",
+          "_str": "<member '_str' of 'PurePath' objects>",
+          "anchor": "<property object at 0x0000021ACA503600>",
+          "drive": "<property object at 0x0000021ACA503560>",
+          "name": "<property object at 0x0000021ACA503650>",
+          "parent": "<property object at 0x0000021ACA5037E0>",
+          "parents": "<property object at 0x0000021ACA503830>",
+          "parts": "<property object at 0x0000021ACA503790>",
+          "root": "<property object at 0x0000021ACA5035B0>",
+          "stem": "<property object at 0x0000021ACA503740>",
+          "suffix": "<property object at 0x0000021ACA5036A0>",
+          "suffixes": "<property object at 0x0000021ACA5036F0>"
+        }
+      }
+    },
+    "functions": {
+      "app_root": {
+        "signature": "()",
+        "doc": null
+      },
+      "bundle_root": {
+        "signature": "()",
+        "doc": null
+      },
+      "cleanup_stale_onefile_tempdirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "ensure_runtime_dirs": {
+        "signature": "()",
+        "doc": null
+      },
+      "is_frozen": {
+        "signature": "()",
+        "doc": null
+      },
+      "resolve_resource_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      },
+      "resolve_writable_path": {
+        "signature": "(relative_path)",
+        "doc": null
+      }
+    },
+    "variables": {
+      "__doc__": "None",
+      "os": "<module 'os'>",
+      "sys": "<module 'sys'>"
+    }
+  },
+  "vision": {
+    "name": "vision",
+    "payload_size": 81418,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "walls": {
+    "name": "walls",
+    "payload_size": 24385,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "war": {
+    "name": "war",
+    "payload_size": 40571,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  },
+  "weekly_deal": {
+    "name": "weekly_deal",
+    "payload_size": 17807,
+    "status": "error: the format of obfuscated script is incorrect (1:1117)",
+    "classes": {},
+    "functions": {},
+    "variables": {}
+  }
+}

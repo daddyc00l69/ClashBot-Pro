@@ -1,0 +1,31 @@
+{
+  "module": "numpy._pyinstaller.tests",
+  "chunk_size": 526,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "u_pyinstaller\\tests",
+    "aNUITKA_PACKAGE_numpy__pyinstaller",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy__pyinstaller_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy.testing",
+    "aIS_WASM",
+    "aIS_EDITABLE",
+    "aIS_WASM",
+    "aIS_EDITABLE",
+    "apytest",
+    "askip",
+    "uWASM/Pyodide does not use or support Fortran",
+    "aallow_module_level",
+    "uEditable install doesn't support tests with a compile step",
+    "tunumpy\\_pyinstaller\\tests\\__init__.py",
+    "u<module numpy._pyinstaller.tests>"
+  ]
+}

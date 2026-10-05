@@ -1,0 +1,23 @@
+{
+  "module": "PyInstaller.lib.modulegraph",
+  "chunk_size": 351,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_PyInstaller",
+    "u\\not_existing",
+    "ulib\\modulegraph",
+    "aNUITKA_PACKAGE_PyInstaller_lib",
+    "u\\not_existing",
+    "amodulegraph",
+    "aNUITKA_PACKAGE_PyInstaller_lib_modulegraph",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "u0.17",
+    "a__version__",
+    "uPyInstaller\\lib\\modulegraph\\__init__.py",
+    "u<module PyInstaller.lib.modulegraph>"
+  ]
+}

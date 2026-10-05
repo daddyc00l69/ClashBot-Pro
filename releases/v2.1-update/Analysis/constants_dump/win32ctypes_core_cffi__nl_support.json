@@ -1,0 +1,20 @@
+{
+  "module": "win32ctypes.core.cffi._nl_support",
+  "chunk_size": 204,
+  "strings": [
+    "adlls",
+    "akernel32",
+    "aGetACP",
+    "aorigin",
+    "ahas_location",
+    "a_util",
+    "affi",
+    "adlls",
+    "affi",
+    "acdef",
+    "UINT WINAPI GetACP(void);",
+    "a_GetACP",
+    "uwin32ctypes\\core\\cffi\\_nl_support.py",
+    "u<module win32ctypes.core.cffi._nl_support>"
+  ]
+}

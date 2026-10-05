@@ -1,0 +1,22 @@
+{
+  "module": "numpy._core.tests",
+  "chunk_size": 249,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy._core.tests",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "u_core\\tests",
+    "aNUITKA_PACKAGE_numpy__core",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy__core_tests",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\_core\\tests",
+    "aargs",
+    "akw"
+  ]
+}

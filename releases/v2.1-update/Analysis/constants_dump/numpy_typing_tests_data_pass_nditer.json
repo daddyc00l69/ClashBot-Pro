@@ -1,0 +1,15 @@
+{
+  "module": "numpy.typing.tests.data.pass.nditer",
+  "chunk_size": 142,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "anumpy",
+    "anp",
+    "aarray",
+    "aarr",
+    "anditer",
+    "unumpy\\typing\\tests\\data\\pass\\nditer.py",
+    "u<module numpy.typing.tests.data.pass.nditer>"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "module": "numpy.typing.tests.data.pass.lib_utils",
+  "chunk_size": 298,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aannotations",
+    "aStringIO",
+    "anumpy",
+    "anp",
+    "unumpy.lib.array_utils",
+    "alib",
+    "aarray_utils",
+    "aFILE",
+    "aarange",
+    "afloat64",
+    "adtype",
+    "aAR",
+    "waareturn",
+    "aint",
+    "abool",
+    "afunc",
+    "abyte_bounds",
+    "ainfo",
+    "aoutput",
+    "unumpy\\typing\\tests\\data\\pass\\lib_utils.py",
+    "u<module numpy.typing.tests.data.pass.lib_utils>",
+    "wa."
+  ]
+}

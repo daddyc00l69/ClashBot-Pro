@@ -1,0 +1,21 @@
+{
+  "module": "numpy.polynomial.tests",
+  "chunk_size": 307,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "upolynomial\\tests",
+    "aNUITKA_PACKAGE_numpy_polynomial",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy_polynomial_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\polynomial\\tests\\__init__.py",
+    "u<module numpy.polynomial.tests>"
+  ]
+}

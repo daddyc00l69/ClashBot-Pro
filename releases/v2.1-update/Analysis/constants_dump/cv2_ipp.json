@@ -1,0 +1,19 @@
+{
+  "module": "cv2.ipp",
+  "chunk_size": 157,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.ipp",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "aipp",
+    "aNUITKA_PACKAGE_cv2_ipp",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\ipp",
+    "aargs",
+    "akw"
+  ]
+}

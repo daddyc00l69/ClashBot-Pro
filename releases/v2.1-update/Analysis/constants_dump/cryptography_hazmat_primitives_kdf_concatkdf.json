@@ -1,0 +1,21 @@
+{
+  "module": "cryptography.hazmat.primitives.kdf.concatkdf",
+  "chunk_size": 331,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aannotations",
+    "ucryptography.hazmat.bindings._rust",
+    "aopenssl",
+    "aopenssl",
+    "arust_openssl",
+    "ucryptography.hazmat.primitives.kdf",
+    "aKeyDerivationFunction",
+    "aKeyDerivationFunction",
+    "akdf",
+    "aConcatKDFHash",
+    "aConcatKDFHMAC",
+    "ucryptography\\hazmat\\primitives\\kdf\\concatkdf.py",
+    "u<module cryptography.hazmat.primitives.kdf.concatkdf>"
+  ]
+}

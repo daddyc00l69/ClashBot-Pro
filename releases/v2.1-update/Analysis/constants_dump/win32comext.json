@@ -1,0 +1,14 @@
+{
+  "module": "win32comext",
+  "chunk_size": 108,
+  "strings": [
+    "a_NamespacePath",
+    "awin32comext",
+    "aenviron",
+    "aNUITKA_PACKAGE_win32comext",
+    "u\\not_existing",
+    "u<lambda>",
+    "aargs",
+    "akw"
+  ]
+}

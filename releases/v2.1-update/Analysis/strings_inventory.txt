@@ -1,0 +1,5000 @@
+[.bytecode] Record of phased-in incompatible language changes.
+[.bytecode] Each line is of the form:
+[.bytecode]     FeatureName = "_Feature(" OptionalRelease "," MandatoryRelease ","
+[.bytecode]                               CompilerFlag ")"
+[.bytecode] where, normally, OptionalRelease < MandatoryRelease, and both are 5-tuples
+[.bytecode] of the same form as sys.version_info:
+[.bytecode]     (PY_MAJOR_VERSION, # the 2 in 2.1.0a3; an int
+[.bytecode]      PY_MINOR_VERSION, # the 1; an int
+[.bytecode]      PY_MICRO_VERSION, # the 0; an int
+[.bytecode]      PY_RELEASE_LEVEL, # "alpha", "beta", "candidate" or "final"; string
+[.bytecode]      PY_RELEASE_SERIAL # the 3; an int
+[.bytecode]     )
+[.bytecode] OptionalRelease records the first release in which
+[.bytecode]     from __future__ import FeatureName
+[.bytecode] was accepted.
+[.bytecode] In the case of MandatoryReleases that have not yet occurred,
+[.bytecode] MandatoryRelease predicts the release in which the feature will become part
+[.bytecode] of the language.
+[.bytecode] Else MandatoryRelease records when the feature became part of the language;
+[.bytecode] in releases at or after that, modules no longer need
+[.bytecode]     from __future__ import FeatureName
+[.bytecode] to use the feature in question, but may continue to use such imports.
+[.bytecode] MandatoryRelease may also be None, meaning that a planned feature got
+[.bytecode] dropped.
+[.bytecode] Instances of class _Feature have two corresponding methods,
+[.bytecode] .getOptionalRelease() and .getMandatoryRelease().
+[.bytecode] CompilerFlag is the (bitfield) flag that should be passed in the fourth
+[.bytecode] argument to the builtin function compile() to enable the feature in
+[.bytecode] dynamically compiled code.  This flag is stored in the .compiler_flag
+[.bytecode] attribute on _Future instances.  These values must match the appropriate
+[.bytecode] #defines of CO_xxx flags in Include/cpython/compile.h.
+[.bytecode] No feature line is ever to be deleted from this file.
+[.bytecode] nested_scopes
+[.bytecode] generators
+[.bytecode] division
+[.bytecode] absolute_import
+[.bytecode] with_statement
+[.bytecode] print_function
+[.bytecode] unicode_literals
+[.bytecode] barry_as_FLUFL
+[.bytecode] generator_stop
+[.bytecode] annotations
+[.bytecode] all_feature_names
+[.bytecode] _Featurec
+[.bytecode] optional
+[.bytecode] mandatory
+[.bytecode] compiler_flag)
+[.bytecode] self
+[.bytecode] optionalRelease
+[.bytecode] mandatoryReleaser
+[] a__module__
+[] a__class__
+[] a__name__
+[] a__package__
+[] a__metaclass__
+[] a__abstractmethods__
+[] a__closure__
+[] a__dict__
+[] a__doc__
+[] a__file__
+[] a__path__
+[] a__enter__
+[] a__exit__
+[] a__builtins__
+[] a__all__
+[] a__init__
+[] a__cmp__
+[] a__iter__
+[] a__loader__
+[] a__compiled__
+[] a__nuitka__
+[] ainspect
+[] acompile
+[] arange
+[] aopen
+[] asuper
+[] asum
+[] aformat
+[] a__import__
+[] abytearray
+[] astaticmethod
+[] aclassmethod
+[] akeys
+[] aget
+[] aname
+[] aglobals
+[] alocals
+[] afromlist
+[] alevel
+[] aread
+[] arb
+[] wrwwwbalower
+[] w/w\apath
+[] abasename
+[] adirname
+[] aabspath
+[] aisabs
+[] anormpath
+[] aexists
+[] aisdir
+[PIL.BlpImagePlugin] l?l
+[PIL.BlpImagePlugin] astruct
+[PIL.BlpImagePlugin] aunpack_from
+[PIL.BlpImagePlugin] u<HHI
+[PIL.BlpImagePlugin] adata
+[PIL.BlpImagePlugin] aunpack_565
+[PIL.BlpImagePlugin] abits
+[PIL.BlpImagePlugin] ar0
+[PIL.BlpImagePlugin] ag0
+[PIL.BlpImagePlugin] ab0
+[PIL.BlpImagePlugin] ar1
+[PIL.BlpImagePlugin] ag1
+[PIL.BlpImagePlugin] ab1
+[PIL.BlpImagePlugin] pppaextend
+[PIL.BlpImagePlugin] wgu
+[PIL.BlpImagePlugin]     input: one "row" of data (i.e. will produce 4*width pixels)
+[PIL.BlpImagePlugin]     
+[PIL.BlpImagePlugin] u<8B
+[PIL.BlpImagePlugin] u<HH
+[PIL.BlpImagePlugin] u<I
+[PIL.BlpImagePlugin] wjahigh
+[PIL.BlpImagePlugin] acode
+[PIL.BlpImagePlugin] u<BB
+[PIL.BlpImagePlugin] u<6B
+[PIL.BlpImagePlugin] aalphacode2
+[PIL.BlpImagePlugin] aalphacode1
+[PIL.BlpImagePlugin] aa0
+[PIL.BlpImagePlugin] aa1
+[PIL.BlpImagePlugin]     input: one "row" of data (i.e. will produce 4 * width pixels)
+[PIL.BlpImagePlugin]     
+[PIL.BlpImagePlugin] astartswith
+[PIL.BlpImagePlugin] cBLP1
+[PIL.BlpImagePlugin] cBLP2
+[PIL.BlpImagePlugin] afp
+[PIL.BlpImagePlugin] amagic
+[PIL.BlpImagePlugin] a_accept
+[PIL.BlpImagePlugin] uBad BLP magic 
+[PIL.BlpImagePlugin] aBLPFormatError
+[PIL.BlpImagePlugin] aunpack
+[PIL.BlpImagePlugin] u<i
+[PIL.BlpImagePlugin] cBLP1
+[PIL.BlpImagePlugin] u<b
+[PIL.BlpImagePlugin] aseek
+[PIL.BlpImagePlugin] aSEEK_CUR
+[PIL.BlpImagePlugin] u<II
+[PIL.BlpImagePlugin] a_size
+[PIL.BlpImagePlugin] aalpha_encoding
+[PIL.BlpImagePlugin] adecode
+[PIL.BlpImagePlugin] aRGBA
+[PIL.BlpImagePlugin] aRGB
+[PIL.BmpImagePlugin] astartswith
+[PIL.BmpImagePlugin] cBM
+[PIL.BmpImagePlugin] ai32
+[PIL.BmpImagePlugin] l(l4l8l@lll|afp
+[PIL.BmpImagePlugin] aseek
+[PIL.BmpImagePlugin] aheader_size
+[PIL.BmpImagePlugin] adirection
+[PIL.BmpImagePlugin] aImageFile
+[PIL.BmpImagePlugin] a_safe_read
+[PIL.BmpImagePlugin] ai16
+[PIL.BmpImagePlugin] awidth
+[PIL.BmpImagePlugin] aheight
+[PIL.BmpImagePlugin] aplanes
+[PIL.BmpImagePlugin] abits
+[PIL.BmpImagePlugin] aCOMPRESSIONS
+[PIL.BmpImagePlugin] aRAW
+[PIL.BmpImagePlugin] acompression
+[PIL.BmpImagePlugin] apalette_padding
+[PIL.BmpImagePlugin] l(l4l8l@lll|l
+[PIL.BmpImagePlugin] ay_flip
+[PIL.BmpImagePlugin] adata_size
+[PIL.BmpImagePlugin] apixels_per_meter
+[PIL.BmpImagePlugin] acolors
+[PIL.BmpImagePlugin] ainfo
+[PIL.BmpImagePlugin] adpi
+[PIL.BmpImagePlugin] aBITFIELDS
+[PIL.BmpImagePlugin] ar_mask
+[PIL.BmpImagePlugin] ag_mask
+[PIL.BmpImagePlugin] ab_mask
+[PIL.BmpImagePlugin] aa_mask
+[PIL.BmpImagePlugin] aheader_data
+[PIL.BmpImagePlugin] l$afile_info
+[PIL.BmpImagePlugin] argb_mask
+[PIL.BmpImagePlugin] argba_mask
+[PIL.BmpImagePlugin] uUnsupported BMP header type (
+[PIL.BmpImagePlugin] w)a_size
+[PIL.BmpImagePlugin] acolors
+[PIL.BmpImagePlugin] aBIT2MODE
+[PIL.BmpImagePlugin] spa_mode
+[PIL.BmpImagePlugin] amode
+[PIL.BmpImagePlugin] uUnsupported BMP pixel depth (
+[PIL.BmpImagePlugin] araw
+[PIL.BmpImagePlugin] l l
+[PIL.BmpImagePlugin] pppL
+[PIL.BmpImagePlugin] l T
+[PIL.BmpImagePlugin] l T
+[PIL.BmpImagePlugin] l T
+[PIL.BmpImagePlugin] l T
+[PIL.BmpImagePlugin] l T
+[PIL.BmpImagePlugin] l T
+[PIL.BufrStubImagePlugin] a_handler
+[PIL.BufrStubImagePlugin]     Install application-specific BUFR image handler.
+[PIL.BufrStubImagePlugin]     :param handler: Handler object.
+[PIL.BufrStubImagePlugin]     
+[PIL.BufrStubImagePlugin] astartswith
+[PIL.BufrStubImagePlugin] cBUFR
+[PIL.BufrStubImagePlugin] cZCZC
+[PIL.BufrStubImagePlugin] afp
+[PIL.BufrStubImagePlugin] a_accept
+[PIL.BufrStubImagePlugin] uNot a BUFR file
+[PIL.BufrStubImagePlugin] aseek
+[PIL.BufrStubImagePlugin] aSEEK_CUR
+[PIL.BufrStubImagePlugin] wFa_mode
+[PIL.BufrStubImagePlugin] pa_size
+[PIL.BufrStubImagePlugin] a_load
+[PIL.BufrStubImagePlugin] asave
+[PIL.BufrStubImagePlugin] uBUFR save handler not installed
+[PIL.BufrStubImagePlugin] aorigin
+[PIL.BufrStubImagePlugin] ahas_location
+[PIL.BufrStubImagePlugin] aannotations
+[PIL.BufrStubImagePlugin] aos
+[PIL.BufrStubImagePlugin] aIO
+[PIL.BufrStubImagePlugin] aImage
+[PIL.BufrStubImagePlugin] aImageFile
+[PIL.BufrStubImagePlugin] aImage
+[PIL.BufrStubImagePlugin] aImageFile
+[PIL.BufrStubImagePlugin] ahandler
+[PIL.BufrStubImagePlugin] areturn
+[PIL.BufrStubImagePlugin] uImageFile.StubHandler | None
+[PIL.BufrStubImagePlugin] aNone
+[PIL.BufrStubImagePlugin] aregister_handler
+[PIL.BufrStubImagePlugin] aprefix
+[PIL.BufrStubImagePlugin] areturn
+[PIL.BufrStubImagePlugin] abytes
+[PIL.BufrStubImagePlugin] abool
+[PIL.BufrStubImagePlugin] aStubImageFile
+[PIL.BufrStubImagePlugin] a__prepare__
+[PIL.BufrStubImagePlugin] aBufrStubImageFile
+[PIL.BufrStubImagePlugin] a__getitem__
+[PIL.BufrStubImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.BufrStubImagePlugin] u<metaclass>
+[PIL.BufrStubImagePlugin] uPIL.BufrStubImagePlugin
+[PIL.BufrStubImagePlugin] a__qualname__
+[PIL.BufrStubImagePlugin] aBUFR
+[PIL.BufrStubImagePlugin] aformat_description
+[PIL.BufrStubImagePlugin] areturn
+[PIL.BufrStubImagePlugin] aNone
+[PIL.BufrStubImagePlugin] a_open
+[PIL.BufrStubImagePlugin] uBufrStubImageFile._open
+[PIL.BufrStubImagePlugin] areturn
+[PIL.CurImagePlugin] astartswith
+[PIL.CurImagePlugin] afp
+[PIL.CurImagePlugin] atell
+[PIL.CurImagePlugin] a_accept
+[PIL.CurImagePlugin] unot a CUR file
+[PIL.CurImagePlugin] ai16
+[PIL.CurImagePlugin] aself
+[PIL.CurImagePlugin] wmuNo cursors were found
+[PIL.CurImagePlugin] a_bitmap
+[PIL.CurImagePlugin] ai32
+[PIL.CurImagePlugin] asize
+[PIL.CurImagePlugin] a_size
+[PIL.CurImagePlugin] atile
+[PIL.CurImagePlugin] a_replace
+[PIL.CurImagePlugin] aextents
+[PIL.CurImagePlugin] aorigin
+[PIL.CurImagePlugin] ahas_location
+[PIL.CurImagePlugin] aannotations
+[PIL.CurImagePlugin] aBmpImagePlugin
+[PIL.CurImagePlugin] aImage
+[PIL.CurImagePlugin] aBmpImagePlugin
+[PIL.CurImagePlugin] aImage
+[PIL.CurImagePlugin] a_binary
+[PIL.CurImagePlugin] ai16le
+[PIL.CurImagePlugin] ai16le
+[PIL.CurImagePlugin] ai32le
+[PIL.CurImagePlugin] ai32le
+[PIL.CurImagePlugin] aprefix
+[PIL.CurImagePlugin] areturn
+[PIL.CurImagePlugin] abytes
+[PIL.CurImagePlugin] abool
+[PIL.CurImagePlugin] aBmpImageFile
+[PIL.CurImagePlugin] a__prepare__
+[PIL.CurImagePlugin] aCurImageFile
+[PIL.CurImagePlugin] a__getitem__
+[PIL.CurImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.CurImagePlugin] u<metaclass>
+[PIL.CurImagePlugin] uPIL.CurImagePlugin
+[PIL.CurImagePlugin] a__qualname__
+[PIL.CurImagePlugin] aCUR
+[PIL.CurImagePlugin] uWindows Cursor
+[PIL.CurImagePlugin] aformat_description
+[PIL.CurImagePlugin] areturn
+[PIL.CurImagePlugin] aNone
+[PIL.CurImagePlugin] a_open
+[PIL.CurImagePlugin] uCurImageFile._open
+[PIL.CurImagePlugin] a__orig_bases__
+[PIL.CurImagePlugin] aregister_open
+[PIL.CurImagePlugin] aregister_extension
+[PIL.CurImagePlugin] u.cur
+[PIL.DcxImagePlugin] ai32
+[PIL.DcxImagePlugin] aMAGIC
+[PIL.DcxImagePlugin] afp
+[PIL.DcxImagePlugin] a_accept
+[PIL.DcxImagePlugin] unot a DCX file
+[PIL.DcxImagePlugin] a_offset
+[PIL.DcxImagePlugin] aself
+[PIL.DcxImagePlugin] aappend
+[PIL.DcxImagePlugin] a_fp
+[PIL.DcxImagePlugin] aframe
+[PIL.DcxImagePlugin] an_frames
+[PIL.DcxImagePlugin] ais_animated
+[PIL.DcxImagePlugin] aseek
+[PIL.DcxImagePlugin] a_seek_check
+[PIL.DcxImagePlugin] aDeferredError
+[PIL.DcxImagePlugin] aex
+[PIL.DcxImagePlugin] aPcxImageFile
+[PIL.DcxImagePlugin] a_open
+[PIL.DcxImagePlugin] aorigin
+[PIL.DcxImagePlugin] ahas_location
+[PIL.DcxImagePlugin] aannotations
+[PIL.DcxImagePlugin] aImage
+[PIL.DcxImagePlugin] aImage
+[PIL.DcxImagePlugin] a_binary
+[PIL.DcxImagePlugin] ai32le
+[PIL.DcxImagePlugin] ai32le
+[PIL.DcxImagePlugin] a_util
+[PIL.DcxImagePlugin] aDeferredError
+[PIL.DcxImagePlugin] aPcxImagePlugin
+[PIL.DcxImagePlugin] aPcxImageFile
+[PIL.DcxImagePlugin] aprefix
+[PIL.DcxImagePlugin] areturn
+[PIL.DcxImagePlugin] abytes
+[PIL.DcxImagePlugin] abool
+[PIL.DcxImagePlugin] a__prepare__
+[PIL.DcxImagePlugin] aDcxImageFile
+[PIL.DcxImagePlugin] a__getitem__
+[PIL.DcxImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.DcxImagePlugin] u<metaclass>
+[PIL.DcxImagePlugin] uPIL.DcxImagePlugin
+[PIL.DcxImagePlugin] a__qualname__
+[PIL.DcxImagePlugin] aDCX
+[PIL.DcxImagePlugin] uIntel DCX
+[PIL.DcxImagePlugin] aformat_description
+[PIL.DcxImagePlugin] a_close_exclusive_fp_after_loading
+[PIL.DcxImagePlugin] areturn
+[PIL.DcxImagePlugin] aNone
+[PIL.DcxImagePlugin] uDcxImageFile._open
+[PIL.DcxImagePlugin] aframe
+[PIL.DcxImagePlugin] areturn
+[PIL.DdsImagePlugin] afp
+[PIL.DdsImagePlugin] a_accept
+[PIL.DdsImagePlugin] unot a DDS file
+[PIL.DdsImagePlugin] astruct
+[PIL.DdsImagePlugin] aunpack
+[PIL.DdsImagePlugin] u<I
+[PIL.DdsImagePlugin] l|uUnsupported header size 
+[PIL.DdsImagePlugin] uIncomplete header: 
+[PIL.DdsImagePlugin] u bytes
+[PIL.DdsImagePlugin] u<3I
+[PIL.DdsImagePlugin] :nl
+[PIL.DdsImagePlugin] na_size
+[PIL.DdsImagePlugin] pasize
+[PIL.DdsImagePlugin] nu<11I
+[PIL.DdsImagePlugin] lDnu<4I
+[PIL.DdsImagePlugin] :lDlTnaDDPF
+[PIL.DdsImagePlugin] aRGB
+[PIL.DdsImagePlugin] aALPHAPIXELS
+[PIL.DdsImagePlugin] aRGBA
+[PIL.DdsImagePlugin] a_mode
+[PIL.DdsImagePlugin] w<wIlTaImageFile
+[PIL.DdsImagePlugin] a_Tile
+[PIL.DdsImagePlugin] adds_rgb
+[PIL.DdsImagePlugin] atile
+[PIL.DdsImagePlugin] aLUMINANCE
+[PIL.DdsImagePlugin] wLl
+[PIL.DdsImagePlugin] aLA
+[PIL.DdsImagePlugin] uUnsupported bitcount 
+[PIL.DdsImagePlugin] u for 
+[PIL.DdsImagePlugin] aPALETTEINDEXED8
+[PIL.DdsImagePlugin] wPaImagePalette
+[PIL.DdsImagePlugin] araw
+[PIL.DdsImagePlugin] apalette
+[PIL.DdsImagePlugin] amode
+[PIL.DdsImagePlugin] aFOURCC
+[PIL.DdsImagePlugin] aD3DFMT
+[PIL.DdsImagePlugin] aDXT1
+[PIL.DdsImagePlugin] apixel_format
+[PIL.DdsImagePlugin] aDXT3
+[PIL.DdsImagePlugin] aDXT5
+[PIL.DdsImagePlugin] aBC4U
+[PIL.DdsImagePlugin] aATI1
+[PIL.DdsImagePlugin] aBC4
+[PIL.DdsImagePlugin] aBC5S
+[PIL.DdsImagePlugin] aBC5U
+[PIL.DdsImagePlugin] aATI2
+[PIL.DdsImagePlugin] aBC5
+[PIL.DdsImagePlugin] aDX10
+[PIL.DdsImagePlugin] aDXGI_FORMAT
+[PIL.DdsImagePlugin] aBC1_UNORM
+[PIL.EpsImagePlugin] ags_binary
+[PIL.EpsImagePlugin] ags_windows_binary
+[PIL.EpsImagePlugin] ashutil
+[PIL.EpsImagePlugin] agswin32c
+[PIL.EpsImagePlugin] agswin64c
+[PIL.EpsImagePlugin] ags
+[PIL.EpsImagePlugin] awhich
+[PIL.EpsImagePlugin] ahas_ghostscript
+[PIL.EpsImagePlugin] uUnable to locate Ghostscript on paths
+[PIL.EpsImagePlugin] R@l
+[PIL.EpsImagePlugin] atempfile
+[PIL.EpsImagePlugin] amkstemp
+[PIL.EpsImagePlugin] awb
+[PIL.EpsImagePlugin] aseek
+[PIL.EpsImagePlugin] aSEEK_END
+[PIL.EpsImagePlugin] atell
+[PIL.EpsImagePlugin] alengthfile
+[PIL.EpsImagePlugin] afp
+[PIL.EpsImagePlugin] amin
+[PIL.EpsImagePlugin] wfawrite
+[PIL.EpsImagePlugin] nnnapngalpha
+[PIL.EpsImagePlugin] apnmraw
+[PIL.EpsImagePlugin] u-q
+[PIL.EpsImagePlugin] u-g
+[PIL.EpsImagePlugin] wdwxu-r
+[PIL.EpsImagePlugin] u-dBATCH
+[PIL.EpsImagePlugin] u-dNOPAUSE
+[PIL.EpsImagePlugin] u-dSAFER
+[PIL.EpsImagePlugin] u-sDEVICE=
+[PIL.EpsImagePlugin] u-sOutputFile=
+[PIL.EpsImagePlugin] u-c
+[PIL.EpsImagePlugin] w u translate
+[PIL.EpsImagePlugin] u-f
+[PIL.EpsImagePlugin] ashowpage
+[PIL.EpsImagePlugin] asubprocess
+[PIL.EpsImagePlugin] aSTARTUPINFO
+[PIL.EpsImagePlugin] adwFlags
+[PIL.EpsImagePlugin] aSTARTF_USESHOWWINDOW
+[PIL.EpsImagePlugin] acheck_call
+[PIL.EpsImagePlugin] astartupinfo
+[PIL.EpsImagePlugin] aImage
+[PIL.EpsImagePlugin] aload
+[PIL.EpsImagePlugin] aim
+[PIL.EpsImagePlugin] acopy
+[PIL.EpsImagePlugin] aunlink
+[PIL.EpsImagePlugin] ainfile_temp
+[PIL.EpsImagePlugin] uRender an image using Ghostscript
+[PIL.EpsImagePlugin] astartswith
+[PIL.EpsImagePlugin] c%!PS
+[PIL.EpsImagePlugin] ai32
+[PIL.ExifTags] This module provides constants and clear-text names for various
+[PIL.ExifTags] well-known EXIF tags.
+[PIL.ExifTags] aorigin
+[PIL.ExifTags] ahas_location
+[PIL.ExifTags] aannotations
+[PIL.ExifTags] aenum
+[PIL.ExifTags] aIntEnum
+[PIL.ExifTags] aIntEnum
+[PIL.ExifTags] a__prepare__
+[PIL.ExifTags] aBase
+[PIL.ExifTags] a__getitem__
+[PIL.ExifTags] u%s.__prepare__() must return a mapping, not %s
+[PIL.ExifTags] u<metaclass>
+[PIL.ExifTags] uPIL.ExifTags
+[PIL.ExifTags] a__qualname__
+[PIL.ExifTags] aInteropIndex
+[PIL.ExifTags] aProcessingSoftware
+[PIL.ExifTags] aNewSubfileType
+[PIL.ExifTags] aSubfileType
+[PIL.ExifTags] aImageWidth
+[PIL.ExifTags] aImageLength
+[PIL.ExifTags] aBitsPerSample
+[PIL.ExifTags] aCompression
+[PIL.ExifTags] aPhotometricInterpretation
+[PIL.ExifTags] aThresholding
+[PIL.ExifTags] aCellWidth
+[PIL.ExifTags] aCellLength
+[PIL.ExifTags] aFillOrder
+[PIL.ExifTags] aDocumentName
+[PIL.ExifTags] aImageDescription
+[PIL.ExifTags] aMake
+[PIL.ExifTags] aModel
+[PIL.ExifTags] aStripOffsets
+[PIL.ExifTags] aOrientation
+[PIL.ExifTags] aSamplesPerPixel
+[PIL.ExifTags] aRowsPerStrip
+[PIL.ExifTags] aStripByteCounts
+[PIL.ExifTags] aMinSampleValue
+[PIL.ExifTags] aMaxSampleValue
+[PIL.ExifTags] aXResolution
+[PIL.ExifTags] aYResolution
+[PIL.ExifTags] aPlanarConfiguration
+[PIL.ExifTags] aPageName
+[PIL.ExifTags] aFreeOffsets
+[PIL.ExifTags] aFreeByteCounts
+[PIL.ExifTags] aGrayResponseUnit
+[PIL.ExifTags] aGrayResponseCurve
+[PIL.ExifTags] aT4Options
+[PIL.ExifTags] aT6Options
+[PIL.ExifTags] aResolutionUnit
+[PIL.FliImagePlugin] ai16
+[PIL.FliImagePlugin] afp
+[PIL.FliImagePlugin] a_accept
+[PIL.FliImagePlugin] :l*lPnb&
+[PIL.FliImagePlugin] :lXnnb(
+[PIL.FliImagePlugin] unot an FLI/FLC file
+[PIL.FliImagePlugin] an_frames
+[PIL.FliImagePlugin] ais_animated
+[PIL.FliImagePlugin] wPa_mode
+[PIL.FliImagePlugin] a_size
+[PIL.FliImagePlugin] ai32
+[PIL.FliImagePlugin] lFainfo
+[PIL.FliImagePlugin] aduration
+[PIL.FliImagePlugin] a_FliImageFile__offset
+[PIL.FliImagePlugin] aseek
+[PIL.FliImagePlugin] wsl
+[PIL.FliImagePlugin] achunk_size
+[PIL.FliImagePlugin] aself
+[PIL.FliImagePlugin] aSEEK_CUR
+[PIL.FliImagePlugin] a_palette
+[PIL.FliImagePlugin] aImagePalette
+[PIL.FliImagePlugin] araw
+[PIL.FliImagePlugin] aRGB
+[PIL.FliImagePlugin] apalette
+[PIL.FliImagePlugin] a_FliImageFile__frame
+[PIL.FliImagePlugin] a_fp
+[PIL.FliImagePlugin] atell
+[PIL.FliImagePlugin] a_FliImageFile__rewind
+[PIL.FliImagePlugin] ao8
+[PIL.FliImagePlugin] u<genexpr>
+[PIL.FliImagePlugin] uFliImageFile._open.<locals>.<genexpr>
+[PIL.FliImagePlugin] wil
+[PIL.FliImagePlugin] ashift
+[PIL.FliImagePlugin] a_seek_check
+[PIL.FliImagePlugin] a_seek
+[PIL.FliImagePlugin] aDeferredError
+[PIL.FliImagePlugin] aex
+[PIL.FliImagePlugin] aload
+[PIL.FliImagePlugin] ucannot seek to frame 
+[PIL.FliImagePlugin] umissing frame size
+[PIL.FliImagePlugin] adecodermaxblock
+[PIL.FliImagePlugin] aImageFile
+[PIL.FliImagePlugin] a_Tile
+[PIL.FliImagePlugin] afli
+[PIL.FliImagePlugin] pasize
+[PIL.FliImagePlugin] atile
+[PIL.FliImagePlugin] aorigin
+[PIL.FliImagePlugin] ahas_location
+[PIL.FliImagePlugin] aannotations
+[PIL.FliImagePlugin] aos
+[PIL.FpxImagePlugin] astartswith
+[PIL.FpxImagePlugin] aolefile
+[PIL.FpxImagePlugin] aMAGIC
+[PIL.FpxImagePlugin] afp
+[PIL.FpxImagePlugin] aOleFileIO
+[PIL.FpxImagePlugin] aole
+[PIL.FpxImagePlugin] unot an FPX file; invalid OLE file
+[PIL.FpxImagePlugin] aroot
+[PIL.FpxImagePlugin] aclsid
+[PIL.FpxImagePlugin] u56616700-C154-11CE-8553-00AA00A1F95B
+[PIL.FpxImagePlugin] unot an FPX file; bad root CLSID
+[PIL.FpxImagePlugin] a_open_index
+[PIL.FpxImagePlugin] agetproperties
+[PIL.FpxImagePlugin] uData Object Store 
+[PIL.FpxImagePlugin] u06d
+[PIL.FpxImagePlugin] Image Contents
+[PIL.FpxImagePlugin] a_size
+[PIL.FpxImagePlugin] amax
+[PIL.FpxImagePlugin] asize
+[PIL.FpxImagePlugin] l@l
+[PIL.FpxImagePlugin] wiamaxid
+[PIL.FpxImagePlugin] ai32
+[PIL.FpxImagePlugin] uInvalid number of bands
+[PIL.FpxImagePlugin] abands
+[PIL.FpxImagePlugin] aMODES
+[PIL.FpxImagePlugin] a_mode
+[PIL.FpxImagePlugin] arawmode
+[PIL.FpxImagePlugin] ajpeg
+[PIL.FpxImagePlugin] aself
+[PIL.FpxImagePlugin] a_open_subimage
+[PIL.FpxImagePlugin] wsl
+[PIL.FpxImagePlugin] u<genexpr>
+[PIL.FpxImagePlugin] uFpxImageFile._open_index.<locals>.<genexpr>
+[PIL.FpxImagePlugin] uResolution 
+[PIL.FpxImagePlugin] u04d
+[PIL.FpxImagePlugin] uSubimage 0000 Header
+[PIL.FpxImagePlugin] aopenstream
+[PIL.FpxImagePlugin] l$l
+[PIL.FpxImagePlugin] l usubimage mismatch
+[PIL.FpxImagePlugin] aseek
+[PIL.FpxImagePlugin] atile
+[PIL.FpxImagePlugin] amin
+[PIL.FpxImagePlugin] wxaxtile
+[PIL.FpxImagePlugin] wyaytile
+[PIL.FpxImagePlugin] aappend
+[PIL.FpxImagePlugin] aImageFile
+[PIL.FpxImagePlugin] a_Tile
+[PIL.FpxImagePlugin] araw
+[PIL.FpxImagePlugin] afill
+[PIL.FpxImagePlugin] aRGBA
+[PIL.FtexImagePlugin] afp
+[PIL.FtexImagePlugin] a_accept
+[PIL.FtexImagePlugin] unot an FTEX file
+[PIL.FtexImagePlugin] astruct
+[PIL.FtexImagePlugin] aunpack
+[PIL.FtexImagePlugin] u<i
+[PIL.FtexImagePlugin] u<2i
+[PIL.FtexImagePlugin] a_size
+[PIL.FtexImagePlugin] aseek
+[PIL.FtexImagePlugin] aFormat
+[PIL.FtexImagePlugin] aDXT1
+[PIL.FtexImagePlugin] aRGBA
+[PIL.FtexImagePlugin] a_mode
+[PIL.FtexImagePlugin] aImageFile
+[PIL.FtexImagePlugin] a_Tile
+[PIL.FtexImagePlugin] abcn
+[PIL.FtexImagePlugin] pasize
+[PIL.FtexImagePlugin] atile
+[PIL.FtexImagePlugin] aUNCOMPRESSED
+[PIL.FtexImagePlugin] aRGB
+[PIL.FtexImagePlugin] araw
+[PIL.FtexImagePlugin] uInvalid texture compression format: 
+[PIL.FtexImagePlugin] aBytesIO
+[PIL.FtexImagePlugin] astartswith
+[PIL.FtexImagePlugin] aMAGIC
+[PIL.FtexImagePlugin] A Pillow loader for .ftc and .ftu files (FTEX)
+[PIL.FtexImagePlugin] Jerome Leclanche <jerome@leclan.ch>
+[PIL.FtexImagePlugin] The contents of this file are hereby released in the public domain (CC0)
+[PIL.FtexImagePlugin] Full text of the CC0 license:
+[PIL.FtexImagePlugin]   https://creativecommons.org/publicdomain/zero/1.0/
+[PIL.FtexImagePlugin] Independence War 2: Edge Of Chaos - Texture File Format - 16 October 2001
+[PIL.FtexImagePlugin] The textures used for 3D objects in Independence War 2: Edge Of Chaos are in a
+[PIL.FtexImagePlugin] packed custom format called FTEX. This file format uses file extensions FTC
+[PIL.FtexImagePlugin] and FTU.
+[PIL.FtexImagePlugin] * FTC files are compressed textures (using standard texture compression).
+[PIL.FtexImagePlugin] * FTU files are not compressed.
+[PIL.FtexImagePlugin] Texture File Format
+[PIL.FtexImagePlugin] The FTC and FTU texture files both use the same format. This
+[PIL.FtexImagePlugin] has the following structure:
+[PIL.FtexImagePlugin] {header}
+[PIL.FtexImagePlugin] {format_directory}
+[PIL.FtexImagePlugin] {data}
+[PIL.FtexImagePlugin] Where:
+[PIL.FtexImagePlugin] {header} = {
+[PIL.FtexImagePlugin]     u32:magic,
+[PIL.FtexImagePlugin]     u32:version,
+[PIL.FtexImagePlugin]     u32:width,
+[PIL.FtexImagePlugin]     u32:height,
+[PIL.FtexImagePlugin]     u32:mipmap_count,
+[PIL.FtexImagePlugin]     u32:format_count
+[PIL.GbrImagePlugin] ai32
+[PIL.GbrImagePlugin] afp
+[PIL.GbrImagePlugin] unot a GIMP brush
+[PIL.GbrImagePlugin] uUnsupported GIMP brush version: 
+[PIL.GbrImagePlugin] uUnsupported GIMP brush color depth: 
+[PIL.GbrImagePlugin] cGIMP
+[PIL.GbrImagePlugin] unot a GIMP brush, bad magic number
+[PIL.GbrImagePlugin] ainfo
+[PIL.GbrImagePlugin] aspacing
+[PIL.GbrImagePlugin] :nq
+[PIL.GbrImagePlugin] nacomment
+[PIL.GbrImagePlugin] wLa_mode
+[PIL.GbrImagePlugin] aRGBA
+[PIL.GbrImagePlugin] a_size
+[PIL.GbrImagePlugin] aImage
+[PIL.GbrImagePlugin] a_decompression_bomb_check
+[PIL.GbrImagePlugin] asize
+[PIL.GbrImagePlugin] a_data_size
+[PIL.GbrImagePlugin] a_im
+[PIL.GbrImagePlugin] acore
+[PIL.GbrImagePlugin] anew
+[PIL.GbrImagePlugin] amode
+[PIL.GbrImagePlugin] aim
+[PIL.GbrImagePlugin] afrombytes
+[PIL.GbrImagePlugin] aload
+[PIL.GbrImagePlugin] aorigin
+[PIL.GbrImagePlugin] ahas_location
+[PIL.GbrImagePlugin] aannotations
+[PIL.GbrImagePlugin] aImage
+[PIL.GbrImagePlugin] aImageFile
+[PIL.GbrImagePlugin] aImageFile
+[PIL.GbrImagePlugin] a_binary
+[PIL.GbrImagePlugin] ai32be
+[PIL.GbrImagePlugin] ai32be
+[PIL.GbrImagePlugin] aprefix
+[PIL.GbrImagePlugin] areturn
+[PIL.GbrImagePlugin] abytes
+[PIL.GbrImagePlugin] abool
+[PIL.GbrImagePlugin] a_accept
+[PIL.GbrImagePlugin] a__prepare__
+[PIL.GbrImagePlugin] aGbrImageFile
+[PIL.GbrImagePlugin] a__getitem__
+[PIL.GbrImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.GbrImagePlugin] u<metaclass>
+[PIL.GbrImagePlugin] uPIL.GbrImagePlugin
+[PIL.GbrImagePlugin] a__qualname__
+[PIL.GbrImagePlugin] aGBR
+[PIL.GbrImagePlugin] uGIMP brush file
+[PIL.GbrImagePlugin] aformat_description
+[PIL.GbrImagePlugin] areturn
+[PIL.GifImagePlugin] astartswith
+[PIL.GifImagePlugin] cGIF87a
+[PIL.GifImagePlugin] cGIF89a
+[PIL.GifImagePlugin] afp
+[PIL.GifImagePlugin] a_accept
+[PIL.GifImagePlugin] unot a GIF file
+[PIL.GifImagePlugin] :nl
+[PIL.GifImagePlugin] nainfo
+[PIL.GifImagePlugin] aversion
+[PIL.GifImagePlugin] ai16
+[PIL.GifImagePlugin] a_size
+[PIL.GifImagePlugin] abackground
+[PIL.GifImagePlugin] a_is_palette_needed
+[PIL.GifImagePlugin] aImagePalette
+[PIL.GifImagePlugin] araw
+[PIL.GifImagePlugin] aRGB
+[PIL.GifImagePlugin] aglobal_palette
+[PIL.GifImagePlugin] apalette
+[PIL.GifImagePlugin] a_fp
+[PIL.GifImagePlugin] atell
+[PIL.GifImagePlugin] a_GifImageFile__rewind
+[PIL.GifImagePlugin] a_n_frames
+[PIL.GifImagePlugin] a_seek
+[PIL.GifImagePlugin] aself
+[PIL.GifImagePlugin] aseek
+[PIL.GifImagePlugin] Fa_seek_check
+[PIL.GifImagePlugin] a_GifImageFile__frame
+[PIL.GifImagePlugin] a_im
+[PIL.GifImagePlugin] uno more images in GIF file
+[PIL.GifImagePlugin] aDeferredError
+[PIL.GifImagePlugin] aex
+[PIL.GifImagePlugin] a_GifImageFile__offset
+[PIL.GifImagePlugin] adispose
+[PIL.GifImagePlugin] adisposal_method
+[PIL.GifImagePlugin] acomment
+[PIL.GifImagePlugin] atile
+[PIL.GifImagePlugin] aload
+[PIL.GifImagePlugin] ucannot seek to frame 
+[PIL.GifImagePlugin] adata
+[PIL.GifImagePlugin] d;wsd!l
+[PIL.GifImagePlugin] aduration
+[PIL.GifImagePlugin] ablock
+[PIL.GifImagePlugin] aextension
+[PIL.GifImagePlugin] cNETSCAPE2.0
+[PIL.GifImagePlugin] aloop
+[PIL.GifImagePlugin] d,T
+[PIL.GifImagePlugin] asize
+[PIL.GifImagePlugin] amax
+[PIL.GifImagePlugin] aImage
+[PIL.GifImagePlugin] a_decompression_bomb_check
+[PIL.GimpGradientFile] aEPSILON
+[PIL.GimpGradientFile] ?alog
+[PIL.GimpGradientFile] ?amax
+[PIL.GimpGradientFile] asin
+[PIL.GimpGradientFile] api
+[PIL.GimpGradientFile] @alinear
+[PIL.GimpGradientFile] asqrt
+[PIL.GimpGradientFile] agradient
+[PIL.GimpGradientFile] aentries
+[PIL.GimpGradientFile] ax1
+[PIL.GimpGradientFile] aix
+[PIL.GimpGradientFile] aself
+[PIL.GimpGradientFile] ax0
+[PIL.GimpGradientFile] asegment
+[PIL.GimpGradientFile] ?axm
+[PIL.GimpGradientFile] ao8
+[PIL.GimpGradientFile] argb1
+[PIL.GimpGradientFile] argb0
+[PIL.GimpGradientFile] apalette
+[PIL.GimpGradientFile] aRGBA
+[PIL.GimpGradientFile] areadline
+[PIL.GimpGradientFile] astartswith
+[PIL.GimpGradientFile] cGIMP Gradient
+[PIL.GimpGradientFile] unot a GIMP gradient file
+[PIL.GimpGradientFile] cName: 
+[PIL.GimpGradientFile] astrip
+[PIL.GimpGradientFile] aline
+[PIL.GimpGradientFile] afp
+[PIL.GimpGradientFile] asplit
+[PIL.GimpGradientFile] :nl
+[PIL.GimpGradientFile] n:l
+[PIL.GimpGradientFile] n:l
+[PIL.GimpGradientFile] naSEGMENTS
+[PIL.GimpGradientFile] ucannot handle HSV colour space
+[PIL.GimpGradientFile] aappend
+[PIL.GimpGradientFile] Stuff to translate curve segments to palette values (derived from
+[PIL.GimpGradientFile] the corresponding code in GIMP, written by Federico Mena Quintero.
+[PIL.GimpGradientFile] See the GIMP distribution for more information.)
+[PIL.GimpGradientFile] aorigin
+[PIL.GimpGradientFile] ahas_location
+[PIL.GimpGradientFile] aannotations
+[PIL.GimpGradientFile] amath
+[PIL.GimpGradientFile] alog
+[PIL.GimpGradientFile] api
+[PIL.GimpGradientFile] asin
+[PIL.GimpGradientFile] asqrt
+[PIL.GimpGradientFile] a_binary
+[PIL.GimpGradientFile] ao8
+[PIL.GimpGradientFile] aTYPE_CHECKING
+[PIL.GimpGradientFile] amiddle
+[PIL.GimpPaletteFile] areadline
+[PIL.GimpPaletteFile] astartswith
+[PIL.GimpPaletteFile] cGIMP Palette
+[PIL.GimpPaletteFile] unot a GIMP palette file
+[PIL.GimpPaletteFile] wiafp
+[PIL.GimpPaletteFile] are
+[PIL.GimpPaletteFile] amatch
+[PIL.GimpPaletteFile] c\w+:|#
+[PIL.GimpPaletteFile] ubad palette file
+[PIL.GimpPaletteFile] asplit
+[PIL.GimpPaletteFile] amaxsplit
+[PIL.GimpPaletteFile] ubad palette entry
+[PIL.GimpPaletteFile] apalette
+[PIL.GimpPaletteFile] wvu<genexpr>
+[PIL.GimpPaletteFile] uGimpPaletteFile._read.<locals>.<genexpr>
+[PIL.GimpPaletteFile] a_read
+[PIL.GimpPaletteFile] a__new__
+[PIL.GimpPaletteFile] aBytesIO
+[PIL.GimpPaletteFile] arawmode
+[PIL.GimpPaletteFile] aorigin
+[PIL.GimpPaletteFile] ahas_location
+[PIL.GimpPaletteFile] aannotations
+[PIL.GimpPaletteFile] aTYPE_CHECKING
+[PIL.GimpPaletteFile] uPIL.GimpPaletteFile
+[PIL.GimpPaletteFile] uFile handler for GIMP's palette format.
+[PIL.GimpPaletteFile] aGimpPaletteFile
+[PIL.GimpPaletteFile] a__qualname__
+[PIL.GimpPaletteFile] aRGB
+[PIL.GimpPaletteFile] afp
+[PIL.GimpPaletteFile] alimit
+[PIL.GimpPaletteFile] areturn
+[PIL.GimpPaletteFile] uIO[bytes]
+[PIL.GimpPaletteFile] abool
+[PIL.GimpPaletteFile] aNone
+[PIL.GimpPaletteFile] uGimpPaletteFile._read
+[PIL.GimpPaletteFile] afp
+[PIL.GimpPaletteFile] areturn
+[PIL.GimpPaletteFile] uIO[bytes]
+[PIL.GimpPaletteFile] aNone
+[PIL.GimpPaletteFile] uGimpPaletteFile.__init__
+[PIL.GimpPaletteFile] adata
+[PIL.GimpPaletteFile] areturn
+[PIL.GimpPaletteFile] abytes
+[PIL.GimpPaletteFile] aGimpPaletteFile
+[PIL.GimpPaletteFile] afrombytes
+[PIL.GimpPaletteFile] uGimpPaletteFile.frombytes
+[PIL.GimpPaletteFile] areturn
+[PIL.GimpPaletteFile] utuple[bytes, str]
+[PIL.GimpPaletteFile] agetpalette
+[PIL.GimpPaletteFile] uGimpPaletteFile.getpalette
+[PIL.GribStubImagePlugin] a_handler
+[PIL.GribStubImagePlugin]     Install application-specific GRIB image handler.
+[PIL.GribStubImagePlugin]     :param handler: Handler object.
+[PIL.GribStubImagePlugin]     
+[PIL.GribStubImagePlugin] astartswith
+[PIL.GribStubImagePlugin] cGRIB
+[PIL.GribStubImagePlugin] afp
+[PIL.GribStubImagePlugin] a_accept
+[PIL.GribStubImagePlugin] uNot a GRIB file
+[PIL.GribStubImagePlugin] aseek
+[PIL.GribStubImagePlugin] aSEEK_CUR
+[PIL.GribStubImagePlugin] wFa_mode
+[PIL.GribStubImagePlugin] pa_size
+[PIL.GribStubImagePlugin] a_load
+[PIL.GribStubImagePlugin] asave
+[PIL.GribStubImagePlugin] uGRIB save handler not installed
+[PIL.GribStubImagePlugin] aorigin
+[PIL.GribStubImagePlugin] ahas_location
+[PIL.GribStubImagePlugin] aannotations
+[PIL.GribStubImagePlugin] aos
+[PIL.GribStubImagePlugin] aIO
+[PIL.GribStubImagePlugin] aImage
+[PIL.GribStubImagePlugin] aImageFile
+[PIL.GribStubImagePlugin] aImage
+[PIL.GribStubImagePlugin] aImageFile
+[PIL.GribStubImagePlugin] ahandler
+[PIL.GribStubImagePlugin] areturn
+[PIL.GribStubImagePlugin] uImageFile.StubHandler | None
+[PIL.GribStubImagePlugin] aNone
+[PIL.GribStubImagePlugin] aregister_handler
+[PIL.GribStubImagePlugin] aprefix
+[PIL.GribStubImagePlugin] areturn
+[PIL.GribStubImagePlugin] abytes
+[PIL.GribStubImagePlugin] abool
+[PIL.GribStubImagePlugin] aStubImageFile
+[PIL.GribStubImagePlugin] a__prepare__
+[PIL.GribStubImagePlugin] aGribStubImageFile
+[PIL.GribStubImagePlugin] a__getitem__
+[PIL.GribStubImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.GribStubImagePlugin] u<metaclass>
+[PIL.GribStubImagePlugin] uPIL.GribStubImagePlugin
+[PIL.GribStubImagePlugin] a__qualname__
+[PIL.GribStubImagePlugin] aGRIB
+[PIL.GribStubImagePlugin] aformat_description
+[PIL.GribStubImagePlugin] areturn
+[PIL.GribStubImagePlugin] aNone
+[PIL.GribStubImagePlugin] a_open
+[PIL.GribStubImagePlugin] uGribStubImageFile._open
+[PIL.GribStubImagePlugin] areturn
+[PIL.GribStubImagePlugin] uImageFile.StubHandler | None
+[PIL.Hdf5StubImagePlugin] a_handler
+[PIL.Hdf5StubImagePlugin]     Install application-specific HDF5 image handler.
+[PIL.Hdf5StubImagePlugin]     :param handler: Handler object.
+[PIL.Hdf5StubImagePlugin]     
+[PIL.Hdf5StubImagePlugin] astartswith
+[PIL.Hdf5StubImagePlugin] HDF
+[PIL.Hdf5StubImagePlugin] afp
+[PIL.Hdf5StubImagePlugin] a_accept
+[PIL.Hdf5StubImagePlugin] uNot an HDF file
+[PIL.Hdf5StubImagePlugin] aseek
+[PIL.Hdf5StubImagePlugin] aSEEK_CUR
+[PIL.Hdf5StubImagePlugin] wFa_mode
+[PIL.Hdf5StubImagePlugin] pa_size
+[PIL.Hdf5StubImagePlugin] a_load
+[PIL.Hdf5StubImagePlugin] asave
+[PIL.Hdf5StubImagePlugin] uHDF5 save handler not installed
+[PIL.Hdf5StubImagePlugin] aorigin
+[PIL.Hdf5StubImagePlugin] ahas_location
+[PIL.Hdf5StubImagePlugin] aannotations
+[PIL.Hdf5StubImagePlugin] aos
+[PIL.Hdf5StubImagePlugin] aIO
+[PIL.Hdf5StubImagePlugin] aImage
+[PIL.Hdf5StubImagePlugin] aImageFile
+[PIL.Hdf5StubImagePlugin] aImage
+[PIL.Hdf5StubImagePlugin] aImageFile
+[PIL.Hdf5StubImagePlugin] ahandler
+[PIL.Hdf5StubImagePlugin] areturn
+[PIL.Hdf5StubImagePlugin] uImageFile.StubHandler | None
+[PIL.Hdf5StubImagePlugin] aNone
+[PIL.Hdf5StubImagePlugin] aregister_handler
+[PIL.Hdf5StubImagePlugin] aprefix
+[PIL.Hdf5StubImagePlugin] areturn
+[PIL.Hdf5StubImagePlugin] abytes
+[PIL.Hdf5StubImagePlugin] abool
+[PIL.Hdf5StubImagePlugin] aStubImageFile
+[PIL.Hdf5StubImagePlugin] a__prepare__
+[PIL.Hdf5StubImagePlugin] aHDF5StubImageFile
+[PIL.Hdf5StubImagePlugin] a__getitem__
+[PIL.Hdf5StubImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.Hdf5StubImagePlugin] u<metaclass>
+[PIL.Hdf5StubImagePlugin] uPIL.Hdf5StubImagePlugin
+[PIL.Hdf5StubImagePlugin] a__qualname__
+[PIL.Hdf5StubImagePlugin] aHDF5
+[PIL.Hdf5StubImagePlugin] aformat_description
+[PIL.Hdf5StubImagePlugin] areturn
+[PIL.Hdf5StubImagePlugin] aNone
+[PIL.Hdf5StubImagePlugin] a_open
+[PIL.Hdf5StubImagePlugin] uHDF5StubImageFile._open
+[PIL.Hdf5StubImagePlugin] areturn
+[PIL.Hdf5StubImagePlugin] uImageFile.StubHandler | None
+[PIL.IcnsImagePlugin] astruct
+[PIL.IcnsImagePlugin] aunpack
+[PIL.IcnsImagePlugin] u>4sI
+[PIL.IcnsImagePlugin] aHEADERSIZE
+[PIL.IcnsImagePlugin] aseek
+[PIL.IcnsImagePlugin] uUnknown signature, expecting 0x00000000
+[PIL.IcnsImagePlugin] aread_32
+[PIL.IcnsImagePlugin] aImage
+[PIL.IcnsImagePlugin] afrombuffer
+[PIL.IcnsImagePlugin] aRGB
+[PIL.IcnsImagePlugin] araw
+[PIL.IcnsImagePlugin] anew
+[PIL.IcnsImagePlugin] asizesq
+[PIL.IcnsImagePlugin] abytesleft
+[PIL.IcnsImagePlugin] afobj
+[PIL.IcnsImagePlugin] l}adata
+[PIL.IcnsImagePlugin] aappend
+[PIL.IcnsImagePlugin] abyte
+[PIL.IcnsImagePlugin] ablocksize
+[PIL.IcnsImagePlugin] uError reading channel [
+[PIL.IcnsImagePlugin] u left]
+[PIL.IcnsImagePlugin] wLapixel_size
+[PIL.IcnsImagePlugin] aim
+[PIL.IcnsImagePlugin] aputband
+[PIL.IcnsImagePlugin]     Read a 32bit RGB icon resource.  Seems to be either uncompressed or
+[PIL.IcnsImagePlugin]     an RLE packbits-like scheme.
+[PIL.IcnsImagePlugin]     
+[PIL.IcnsImagePlugin] wAT
+[PIL.IcnsImagePlugin] astartswith
+[PIL.IcnsImagePlugin] PNG
+[PIL.IcnsImagePlugin] aPngImagePlugin
+[PIL.IcnsImagePlugin] aPngImageFile
+[PIL.IcnsImagePlugin] a_decompression_bomb_check
+[PIL.IcnsImagePlugin] asize
+[PIL.IcnsImagePlugin] aRGBA
+[PIL.IcnsImagePlugin] jP  
+[PIL.IcnsImagePlugin] aenable_jpeg2k
+[PIL.IcnsImagePlugin] uUnsupported icon subimage format (rebuild PIL with JPEG 2000 support to fix this)
+[PIL.IcnsImagePlugin] aBytesIO
+[PIL.IcnsImagePlugin] aJpeg2KImagePlugin
+[PIL.IcnsImagePlugin] aJpeg2KImageFile
+[PIL.IcnsImagePlugin] amode
+[PIL.IcnsImagePlugin] aconvert
+[PIL.IcnsImagePlugin] aRGBA
+[PIL.IcnsImagePlugin] uUnsupported icon subimage format
+[PIL.IcnsImagePlugin] adct
+[PIL.IcnsImagePlugin] anextheader
+[PIL.IcnsImagePlugin] a_accept
+[PIL.IcnsImagePlugin] unot an icns file
+[PIL.IcnsImagePlugin] wiuinvalid block header
+[PIL.IcoImagePlugin] awrite
+[PIL.IcoImagePlugin] a_MAGIC
+[PIL.IcoImagePlugin] aencoderinfo
+[PIL.IcoImagePlugin] abitmap_format
+[PIL.IcoImagePlugin] abmp
+[PIL.IcoImagePlugin] asizes
+[PIL.IcoImagePlugin] l pT
+[PIL.IcoImagePlugin] l0pT
+[PIL.IcoImagePlugin] l@pT
+[PIL.IcoImagePlugin] paappend_images
+[PIL.IcoImagePlugin] asize
+[PIL.IcoImagePlugin] asorted
+[PIL.IcoImagePlugin] aprovided_ims
+[PIL.IcoImagePlugin] aframes
+[PIL.IcoImagePlugin] aappend
+[PIL.IcoImagePlugin] aBmpImagePlugin
+[PIL.IcoImagePlugin] aSAVE
+[PIL.IcoImagePlugin] amode
+[PIL.IcoImagePlugin] abits_used
+[PIL.IcoImagePlugin] aprovided_im
+[PIL.IcoImagePlugin] acopy
+[PIL.IcoImagePlugin] athumbnail
+[PIL.IcoImagePlugin] aImage
+[PIL.IcoImagePlugin] aResampling
+[PIL.IcoImagePlugin] aLANCZOS
+[PIL.IcoImagePlugin] areducing_gap
+[PIL.IcoImagePlugin] nao16
+[PIL.IcoImagePlugin] atell
+[PIL.IcoImagePlugin] afp
+[PIL.IcoImagePlugin] ao8
+[PIL.IcoImagePlugin] nnT
+[PIL.IcoImagePlugin] l l
+[PIL.IcoImagePlugin] aBytesIO
+[PIL.IcoImagePlugin] asave
+[PIL.IcoImagePlugin] adib
+[PIL.IcoImagePlugin] l anew
+[PIL.IcoImagePlugin] w1aImageFile
+[PIL.IcoImagePlugin] a_save
+[PIL.IcoImagePlugin] a_Tile
+[PIL.IcoImagePlugin] araw
+[PIL.IcoImagePlugin] w1l
+[PIL.IcoImagePlugin] apng
+[PIL.IcoImagePlugin] aseek
+[PIL.IcoImagePlugin] :nl
+[PIL.IcoImagePlugin] nao32
+[PIL.IcoImagePlugin] nnaoffset
+[PIL.IcoImagePlugin] astartswith
+[PIL.IcoImagePlugin] a_accept
+[PIL.IcoImagePlugin] unot an ICO file
+[PIL.IcoImagePlugin] abuf
+[PIL.ImImagePlugin] afp
+[PIL.ImImagePlugin] ldunot an IM file
+[PIL.ImImagePlugin] aseek
+[PIL.ImImagePlugin] wLainfo
+[PIL.ImImagePlugin] aMODE
+[PIL.ImImagePlugin] aSIZE
+[PIL.ImImagePlugin] aFRAMES
+[PIL.ImImagePlugin] arawmode
+[PIL.ImImagePlugin] aself
+[PIL.ImImagePlugin] areadline
+[PIL.ImImagePlugin] aendswith
+[PIL.ImImagePlugin] :nq
+[PIL.ImImagePlugin] :nq
+[PIL.ImImagePlugin] nasplit
+[PIL.ImImagePlugin] amatch
+[PIL.ImImagePlugin] wsare
+[PIL.ImImagePlugin] aerror
+[PIL.ImImagePlugin] agroup
+[PIL.ImImagePlugin] adecode
+[PIL.ImImagePlugin] ulatin-1
+[PIL.ImImagePlugin] areplace
+[PIL.ImImagePlugin] aSCALE
+[PIL.ImImagePlugin] areplace
+[PIL.ImImagePlugin] w*w,anumber
+[PIL.ImImagePlugin] w,aOPEN
+[PIL.ImImagePlugin] aCOMMENT
+[PIL.ImImagePlugin] aappend
+[PIL.ImImagePlugin] wvaTAGS
+[PIL.ImImagePlugin] wnuSyntax error in IM header: 
+[PIL.ImImagePlugin] aascii
+[PIL.ImImagePlugin] areplace
+[PIL.ImImagePlugin] uNot an IM file
+[PIL.ImImagePlugin] a_size
+[PIL.ImImagePlugin] a_mode
+[PIL.ImImagePlugin] astartswith
+[PIL.ImImagePlugin] uFile truncated
+[PIL.ImImagePlugin] aLUT
+[PIL.ImImagePlugin] amode
+[PIL.ImImagePlugin] wLaLA
+[PIL.ImImagePlugin] wPaPA
+[PIL.ImImagePlugin] agreyscale
+[PIL.ImImagePlugin] alinear
+[PIL.ImImagePlugin] :nl
+[PIL.ImImagePlugin] nalut
+[PIL.ImImagePlugin] wLwPwPT
+[PIL.ImImagePlugin] aLA
+[PIL.ImImagePlugin] aPA
+[PIL.ImImagePlugin] aPA
+[PIL.ImImagePlugin] uPA;L
+[PIL.ImImagePlugin] aImagePalette
+[PIL.Image] aImageMode
+[PIL.Image] agetmode
+[PIL.Image] amode
+[PIL.Image] aheight
+[PIL.Image] awidth
+[PIL.Image] abands
+[PIL.Image] atypestr
+[PIL.Image] abasemode
+[PIL.Image]     Gets the "base" mode for given mode.  This function returns "L" for
+[PIL.Image]     images that contain grayscale data, and "RGB" for images that
+[PIL.Image]     contain color data.
+[PIL.Image]     :param mode: Input mode.
+[PIL.Image]     :returns: "L" or "RGB".
+[PIL.Image]     :exception KeyError: If the input mode was not a standard mode.
+[PIL.Image]     
+[PIL.Image] abasetype
+[PIL.Image]     Gets the storage type mode.  Given a mode, this function returns a
+[PIL.Image]     single-layer mode suitable for storing individual bands.
+[PIL.Image]     :param mode: Input mode.
+[PIL.Image]     :returns: "L", "I", or "F".
+[PIL.Image]     :exception KeyError: If the input mode was not a standard mode.
+[PIL.Image]     
+[PIL.Image]     Gets a list of individual band names.  Given a mode, this function returns
+[PIL.Image]     a tuple containing the names of individual bands (use
+[PIL.Image]     :py:method:`~PIL.Image.getmodetype` to get the mode used to store each
+[PIL.Image]     individual band.
+[PIL.Image]     :param mode: Input mode.
+[PIL.Image]     :returns: A tuple containing band names.  The length of the tuple
+[PIL.Image]         gives the number of bands in an image of the given mode.
+[PIL.Image]     :exception KeyError: If the input mode was not a standard mode.
+[PIL.Image]     
+[PIL.Image]     Gets the number of individual bands for this mode.
+[PIL.Image]     :param mode: Input mode.
+[PIL.Image]     :returns: The number of bands in this mode.
+[PIL.Image]     :exception KeyError: If the input mode was not a standard mode.
+[PIL.Image]     
+[PIL.Image] a_initialized
+[PIL.Image] aBmpImagePlugin
+[PIL.Image] aBmpImagePlugin
+[PIL.Image] aGifImagePlugin
+[PIL.Image] aGifImagePlugin
+[PIL.Image] aJpegImagePlugin
+[PIL.Image] aJpegImagePlugin
+[PIL.Image] aPpmImagePlugin
+[PIL.Image] aPpmImagePlugin
+[PIL.Image] aPngImagePlugin
+[PIL.Image] aPngImagePlugin
+[PIL.Image]     Explicitly loads BMP, GIF, JPEG, PPM and PPM file format drivers.
+[PIL.Image]     It is called when opening or saving images.
+[PIL.Image]     
+[PIL.ImageChops] aImage
+[PIL.ImageChops] anew
+[PIL.ImageChops] wLasize
+[PIL.ImageChops] uFill a channel with a given gray level.
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] acopy
+[PIL.ImageChops] uCopy a channel. Alias for :py:meth:`PIL.Image.Image.copy`.
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] aload
+[PIL.ImageChops] a_new
+[PIL.ImageChops] aim
+[PIL.ImageChops] achop_invert
+[PIL.ImageChops]     Invert an image (channel). ::
+[PIL.ImageChops]         out = MAX - image
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] achop_lighter
+[PIL.ImageChops]     Compares the two images, pixel by pixel, and returns a new image containing
+[PIL.ImageChops]     the lighter values. ::
+[PIL.ImageChops]         out = max(image1, image2)
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] achop_darker
+[PIL.ImageChops]     Compares the two images, pixel by pixel, and returns a new image containing
+[PIL.ImageChops]     the darker values. ::
+[PIL.ImageChops]         out = min(image1, image2)
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] achop_difference
+[PIL.ImageChops]     Returns the absolute value of the pixel-by-pixel difference between the two
+[PIL.ImageChops]     images. ::
+[PIL.ImageChops]         out = abs(image1 - image2)
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] achop_multiply
+[PIL.ImageChops]     Superimposes two images on top of each other.
+[PIL.ImageChops]     If you multiply an image with a solid black image, the result is black. If
+[PIL.ImageChops]     you multiply with a solid white image, the image is unaffected. ::
+[PIL.ImageChops]         out = image1 * image2 / MAX
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] achop_screen
+[PIL.ImageChops]     Superimposes two inverted images on top of each other. ::
+[PIL.ImageChops]         out = MAX - ((MAX - image1) * (MAX - image2) / MAX)
+[PIL.ImageChops]     :rtype: :py:class:`~PIL.Image.Image`
+[PIL.ImageChops]     
+[PIL.ImageChops] achop_soft_light
+[PIL.ImageChops]     Superimposes two images on top of each other using the Soft Light algorithm
+[PIL.ImageCms] aFlags
+[PIL.ImageCms] aNONE
+[PIL.ImageCms]         Fine-tune control over number of gridpoints
+[PIL.ImageCms]         :param n: :py:class:`int` in range ``0 <= n <= 255``
+[PIL.ImageCms]         
+[PIL.ImageCms] afilename
+[PIL.ImageCms] aencode
+[PIL.ImageCms] adecode
+[PIL.ImageCms] aascii
+[PIL.ImageCms] acore
+[PIL.ImageCms] aprofile_frombytes
+[PIL.ImageCms] aprofile
+[PIL.ImageCms] nnnaprofile_open
+[PIL.ImageCms] aCmsProfile
+[PIL.ImageCms] uInvalid type for Profile
+[PIL.ImageCms]         :param profile: Either a string representing a filename,
+[PIL.ImageCms]             a file like object containing a profile or a
+[PIL.ImageCms]             low-level profile object
+[PIL.ImageCms]         
+[PIL.ImageCms] aproduct_name
+[PIL.ImageCms] aproduct_info
+[PIL.ImageCms] adeprecate
+[PIL.ImageCms] uImageCms.ImageCmsProfile.
+[PIL.ImageCms] w'u' object has no attribute '
+[PIL.ImageCms] aprofile_tobytes
+[PIL.ImageCms]         Returns the profile in a format suitable for embedding in
+[PIL.ImageCms]         saved images.
+[PIL.ImageCms]         :returns: a bytes object containing the ICC profile.
+[PIL.ImageCms]         
+[PIL.ImageCms] abuildTransform
+[PIL.ImageCms] atransform
+[PIL.ImageCms] abuildProofTransform
+[PIL.ImageCms] ainput_mode
+[PIL.ImageCms] ainputMode
+[PIL.ImageCms] aoutput_mode
+[PIL.ImageCms] aoutputMode
+[PIL.ImageCms] aoutput_profile
+[PIL.ImageCms] aapply
+[PIL.ImageCms] aImage
+[PIL.ImageCms] anew
+[PIL.ImageCms] asize
+[PIL.ImageCms] agetim
+[PIL.ImageCms] atobytes
+[PIL.ImageCms] ainfo
+[PIL.ImageCms] aicc_profile
+[PIL.ImageCms] amode
+[PIL.ImageCms] umode mismatch
+[PIL.ImageCms] aImageWin
+[PIL.ImageCms] aImageWin
+[PIL.ImageCms] aHDC
+[PIL.ImageColor] ucolor specifier is too long
+[PIL.ImageColor] acolormap
+[PIL.ImageColor] agetrgb
+[PIL.ImageColor] are
+[PIL.ImageColor] amatch
+[PIL.ImageColor] u#[a-f0-9]{3}$
+[PIL.ImageColor] u#[a-f0-9]{4}$
+[PIL.ImageColor] u#[a-f0-9]{6}$
+[PIL.ImageColor] n:l
+[PIL.ImageColor] n:l
+[PIL.ImageColor] nu#[a-f0-9]{8}$
+[PIL.ImageColor] nurgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$
+[PIL.ImageColor] agroup
+[PIL.ImageColor] urgb\(\s*(\d+)%\s*,\s*(\d+)%\s*,\s*(\d+)%\s*\)$
+[PIL.ImageColor] Y@f
+[PIL.ImageColor] ?uhsl\(\s*(\d+\.?\d*)\s*,\s*(\d+\.?\d*)%\s*,\s*(\d+\.?\d*)%\s*\)$
+[PIL.ImageColor] acolorsys
+[PIL.ImageColor] ahls_to_rgb
+[PIL.ImageColor] ahls_to_rgb
+[PIL.ImageColor] v@uhs[bv]\(\s*(\d+\.?\d*)\s*,\s*(\d+\.?\d*)%\s*,\s*(\d+\.?\d*)%\s*\)$
+[PIL.ImageColor] ahsv_to_rgb
+[PIL.ImageColor] ahsv_to_rgb
+[PIL.ImageColor] urgba\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$
+[PIL.ImageColor] uunknown color specifier: 
+[PIL.ImageColor]      Convert a color string to an RGB or RGBA tuple. If the string cannot be
+[PIL.ImageColor]      parsed, this function raises a :py:exc:`ValueError` exception.
+[PIL.ImageColor]     .. versionadded:: 1.1.4
+[PIL.ImageColor]     :param color: A color string
+[PIL.ImageColor]     :return: ``(red, green, blue[, alpha])``
+[PIL.ImageColor]     
+[PIL.ImageColor] :nl
+[PIL.ImageColor] naHSV
+[PIL.ImageColor] argb_to_hsv
+[PIL.ImageColor] argb_to_hsv
+[PIL.ImageColor] argb
+[PIL.ImageColor] aImage
+[PIL.ImageColor] agetmodebase
+[PIL.ImageColor] wLl
+[PIL.ImageColor] wAu
+[PIL.ImageColor]     Same as :py:func:`~PIL.ImageColor.getrgb` for most modes. However, if
+[PIL.ImageColor]     ``mode`` is HSV, converts the RGB value to a HSV value, or if ``mode`` is
+[PIL.ImageColor]     not color or a palette image, converts the RGB value to a grayscale value.
+[PIL.ImageColor]     If the string cannot be parsed, this function raises a :py:exc:`ValueError`
+[PIL.ImageColor]     exception.
+[PIL.ImageColor]     .. versionadded:: 1.1.4
+[PIL.ImageColor]     :param color: A color string
+[PIL.ImageColor]     :param mode: Convert result to this mode
+[PIL.ImageColor]     :return: ``graylevel, (graylevel, alpha) or (red, green, blue[, alpha])``
+[PIL.ImageColor]     
+[PIL.ImageColor] aorigin
+[PIL.ImageDraw] a_ensure_mutable
+[PIL.ImageDraw] amode
+[PIL.ImageDraw] aRGBA
+[PIL.ImageDraw] aRGB
+[PIL.ImageDraw] umode mismatch
+[PIL.ImageDraw] wPapalette
+[PIL.ImageDraw] a_image
+[PIL.ImageDraw] aim
+[PIL.ImageDraw] aImage
+[PIL.ImageDraw] acore
+[PIL.ImageDraw] adraw
+[PIL.ImageDraw] wIwFadraw_ink
+[PIL.ImageDraw] aink
+[PIL.ImageDraw] w1wPwIwFw1afontmode
+[PIL.ImageDraw] wLafill
+[PIL.ImageDraw]         Create a drawing instance.
+[PIL.ImageDraw]         :param im: The image to draw in.
+[PIL.ImageDraw]         :param mode: Optional mode to use for color values.  For RGB
+[PIL.ImageDraw]            images, this argument can be RGB or RGBA (to blend the
+[PIL.ImageDraw]            drawing into the image).  For all other modes, this argument
+[PIL.ImageDraw]            must be the same as the image mode.  If omitted, the mode
+[PIL.ImageDraw]            defaults to the mode of the image.
+[PIL.ImageDraw]         
+[PIL.ImageDraw] afont
+[PIL.ImageDraw] aImageFont
+[PIL.ImageDraw] aImageFont
+[PIL.ImageDraw] aload_default
+[PIL.ImageDraw]         Get the current default font.
+[PIL.ImageDraw]         To set the default font for this ImageDraw instance::
+[PIL.ImageDraw]             from PIL import ImageDraw, ImageFont
+[PIL.ImageDraw]             draw.font = ImageFont.truetype("Tests/fonts/FreeMono.ttf")
+[PIL.ImageDraw]         To set the default font for all future ImageDraw instances::
+[PIL.ImageDraw]             from PIL import ImageDraw, ImageFont
+[PIL.ImageDraw]             ImageDraw.ImageDraw.font = ImageFont.truetype("Tests/fonts/FreeMono.ttf")
+[PIL.ImageDraw]         If the current default font is ``None``,
+[PIL.ImageDraw]         it is initialized with ``ImageFont.load_default()``.
+[PIL.ImageDraw]         :returns: An image font.
+[PIL.ImageDraw] agetfont
+[PIL.ImageDraw] aImageColor
+[PIL.ImageDraw] agetcolor
+[PIL.ImageDraw] a_getink
+[PIL.ImageDraw] adraw_arc
+[PIL.ImageDraw] uDraw an arc.
+[PIL.ImageDraw] aload
+[PIL.ImageDraw] adraw_bitmap
+[PIL.ImageDraw] uDraw a bitmap.
+[PIL.ImageDraw] adraw_chord
+[PIL.ImageDraw] uDraw a chord.
+[PIL.ImageDraw] adraw_ellipse
+[PIL.ImageDraw] uDraw an ellipse.
+[PIL.ImageDraw2] aImageColor
+[PIL.ImageDraw2] agetrgb
+[PIL.ImageDraw2] acolor
+[PIL.ImageDraw2] awidth
+[PIL.ImageDraw2] aImageFont
+[PIL.ImageDraw2] atruetype
+[PIL.ImageDraw2] afont
+[PIL.ImageDraw2] uIf image argument is mode string, size must be a list or tuple
+[PIL.ImageDraw2] aImage
+[PIL.ImageDraw2] anew
+[PIL.ImageDraw2] aImageDraw
+[PIL.ImageDraw2] aDraw
+[PIL.ImageDraw2] adraw
+[PIL.ImageDraw2] aimage
+[PIL.ImageDraw2] atransform
+[PIL.ImageDraw2] aPen
+[PIL.ImageDraw2] aBrush
+[PIL.ImageDraw2] aImagePath
+[PIL.ImageDraw2] aPath
+[PIL.ImageDraw2] aarc
+[PIL.ImageDraw2] aline
+[PIL.ImageDraw2] afill
+[PIL.ImageDraw2] asetdefault
+[PIL.ImageDraw2] aoutline
+[PIL.ImageDraw2] aline
+[PIL.ImageDraw2] uSets a transformation offset.
+[PIL.ImageDraw2] arender
+[PIL.ImageDraw2] aarc
+[PIL.ImageDraw2] astart
+[PIL.ImageDraw2]         Draws an arc (a portion of a circle outline) between the start and end
+[PIL.ImageDraw2]         angles, inside the given bounding box.
+[PIL.ImageDraw2]         .. seealso:: :py:meth:`PIL.ImageDraw.ImageDraw.arc`
+[PIL.ImageDraw2]         
+[PIL.ImageDraw2] achord
+[PIL.ImageDraw2]         Same as :py:meth:`~PIL.ImageDraw2.Draw.arc`, but connects the end points
+[PIL.ImageDraw2]         with a straight line.
+[PIL.ImageDraw2]         .. seealso:: :py:meth:`PIL.ImageDraw.ImageDraw.chord`
+[PIL.ImageDraw2]         
+[PIL.ImageDraw2] aellipse
+[PIL.ImageDraw2]         Draws an ellipse inside the given bounding box.
+[PIL.ImageDraw2]         .. seealso:: :py:meth:`PIL.ImageDraw.ImageDraw.ellipse`
+[PIL.ImageDraw2]         
+[PIL.ImageDraw2]         Draws a line between the coordinates in the ``xy`` list.
+[PIL.ImageDraw2]         .. seealso:: :py:meth:`PIL.ImageDraw.ImageDraw.line`
+[PIL.ImageDraw2]         
+[PIL.ImageDraw2] apieslice
+[PIL.ImageDraw2]         Same as arc, but also draws straight lines between the end points and the
+[PIL.ImageDraw2]         center of the bounding box.
+[PIL.ImageDraw2]         .. seealso:: :py:meth:`PIL.ImageDraw.ImageDraw.pieslice`
+[PIL.ImageDraw2]         
+[PIL.ImageFile] aImage
+[PIL.ImageFile] acore
+[PIL.ImageFile] agetcodecstatus
+[PIL.ImageFile] aERRORS
+[PIL.ImageFile] aencoder
+[PIL.ImageFile] adecoder
+[PIL.ImageFile] u error 
+[PIL.ImageFile] u when 
+[PIL.ImageFile] awriting
+[PIL.ImageFile] areading
+[PIL.ImageFile] u image file
+[PIL.ImageFile] a_min_frame
+[PIL.ImageFile] acustom_mimetype
+[PIL.ImageFile] atile
+[PIL.ImageFile] areadonly
+[PIL.ImageFile] adecoderconfig
+[PIL.ImageFile] aMAXBLOCK
+[PIL.ImageFile] adecodermaxblock
+[PIL.ImageFile] ais_path
+[PIL.ImageFile] afp
+[PIL.ImageFile] afspath
+[PIL.ImageFile] afilename
+[PIL.ImageFile] a_exclusive_fp
+[PIL.ImageFile] acast
+[PIL.ImageFile] aIO
+[PIL.ImageFile] a_open
+[PIL.ImageFile] astruct
+[PIL.ImageFile] aerror
+[PIL.ImageFile] amode
+[PIL.ImageFile] asize
+[PIL.ImageFile] unot identified by this driver
+[PIL.ImageFile] a_fp
+[PIL.ImageFile] aDeferredError
+[PIL.ImageFile] uOperation on closed image
+[PIL.ImageFile] a_close_fp
+[PIL.ImageFile] alogger
+[PIL.ImageFile] adebug
+[PIL.ImageFile] uError closing: %s
+[PIL.ImageFile]         Closes the file pointer, if possible.
+[PIL.ImageFile]         This operation will destroy the image core and release its memory.
+[PIL.ImageFile]         The image data will be unusable afterward.
+[PIL.ImageFile]         This function is required to close images that have multiple frames or
+[PIL.ImageFile]         have not had their file read and closed by the
+[PIL.ImageFile]         :py:meth:`~PIL.Image.Image.load` method. See :ref:`file-handling` for
+[PIL.ImageFile]         more information.
+[PIL.ImageFile]         
+[PIL.ImageFile] agetexif
+[PIL.ImageFile] aExifTags
+[PIL.ImageFile] aBase
+[PIL.ImageFile] aSubIFDs
+[PIL.ImageFilter] amode
+[PIL.ImageFilter] wPucannot filter palette images
+[PIL.ImageFilter] afilter
+[PIL.ImageFilter] afilterargs
+[PIL.ImageFilter] areduce
+[PIL.ImageFilter] u<lambda>
+[PIL.ImageFilter] uKernel.__init__.<locals>.<lambda>
+[PIL.ImageFilter] unot enough coefficients in kernel
+[PIL.ImageFilter] asize
+[PIL.ImageFilter] arank
+[PIL.ImageFilter] aexpand
+[PIL.ImageFilter] arankfilter
+[PIL.ImageFilter] amodefilter
+[PIL.ImageFilter] aradius
+[PIL.ImageFilter] Oint
+[PIL.ImageFilter] Ofloat
+[PIL.ImageFilter] pacopy
+[PIL.ImageFilter] agaussian_blur
+[PIL.ImageFilter] Otuple
+[PIL.ImageFilter] Olist
+[PIL.ImageFilter] uradius must be >= 0
+[PIL.ImageFilter] abox_blur
+[PIL.ImageFilter] apercent
+[PIL.ImageFilter] athreshold
+[PIL.ImageFilter] aunsharp_mask
+[PIL.ImageFilter] uOnly 3 or 4 output channels are supported
+[PIL.ImageFilter] a_check_size
+[PIL.ImageFilter] achannels
+[PIL.ImageFilter] a_copy_table
+[PIL.ImageFilter] ashape
+[PIL.ImageFilter] anumpy
+[PIL.ImageFilter] andarray
+[PIL.ImageFilter] areshape
+[PIL.ImageFilter] Olist
+[PIL.ImageFilter] Otuple
+[PIL.ImageFilter] acast
+[PIL.ImageFilter] aSequence
+[PIL.ImageFilter] uThe elements of the table should have a length of 
+[PIL.ImageFilter] aflat_table
+[PIL.ImageFilter] atable
+[PIL.ImageFilter] uThe table should have either channels * size**3 float items or size**3 items of channels-sized tuples with floats. Table should be: 
+[PIL.ImageFilter] wxu. Actual length: 
+[PIL.ImageFilter] uSize should be either an integer or a tuple of three integers.
+[PIL.ImageFilter] lAuSize should be in [2, 65] range.
+[PIL.ImageFilter] u<genexpr>
+[PIL.ImageFilter] uColor3DLUT._check_size.<locals>.<genexpr>
+[PIL.ImageFilter] asize_2d
+[PIL.ImageFilter] asize_1d
+[PIL.ImageFilter] acallback
+[PIL.ImageFilter] wgasize_3d
+[PIL.ImageFont] aMAX_STRING_LENGTH
+[PIL.ImageFont] utoo many characters in string
+[PIL.ImageFont] asplitext
+[PIL.ImageFont] u.png
+[PIL.ImageFont] u.gif
+[PIL.ImageFont] u.pbm
+[PIL.ImageFont] aimage
+[PIL.ImageFont] aroot
+[PIL.ImageFont] aImage
+[PIL.ImageFont] amode
+[PIL.ImageFont] w1wLucannot find glyph data file 
+[PIL.ImageFont] u.{gif|pbm|png}
+[PIL.ImageFont] afullname
+[PIL.ImageFont] a_load_pilfont_data
+[PIL.ImageFont] nnnuinvalid font image mode
+[PIL.ImageFont] cPILfont
+[PIL.ImageFont] uNot a PILfont file
+[PIL.ImageFont] areadline
+[PIL.ImageFont] ainfo
+[PIL.ImageFont] cDATA
+[PIL.ImageFont] aself
+[PIL.ImageFont] aappend
+[PIL.ImageFont] (aload
+[PIL.ImageFont] acore
+[PIL.ImageFont] afont
+[PIL.ImageFont] aim
+[PIL.ImageFont] a_string_length_check
+[PIL.ImageFont] a_decompression_bomb_check
+[PIL.ImageFont] agetsize
+[PIL.ImageFont] agetmask
+[PIL.ImageFont]         Create a bitmap for the text.
+[PIL.ImageFont]         If the font uses antialiasing, the bitmap should have mode ``L`` and use a
+[PIL.ImageFont]         maximum value of 255. Otherwise, it should have mode ``1``.
+[PIL.ImageFont]         :param text: Text to render.
+[PIL.ImageFont]         :param mode: Used by some graphics drivers to indicate what mode the
+[PIL.ImageFont]                      driver prefers; if empty, the renderer may return either
+[PIL.ImageFont]                      mode. Note that the mode is always a string, to simplify
+[PIL.ImageFont]                      C-level implementations.
+[PIL.ImageFont]                      .. versionadded:: 1.1.5
+[PIL.ImageFont]         :return: An internal PIL storage memory instance as defined by the
+[PIL.ImageFont]                  :py:mod:`PIL.Image.core` interface module.
+[PIL.ImageFont]         
+[PIL.ImageFont]         Returns bounding box (in pixels) of given text.
+[PIL.ImageFont]         .. versionadded:: 9.2.0
+[PIL.ImageFont]         :param text: Text to render.
+[PIL.ImageFont]         :return: ``(left, top, right, bottom)`` bounding box
+[PIL.ImageFont]         
+[PIL.ImageFont]         Returns length (in pixels) of given text.
+[PIL.ImageFont]         This is the amount by which following text should be offset.
+[PIL.ImageFont]         .. versionadded:: 9.2.0
+[PIL.ImageMath] aim
+[PIL.ImageMath] a_Operand
+[PIL.ImageMath] amode
+[PIL.ImageMath] w1wLaconvert
+[PIL.ImageMath] wIT
+[PIL.ImageMath] wIwFuunsupported mode: 
+[PIL.ImageMath] Oint
+[PIL.ImageMath] Ofloat
+[PIL.ImageMath] w1wLwIaImage
+[PIL.ImageMath] anew
+[PIL.ImageMath] wIasize
+[PIL.ImageMath] wFa_Operand__fixup
+[PIL.ImageMath] a_imagingmath
+[PIL.ImageMath] ubad operand type for '
+[PIL.ImageMath] w'aunop
+[PIL.ImageMath] agetim
+[PIL.ImageMath] wFaim_1
+[PIL.ImageMath] aim_2
+[PIL.ImageMath] amin
+[PIL.ImageMath] acrop
+[PIL.ImageMath] pabinop
+[PIL.ImageMath] aout
+[PIL.ImageMath] agetbbox
+[PIL.ImageMath] aapply
+[PIL.ImageMath] aabs
+[PIL.ImageMath] aneg
+[PIL.ImageMath] aadd
+[PIL.ImageMath] asub
+[PIL.ImageMath] amul
+[PIL.ImageMath] adiv
+[PIL.ImageMath] amod
+[PIL.ImageMath] apow
+[PIL.ImageMath] ainvert
+[PIL.ImageMath] aand
+[PIL.ImageMath] aor
+[PIL.ImageMath] axor
+[PIL.ImageMath] alshift
+[PIL.ImageMath] arshift
+[PIL.ImageMath] aeq
+[PIL.ImageMath] ane
+[PIL.ImageMath] alt
+[PIL.ImageMath] ale
+[PIL.ImageMath] agt
+[PIL.ImageMath] age
+[PIL.ImageMath] amode
+[PIL.ImageMath] wIamax
+[PIL.ImageMath] aops
+[PIL.ImageMath] acopy
+[PIL.ImageMath] aupdate
+[PIL.ImageMath] aitems
+[PIL.ImageMode] amode
+[PIL.ImageMode] w1wLwIwFwPaRGB
+[PIL.ImageMode] aRGBX
+[PIL.ImageMode] aRGBA
+[PIL.ImageMode] aCMYK
+[PIL.ImageMode] aYCbCr
+[PIL.ImageMode] aLAB
+[PIL.ImageMode] aHSV
+[PIL.ImageMode] aRGBa
+[PIL.ImageMode] aLA
+[PIL.ImageMode] aLa
+[PIL.ImageMode] aPA
+[PIL.ImageMode] wLpT
+[PIL.ImageMode] w1u|b1
+[PIL.ImageMode] wLpT
+[PIL.ImageMode] wLu|u1
+[PIL.ImageMode] wLwIT
+[PIL.ImageMode] wIu<i4
+[PIL.ImageMode] wLwFT
+[PIL.ImageMode] wFu<f4
+[PIL.ImageMode] wPwLT
+[PIL.ImageMode] wPu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wRwGwBu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wRwGwBwXu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wRwGwBwAu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wCwMwYwKu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wYaCb
+[PIL.ImageMode] aCr
+[PIL.ImageMode] u|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wLwAwBu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wHwSwVu|u1
+[PIL.ImageMode] aRGB
+[PIL.ImageMode] wLT
+[PIL.ImageMode] wRwGwBwau|u1
+[PIL.ImageMode] wLpT
+[PIL.ImageMode] wLwAu|u1
+[PIL.ImageOps] aleft
+[PIL.ImageOps] atop
+[PIL.ImageOps] aright
+[PIL.ImageOps] abottom
+[PIL.ImageOps] aImageColor
+[PIL.ImageOps] aImageColor
+[PIL.ImageOps] agetcolor
+[PIL.ImageOps] amode
+[PIL.ImageOps] wPumode P support coming soon
+[PIL.ImageOps] wLaRGB
+[PIL.ImageOps] aRGB
+[PIL.ImageOps] apoint
+[PIL.ImageOps] alut
+[PIL.ImageOps] unot supported for mode 
+[PIL.ImageOps] aconvert
+[PIL.ImageOps] wLahistogram
+[PIL.ImageOps] aignore
+[PIL.ImageOps] whacutoff
+[PIL.ImageOps] wnldacut
+[PIL.ImageOps] pahi
+[PIL.ImageOps] alo
+[PIL.ImageOps] l l!l"l#l$l%l&l'l(l)l*l+l,l-l.l/l0l1l2l3l4l5l6l7l8l9l:l;l<l=l>l?l@lAlBlClDlElFlGlHlIlJlKlLlMlNlOlPlQlRlSlTlUlVlWlXlYlZl[l\l]l^l_l`lalblcldlelflglhliljlklllmlnlolplqlrlsltlulvlwlxlylzl{l|l}l~l
+[PIL.ImageOps] o@ascale
+[PIL.ImageOps] aoffset
+[PIL.ImageOps] aappend
+[PIL.ImageOps] a_lut
+[PIL.ImageOps]     Maximize (normalize) image contrast. This function calculates a
+[PIL.ImageOps]     histogram of the input image (or mask region), removes ``cutoff`` percent of the
+[PIL.ImageOps]     lightest and darkest pixels from the histogram, and remaps the image
+[PIL.ImageOps]     so that the darkest pixel becomes black (0), and the lightest
+[PIL.ImageOps]     becomes white (255).
+[PIL.ImageOps]     :param image: The image to process.
+[PIL.ImageOps]     :param cutoff: The percent to cut off from the histogram on the low and
+[PIL.ImageOps]                    high ends. Either a tuple of (low, high), or a single
+[PIL.ImageOps]                    number for both.
+[PIL.ImageOps]     :param ignore: The background pixel value (use None for no background).
+[PIL.ImageOps]     :param mask: Histogram used in contrast operation is computed using pixels
+[PIL.ImageOps]                  within the mask. If no mask is given the entire image is used
+[PIL.ImageOps]                  for histogram computation.
+[PIL.ImageOps]     :param preserve_tone: Preserve image tone in Photoshop-like style autocontrast.
+[PIL.ImageOps]                           .. versionadded:: 8.2.0
+[PIL.ImageOps]     :return: An image.
+[PIL.ImageOps]     
+[PIL.ImageOps] wLacast
+[PIL.ImageOps] aSequence
+[PIL.ImageOps] a_color
+[PIL.ImageOps] ared
+[PIL.ImageOps] agreen
+[PIL.ImageOps] ablue
+[PIL.ImageOps] aRGB
+[PIL.ImagePalette] amode
+[PIL.ImagePalette] arawmode
+[PIL.ImagePalette] apalette
+[PIL.ImagePalette] adirty
+[PIL.ImagePalette] a_palette
+[PIL.ImagePalette] a_colors
+[PIL.ImagePalette] aself
+[PIL.ImagePalette] amode_len
+[PIL.ImagePalette] aImagePalette
+[PIL.ImagePalette] :nnnatobytes
+[PIL.ImagePalette]         Get palette contents in format suitable for the low-level
+[PIL.ImagePalette]         ``im.putpalette`` primitive.
+[PIL.ImagePalette]         .. warning:: This method is experimental.
+[PIL.ImagePalette]         
+[PIL.ImagePalette] upalette contains raw palette data
+[PIL.ImagePalette] aarray
+[PIL.ImagePalette] wBuConvert palette to bytes.
+[PIL.ImagePalette]         .. warning:: This method is experimental.
+[PIL.ImagePalette]         
+[PIL.ImagePalette] ainfo
+[PIL.ImagePalette] abackground
+[PIL.ImagePalette] atransparency
+[PIL.ImagePalette] aindex
+[PIL.ImagePalette] ahistogram
+[PIL.ImagePalette] ucannot allocate more than 256 colors
+[PIL.ImagePalette] aRGB
+[PIL.ImagePalette] ucannot add non-opaque RGBA color to RGB palette
+[PIL.ImagePalette] :nl
+[PIL.ImagePalette] naRGBA
+[PIL.ImagePalette] acolors
+[PIL.ImagePalette] acolor
+[PIL.ImagePalette] a_new_color_index
+[PIL.ImagePalette] uunknown color specifier: 
+[PIL.ImagePalette] uGiven an rgb tuple, allocate palette entry.
+[PIL.ImagePalette]         .. warning:: This method is experimental.
+[PIL.ImagePalette]         
+[PIL.ImagePalette] awrite
+[PIL.ImagePalette] u# Palette
+[PIL.ImagePalette] u# Mode: 
+[PIL.ImagePalette] afp
+[PIL.ImagePalette] w T
+[PIL.ImagePalette] u 0
+[PIL.ImagePalette] uSave palette to text file.
+[PIL.ImagePalette]         .. warning:: This method is experimental.
+[PIL.ImagePalette]         
+[PIL.ImagePalette] awhite
+[PIL.ImagePalette] uunavailable when black is non-zero
+[PIL.ImagePalette] o@aexp
+[PIL.ImagePalette] ?arandom
+[PIL.ImagePalette] arandint
+[PIL.ImagePath] aorigin
+[PIL.ImagePath] ahas_location
+[PIL.ImagePath] aannotations
+[PIL.ImagePath] aImage
+[PIL.ImagePath] aImage
+[PIL.ImagePath] acore
+[PIL.ImagePath] aPath
+[PIL.ImagePath] uPIL\ImagePath.py
+[PIL.ImagePath] u<module PIL.ImagePath>
+[PIL.ImageQt] amodules
+[PIL.ImageQt] aqRgba
+[PIL.ImageQt] u(Internal) Turns an RGB color into a Qt compatible color integer.
+[PIL.ImageQt] aQBuffer
+[PIL.ImageQt] aqt_version
+[PIL.ImageQt] w6aQIODevice
+[PIL.ImageQt] aOpenModeFlag
+[PIL.ImageQt] aOpenMode
+[PIL.ImageQt] aReadWrite
+[PIL.ImageQt] ahasAlphaChannel
+[PIL.ImageQt] asave
+[PIL.ImageQt] apng
+[PIL.ImageQt] appm
+[PIL.ImageQt] aBytesIO
+[PIL.ImageQt] awrite
+[PIL.ImageQt] adata
+[PIL.ImageQt] aseek
+[PIL.ImageQt] aImage
+[PIL.ImageQt]     :param im: QImage or PIL ImageQt object
+[PIL.ImageQt]     
+[PIL.ImageQt] afromqimage
+[PIL.ImageQt] w1wLwPuI;16
+[PIL.ImageQt] abytes_per_line
+[PIL.ImageQt] aextra_padding
+[PIL.ImageQt]     converts each scanline of data from 8 bit to 32 bit aligned
+[PIL.ImageQt]     
+[PIL.ImageQt] atoUtf8
+[PIL.ImageQt] uutf-8
+[PIL.ImageQt] ais_path
+[PIL.ImageQt] aim
+[PIL.ImageQt] aQImage
+[PIL.ImageQt] aFormat
+[PIL.ImageQt] amode
+[PIL.ImageQt] w1aFormat_Mono
+[PIL.ImageQt] wLaFormat_Indexed8
+[PIL.ImageQt] argb
+[PIL.ImageQt] wPagetpalette
+[PIL.ImageQt] aRGB
+[PIL.ImageQt] aconvert
+[PIL.ImageQt] aRGBA
+[PIL.ImageQt] atobytes
+[PIL.ImageQt] araw
+[PIL.ImageQt] aBGRA
+[PIL.ImageQt] aFormat_RGB32
+[PIL.ImageQt] aRGBA
+[PIL.ImageQt] aFormat_ARGB32
+[PIL.ImageQt] uI;16
+[PIL.ImageQt] apoint
+[PIL.ImageQt] u<lambda>
+[PIL.ImageQt] u_toqclass_helper.<locals>.<lambda>
+[PIL.ImageSequence] aseek
+[PIL.ImageSequence] uim must have seek method
+[PIL.ImageSequence] aim
+[PIL.ImageSequence] a_min_frame
+[PIL.ImageSequence] aposition
+[PIL.ImageSequence] uend of sequence
+[PIL.ImageSequence] atell
+[PIL.ImageSequence] aims
+[PIL.ImageSequence] aIterator
+[PIL.ImageSequence] acopy
+[PIL.ImageSequence] afunc
+[PIL.ImageSequence]     Applies a given function to all frames in an image or a list of images.
+[PIL.ImageSequence]     The frames are returned as a list of separate images.
+[PIL.ImageSequence]     :param im: An image, or a list of images.
+[PIL.ImageSequence]     :param func: The function to apply to all of the image frames.
+[PIL.ImageSequence]     :returns: A list of images.
+[PIL.ImageSequence]     
+[PIL.ImageSequence] aorigin
+[PIL.ImageSequence] ahas_location
+[PIL.ImageSequence] aannotations
+[PIL.ImageSequence] aImage
+[PIL.ImageSequence] aImage
+[PIL.ImageSequence] aTYPE_CHECKING
+[PIL.ImageSequence] uPIL.ImageSequence
+[PIL.ImageSequence]     This class implements an iterator object that can be used to loop
+[PIL.ImageSequence]     over an image sequence.
+[PIL.ImageSequence]     You can use the ``[]`` operator to access elements by index. This operator
+[PIL.ImageSequence]     will raise an :py:exc:`IndexError` if you try to access a nonexistent
+[PIL.ImageSequence]     frame.
+[PIL.ImageSequence]     :param im: An image object.
+[PIL.ImageSequence]     
+[PIL.ImageSequence] a__qualname__
+[PIL.ImageSequence] aim
+[PIL.ImageSequence] areturn
+[PIL.ImageSequence] uImage.Image
+[PIL.ImageSequence] aNone
+[PIL.ImageSequence] uIterator.__init__
+[PIL.ImageSequence] aix
+[PIL.ImageSequence] areturn
+[PIL.ImageSequence] aint
+[PIL.ImageSequence] uImage.Image
+[PIL.ImageSequence] a__getitem__
+[PIL.ImageSequence] uIterator.__getitem__
+[PIL.ImageSequence] areturn
+[PIL.ImageSequence] aIterator
+[PIL.ImageSequence] uIterator.__iter__
+[PIL.ImageSequence] areturn
+[PIL.ImageSequence] uImage.Image
+[PIL.ImageSequence] a__next__
+[PIL.ImageSequence] uIterator.__next__
+[PIL.ImageShow] aViewer
+[PIL.ImageShow] a_viewers
+[PIL.ImageShow] aappend
+[PIL.ImageShow] ainsert
+[PIL.ImageShow]     The :py:func:`register` function is used to register additional viewers::
+[PIL.ImageShow]         from PIL import ImageShow
+[PIL.ImageShow]         ImageShow.register(MyViewer())  # MyViewer will be used as a last resort
+[PIL.ImageShow]         ImageShow.register(MySecondViewer(), 0)  # MySecondViewer will be prioritised
+[PIL.ImageShow]         ImageShow.register(ImageShow.XVViewer(), 0)  # XVViewer will be prioritised
+[PIL.ImageShow]     :param viewer: The viewer to be registered.
+[PIL.ImageShow]     :param order:
+[PIL.ImageShow]         Zero or a negative integer to prepend this viewer to the list,
+[PIL.ImageShow]         a positive integer to append it.
+[PIL.ImageShow]     
+[PIL.ImageShow] ashow
+[PIL.ImageShow] aimage
+[PIL.ImageShow] atitle
+[PIL.ImageShow] aoptions
+[PIL.ImageShow]     Display a given image.
+[PIL.ImageShow]     :param image: An image object.
+[PIL.ImageShow]     :param title: Optional title. Not all viewers can display the title.
+[PIL.ImageShow]     :param \**options: Additional viewer options.
+[PIL.ImageShow]     :returns: ``True`` if a suitable viewer was found, ``False`` otherwise.
+[PIL.ImageShow]     
+[PIL.ImageShow] amode
+[PIL.ImageShow] w1aRGBA
+[PIL.ImageShow] aPNG
+[PIL.ImageShow] uI;16
+[PIL.ImageShow] aLA
+[PIL.ImageShow] aImage
+[PIL.ImageShow] agetmodebase
+[PIL.ImageShow] aconvert
+[PIL.ImageShow] ashow_image
+[PIL.ImageShow]         The main function for displaying an image.
+[PIL.ImageShow]         Converts the given image to the target format and displays it.
+[PIL.ImageShow]         
+[PIL.ImageShow] uReturn format name, or ``None`` to save as PGM/PPM.
+[PIL.ImageShow] uunavailable in base viewer
+[PIL.ImageShow]         Returns the command used to display the file.
+[PIL.ImageShow]         Not implemented in the base class.
+[PIL.ImageShow]         
+[PIL.ImageShow] a_dump
+[PIL.ImageShow] aget_format
+[PIL.ImageShow] uSave to temporary file and return filename.
+[PIL.ImageShow] ashow_file
+[PIL.ImageShow] asave_image
+[PIL.ImageShow] uDisplay the given image.
+[PIL.ImageShow] asystem
+[PIL.ImageShow] aget_command
+[PIL.ImageShow]         Display given file.
+[PIL.ImageText] atext
+[PIL.ImageText] aImageFont
+[PIL.ImageText] aload_default
+[PIL.ImageText] afont
+[PIL.ImageText] amode
+[PIL.ImageText] aspacing
+[PIL.ImageText] adirection
+[PIL.ImageText] afeatures
+[PIL.ImageText] alanguage
+[PIL.ImageText] aembedded_color
+[PIL.ImageText] astroke_width
+[PIL.ImageText] astroke_fill
+[PIL.ImageText]         :param text: String to be drawn.
+[PIL.ImageText]         :param font: Either an :py:class:`~PIL.ImageFont.ImageFont` instance,
+[PIL.ImageText]                      :py:class:`~PIL.ImageFont.FreeTypeFont` instance,
+[PIL.ImageText]                      :py:class:`~PIL.ImageFont.TransposedFont` instance or ``None``. If
+[PIL.ImageText]                      ``None``, the default font from :py:meth:`.ImageFont.load_default`
+[PIL.ImageText]                      will be used.
+[PIL.ImageText]         :param mode: The image mode this will be used with.
+[PIL.ImageText]         :param spacing: The number of pixels between lines.
+[PIL.ImageText]         :param direction: Direction of the text. It can be ``"rtl"`` (right to left),
+[PIL.ImageText]                           ``"ltr"`` (left to right) or ``"ttb"`` (top to bottom).
+[PIL.ImageText]                           Requires libraqm.
+[PIL.ImageText]         :param features: A list of OpenType font features to be used during text
+[PIL.ImageText]                          layout. This is usually used to turn on optional font features
+[PIL.ImageText]                          that are not enabled by default, for example ``"dlig"`` or
+[PIL.ImageText]                          ``"ss01"``, but can be also used to turn off default font
+[PIL.ImageText]                          features, for example ``"-liga"`` to disable ligatures or
+[PIL.ImageText]                          ``"-kern"`` to disable kerning.  To get all supported
+[PIL.ImageText]                          features, see `OpenType docs`_.
+[PIL.ImageText]                          Requires libraqm.
+[PIL.ImageText]         :param language: Language of the text. Different languages may use
+[PIL.ImageText]                          different glyph shapes or ligatures. This parameter tells
+[PIL.ImageText]                          the font which language the text is in, and to apply the
+[PIL.ImageText]                          correct substitutions as appropriate, if available.
+[PIL.ImageText]                          It should be a `BCP 47 language code`_.
+[PIL.ImageText]                          Requires libraqm.
+[PIL.ImageText]         
+[PIL.ImageText] aRGB
+[PIL.ImageText] aRGBA
+[PIL.ImageText] uEmbedded color supported only in RGB and RGBA modes
+[PIL.ImageText]         Use embedded color glyphs (COLR, CBDT, SBIX).
+[PIL.ImageText]         
+[PIL.ImageText]         :param width: The width of the text stroke.
+[PIL.ImageText]         :param fill: Color to use for the text stroke when drawing. If not given, will
+[PIL.ImageText]                      default to the ``fill`` parameter from
+[PIL.ImageText]                      :py:meth:`.ImageDraw.ImageDraw.text`.
+[PIL.ImageText]         
+[PIL.ImageText] w1wPwIwFw1aRGBA
+[PIL.ImageText] wLw
+[PIL.ImageTk] apop
+[PIL.ImageTk] afile
+[PIL.ImageTk] adata
+[PIL.ImageTk] aBytesIO
+[PIL.ImageTk] adata
+[PIL.ImageTk] aImage
+[PIL.ImageTk] atk
+[PIL.ImageTk] acall
+[PIL.ImageTk] atkinter
+[PIL.ImageTk] aTclError
+[PIL.ImageTk] a_imagingtk
+[PIL.ImageTk] a_imagingtk
+[PIL.ImageTk] atkinit
+[PIL.ImageTk] ainterpaddr
+[PIL.ImageTk] a_get_image_from_kw
+[PIL.ImageTk] uImage is required
+[PIL.ImageTk] uIf first argument is mode, size is required
+[PIL.ImageTk] amode
+[PIL.ImageTk] wPaapply_transparency
+[PIL.ImageTk] aload
+[PIL.ImageTk] apalette
+[PIL.ImageTk] aRGB
+[PIL.ImageTk] asize
+[PIL.ImageTk] awidth
+[PIL.ImageTk] aheight
+[PIL.ImageTk] w1wLaRGB
+[PIL.ImageTk] aRGBA
+[PIL.ImageTk] agetmodebase
+[PIL.ImageTk] a_PhotoImage__mode
+[PIL.ImageTk] a_PhotoImage__size
+[PIL.ImageTk] aPhotoImage
+[PIL.ImageTk] a_PhotoImage__photo
+[PIL.ImageTk] aimage
+[PIL.ImageTk] apaste
+[PIL.ImageTk] adelete
+[PIL.ImageTk]         Get the Tkinter photo image identifier.  This method is automatically
+[PIL.ImageTk]         called by Tkinter whenever a PhotoImage object is passed to a Tkinter
+[PIL.ImageTk]         method.
+[PIL.ImageTk]         :return: A Tkinter photo image identifier (a string).
+[PIL.ImageTk]         
+[PIL.ImageTk]         Get the width of the image.
+[PIL.ImageTk]         :return: The width, in pixels.
+[PIL.ImageTk]         
+[PIL.ImageTk]         Get the height of the image.
+[PIL.ImageTk]         :return: The height, in pixels.
+[PIL.ImageTk]         
+[PIL.ImageTk] agetim
+[PIL.ImageTk] aim
+[PIL.ImageTk] aisblock
+[PIL.ImageTk] acore
+[PIL.ImageWin] adc
+[PIL.ImageWin] awnd
+[PIL.ImageWin] uIf first argument is mode, size is required
+[PIL.ImageWin] amode
+[PIL.ImageWin] asize
+[PIL.ImageWin] w1wLwPaRGB
+[PIL.ImageWin] aImage
+[PIL.ImageWin] agetmodebase
+[PIL.ImageWin] acore
+[PIL.ImageWin] adisplay
+[PIL.ImageWin] aimage
+[PIL.ImageWin] apaste
+[PIL.ImageWin] aHWND
+[PIL.ImageWin] agetdc
+[PIL.ImageWin] aexpose
+[PIL.ImageWin] areleasedc
+[PIL.ImageWin]         Copy the bitmap contents to a device context.
+[PIL.ImageWin]         :param handle: Device context (HDC), cast to a Python integer, or an
+[PIL.ImageWin]                        HDC or HWND instance.  In PythonWin, you can use
+[PIL.ImageWin]                        ``CDC.GetHandleAttrib()`` to get a suitable handle.
+[PIL.ImageWin]         
+[PIL.ImageWin] padraw
+[PIL.ImageWin]         Same as expose, but allows you to specify where to draw the image, and
+[PIL.ImageWin]         what part of it to draw.
+[PIL.ImageWin]         The destination and source areas are given as 4-tuple rectangles. If
+[PIL.ImageWin]         the source is omitted, the entire image is copied. If the source and
+[PIL.ImageWin]         the destination have different sizes, the image is resized as
+[PIL.ImageWin]         necessary.
+[PIL.ImageWin]         
+[PIL.ImageWin] aquery_palette
+[PIL.ImageWin]         Installs the palette associated with the image in the given device
+[PIL.ImageWin]         context.
+[PIL.ImageWin]         This method should be called upon **QUERYNEWPALETTE** and
+[PIL.ImageWin]         **PALETTECHANGED** events from Windows. If this method returns a
+[PIL.ImageWin]         non-zero value, one or more display palette entries were changed, and
+[PIL.ImageWin]         the image should be redrawn.
+[PIL.ImageWin]         :param handle: Device context (HDC), cast to a Python integer, or an
+[PIL.ImageWin]                        HDC or HWND instance.
+[PIL.ImageWin]         :return: The number of entries that were changed (if one or more entries,
+[PIL.ImageWin]                  this indicates that the image should be redrawn).
+[PIL.ImageWin]         
+[PIL.ImageWin] aload
+[PIL.ImageWin] aconvert
+[PIL.ImageWin] aim
+[PIL.ImageWin]         Paste a PIL image into the bitmap image.
+[PIL.ImageWin]         :param im: A PIL image.  The size must match the target region.
+[PIL.ImageWin]                    If the mode does not match, the image is converted to the
+[PIL.ImageWin]                    mode of the bitmap image.
+[PIL.ImageWin]         :param box: A 4-tuple defining the left, upper, right, and
+[PIL.ImageWin]                     lower pixel coordinate.  See :ref:`coordinate-system`. If
+[PIL.ImtImagePlugin] afp
+[PIL.ImtImagePlugin] ldd
+[PIL.ImtImagePlugin] unot an IM file
+[PIL.ImtImagePlugin] abuffer
+[PIL.ImtImagePlugin] :nl
+[PIL.ImtImagePlugin] n:l
+[PIL.ImtImagePlugin] nnaself
+[PIL.ImtImagePlugin] aImageFile
+[PIL.ImtImagePlugin] a_Tile
+[PIL.ImtImagePlugin] araw
+[PIL.ImtImagePlugin] pasize
+[PIL.ImtImagePlugin] atell
+[PIL.ImtImagePlugin] amode
+[PIL.ImtImagePlugin] atile
+[PIL.ImtImagePlugin] asplit
+[PIL.ImtImagePlugin] apop
+[PIL.ImtImagePlugin] l*afield
+[PIL.ImtImagePlugin] amatch
+[PIL.ImtImagePlugin] agroup
+[PIL.ImtImagePlugin] cwidth
+[PIL.ImtImagePlugin] aysize
+[PIL.ImtImagePlugin] a_size
+[PIL.ImtImagePlugin] cheight
+[PIL.ImtImagePlugin] axsize
+[PIL.ImtImagePlugin] cpixel
+[PIL.ImtImagePlugin] cn8
+[PIL.ImtImagePlugin] wLa_mode
+[PIL.ImtImagePlugin] aorigin
+[PIL.ImtImagePlugin] ahas_location
+[PIL.ImtImagePlugin] aannotations
+[PIL.ImtImagePlugin] are
+[PIL.ImtImagePlugin] aImage
+[PIL.ImtImagePlugin] aImageFile
+[PIL.ImtImagePlugin] aImage
+[PIL.ImtImagePlugin] c([a-z]*) ([^ \r\n]*)
+[PIL.ImtImagePlugin] a__prepare__
+[PIL.ImtImagePlugin] aImtImageFile
+[PIL.ImtImagePlugin] a__getitem__
+[PIL.ImtImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.ImtImagePlugin] u<metaclass>
+[PIL.ImtImagePlugin] uPIL.ImtImagePlugin
+[PIL.ImtImagePlugin] a__qualname__
+[PIL.ImtImagePlugin] aIMT
+[PIL.ImtImagePlugin] uIM Tools
+[PIL.ImtImagePlugin] aformat_description
+[PIL.ImtImagePlugin] areturn
+[PIL.ImtImagePlugin] aNone
+[PIL.ImtImagePlugin] a_open
+[PIL.ImtImagePlugin] uImtImageFile._open
+[PIL.ImtImagePlugin] a__orig_bases__
+[PIL.IptcImagePlugin] ai32
+[PIL.IptcImagePlugin] nna_i
+[PIL.IptcImagePlugin] ainfo
+[PIL.IptcImagePlugin] afp
+[PIL.IptcImagePlugin] astrip
+[PIL.IptcImagePlugin] uinvalid IPTC/NAA file
+[PIL.IptcImagePlugin] uillegal field length in IPTC/NAA file
+[PIL.IptcImagePlugin] ai16
+[PIL.IptcImagePlugin] aself
+[PIL.IptcImagePlugin] atell
+[PIL.IptcImagePlugin] afield
+[PIL.IptcImagePlugin] aappend
+[PIL.IptcImagePlugin] l<wLa_mode
+[PIL.IptcImagePlugin] aRGB
+[PIL.IptcImagePlugin] aCMYK
+[PIL.IptcImagePlugin] lAagetint
+[PIL.IptcImagePlugin] a_size
+[PIL.IptcImagePlugin] aCOMPRESSION
+[PIL.IptcImagePlugin] lxuUnknown IPTC image compression
+[PIL.IptcImagePlugin] aImageFile
+[PIL.IptcImagePlugin] a_Tile
+[PIL.IptcImagePlugin] aiptc
+[PIL.IptcImagePlugin] pasize
+[PIL.IptcImagePlugin] atile
+[PIL.IptcImagePlugin] aseek
+[PIL.IptcImagePlugin] aoffset
+[PIL.IptcImagePlugin] aBytesIO
+[PIL.IptcImagePlugin] araw
+[PIL.IptcImagePlugin] awrite
+[PIL.IptcImagePlugin] cP5
+[PIL.IptcImagePlugin] %d %d
+[PIL.IptcImagePlugin] 255
+[PIL.IptcImagePlugin] amin
+[PIL.IptcImagePlugin] @woaImage
+[PIL.IptcImagePlugin] anew
+[PIL.IptcImagePlugin] agetmodebands
+[PIL.IptcImagePlugin] amode
+[PIL.IptcImagePlugin] amerge
+[PIL.IptcImagePlugin] aload
+[PIL.IptcImagePlugin] aim
+[PIL.IptcImagePlugin] nnnT
+[PIL.IptcImagePlugin] aJpegImagePlugin
+[PIL.IptcImagePlugin] aTiffImagePlugin
+[PIL.IptcImagePlugin] aJpegImagePlugin
+[PIL.IptcImagePlugin] aTiffImagePlugin
+[PIL.IptcImagePlugin] aIptcImageFile
+[PIL.IptcImagePlugin] aitems
+[PIL.IptcImagePlugin] aJpegImageFile
+[PIL.IptcImagePlugin] aphotoshop
+[PIL.IptcImagePlugin] aTiffImageFile
+[PIL.Jpeg2KImagePlugin] afp
+[PIL.Jpeg2KImagePlugin] ahas_length
+[PIL.Jpeg2KImagePlugin] alength
+[PIL.Jpeg2KImagePlugin] aremaining_in_box
+[PIL.Jpeg2KImagePlugin] atell
+[PIL.Jpeg2KImagePlugin] a_can_read
+[PIL.Jpeg2KImagePlugin] uNot enough data in header
+[PIL.Jpeg2KImagePlugin] uExpected to read 
+[PIL.Jpeg2KImagePlugin] u bytes but only got 
+[PIL.Jpeg2KImagePlugin] astruct
+[PIL.Jpeg2KImagePlugin] acalcsize
+[PIL.Jpeg2KImagePlugin] a_read_bytes
+[PIL.Jpeg2KImagePlugin] aunpack
+[PIL.Jpeg2KImagePlugin] aBoxReader
+[PIL.Jpeg2KImagePlugin] aBytesIO
+[PIL.Jpeg2KImagePlugin] aseek
+[PIL.Jpeg2KImagePlugin] aSEEK_CUR
+[PIL.Jpeg2KImagePlugin] acast
+[PIL.Jpeg2KImagePlugin] Oint
+[PIL.Jpeg2KImagePlugin] Obytes
+[PIL.Jpeg2KImagePlugin] aread_fields
+[PIL.Jpeg2KImagePlugin] u>I4s
+[PIL.Jpeg2KImagePlugin] u>Q
+[PIL.Jpeg2KImagePlugin] uInvalid header length
+[PIL.Jpeg2KImagePlugin] a_binary
+[PIL.Jpeg2KImagePlugin] ai16be
+[PIL.Jpeg2KImagePlugin] aunpack_from
+[PIL.Jpeg2KImagePlugin] u>HHIIIIIIIIH
+[PIL.Jpeg2KImagePlugin] u>B
+[PIL.Jpeg2KImagePlugin] l&l
+[PIL.Jpeg2KImagePlugin] uI;16
+[PIL.Jpeg2KImagePlugin] wLaLA
+[PIL.Jpeg2KImagePlugin] aRGB
+[PIL.Jpeg2KImagePlugin] aRGBA
+[PIL.Jpeg2KImagePlugin] uunable to determine J2K image mode
+[PIL.Jpeg2KImagePlugin] uParse the JPEG 2000 codestream to extract the size and component
+[PIL.Jpeg2KImagePlugin]     count from the SIZ marker segment, returning a PIL (size, mode) tuple.
+[PIL.Jpeg2KImagePlugin] NuConvert JPEG2000's (numerator, denominator, exponent-base-10) resolution,
+[PIL.Jpeg2KImagePlugin]     calculated as (num / denom) * 10^exp and stored in dots per meter,
+[PIL.Jpeg2KImagePlugin]     to floating-point dots per inch.
+[PIL.Jpeg2KImagePlugin] areader
+[PIL.Jpeg2KImagePlugin] ahas_next_box
+[PIL.Jpeg2KImagePlugin] anext_box_type
+[PIL.Jpeg2KImagePlugin] cjp2h
+[PIL.Jpeg2KImagePlugin] aread_boxes
+[PIL.Jpeg2KImagePlugin] cftyp
+[PIL.Jpeg2KImagePlugin] u>4s
+[PIL.Jpeg2KImagePlugin] cjpx 
+[PIL.Jpeg2KImagePlugin] uimage/jpx
+[PIL.Jpeg2KImagePlugin] aheader
+[PIL.JpegImagePlugin] afp
+[PIL.JpegImagePlugin] ai16
+[PIL.JpegImagePlugin] aImageFile
+[PIL.JpegImagePlugin] a_safe_read
+[PIL.JpegImagePlugin] aAPP
+[PIL.JpegImagePlugin] aapp
+[PIL.JpegImagePlugin] aapplist
+[PIL.JpegImagePlugin] aappend
+[PIL.JpegImagePlugin] astartswith
+[PIL.JpegImagePlugin] cJFIF
+[PIL.JpegImagePlugin] ainfo
+[PIL.JpegImagePlugin] ajfif
+[PIL.JpegImagePlugin] ajfif_version
+[PIL.JpegImagePlugin] ajfif_unit
+[PIL.JpegImagePlugin] ajfif_density
+[PIL.JpegImagePlugin] adpi
+[PIL.JpegImagePlugin] Exif
+[PIL.JpegImagePlugin] aexif
+[PIL.JpegImagePlugin] nnatell
+[PIL.JpegImagePlugin] a_exif_offset
+[PIL.JpegImagePlugin] http://ns.adobe.com/xap/1.0/
+[PIL.JpegImagePlugin] asplit
+[PIL.JpegImagePlugin] axmp
+[PIL.JpegImagePlugin] FPXR
+[PIL.JpegImagePlugin] aflashpix
+[PIL.JpegImagePlugin] ICC_PROFILE
+[PIL.JpegImagePlugin] aicclist
+[PIL.JpegImagePlugin] Photoshop 3.0
+[PIL.JpegImagePlugin] asetdefault
+[PIL.JpegImagePlugin] aphotoshop
+[PIL.JpegImagePlugin] wsaoffset
+[PIL.JpegImagePlugin] c8BIM
+[PIL.JpegImagePlugin] ai32
+[PIL.JpegImagePlugin] aXResolution
+[PIL.JpegImagePlugin] aDisplayedUnitsX
+[PIL.JpegImagePlugin] aYResolution
+[PIL.JpegImagePlugin] aDisplayedUnitsY
+[PIL.JpegImagePlugin] astruct
+[PIL.JpegImagePlugin] aerror
+[PIL.JpegImagePlugin] cAdobe
+[PIL.JpegImagePlugin] aadobe
+[PIL.JpegImagePlugin] aadobe_transform
+[PIL.JpegImagePlugin] MPF
+[PIL.JpegImagePlugin] nnamp
+[PIL.JpegImagePlugin] ampoffset
+[PIL.JpegImagePlugin] @u<genexpr>
+[PIL.JpegImagePlugin] uAPP.<locals>.<genexpr>
+[PIL.JpegImagePlugin] acomment
+[PIL.JpegImagePlugin] aCOM
+[PIL.JpegImagePlugin] a_size
+[PIL.JpegPresets] JPEG quality settings equivalent to the Photoshop settings.
+[PIL.JpegPresets] Can be used when saving JPEG files.
+[PIL.JpegPresets] The following presets are available by default:
+[PIL.JpegPresets] ``web_low``, ``web_medium``, ``web_high``, ``web_very_high``, ``web_maximum``,
+[PIL.JpegPresets] ``low``, ``medium``, ``high``, ``maximum``.
+[PIL.JpegPresets] More presets can be added to the :py:data:`presets` dict if needed.
+[PIL.JpegPresets] To apply the preset, specify::
+[PIL.JpegPresets]   quality="preset_name"
+[PIL.JpegPresets] To apply only the quantization table::
+[PIL.JpegPresets]   qtables="preset_name"
+[PIL.JpegPresets] To apply only the subsampling setting::
+[PIL.JpegPresets]   subsampling="preset_name"
+[PIL.JpegPresets] Example::
+[PIL.JpegPresets]   im.save("image_name.jpg", quality="web_high")
+[PIL.JpegPresets] Subsampling
+[PIL.JpegPresets] -----------
+[PIL.JpegPresets] Subsampling is the practice of encoding images by implementing less resolution
+[PIL.JpegPresets] for chroma information than for luma information.
+[PIL.JpegPresets] (ref.: https://en.wikipedia.org/wiki/Chroma_subsampling)
+[PIL.JpegPresets] Possible subsampling values are 0, 1 and 2 that correspond to 4:4:4, 4:2:2 and
+[PIL.JpegPresets] 4:2:0.
+[PIL.JpegPresets] You can get the subsampling of a JPEG with the
+[PIL.JpegPresets] :func:`.JpegImagePlugin.get_sampling` function.
+[PIL.JpegPresets] In JPEG compressed data a JPEG marker is used instead of an EXIF
+[PIL.JpegPresets] tag.
+[PIL.JpegPresets] (ref.: https://exiv2.org/tags.html)
+[PIL.JpegPresets] Quantization tables
+[PIL.JpegPresets] -------------------
+[PIL.JpegPresets] They are values use by the DCT (Discrete cosine transform) to remove
+[PIL.JpegPresets] *unnecessary* information from the image (the lossy part of the compression).
+[PIL.JpegPresets] (ref.: https://en.wikipedia.org/wiki/Quantization_matrix#Quantization_matrices,
+[PIL.JpegPresets] https://en.wikipedia.org/wiki/JPEG#Quantization)
+[PIL.JpegPresets] You can get the quantization tables of a JPEG with::
+[PIL.JpegPresets]   im.quantization
+[PIL.JpegPresets] This will return a dict with a number of lists. You can pass this dict
+[PIL.JpegPresets] directly as the qtables argument when saving a JPEG.
+[PIL.JpegPresets] The quantization table format in presets is a list with sublists. These formats
+[PIL.JpegPresets] are interchangeable.
+[PIL.JpegPresets] Libjpeg ref.:
+[PIL.JpegPresets] https://web.archive.org/web/20120328125543/http://www.jpegcameras.com/libjpeg/libjpeg-3.html
+[PIL.JpegPresets] aorigin
+[PIL.JpegPresets] ahas_location
+[PIL.JpegPresets] aannotations
+[PIL.JpegPresets] aweb_low
+[PIL.JpegPresets] aweb_medium
+[PIL.JpegPresets] aweb_high
+[PIL.JpegPresets] aweb_very_high
+[PIL.JpegPresets] aweb_maximum
+[PIL.JpegPresets] alow
+[PIL.JpegPresets] amedium
+[PIL.McIdasImagePlugin] astartswith
+[PIL.McIdasImagePlugin] afp
+[PIL.McIdasImagePlugin] a_accept
+[PIL.McIdasImagePlugin] unot an McIdas area file
+[PIL.McIdasImagePlugin] aarea_descriptor_raw
+[PIL.McIdasImagePlugin] astruct
+[PIL.McIdasImagePlugin] aunpack
+[PIL.McIdasImagePlugin] u!64i
+[PIL.McIdasImagePlugin] aarea_descriptor
+[PIL.McIdasImagePlugin] wLl
+[PIL.McIdasImagePlugin] uI;16B
+[PIL.McIdasImagePlugin] wIuI;32B
+[PIL.McIdasImagePlugin] uunsupported McIdas format
+[PIL.McIdasImagePlugin] a_mode
+[PIL.McIdasImagePlugin] a_size
+[PIL.McIdasImagePlugin] l"l
+[PIL.McIdasImagePlugin] aImageFile
+[PIL.McIdasImagePlugin] a_Tile
+[PIL.McIdasImagePlugin] araw
+[PIL.McIdasImagePlugin] pasize
+[PIL.McIdasImagePlugin] atile
+[PIL.McIdasImagePlugin] aorigin
+[PIL.McIdasImagePlugin] ahas_location
+[PIL.McIdasImagePlugin] aannotations
+[PIL.McIdasImagePlugin] aImage
+[PIL.McIdasImagePlugin] aImageFile
+[PIL.McIdasImagePlugin] aImage
+[PIL.McIdasImagePlugin] aprefix
+[PIL.McIdasImagePlugin] areturn
+[PIL.McIdasImagePlugin] abytes
+[PIL.McIdasImagePlugin] abool
+[PIL.McIdasImagePlugin] a__prepare__
+[PIL.McIdasImagePlugin] aMcIdasImageFile
+[PIL.McIdasImagePlugin] a__getitem__
+[PIL.McIdasImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.McIdasImagePlugin] u<metaclass>
+[PIL.McIdasImagePlugin] uPIL.McIdasImagePlugin
+[PIL.McIdasImagePlugin] a__qualname__
+[PIL.McIdasImagePlugin] aMCIDAS
+[PIL.McIdasImagePlugin] uMcIdas area file
+[PIL.McIdasImagePlugin] aformat_description
+[PIL.McIdasImagePlugin] areturn
+[PIL.McIdasImagePlugin] aNone
+[PIL.McIdasImagePlugin] a_open
+[PIL.McIdasImagePlugin] uMcIdasImageFile._open
+[PIL.McIdasImagePlugin] a__orig_bases__
+[PIL.McIdasImagePlugin] aregister_open
+[PIL.McIdasImagePlugin] uPIL\McIdasImagePlugin.py
+[PIL.McIdasImagePlugin] u<module PIL.McIdasImagePlugin>
+[PIL.McIdasImagePlugin] a__class__
+[PIL.MicImagePlugin] astartswith
+[PIL.MicImagePlugin] aolefile
+[PIL.MicImagePlugin] aMAGIC
+[PIL.MicImagePlugin] aOleFileIO
+[PIL.MicImagePlugin] afp
+[PIL.MicImagePlugin] aole
+[PIL.MicImagePlugin] unot an MIC file; invalid OLE file
+[PIL.MicImagePlugin] nnaendswith
+[PIL.MicImagePlugin] u.ACI
+[PIL.MicImagePlugin] aImage
+[PIL.MicImagePlugin] aimages
+[PIL.MicImagePlugin] unot an MIC file; no image entries
+[PIL.MicImagePlugin] aframe
+[PIL.MicImagePlugin] a_n_frames
+[PIL.MicImagePlugin] ais_animated
+[PIL.MicImagePlugin] a_MicImageFile__fp
+[PIL.MicImagePlugin] aseek
+[PIL.MicImagePlugin] a_seek_check
+[PIL.MicImagePlugin] aopenstream
+[PIL.MicImagePlugin] aTiffImagePlugin
+[PIL.MicImagePlugin] aTiffImageFile
+[PIL.MicImagePlugin] a_open
+[PIL.MicImagePlugin] aorigin
+[PIL.MicImagePlugin] ahas_location
+[PIL.MicImagePlugin] aannotations
+[PIL.MicImagePlugin] aImage
+[PIL.MicImagePlugin] aTiffImagePlugin
+[PIL.MicImagePlugin] aprefix
+[PIL.MicImagePlugin] areturn
+[PIL.MicImagePlugin] abytes
+[PIL.MicImagePlugin] abool
+[PIL.MicImagePlugin] a_accept
+[PIL.MicImagePlugin] a__prepare__
+[PIL.MicImagePlugin] aMicImageFile
+[PIL.MicImagePlugin] a__getitem__
+[PIL.MicImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.MicImagePlugin] u<metaclass>
+[PIL.MicImagePlugin] uPIL.MicImagePlugin
+[PIL.MicImagePlugin] a__qualname__
+[PIL.MicImagePlugin] aMIC
+[PIL.MicImagePlugin] uMicrosoft Image Composer
+[PIL.MicImagePlugin] aformat_description
+[PIL.MicImagePlugin] a_close_exclusive_fp_after_loading
+[PIL.MicImagePlugin] areturn
+[PIL.MicImagePlugin] aNone
+[PIL.MicImagePlugin] uMicImageFile._open
+[PIL.MicImagePlugin] aframe
+[PIL.MicImagePlugin] areturn
+[PIL.MicImagePlugin] aint
+[PIL.MicImagePlugin] aNone
+[PIL.MpegImagePlugin] afp
+[PIL.MpegImagePlugin] abits
+[PIL.MpegImagePlugin] abitbuffer
+[PIL.MpegImagePlugin] ai8
+[PIL.MpegImagePlugin] aself
+[PIL.MpegImagePlugin] anext
+[PIL.MpegImagePlugin] apeek
+[PIL.MpegImagePlugin] astartswith
+[PIL.MpegImagePlugin] aBitStream
+[PIL.MpegImagePlugin] l l
+[PIL.MpegImagePlugin] unot an MPEG file
+[PIL.MpegImagePlugin] aRGB
+[PIL.MpegImagePlugin] a_mode
+[PIL.MpegImagePlugin] a_size
+[PIL.MpegImagePlugin] aorigin
+[PIL.MpegImagePlugin] ahas_location
+[PIL.MpegImagePlugin] aannotations
+[PIL.MpegImagePlugin] aImage
+[PIL.MpegImagePlugin] aImageFile
+[PIL.MpegImagePlugin] aImage
+[PIL.MpegImagePlugin] aImageFile
+[PIL.MpegImagePlugin] a_binary
+[PIL.MpegImagePlugin] ai8
+[PIL.MpegImagePlugin] a_typing
+[PIL.MpegImagePlugin] aSupportsRead
+[PIL.MpegImagePlugin] aSupportsRead
+[PIL.MpegImagePlugin] uPIL.MpegImagePlugin
+[PIL.MpegImagePlugin] a__qualname__
+[PIL.MpegImagePlugin] afp
+[PIL.MpegImagePlugin] areturn
+[PIL.MpegImagePlugin] uSupportsRead[bytes]
+[PIL.MpegImagePlugin] aNone
+[PIL.MpegImagePlugin] uBitStream.__init__
+[PIL.MpegImagePlugin] areturn
+[PIL.MpegImagePlugin] aint
+[PIL.MpegImagePlugin] uBitStream.next
+[PIL.MpegImagePlugin] abits
+[PIL.MpegImagePlugin] areturn
+[PIL.MpegImagePlugin] aint
+[PIL.MpegImagePlugin] puBitStream.peek
+[PIL.MpegImagePlugin] abits
+[PIL.MpegImagePlugin] areturn
+[PIL.MpegImagePlugin] aint
+[PIL.MpegImagePlugin] aNone
+[PIL.MpegImagePlugin] askip
+[PIL.MpegImagePlugin] uBitStream.skip
+[PIL.MpegImagePlugin] uBitStream.read
+[PIL.MpegImagePlugin] aprefix
+[PIL.MpegImagePlugin] areturn
+[PIL.MpegImagePlugin] abytes
+[PIL.MpoImagePlugin] aJpegImagePlugin
+[PIL.MpoImagePlugin] a_save
+[PIL.MpoImagePlugin] aencoderinfo
+[PIL.MpoImagePlugin] aappend_images
+[PIL.MpoImagePlugin] ais_animated
+[PIL.MpoImagePlugin] aImageSequence
+[PIL.MpoImagePlugin] aIterator
+[PIL.MpoImagePlugin] aoffsets
+[PIL.MpoImagePlugin] lBl
+[PIL.MpoImagePlugin] atotal
+[PIL.MpoImagePlugin] astruct
+[PIL.MpoImagePlugin] apack
+[PIL.MpoImagePlugin] u>H
+[PIL.MpoImagePlugin] MPF
+[PIL.MpoImagePlugin] d aextra
+[PIL.MpoImagePlugin] aexif
+[PIL.MpoImagePlugin] aImage
+[PIL.MpoImagePlugin] aExif
+[PIL.MpoImagePlugin] atobytes
+[PIL.MpoImagePlugin] aexif
+[PIL.MpoImagePlugin] ampf_offset
+[PIL.MpoImagePlugin] afp
+[PIL.MpoImagePlugin] afilename
+[PIL.MpoImagePlugin] aappend
+[PIL.MpoImagePlugin] atell
+[PIL.MpoImagePlugin] a_attach_default_encoderinfo
+[PIL.MpoImagePlugin] aim
+[PIL.MpoImagePlugin] asave
+[PIL.MpoImagePlugin] aJPEG
+[PIL.MpoImagePlugin] aTiffImagePlugin
+[PIL.MpoImagePlugin] aImageFileDirectory_v2
+[PIL.MpoImagePlugin] c0100
+[PIL.MpoImagePlugin] ampentries
+[PIL.MpoImagePlugin] u<LLLHH
+[PIL.MpoImagePlugin] adata_offset
+[PIL.MpoImagePlugin] aseek
+[PIL.MpoImagePlugin] awrite
+[PIL.MpoImagePlugin] II*
+[PIL.MpoImagePlugin] ao32le
+[PIL.MpoImagePlugin] aSEEK_END
+[PIL.MpoImagePlugin] an_frames
+[PIL.MpoImagePlugin] u<genexpr>
+[PIL.MpoImagePlugin] u_save_all.<locals>.<genexpr>
+[PIL.MpoImagePlugin] aJpegImageFile
+[PIL.MpoImagePlugin] a_open
+[PIL.MpoImagePlugin] a_after_jpeg_open
+[PIL.MpoImagePlugin] a_getmp
+[PIL.MpoImagePlugin] ampinfo
+[PIL.MpoImagePlugin] uImage appears to be a malformed MPO file
+[PIL.MpoImagePlugin] aDataOffset
+[PIL.MspImagePlugin] astartswith
+[PIL.MspImagePlugin] cDanM
+[PIL.MspImagePlugin] cLinS
+[PIL.MspImagePlugin] afp
+[PIL.MspImagePlugin] l a_accept
+[PIL.MspImagePlugin] unot an MSP file
+[PIL.MspImagePlugin] l l
+[PIL.MspImagePlugin] achecksum
+[PIL.MspImagePlugin] ai16
+[PIL.MspImagePlugin] wsubad MSP checksum
+[PIL.MspImagePlugin] w1a_mode
+[PIL.MspImagePlugin] a_size
+[PIL.MspImagePlugin] cDanM
+[PIL.MspImagePlugin] aImageFile
+[PIL.MspImagePlugin] a_Tile
+[PIL.MspImagePlugin] araw
+[PIL.MspImagePlugin] pasize
+[PIL.MspImagePlugin] l atile
+[PIL.MspImagePlugin] aMSP
+[PIL.MspImagePlugin] afd
+[PIL.MspImagePlugin] aBytesIO
+[PIL.MspImagePlugin] astate
+[PIL.MspImagePlugin] axsize
+[PIL.MspImagePlugin] aseek
+[PIL.MspImagePlugin] astruct
+[PIL.MspImagePlugin] aunpack_from
+[PIL.MspImagePlugin] w<aysize
+[PIL.MspImagePlugin] wHl
+[PIL.MspImagePlugin] aerror
+[PIL.MspImagePlugin] uTruncated MSP file in row map
+[PIL.MspImagePlugin] aimg
+[PIL.MspImagePlugin] awrite
+[PIL.MspImagePlugin] ablank_line
+[PIL.MspImagePlugin] aself
+[PIL.MspImagePlugin] uTruncated MSP file, expected 
+[PIL.MspImagePlugin] u bytes on row 
+[PIL.MspImagePlugin] aidx
+[PIL.MspImagePlugin] arow
+[PIL.MspImagePlugin] aBc
+[PIL.MspImagePlugin] uCorrupted MSP file in row 
+[PIL.MspImagePlugin] aset_as_raw
+[PIL.MspImagePlugin] agetvalue
+[PIL.MspImagePlugin] amode
+[PIL.MspImagePlugin] ucannot write mode 
+[PIL.MspImagePlugin] u as MSP
+[PIL.MspImagePlugin] cDa
+[PIL.MspImagePlugin] cnM
+[PIL.MspImagePlugin] ao16
+[PIL.MspImagePlugin] a_save
+[PIL.MspImagePlugin] aorigin
+[PIL.PaletteFile] ao8
+[PIL.PaletteFile] afp
+[PIL.PaletteFile] areadline
+[PIL.PaletteFile] astartswith
+[PIL.PaletteFile] d#ubad palette file
+[PIL.PaletteFile] asplit
+[PIL.PaletteFile] apalette
+[PIL.PaletteFile] arawmode
+[PIL.PaletteFile] aorigin
+[PIL.PaletteFile] ahas_location
+[PIL.PaletteFile] aannotations
+[PIL.PaletteFile] aIO
+[PIL.PaletteFile] a_binary
+[PIL.PaletteFile] ao8
+[PIL.PaletteFile] uPIL.PaletteFile
+[PIL.PaletteFile] uFile handler for Teragon-style palette files.
+[PIL.PaletteFile] aPaletteFile
+[PIL.PaletteFile] a__qualname__
+[PIL.PaletteFile] aRGB
+[PIL.PaletteFile] afp
+[PIL.PaletteFile] areturn
+[PIL.PaletteFile] uIO[bytes]
+[PIL.PaletteFile] aNone
+[PIL.PaletteFile] uPaletteFile.__init__
+[PIL.PaletteFile] areturn
+[PIL.PaletteFile] utuple[bytes, str]
+[PIL.PaletteFile] agetpalette
+[PIL.PaletteFile] uPaletteFile.getpalette
+[PIL.PaletteFile] uPIL\PaletteFile.py
+[PIL.PaletteFile] u<module PIL.PaletteFile>
+[PIL.PaletteFile] aself
+[PIL.PaletteFile] afp
+[PIL.PaletteFile] apalette
+[PIL.PaletteFile] wsamsg
+[PIL.PaletteFile] wvwiwrwgwbT
+[PIL.PaletteFile] aself
+[PIL.PalmImagePlugin] aImage
+[PIL.PalmImagePlugin] anew
+[PIL.PalmImagePlugin] wLa_Palm8BitColormapValues
+[PIL.PalmImagePlugin] aputdata
+[PIL.PalmImagePlugin] apalettedata
+[PIL.PalmImagePlugin] ppaputpalette
+[PIL.PalmImagePlugin] amode
+[PIL.PalmImagePlugin] wPl
+[PIL.PalmImagePlugin] aencoderinfo
+[PIL.PalmImagePlugin] abpp
+[PIL.PalmImagePlugin] abpp
+[PIL.PalmImagePlugin] apoint
+[PIL.PalmImagePlugin] u<lambda>
+[PIL.PalmImagePlugin] u_save.<locals>.<lambda>
+[PIL.PalmImagePlugin] ainfo
+[PIL.PalmImagePlugin] ucannot write mode 
+[PIL.PalmImagePlugin] u as Palm
+[PIL.PalmImagePlugin] a_mode
+[PIL.PalmImagePlugin] uP;
+[PIL.PalmImagePlugin] w1u1;I
+[PIL.PalmImagePlugin] aim
+[PIL.PalmImagePlugin] aload
+[PIL.PalmImagePlugin] asize
+[PIL.PalmImagePlugin] a_COMPRESSION_TYPES
+[PIL.PalmImagePlugin] anone
+[PIL.PalmImagePlugin] a_FLAGS
+[PIL.PalmImagePlugin] ucustom-colormap
+[PIL.PalmImagePlugin] agetpalette
+[PIL.PalmImagePlugin] aoffset
+[PIL.PalmImagePlugin] awrite
+[PIL.PalmImagePlugin] ao16b
+[PIL.PalmImagePlugin] ao8
+[PIL.PalmImagePlugin] acolors
+[PIL.PalmImagePlugin] afp
+[PIL.PalmImagePlugin] acolormap
+[PIL.PalmImagePlugin] aImageFile
+[PIL.PalmImagePlugin] a_save
+[PIL.PalmImagePlugin] a_Tile
+[PIL.PalmImagePlugin] araw
+[PIL.PalmImagePlugin] paflush
+[PIL.PalmImagePlugin] amaxval
+[PIL.PalmImagePlugin] ashift
+[PIL.PalmImagePlugin] aorigin
+[PIL.PalmImagePlugin] ahas_location
+[PIL.PalmImagePlugin] aannotations
+[PIL.PalmImagePlugin] aIO
+[PIL.PalmImagePlugin] aImage
+[PIL.PalmImagePlugin] aImageFile
+[PIL.PalmImagePlugin] a_binary
+[PIL.PalmImagePlugin] ao8
+[PIL.PcdImagePlugin] afp
+[PIL.PcdImagePlugin] aseek
+[PIL.PcdImagePlugin] astartswith
+[PIL.PcdImagePlugin] cPCD_
+[PIL.PcdImagePlugin] unot a PCD file
+[PIL.PcdImagePlugin] atile_post_rotate
+[PIL.PcdImagePlugin] lZl
+[PIL.PcdImagePlugin] aRGB
+[PIL.PcdImagePlugin] a_mode
+[PIL.PcdImagePlugin] a_size
+[PIL.PcdImagePlugin] aImageFile
+[PIL.PcdImagePlugin] a_Tile
+[PIL.PcdImagePlugin] apcd
+[PIL.PcdImagePlugin] atile
+[PIL.PcdImagePlugin] a_im
+[PIL.PcdImagePlugin] aImage
+[PIL.PcdImagePlugin] acore
+[PIL.PcdImagePlugin] anew
+[PIL.PcdImagePlugin] amode
+[PIL.PcdImagePlugin] aim
+[PIL.PcdImagePlugin] aload_prepare
+[PIL.PcdImagePlugin] arotate
+[PIL.PcdImagePlugin] aexpand
+[PIL.PcdImagePlugin] taorigin
+[PIL.PcdImagePlugin] ahas_location
+[PIL.PcdImagePlugin] aannotations
+[PIL.PcdImagePlugin] aImage
+[PIL.PcdImagePlugin] aImageFile
+[PIL.PcdImagePlugin] a__prepare__
+[PIL.PcdImagePlugin] aPcdImageFile
+[PIL.PcdImagePlugin] a__getitem__
+[PIL.PcdImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.PcdImagePlugin] u<metaclass>
+[PIL.PcdImagePlugin] uPIL.PcdImagePlugin
+[PIL.PcdImagePlugin] a__qualname__
+[PIL.PcdImagePlugin] aPCD
+[PIL.PcdImagePlugin] uKodak PhotoCD
+[PIL.PcdImagePlugin] aformat_description
+[PIL.PcdImagePlugin] areturn
+[PIL.PcdImagePlugin] aNone
+[PIL.PcdImagePlugin] a_open
+[PIL.PcdImagePlugin] uPcdImageFile._open
+[PIL.PcdImagePlugin] uPcdImageFile.load_prepare
+[PIL.PcdImagePlugin] aload_end
+[PIL.PcdImagePlugin] uPcdImageFile.load_end
+[PIL.PcdImagePlugin] a__orig_bases__
+[PIL.PcdImagePlugin] aregister_open
+[PIL.PcdImagePlugin] aregister_extension
+[PIL.PcdImagePlugin] u.pcd
+[PIL.PcdImagePlugin] uPIL\PcdImagePlugin.py
+[PIL.PcxImagePlugin] afp
+[PIL.PcxImagePlugin] lDa_accept
+[PIL.PcxImagePlugin] unot a PCX file
+[PIL.PcxImagePlugin] ai16
+[PIL.PcxImagePlugin] ubad PCX image size
+[PIL.PcxImagePlugin] alogger
+[PIL.PcxImagePlugin] adebug
+[PIL.PcxImagePlugin] uBBox: %s %s %s %s
+[PIL.PcxImagePlugin] atell
+[PIL.PcxImagePlugin] l<lAlBuPCX version %s, bits %s, planes %s, stride %s
+[PIL.PcxImagePlugin] ainfo
+[PIL.PcxImagePlugin] adpi
+[PIL.PcxImagePlugin] w1T
+[PIL.PcxImagePlugin] wPuP;
+[PIL.PcxImagePlugin] wLaImagePalette
+[PIL.PcxImagePlugin] araw
+[PIL.PcxImagePlugin] aRGB
+[PIL.PcxImagePlugin] l@napalette
+[PIL.PcxImagePlugin] aseek
+[PIL.PcxImagePlugin] aSEEK_END
+[PIL.PcxImagePlugin] ao8
+[PIL.PcxImagePlugin] nnuRGB;L
+[PIL.PcxImagePlugin] uunknown PCX mode
+[PIL.PcxImagePlugin] a_mode
+[PIL.PcxImagePlugin] a_size
+[PIL.PcxImagePlugin] pasize
+[PIL.PcxImagePlugin] usize: %sx%s
+[PIL.PcxImagePlugin] aImageFile
+[PIL.PcxImagePlugin] a_Tile
+[PIL.PcxImagePlugin] apcx
+[PIL.PcxImagePlugin] atile
+[PIL.PcxImagePlugin] aSAVE
+[PIL.PcxImagePlugin] amode
+[PIL.PcxImagePlugin] uCannot save 
+[PIL.PcxImagePlugin] u images as PCX
+[PIL.PcxImagePlugin] uPcxImagePlugin._save: xwidth: %d, bits: %d, stride: %d
+[PIL.PcxImagePlugin] awrite
+[PIL.PcxImagePlugin] ao16
+[PIL.PcxImagePlugin] ldb
+[PIL.PcxImagePlugin] a_save
+[PIL.PcxImagePlugin] aim
+[PIL.PcxImagePlugin] agetpalette
+[PIL.PcxImagePlugin] aRGB
+[PIL.PcxImagePlugin] aRGB
+[PIL.PcxImagePlugin] aorigin
+[PIL.PcxImagePlugin] ahas_location
+[PIL.PcxImagePlugin] aannotations
+[PIL.PcxImagePlugin] aio
+[PIL.PcxImagePlugin] alogging
+[PIL.PcxImagePlugin] aIO
+[PIL.PdfImagePlugin] a_save
+[PIL.PdfImagePlugin] asave_all
+[PIL.PdfImagePlugin] tasize
+[PIL.PdfImagePlugin] aBitsPerComponent
+[PIL.PdfImagePlugin] amode
+[PIL.PdfImagePlugin] w1afeatures
+[PIL.PdfImagePlugin] acheck
+[PIL.PdfImagePlugin] alibtiff
+[PIL.PdfImagePlugin] aCCITTFaxDecode
+[PIL.PdfImagePlugin] aBitsPerComponent
+[PIL.PdfImagePlugin] aPdfParser
+[PIL.PdfImagePlugin] aPdfArray
+[PIL.PdfImagePlugin] aPdfDict
+[PIL.PdfImagePlugin] wKaBlackIs1
+[PIL.PdfImagePlugin] aColumns
+[PIL.PdfImagePlugin] aRows
+[PIL.PdfImagePlugin] aDCTDecode
+[PIL.PdfImagePlugin] aPdfName
+[PIL.PdfImagePlugin] aDeviceGray
+[PIL.PdfImagePlugin] aColorSpace
+[PIL.PdfImagePlugin] aImageB
+[PIL.PdfImagePlugin] wLaLA
+[PIL.PdfImagePlugin] aJPXDecode
+[PIL.PdfImagePlugin] aSMaskInData
+[PIL.PdfImagePlugin] wPaASCIIHexDecode
+[PIL.PdfImagePlugin] agetpalette
+[PIL.PdfImagePlugin] aIndexed
+[PIL.PdfImagePlugin] aDeviceRGB
+[PIL.PdfImagePlugin] aPdfBinary
+[PIL.PdfImagePlugin] aImageI
+[PIL.PdfImagePlugin] atransparency
+[PIL.PdfImagePlugin] ainfo
+[PIL.PdfImagePlugin] aconvert
+[PIL.PdfImagePlugin] aLA
+[PIL.PdfImagePlugin] agetchannel
+[PIL.PdfImagePlugin] wAaencoderinfo
+[PIL.PdfImagePlugin] a_write_image
+[PIL.PdfImagePlugin] aSMask
+[PIL.PdfImagePlugin] aRGB
+[PIL.PdfImagePlugin] aImageC
+[PIL.PdfImagePlugin] aRGBA
+[PIL.PdfImagePlugin] aCMYK
+[PIL.PdfImagePlugin] aDeviceCMYK
+[PIL.PdfImagePlugin] ucannot save mode 
+[PIL.PdfImagePlugin] aBytesIO
+[PIL.PdfImagePlugin] aImageFile
+[PIL.PdfImagePlugin] a_Tile
+[PIL.PdfImagePlugin] ahex
+[PIL.PdfImagePlugin] pasave
+[PIL.PdfImagePlugin] aTIFF
+[PIL.PdfParser] acodecs
+[PIL.PdfParser] aBOM_UTF16_BE
+[PIL.PdfParser] aencode
+[PIL.PdfParser] autf_16_be
+[PIL.PdfParser] adecode
+[PIL.PdfParser] aPDFDocEncoding
+[PIL.PdfParser] u<genexpr>
+[PIL.PdfParser] udecode_text.<locals>.<genexpr>
+[PIL.PdfParser] aPdfFormatError
+[PIL.PdfParser] aobject_id
+[PIL.PdfParser] w ageneration
+[PIL.PdfParser] u R
+[PIL.PdfParser] a__str__
+[PIL.PdfParser] uus-ascii
+[PIL.PdfParser] aIndirectReference
+[PIL.PdfParser] u obj
+[PIL.PdfParser] aexisting_entries
+[PIL.PdfParser] anew_entries
+[PIL.PdfParser] adeleted_entries
+[PIL.PdfParser] areading_finished
+[PIL.PdfParser] uobject ID 
+[PIL.PdfParser] u cannot be deleted because it doesn't exist
+[PIL.PdfParser] asorted
+[PIL.PdfParser] atell
+[PIL.PdfParser] awrite
+[PIL.PdfParser] cxref
+[PIL.PdfParser] aprev
+[PIL.PdfParser] wfc%d %d
+[PIL.PdfParser] acontiguous_keys
+[PIL.PdfParser] aself
+[PIL.PdfParser] c%010d %05d n 
+[PIL.PdfParser] adeleted_keys
+[PIL.PdfParser] apop
+[PIL.PdfParser] acheck_format_condition
+[PIL.PdfParser] uexpected the next deleted object ID to be 
+[PIL.PdfParser] u, instead found 
+[PIL.PdfParser] c%010d %05d f 
+[PIL.PdfParser] aPdfName
+[PIL.PdfParser] w(w)aPdfParser
+[PIL.PdfParser] ainterpret_name
+[PIL.PdfParser] /aallowed_chars
+[PIL.PdfParser] aresult
+[PIL.PdfParser] aappend
+[PIL.PdfParser] aextend
+[PIL.PdfParser] c#%02X
+[PIL.PdfParser] c[ 
+[PIL.PdfParser] d c ]
+[PIL.PdfParser] apdf_repr
+[PIL.PdfParser] uPdfArray.__bytes__.<locals>.<genexpr>
+[PIL.PdfParser] adata
+[PIL.PixarImagePlugin] astartswith
+[PIL.PixarImagePlugin] afp
+[PIL.PixarImagePlugin] a_accept
+[PIL.PixarImagePlugin] unot a PIXAR file
+[PIL.PixarImagePlugin] ai16
+[PIL.PixarImagePlugin] a_size
+[PIL.PixarImagePlugin] aRGB
+[PIL.PixarImagePlugin] a_mode
+[PIL.PixarImagePlugin] aImageFile
+[PIL.PixarImagePlugin] a_Tile
+[PIL.PixarImagePlugin] araw
+[PIL.PixarImagePlugin] pasize
+[PIL.PixarImagePlugin] amode
+[PIL.PixarImagePlugin] atile
+[PIL.PixarImagePlugin] aorigin
+[PIL.PixarImagePlugin] ahas_location
+[PIL.PixarImagePlugin] aannotations
+[PIL.PixarImagePlugin] aImage
+[PIL.PixarImagePlugin] aImageFile
+[PIL.PixarImagePlugin] aImage
+[PIL.PixarImagePlugin] a_binary
+[PIL.PixarImagePlugin] ai16le
+[PIL.PixarImagePlugin] ai16le
+[PIL.PixarImagePlugin] aprefix
+[PIL.PixarImagePlugin] areturn
+[PIL.PixarImagePlugin] abytes
+[PIL.PixarImagePlugin] abool
+[PIL.PixarImagePlugin] a__prepare__
+[PIL.PixarImagePlugin] aPixarImageFile
+[PIL.PixarImagePlugin] a__getitem__
+[PIL.PixarImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.PixarImagePlugin] u<metaclass>
+[PIL.PixarImagePlugin] uPIL.PixarImagePlugin
+[PIL.PixarImagePlugin] a__qualname__
+[PIL.PixarImagePlugin] aPIXAR
+[PIL.PixarImagePlugin] uPIXAR raster image
+[PIL.PixarImagePlugin] aformat_description
+[PIL.PixarImagePlugin] areturn
+[PIL.PixarImagePlugin] aNone
+[PIL.PixarImagePlugin] a_open
+[PIL.PixarImagePlugin] uPixarImageFile._open
+[PIL.PixarImagePlugin] a__orig_bases__
+[PIL.PixarImagePlugin] aregister_open
+[PIL.PixarImagePlugin] aregister_extension
+[PIL.PixarImagePlugin] u.pxr
+[PIL.PixarImagePlugin] uPIL\PixarImagePlugin.py
+[PIL.PixarImagePlugin] u<module PIL.PixarImagePlugin>
+[PIL.PixarImagePlugin] a__class__
+[PIL.PixarImagePlugin] aprefix
+[PIL.PixarImagePlugin] aself
+[PIL.PngImagePlugin] azlib
+[PIL.PngImagePlugin] adecompressobj
+[PIL.PngImagePlugin] adecompress
+[PIL.PngImagePlugin] aMAX_TEXT_CHUNK
+[PIL.PngImagePlugin] aunconsumed_tail
+[PIL.PngImagePlugin] uDecompressed data too large for PngImagePlugin.MAX_TEXT_CHUNK
+[PIL.PngImagePlugin] acrc32
+[PIL.PngImagePlugin] afp
+[PIL.PngImagePlugin] aqueue
+[PIL.PngImagePlugin] apop
+[PIL.PngImagePlugin] aseek
+[PIL.PngImagePlugin] nnatell
+[PIL.PngImagePlugin] ai32
+[PIL.PngImagePlugin] ais_cid
+[PIL.PngImagePlugin] aImageFile
+[PIL.PngImagePlugin] aLOAD_TRUNCATED_IMAGES
+[PIL.PngImagePlugin] ubroken PNG file (chunk 
+[PIL.PngImagePlugin] w)apos
+[PIL.PngImagePlugin] uFetch a new chunk. Returns header information.
+[PIL.PngImagePlugin] aappend
+[PIL.PngImagePlugin] alogger
+[PIL.PngImagePlugin] adebug
+[PIL.PngImagePlugin] uSTREAM %r %s %s
+[PIL.PngImagePlugin] achunk_
+[PIL.PngImagePlugin] adecode
+[PIL.PngImagePlugin] aascii
+[PIL.PngImagePlugin] uCall the appropriate chunk handler
+[PIL.PngImagePlugin] acrc_skip
+[PIL.PngImagePlugin] a_crc32
+[PIL.PngImagePlugin] ubroken PNG file (bad header checksum in 
+[PIL.PngImagePlugin] astruct
+[PIL.PngImagePlugin] aerror
+[PIL.PngImagePlugin] ubroken PNG file (incomplete checksum in 
+[PIL.PngImagePlugin] uRead and verify checksum
+[PIL.PngImagePlugin] uRead checksum
+[PIL.PngImagePlugin] aself
+[PIL.PngImagePlugin] utruncated PNG file
+[PIL.PngImagePlugin] acrc
+[PIL.PngImagePlugin] a_safe_read
+[PIL.PngImagePlugin] acids
+[PIL.PngImagePlugin] a__new__
+[PIL.PngImagePlugin] alang
+[PIL.PngImagePlugin] atkey
+[PIL.PngImagePlugin]         :param cls: the class to use when creating the instance
+[PIL.PngImagePlugin]         :param text: value for this key
+[PIL.PngImagePlugin]         :param lang: language code
+[PIL.PngImagePlugin]         :param tkey: UTF-8 version of the key name
+[PIL.PngImagePlugin]         
+[PIL.PngImagePlugin] achunks
+[PIL.PngImagePlugin] uAppends an arbitrary chunk. Use with caution.
+[PIL.PpmImagePlugin] astartswith
+[PIL.PpmImagePlugin] dPc0123456fy
+[PIL.PpmImagePlugin] afp
+[PIL.PpmImagePlugin] aself
+[PIL.PpmImagePlugin] ab_whitespace
+[PIL.PpmImagePlugin] amagic
+[PIL.PpmImagePlugin] atoken
+[PIL.PpmImagePlugin] d#c
+[PIL.PpmImagePlugin] uReached EOF while reading header
+[PIL.PpmImagePlugin] cToken too long in file header: %s
+[PIL.PpmImagePlugin] a_read_magic
+[PIL.PpmImagePlugin] aMODES
+[PIL.PpmImagePlugin] unot a PPM file
+[PIL.PpmImagePlugin] a_mode
+[PIL.PpmImagePlugin] cP1
+[PIL.PpmImagePlugin] cP4
+[PIL.PpmImagePlugin] uimage/x-portable-bitmap
+[PIL.PpmImagePlugin] acustom_mimetype
+[PIL.PpmImagePlugin] cP2
+[PIL.PpmImagePlugin] cP5
+[PIL.PpmImagePlugin] uimage/x-portable-graymap
+[PIL.PpmImagePlugin] cP3
+[PIL.PpmImagePlugin] cP6
+[PIL.PpmImagePlugin] uimage/x-portable-pixmap
+[PIL.PpmImagePlugin] a_read_token
+[PIL.PpmImagePlugin] a_size
+[PIL.PpmImagePlugin] araw
+[PIL.PpmImagePlugin] cP1
+[PIL.PpmImagePlugin] cP2
+[PIL.PpmImagePlugin] cP3
+[PIL.PpmImagePlugin] appm_plain
+[PIL.PpmImagePlugin] w1u1;I
+[PIL.PpmImagePlugin] wFamath
+[PIL.PpmImagePlugin] aisfinite
+[PIL.PpmImagePlugin] uscale must be finite and non-zero
+[PIL.PpmImagePlugin] ainfo
+[PIL.PpmImagePlugin] ascale
+[PIL.PpmImagePlugin] uF;32F
+[PIL.PpmImagePlugin] uF;32BF
+[PIL.PpmImagePlugin] umaxval must be greater than 0 and less than 65536
+[PIL.PpmImagePlugin] wLwIl
+[PIL.PpmImagePlugin] uI;16B
+[PIL.PpmImagePlugin] appm
+[PIL.PpmImagePlugin] aImageFile
+[PIL.PpmImagePlugin] a_Tile
+[PIL.PpmImagePlugin] pasize
+[PIL.PpmImagePlugin] atell
+[PIL.PpmImagePlugin] atile
+[PIL.PpmImagePlugin] afd
+[PIL.PpmImagePlugin] aSAFEBLOCK
+[PIL.PsdImagePlugin] astartswith
+[PIL.PsdImagePlugin] c8BPS
+[PIL.PsdImagePlugin] afp
+[PIL.PsdImagePlugin] a_accept
+[PIL.PsdImagePlugin] ai16
+[PIL.PsdImagePlugin] unot a PSD file
+[PIL.PsdImagePlugin] aMODES
+[PIL.PsdImagePlugin] unot enough channels
+[PIL.PsdImagePlugin] aRGB
+[PIL.PsdImagePlugin] aRGBA
+[PIL.PsdImagePlugin] a_mode
+[PIL.PsdImagePlugin] ai32
+[PIL.PsdImagePlugin] a_size
+[PIL.PsdImagePlugin] wPl
+[PIL.PsdImagePlugin] aImagePalette
+[PIL.PsdImagePlugin] araw
+[PIL.PsdImagePlugin] uRGB;L
+[PIL.PsdImagePlugin] apalette
+[PIL.PsdImagePlugin] aresources
+[PIL.PsdImagePlugin] atell
+[PIL.PsdImagePlugin] aself
+[PIL.PsdImagePlugin] ai8
+[PIL.PsdImagePlugin] aappend
+[PIL.PsdImagePlugin] ainfo
+[PIL.PsdImagePlugin] aicc_profile
+[PIL.PsdImagePlugin] a_layers_position
+[PIL.PsdImagePlugin] a_layers_size
+[PIL.PsdImagePlugin] aseek
+[PIL.PsdImagePlugin] a_n_frames
+[PIL.PsdImagePlugin] a_maketile
+[PIL.PsdImagePlugin] pasize
+[PIL.PsdImagePlugin] atile
+[PIL.PsdImagePlugin] a_fp
+[PIL.PsdImagePlugin] aframe
+[PIL.PsdImagePlugin] a_min_frame
+[PIL.PsdImagePlugin] aDeferredError
+[PIL.PsdImagePlugin] aex
+[PIL.PsdImagePlugin] aBytesIO
+[PIL.PsdImagePlugin] aImageFile
+[PIL.PsdImagePlugin] a_safe_read
+[PIL.PsdImagePlugin] a_layerinfo
+[PIL.PsdImagePlugin] alayers
+[PIL.PsdImagePlugin] a_seek_check
+[PIL.PsdImagePlugin] asize
+[PIL.PsdImagePlugin] areturn
+[PIL.PsdImagePlugin] aint
+[PIL.PsdImagePlugin] abytes
+[PIL.PsdImagePlugin] u_layerinfo.<locals>.read
+[PIL.PsdImagePlugin] asi16
+[PIL.PsdImagePlugin] uLayer block too short for number of layers requested
+[PIL.SgiImagePlugin] ai16
+[PIL.SgiImagePlugin] afp
+[PIL.SgiImagePlugin] a_accept
+[PIL.SgiImagePlugin] uNot an SGI image file
+[PIL.SgiImagePlugin] aMODES
+[PIL.SgiImagePlugin] uUnsupported SGI image mode
+[PIL.SgiImagePlugin] a_size
+[PIL.SgiImagePlugin] asplit
+[PIL.SgiImagePlugin] w;a_mode
+[PIL.SgiImagePlugin] amode
+[PIL.SgiImagePlugin] aRGB
+[PIL.SgiImagePlugin] uimage/rgb
+[PIL.SgiImagePlugin] acustom_mimetype
+[PIL.SgiImagePlugin] aImageFile
+[PIL.SgiImagePlugin] a_Tile
+[PIL.SgiImagePlugin] aSGI16
+[PIL.SgiImagePlugin] pasize
+[PIL.SgiImagePlugin] atile
+[PIL.SgiImagePlugin] aself
+[PIL.SgiImagePlugin] aappend
+[PIL.SgiImagePlugin] araw
+[PIL.SgiImagePlugin] aoffset
+[PIL.SgiImagePlugin] aorientation
+[PIL.SgiImagePlugin] apagesize
+[PIL.SgiImagePlugin] asgi_rle
+[PIL.SgiImagePlugin] wLaRGB
+[PIL.SgiImagePlugin] aRGBA
+[PIL.SgiImagePlugin] aencoderinfo
+[PIL.SgiImagePlugin] abpc
+[PIL.SgiImagePlugin] uUnsupported number of bytes per pixel
+[PIL.SgiImagePlugin] wLasplitext
+[PIL.SgiImagePlugin] aencode
+[PIL.SgiImagePlugin] aascii
+[PIL.SgiImagePlugin] aignore
+[PIL.SgiImagePlugin] awrite
+[PIL.SgiImagePlugin] astruct
+[PIL.SgiImagePlugin] apack
+[PIL.SgiImagePlugin] u>h
+[PIL.SgiImagePlugin] ao8
+[PIL.SgiImagePlugin] u>H
+[PIL.SgiImagePlugin] u>l
+[PIL.SgiImagePlugin] u>l
+[PIL.SgiImagePlugin] u4s
+[PIL.SgiImagePlugin] u79s
+[PIL.SgiImagePlugin] wsc
+[PIL.SgiImagePlugin] u404s
+[PIL.SgiImagePlugin] uL;16B
+[PIL.SgiImagePlugin] atobytes
+[PIL.SgiImagePlugin] arawmode
+[PIL.SgiImagePlugin] aflush
+[PIL.SpiderImagePlugin] EValueError
+[PIL.SpiderImagePlugin] EOverflowError
+[PIL.SpiderImagePlugin] lcT
+[PIL.SpiderImagePlugin] aisInt
+[PIL.SpiderImagePlugin] aiforms
+[PIL.SpiderImagePlugin] l\T
+[PIL.SpiderImagePlugin] nnnastruct
+[PIL.SpiderImagePlugin] aunpack
+[PIL.SpiderImagePlugin] u>23f
+[PIL.SpiderImagePlugin] wfaisSpiderHeader
+[PIL.SpiderImagePlugin] u<23f
+[PIL.SpiderImagePlugin] afp
+[PIL.SpiderImagePlugin] llabigendian
+[PIL.SpiderImagePlugin] u>27f
+[PIL.SpiderImagePlugin] u<27f
+[PIL.SpiderImagePlugin] unot a valid Spider file
+[PIL.SpiderImagePlugin] aerror
+[PIL.SpiderImagePlugin] wtunot a Spider 2D image
+[PIL.SpiderImagePlugin] a_size
+[PIL.SpiderImagePlugin] aistack
+[PIL.SpiderImagePlugin] aimgnumber
+[PIL.SpiderImagePlugin] a_nimages
+[PIL.SpiderImagePlugin] aimgbytes
+[PIL.SpiderImagePlugin] ahdrlen
+[PIL.SpiderImagePlugin] astkoffset
+[PIL.SpiderImagePlugin] uinconsistent stack header values
+[PIL.SpiderImagePlugin] uF;32BF
+[PIL.SpiderImagePlugin] arawmode
+[PIL.SpiderImagePlugin] uF;32F
+[PIL.SpiderImagePlugin] wFa_mode
+[PIL.SpiderImagePlugin] aImageFile
+[PIL.SpiderImagePlugin] a_Tile
+[PIL.SpiderImagePlugin] araw
+[PIL.SpiderImagePlugin] pasize
+[PIL.SpiderImagePlugin] atile
+[PIL.SpiderImagePlugin] a_fp
+[PIL.SpiderImagePlugin] uattempt to seek in a non-stack file
+[PIL.SpiderImagePlugin] a_seek_check
+[PIL.SpiderImagePlugin] aDeferredError
+[PIL.SpiderImagePlugin] aex
+[PIL.SpiderImagePlugin] aseek
+[PIL.SpiderImagePlugin] a_open
+[PIL.SpiderImagePlugin] agetextrema
+[PIL.SpiderImagePlugin] acast
+[PIL.SpiderImagePlugin] Ofloat
+[PIL.SpiderImagePlugin] papoint
+[PIL.SpiderImagePlugin] u<lambda>
+[PIL.SpiderImagePlugin] uSpiderImageFile.convert2byte.<locals>.<lambda>
+[PIL.SpiderImagePlugin] aconvert
+[PIL.SpiderImagePlugin] wLwmuMust not call PIL.SpiderImagePlugin.SpiderImageFile.tkPhotoImage
+[PIL.SunImagePlugin] ai32
+[PIL.SunImagePlugin] afp
+[PIL.SunImagePlugin] l a_accept
+[PIL.SunImagePlugin] unot an SUN raster file
+[PIL.SunImagePlugin] l l
+[PIL.SunImagePlugin] a_size
+[PIL.SunImagePlugin] w1u1;I
+[PIL.SunImagePlugin] a_mode
+[PIL.SunImagePlugin] wLuL;4
+[PIL.SunImagePlugin] wLl
+[PIL.SunImagePlugin] aRGB
+[PIL.SunImagePlugin] aRGB
+[PIL.SunImagePlugin] aRGB
+[PIL.SunImagePlugin] aBGR
+[PIL.SunImagePlugin] aRGB
+[PIL.SunImagePlugin] aRGBX
+[PIL.SunImagePlugin] aRGB
+[PIL.SunImagePlugin] aBGRX
+[PIL.SunImagePlugin] uUnsupported Mode/Bit Depth
+[PIL.SunImagePlugin] uUnsupported Color Palette Length
+[PIL.SunImagePlugin] uUnsupported Palette Type
+[PIL.SunImagePlugin] aImagePalette
+[PIL.SunImagePlugin] araw
+[PIL.SunImagePlugin] uRGB;L
+[PIL.SunImagePlugin] apalette
+[PIL.SunImagePlugin] amode
+[PIL.SunImagePlugin] wPareplace
+[PIL.SunImagePlugin] wLwPasize
+[PIL.SunImagePlugin] aImageFile
+[PIL.SunImagePlugin] a_Tile
+[PIL.SunImagePlugin] patile
+[PIL.SunImagePlugin] asun_rle
+[PIL.SunImagePlugin] uUnsupported Sun Raster file type
+[PIL.SunImagePlugin] aorigin
+[PIL.SunImagePlugin] ahas_location
+[PIL.SunImagePlugin] aannotations
+[PIL.SunImagePlugin] aImage
+[PIL.SunImagePlugin] aImageFile
+[PIL.SunImagePlugin] aImagePalette
+[PIL.SunImagePlugin] aImage
+[PIL.SunImagePlugin] a_binary
+[PIL.SunImagePlugin] ai32be
+[PIL.SunImagePlugin] ai32be
+[PIL.SunImagePlugin] aprefix
+[PIL.SunImagePlugin] areturn
+[PIL.SunImagePlugin] abytes
+[PIL.SunImagePlugin] abool
+[PIL.SunImagePlugin] a__prepare__
+[PIL.SunImagePlugin] aSunImageFile
+[PIL.SunImagePlugin] a__getitem__
+[PIL.TgaImagePlugin] afp
+[PIL.TgaImagePlugin] ai16
+[PIL.TgaImagePlugin] a_size
+[PIL.TgaImagePlugin] asize
+[PIL.TgaImagePlugin] l unot a TGA file
+[PIL.TgaImagePlugin] wLa_mode
+[PIL.TgaImagePlugin] w1aLA
+[PIL.TgaImagePlugin] wPT
+[PIL.TgaImagePlugin] aRGB
+[PIL.TgaImagePlugin] aRGBA
+[PIL.TgaImagePlugin] uunknown TGA mode
+[PIL.TgaImagePlugin] l0T
+[PIL.TgaImagePlugin] l0a_flip_horizontally
+[PIL.TgaImagePlugin] l l0T
+[PIL.TgaImagePlugin] uunknown TGA orientation
+[PIL.TgaImagePlugin] ainfo
+[PIL.TgaImagePlugin] aorientation
+[PIL.TgaImagePlugin] atga_rle
+[PIL.TgaImagePlugin] acompression
+[PIL.TgaImagePlugin] aid_section
+[PIL.TgaImagePlugin] aImagePalette
+[PIL.TgaImagePlugin] araw
+[PIL.TgaImagePlugin] uBGRA;15Z
+[PIL.TgaImagePlugin] apalette
+[PIL.TgaImagePlugin] amode
+[PIL.TgaImagePlugin] aBGR
+[PIL.TgaImagePlugin] l aBGRA
+[PIL.TgaImagePlugin] uunknown TGA map depth
+[PIL.TgaImagePlugin] aMODES
+[PIL.TgaImagePlugin] aImageFile
+[PIL.TgaImagePlugin] a_Tile
+[PIL.TgaImagePlugin] patell
+[PIL.TgaImagePlugin] atile
+[PIL.TgaImagePlugin] aim
+[PIL.TgaImagePlugin] atranspose
+[PIL.TgaImagePlugin] aImage
+[PIL.TgaImagePlugin] aTranspose
+[PIL.TgaImagePlugin] aFLIP_LEFT_RIGHT
+[PIL.TgaImagePlugin] aSAVE
+[PIL.TgaImagePlugin] ucannot write mode 
+[PIL.TgaImagePlugin] u as TGA
+[PIL.TgaImagePlugin] arle
+[PIL.TgaImagePlugin] aencoderinfo
+[PIL.TgaImagePlugin] acompression
+[PIL.TgaImagePlugin] aid_section
+[PIL.TgaImagePlugin] :nl
+[PIL.TgaImagePlugin] nawarnings
+[PIL.TgaImagePlugin] awarn
+[PIL.TgaImagePlugin] uid_section has been trimmed to 255 characters
+[PIL.TgaImagePlugin] agetpalette
+[PIL.TiffImagePlugin] u<genexpr>
+[PIL.TiffImagePlugin] astartswith
+[PIL.TiffImagePlugin] aPREFIXES
+[PIL.TiffImagePlugin] aIFDRational
+[PIL.TiffImagePlugin] alimit_rational
+[PIL.TiffImagePlugin] :nnq
+[PIL.TiffImagePlugin] aFraction
+[PIL.TiffImagePlugin] anumerator
+[PIL.TiffImagePlugin] adenominator
+[PIL.TiffImagePlugin] amin
+[PIL.TiffImagePlugin] a_limit_rational
+[PIL.TiffImagePlugin] an_d
+[PIL.TiffImagePlugin] amax
+[PIL.TiffImagePlugin] u_limit_signed_rational.<locals>.<genexpr>
+[PIL.TiffImagePlugin] aself
+[PIL.TiffImagePlugin] aargs
+[PIL.TiffImagePlugin] areturn
+[PIL.TiffImagePlugin] aIFDRational
+[PIL.TiffImagePlugin] utuple[float, ...]
+[PIL.TiffImagePlugin] ubool | float | Fraction
+[PIL.TiffImagePlugin] adelegate
+[PIL.TiffImagePlugin] u_delegate.<locals>.delegate
+[PIL.TiffImagePlugin] a_val
+[PIL.TiffImagePlugin] aop
+[PIL.TiffImagePlugin] a_numerator
+[PIL.TiffImagePlugin] a_denominator
+[PIL.TiffImagePlugin] aTYPE_CHECKING
+[PIL.TiffImagePlugin] acast
+[PIL.TiffImagePlugin] aIntegralLike
+[PIL.TiffImagePlugin]         :param value: either an integer numerator, a
+[PIL.TiffImagePlugin]         float/rational/other number, or an IFDRational
+[PIL.TiffImagePlugin]         :param denominator: Optional integer denominator
+[PIL.TiffImagePlugin]         
+[PIL.TiffImagePlugin] alimit_denominator
+[PIL.TiffImagePlugin]         :param max_denominator: Integer, the maximum denominator value
+[PIL.TiffImagePlugin]         :returns: Tuple of (numerator, denominator)
+[PIL.TiffImagePlugin]         
+[PIL.TiffImagePlugin] a__hash__
+[PIL.TiffImagePlugin] afunc
+[PIL.TiffImagePlugin] areturn
+[PIL.TiffImagePlugin] a_LoaderFunc
+[PIL.TiffImagePlugin] padecorator
+[PIL.TiffImagePlugin] u_register_loader.<locals>.decorator
+[PIL.TiffImagePlugin] aTiffTags
+[PIL.TiffImagePlugin] aTYPES
+[PIL.TiffImagePlugin] aTYPES
+[PIL.TiffImagePlugin] aload_
+[PIL.TiffImagePlugin] nnareplace
+[PIL.TiffImagePlugin] w_w aidx
+[PIL.TiffImagePlugin] asize
+[PIL.TiffTags] a__new__
+[PIL.TiffTags] aenum
+[PIL.TiffTags] aTAGS_V2_GROUPS
+[PIL.TiffTags] aTAGS_V2
+[PIL.TiffTags] aTagInfo
+[PIL.TiffTags] aTAGS
+[PIL.TiffTags] aunknown
+[PIL.TiffTags]     :param tag: Integer tag number
+[PIL.TiffTags]     :param group: Which :py:data:`~PIL.TiffTags.TAGS_V2_GROUPS` to look in
+[PIL.TiffTags]     .. versionadded:: 8.3.0
+[PIL.TiffTags]     :returns: Taginfo namedtuple, From the ``TAGS_V2`` info if possible,
+[PIL.TiffTags]         otherwise just populating the value and name from ``TAGS``.
+[PIL.TiffTags]         If the tag is not recognized, "unknown" is returned for the name
+[PIL.TiffTags]     
+[PIL.TiffTags] a_tags_v2
+[PIL.TiffTags] aitems
+[PIL.TiffTags] a_tags_v2_groups
+[PIL.TiffTags] aorigin
+[PIL.TiffTags] ahas_location
+[PIL.TiffTags] aannotations
+[PIL.TiffTags] aNamedTuple
+[PIL.TiffTags] a__prepare__
+[PIL.TiffTags] a_TagInfo
+[PIL.TiffTags] a__getitem__
+[PIL.TiffTags] u%s.__prepare__() must return a mapping, not %s
+[PIL.TiffTags] u<metaclass>
+[PIL.TiffTags] uPIL.TiffTags
+[PIL.TiffTags] a__qualname__
+[PIL.TiffTags] uint | None
+[PIL.TiffTags] avalue
+[PIL.TiffTags] astr
+[PIL.TiffTags] alength
+[PIL.TiffTags] udict[str, int]
+[PIL.TiffTags] a__orig_bases__
+[PIL.TiffTags] a__slots__
+[PIL.TiffTags] ulist[str]
+[PIL.TiffTags] naunknown
+[PIL.TiffTags] nnnD
+[PIL.TiffTags] avalue
+[PIL.TiffTags] aname
+[PIL.TiffTags] atype
+[PIL.TiffTags] alength
+[PIL.TiffTags] aenum
+[PIL.TiffTags] areturn
+[PIL.TiffTags] uint | None
+[PIL.TiffTags] astr
+[PIL.TiffTags] uint | None
+[PIL.TiffTags] uint | None
+[PIL.TiffTags] udict[str, int] | None
+[PIL.TiffTags] aTagInfo
+[PIL.WebPImagePlugin] astartswith
+[PIL.WebPImagePlugin] cRIFF
+[PIL.WebPImagePlugin] ncWEBP
+[PIL.WebPImagePlugin] na_VP8_MODES_BY_IDENTIFIER
+[PIL.WebPImagePlugin] aSUPPORTED
+[PIL.WebPImagePlugin] uimage file could not be identified because WEBP support not installed
+[PIL.WebPImagePlugin] afp
+[PIL.WebPImagePlugin] a_webp
+[PIL.WebPImagePlugin] aWebPAnimDecoder
+[PIL.WebPImagePlugin] a_decoder
+[PIL.WebPImagePlugin] aget_info
+[PIL.WebPImagePlugin] a_size
+[PIL.WebPImagePlugin] ainfo
+[PIL.WebPImagePlugin] aloop
+[PIL.WebPImagePlugin] an_frames
+[PIL.WebPImagePlugin] arawmode
+[PIL.WebPImagePlugin] abackground
+[PIL.WebPImagePlugin] ais_animated
+[PIL.WebPImagePlugin] aRGBX
+[PIL.WebPImagePlugin] aRGB
+[PIL.WebPImagePlugin] a_mode
+[PIL.WebPImagePlugin] aicc_profile
+[PIL.WebPImagePlugin] aexif
+[PIL.WebPImagePlugin] axmp
+[PIL.WebPImagePlugin] aICCP
+[PIL.WebPImagePlugin] aEXIF
+[PIL.WebPImagePlugin] uXMP 
+[PIL.WebPImagePlugin] aself
+[PIL.WebPImagePlugin] aget_chunk
+[PIL.WebPImagePlugin] a_reset
+[PIL.WebPImagePlugin] areset
+[PIL.WebPImagePlugin] aexif
+[PIL.WebPImagePlugin] agetexif
+[PIL.WebPImagePlugin] a_get_merged_dict
+[PIL.WebPImagePlugin] a_seek_check
+[PIL.WebPImagePlugin] a_WebPImageFile__logical_frame
+[PIL.WebPImagePlugin] areset
+[PIL.WebPImagePlugin] a_WebPImageFile__physical_frame
+[PIL.WebPImagePlugin] a_WebPImageFile__loaded
+[PIL.WebPImagePlugin] a_WebPImageFile__timestamp
+[PIL.WebPImagePlugin] aget_next
+[PIL.WebPImagePlugin] aseek
+[PIL.WebPImagePlugin] ufailed to decode next frame in WebP file
+[PIL.WebPImagePlugin] a_get_next
+[PIL.WebPImagePlugin] a_seek
+[PIL.WebPImagePlugin] atimestamp
+[PIL.WebPImagePlugin] aduration
+[PIL.WebPImagePlugin] a_exclusive_fp
+[PIL.WebPImagePlugin] aBytesIO
+[PIL.WebPImagePlugin] aImageFile
+[PIL.WmfImagePlugin] a_handler
+[PIL.WmfImagePlugin]     Install application-specific WMF image handler.
+[PIL.WmfImagePlugin]     :param handler: Handler object.
+[PIL.WmfImagePlugin]     
+[PIL.WmfImagePlugin] aRGB
+[PIL.WmfImagePlugin] a_mode
+[PIL.WmfImagePlugin] ainfo
+[PIL.WmfImagePlugin] awmf_bbox
+[PIL.WmfImagePlugin] abbox
+[PIL.WmfImagePlugin] afp
+[PIL.WmfImagePlugin] aseek
+[PIL.WmfImagePlugin] aImage
+[PIL.WmfImagePlugin] afrombytes
+[PIL.WmfImagePlugin] asize
+[PIL.WmfImagePlugin] acore
+[PIL.WmfImagePlugin] adrawwmf
+[PIL.WmfImagePlugin] araw
+[PIL.WmfImagePlugin] aBGR
+[PIL.WmfImagePlugin] astartswith
+[PIL.WmfImagePlugin] l,T
+[PIL.WmfImagePlugin] aword
+[PIL.WmfImagePlugin] uInvalid inch
+[PIL.WmfImagePlugin] a_inch
+[PIL.WmfImagePlugin] ashort
+[PIL.WmfImagePlugin] lHadpi
+[PIL.WmfImagePlugin] uUnsupported WMF file format
+[PIL.WmfImagePlugin] :l(l,nc EMF
+[PIL.WmfImagePlugin] a_long
+[PIL.WmfImagePlugin] l l$f
+[PIL.WmfImagePlugin] uUnsupported file format
+[PIL.WmfImagePlugin] a_size
+[PIL.WmfImagePlugin] a_load
+[PIL.WmfImagePlugin] aload
+[PIL.WmfImagePlugin] asave
+[PIL.WmfImagePlugin] uWMF save handler not installed
+[PIL.WmfImagePlugin] aorigin
+[PIL.WmfImagePlugin] ahas_location
+[PIL.WmfImagePlugin] aannotations
+[PIL.WmfImagePlugin] aIO
+[PIL.WmfImagePlugin] aImage
+[PIL.WmfImagePlugin] aImageFile
+[PIL.WmfImagePlugin] aImageFile
+[PIL.WmfImagePlugin] a_binary
+[PIL.WmfImagePlugin] ai16le
+[PIL.WmfImagePlugin] ai16le
+[PIL.WmfImagePlugin] asi16le
+[PIL.WmfImagePlugin] asi16le
+[PIL.WmfImagePlugin] asi32le
+[PIL.WmfImagePlugin] asi32le
+[PIL.WmfImagePlugin] ahandler
+[PIL.XVThumbImagePlugin] astartswith
+[PIL.XVThumbImagePlugin] a_MAGIC
+[PIL.XVThumbImagePlugin] afp
+[PIL.XVThumbImagePlugin] a_accept
+[PIL.XVThumbImagePlugin] unot an XV thumbnail file
+[PIL.XVThumbImagePlugin] areadline
+[PIL.XVThumbImagePlugin] aself
+[PIL.XVThumbImagePlugin] uUnexpected EOF reading XV thumbnail file
+[PIL.XVThumbImagePlugin] l#astrip
+[PIL.XVThumbImagePlugin] asplit
+[PIL.XVThumbImagePlugin] amaxsplit
+[PIL.XVThumbImagePlugin] :nl
+[PIL.XVThumbImagePlugin] nwPa_mode
+[PIL.XVThumbImagePlugin] a_size
+[PIL.XVThumbImagePlugin] aImagePalette
+[PIL.XVThumbImagePlugin] araw
+[PIL.XVThumbImagePlugin] aRGB
+[PIL.XVThumbImagePlugin] aPALETTE
+[PIL.XVThumbImagePlugin] apalette
+[PIL.XVThumbImagePlugin] aImageFile
+[PIL.XVThumbImagePlugin] a_Tile
+[PIL.XVThumbImagePlugin] pasize
+[PIL.XVThumbImagePlugin] atell
+[PIL.XVThumbImagePlugin] amode
+[PIL.XVThumbImagePlugin] atile
+[PIL.XVThumbImagePlugin] aorigin
+[PIL.XVThumbImagePlugin] ahas_location
+[PIL.XVThumbImagePlugin] aannotations
+[PIL.XVThumbImagePlugin] aImage
+[PIL.XVThumbImagePlugin] aImageFile
+[PIL.XVThumbImagePlugin] aImagePalette
+[PIL.XVThumbImagePlugin] aImage
+[PIL.XVThumbImagePlugin] a_binary
+[PIL.XVThumbImagePlugin] ao8
+[PIL.XVThumbImagePlugin] ao8
+[PIL.XVThumbImagePlugin] cP7 332
+[PIL.XVThumbImagePlugin] wg;l
+[PIL.XVThumbImagePlugin] aprefix
+[PIL.XVThumbImagePlugin] areturn
+[PIL.XVThumbImagePlugin] abytes
+[PIL.XVThumbImagePlugin] abool
+[PIL.XVThumbImagePlugin] a__prepare__
+[PIL.XVThumbImagePlugin] aXVThumbImageFile
+[PIL.XVThumbImagePlugin] a__getitem__
+[PIL.XVThumbImagePlugin] u%s.__prepare__() must return a mapping, not %s
+[PIL.XVThumbImagePlugin] u<metaclass>
+[PIL.XVThumbImagePlugin] uPIL.XVThumbImagePlugin
+[PIL.XVThumbImagePlugin] a__qualname__
+[PIL.XVThumbImagePlugin] aXVThumb
+[PIL.XVThumbImagePlugin] uXV thumbnail image
+[PIL.XbmImagePlugin] alstrip
+[PIL.XbmImagePlugin] astartswith
+[PIL.XbmImagePlugin] c#define
+[PIL.XbmImagePlugin] afp
+[PIL.XbmImagePlugin] axbm_head
+[PIL.XbmImagePlugin] amatch
+[PIL.XbmImagePlugin] unot a XBM file
+[PIL.XbmImagePlugin] agroup
+[PIL.XbmImagePlugin] awidth
+[PIL.XbmImagePlugin] aheight
+[PIL.XbmImagePlugin] ahotspot
+[PIL.XbmImagePlugin] axhot
+[PIL.XbmImagePlugin] ayhot
+[PIL.XbmImagePlugin] ainfo
+[PIL.XbmImagePlugin] ahotspot
+[PIL.XbmImagePlugin] w1a_mode
+[PIL.XbmImagePlugin] a_size
+[PIL.XbmImagePlugin] aImageFile
+[PIL.XbmImagePlugin] a_Tile
+[PIL.XbmImagePlugin] axbm
+[PIL.XbmImagePlugin] pasize
+[PIL.XbmImagePlugin] atile
+[PIL.XbmImagePlugin] amode
+[PIL.XbmImagePlugin] ucannot write mode 
+[PIL.XbmImagePlugin] u as XBM
+[PIL.XbmImagePlugin] awrite
+[PIL.XbmImagePlugin] u#define im_width 
+[PIL.XbmImagePlugin] u#define im_height 
+[PIL.XbmImagePlugin] aencoderinfo
+[PIL.XbmImagePlugin] u#define im_x_hot 
+[PIL.XbmImagePlugin] u#define im_y_hot 
+[PIL.XbmImagePlugin] cstatic char im_bits[] = {
+[PIL.XbmImagePlugin] a_save
+[PIL.XbmImagePlugin] c};
+[PIL.XbmImagePlugin] aorigin
+[PIL.XbmImagePlugin] ahas_location
+[PIL.XbmImagePlugin] aannotations
+[PIL.XbmImagePlugin] are
+[PIL.XbmImagePlugin] aIO
+[PIL.XbmImagePlugin] aImage
+[PIL.XbmImagePlugin] aImageFile
+[PIL.XbmImagePlugin] aImage
+[PIL.XbmImagePlugin] c\s*#define[ \t]+.*_width[ \t]+(?P<width>[0-9]+)[\r\n]+#define[ 
+[PIL.XbmImagePlugin] ]+.*_height[ 
+[PIL.XbmImagePlugin] ]+(?P<height>[0-9]+)[
+[PIL.XbmImagePlugin] ]+(?P<hotspot>#define[ 
+[PIL.XbmImagePlugin] ]+[^_]*_x_hot[ 
+[PIL.XbmImagePlugin] ]+(?P<xhot>[0-9]+)[
+[PIL.XbmImagePlugin] ]+#define[ 
+[PIL.XbmImagePlugin] ]+[^_]*_y_hot[ 
+[PIL.XpmImagePlugin] astartswith
+[PIL.XpmImagePlugin] c/* XPM */
+[PIL.XpmImagePlugin] afp
+[PIL.XpmImagePlugin] a_accept
+[PIL.XpmImagePlugin] unot an XPM file
+[PIL.XpmImagePlugin] aself
+[PIL.XpmImagePlugin] areadline
+[PIL.XpmImagePlugin] ubroken XPM file
+[PIL.XpmImagePlugin] axpm_head
+[PIL.XpmImagePlugin] amatch
+[PIL.XpmImagePlugin] agroup
+[PIL.XpmImagePlugin] a_size
+[PIL.XpmImagePlugin] arstrip
+[PIL.XpmImagePlugin] abpp
+[PIL.XpmImagePlugin] asplit
+[PIL.XpmImagePlugin] dccNone
+[PIL.XpmImagePlugin] ainfo
+[PIL.XpmImagePlugin] atransparency
+[PIL.XpmImagePlugin] d#:l
+[PIL.XpmImagePlugin] nnl
+[PIL.XpmImagePlugin] ao8
+[PIL.XpmImagePlugin] apalette
+[PIL.XpmImagePlugin] ucannot read this XPM file
+[PIL.XpmImagePlugin] aRGB
+[PIL.XpmImagePlugin] a_mode
+[PIL.XpmImagePlugin] wPaImagePalette
+[PIL.XpmImagePlugin] araw
+[PIL.XpmImagePlugin] aImageFile
+[PIL.XpmImagePlugin] a_Tile
+[PIL.XpmImagePlugin] axpm
+[PIL.XpmImagePlugin] pasize
+[PIL.XpmImagePlugin] atell
+[PIL.XpmImagePlugin] atile
+[PIL.XpmImagePlugin] axsize
+[PIL.XpmImagePlugin] aljust
+[PIL.XpmImagePlugin] afd
+[PIL.XpmImagePlugin] astate
+[PIL.XpmImagePlugin] aysize
+[PIL.XpmImagePlugin] amode
+[PIL.XpmImagePlugin] adata
+[PIL.XpmImagePlugin] c/* pixels */
+[PIL.XpmImagePlugin] apixel_header
+[PIL.XpmImagePlugin] d"T
+[PIL.XpmImagePlugin] d":l
+[PIL.XpmImagePlugin] naindex
+[PIL.XpmImagePlugin] aset_as_raw
+[PIL.XpmImagePlugin] aorigin
+[PIL.XpmImagePlugin] ahas_location
+[PIL.XpmImagePlugin] aannotations
+[PIL.XpmImagePlugin] are
+[PIL._binary] aunpack_from
+[PIL._binary] u<H
+[PIL._binary]     Converts a 2-bytes (16 bits) string to an unsigned integer.
+[PIL._binary]     :param c: string containing bytes to convert
+[PIL._binary]     :param o: offset of bytes to convert in string
+[PIL._binary]     
+[PIL._binary] u<h
+[PIL._binary]     Converts a 2-bytes (16 bits) string to a signed integer.
+[PIL._binary]     :param c: string containing bytes to convert
+[PIL._binary]     :param o: offset of bytes to convert in string
+[PIL._binary]     
+[PIL._binary] u>h
+[PIL._binary]     Converts a 2-bytes (16 bits) string to a signed integer, big endian.
+[PIL._binary]     :param c: string containing bytes to convert
+[PIL._binary]     :param o: offset of bytes to convert in string
+[PIL._binary]     
+[PIL._binary] u<I
+[PIL._binary]     Converts a 4-bytes (32 bits) string to an unsigned integer.
+[PIL._binary]     :param c: string containing bytes to convert
+[PIL._binary]     :param o: offset of bytes to convert in string
+[PIL._binary]     
+[PIL._binary] u<i
+[PIL._binary]     Converts a 4-bytes (32 bits) string to a signed integer.
+[PIL._binary]     :param c: string containing bytes to convert
+[PIL._binary]     :param o: offset of bytes to convert in string
+[PIL._binary]     
+[PIL._binary] u>i
+[PIL._binary]     Converts a 4-bytes (32 bits) string to a signed integer, big endian.
+[PIL._binary]     :param c: string containing bytes to convert
+[PIL._binary]     :param o: offset of bytes to convert in string
+[PIL._binary]     
+[PIL._binary] u>H
+[PIL._binary] u>I
+[PIL._binary] apack
+[PIL._binary] uBinary input/output support routines.
+[PIL._binary] aorigin
+[PIL._binary] ahas_location
+[PIL._binary] aannotations
+[PIL._binary] astruct
+[PIL._binary] apack
+[PIL._binary] aunpack_from
+[PIL._binary] wcareturn
+[PIL._binary] abytes
+[PIL._binary] aint
+[PIL._binary] ai8
+[PIL._binary] wiareturn
+[PIL._binary] aint
+[PIL._binary] abytes
+[PIL._binary] ao8
+[PIL._binary] wcwoareturn
+[PIL._deprecate] aare
+[PIL._deprecate] ais
+[PIL._deprecate] ua future version
+[PIL._deprecate] a__version__
+[PIL._deprecate] asplit
+[PIL._deprecate] w.w u deprecated and should be removed.
+[PIL._deprecate] uPillow 13 (2026-10-15)
+[PIL._deprecate] uPillow 14 (2027-10-15)
+[PIL._deprecate] uUnknown removal version: 
+[PIL._deprecate] u. Update PIL._deprecate?
+[PIL._deprecate] uUse only one of 'replacement' and 'action'
+[PIL._deprecate] u. Use 
+[PIL._deprecate] u instead.
+[PIL._deprecate] u. 
+[PIL._deprecate] arstrip
+[PIL._deprecate] awarnings
+[PIL._deprecate] awarn
+[PIL._deprecate] u deprecated and will be removed in 
+[PIL._deprecate] aDeprecationWarning
+[PIL._deprecate] astacklevel
+[PIL._deprecate]     Deprecations helper.
+[PIL._deprecate]     :param deprecated: Name of thing to be deprecated.
+[PIL._deprecate]     :param when: Pillow major version to be removed in.
+[PIL._deprecate]     :param replacement: Name of replacement.
+[PIL._deprecate]     :param action: Instead of "replacement", give a custom call to action
+[PIL._deprecate]         e.g. "Upgrade to new thing".
+[PIL._deprecate]     :param plural: if the deprecated thing is plural, needing "are" instead of "is".
+[PIL._deprecate]     Usually of the form:
+[PIL._deprecate]         "[deprecated] is deprecated and will be removed in Pillow [when] (yyyy-mm-dd).
+[PIL._deprecate]         Use [replacement] instead."
+[PIL._deprecate]     You can leave out the replacement sentence:
+[PIL._deprecate]         "[deprecated] is deprecated and will be removed in Pillow [when] (yyyy-mm-dd)"
+[PIL._deprecate]     Or with another call to action:
+[PIL._deprecate]         "[deprecated] is deprecated and will be removed in Pillow [when] (yyyy-mm-dd).
+[PIL._deprecate]         [action]."
+[PIL._deprecate]     
+[PIL._deprecate] aorigin
+[PIL._deprecate] ahas_location
+[PIL._deprecate] aannotations
+[PIL._deprecate] a__version__
+[PIL._deprecate] aaction
+[PIL._deprecate] aplural
+[PIL._deprecate] astacklevel
+[PIL._deprecate] nFl
+[PIL._deprecate] adeprecated
+[PIL._deprecate] awhen
+[PIL._deprecate] areplacement
+[PIL._deprecate] aaction
+[PIL._deprecate] aplural
+[PIL._deprecate] astacklevel
+[PIL._tkinter_finder] uFind compiled module linking to Tcl / Tk libraries
+[PIL._tkinter_finder] aorigin
+[PIL._tkinter_finder] ahas_location
+[PIL._tkinter_finder] aannotations
+[PIL._tkinter_finder] asys
+[PIL._tkinter_finder] atkinter
+[PIL._tkinter_finder] a_tkinter
+[PIL._tkinter_finder] atk
+[PIL._tkinter_finder] apypy_find_executable
+[PIL._tkinter_finder] atklib_cffi
+[PIL._tkinter_finder] aTKINTER_LIB
+[PIL._tkinter_finder] aTkVersion
+[PIL._tkinter_finder] atk_version
+[PIL._tkinter_finder] uPIL\_tkinter_finder.py
+[PIL._tkinter_finder] u<module PIL._tkinter_finder>
+[PIL._typing] aorigin
+[PIL._typing] ahas_location
+[PIL._typing] aannotations
+[PIL._typing] aos
+[PIL._typing] asys
+[PIL._typing] ucollections.abc
+[PIL._typing] aSequence
+[PIL._typing] aSequence
+[PIL._typing] aAny
+[PIL._typing] aProtocol
+[PIL._typing] aTypeVar
+[PIL._typing] aTYPE_CHECKING
+[PIL._typing] aCapsuleType
+[PIL._typing] aBuffer
+[PIL._typing] Ofloat
+[PIL._typing] AOtuple
+[PIL._typing] Oint
+[PIL._typing] Ostr
+[PIL._typing] a_Ink
+[PIL._typing] aCoords
+[PIL._typing] a_T_co
+[PIL._typing] acovariant
+[PIL._typing] a_T_co
+[PIL._typing] a__prepare__
+[PIL._typing] aSupportsRead
+[PIL._typing] a__getitem__
+[PIL._typing] u%s.__prepare__() must return a mapping, not %s
+[PIL._typing] u<metaclass>
+[PIL._typing] uPIL._typing
+[PIL._typing] a__qualname__
+[PIL._typing] alength
+[PIL._typing] areturn
+[PIL._typing] aint
+[PIL._typing] a_T_co
+[PIL._typing] uSupportsRead.read
+[PIL._typing] a__orig_bases__
+[PIL._typing] Ostr
+[PIL._typing] Obytes
+[PIL._typing] aPathLike
+[PIL._typing] aStrOrBytesPath
+[PIL._typing] aBuffer
+[PIL._typing] aIntegralLike
+[PIL._typing] aStrOrBytesPath
+[PIL._typing] aSupportsRead
+[PIL._typing] uPIL\_typing.py
+[PIL._typing] u<module PIL._typing>
+[PIL._typing] a__class__
+[PIL._typing] aself
+[PIL._typing] alength
+[PIL._util] aPathLike
+[PIL._util] aex
+[PIL._util] aDeferredError
+[PIL._util]         Creates an object that raises the wrapped exception ``ex`` when used,
+[PIL._util]         and casts it to :py:obj:`~typing.Any` type.
+[PIL._util]         
+[PIL._util] aorigin
+[PIL._util] ahas_location
+[PIL._util] aannotations
+[PIL._util] aos
+[PIL._util] aTYPE_CHECKING
+[PIL._util] wfareturn
+[PIL._util] aAny
+[PIL._util] uTypeGuard[StrOrBytesPath]
+[PIL._util] ais_path
+[PIL._util] uPIL._util
+[PIL._util] a__qualname__
+[PIL._util] aex
+[PIL._util] aBaseException
+[PIL._util] uDeferredError.__init__
+[PIL._util] aelt
+[PIL._util] areturn
+[PIL._util] astr
+[PIL._util] aNoReturn
+[PIL._util] a__getattr__
+[PIL._util] uDeferredError.__getattr__
+[PIL._util] aex
+[PIL._util] areturn
+[PIL._util] aBaseException
+[PIL._util] aAny
+[PIL._util] anew
+[PIL._util] uDeferredError.new
+[PIL._util] uPIL\_util.py
+[PIL._util] u<module PIL._util>
+[PIL._util] a__class__
+[PIL._util] aself
+[PIL._util] aelt
+[PIL._util] aself
+[PIL._util] aex
+[PIL._util] wfT
+[PIL._util] aex
+[PIL._version] aorigin
+[PIL._version] ahas_location
+[PIL._version] aannotations
+[PIL._version] u12.1.0
+[PIL._version] a__version__
+[PIL._version] uPIL\_version.py
+[PIL._version] u<module PIL._version>
+[PIL] uPillow (Fork of the Python Imaging Library)
+[PIL] Pillow is the friendly PIL fork by Jeffrey A. Clark and contributors.
+[PIL]     https://github.com/python-pillow/Pillow/
+[PIL] Pillow is forked from PIL 1.1.7.
+[PIL] PIL is the Python Imaging Library by Fredrik Lundh and contributors.
+[PIL] Copyright (c) 1999 by Secret Labs AB.
+[PIL] Use PIL.__version__ for this Pillow version.
+[PIL] ;-)
+[PIL] aenviron
+[PIL] aNUITKA_PACKAGE_PIL
+[PIL] u\not_existing
+[PIL] aorigin
+[PIL] ahas_location
+[PIL] asubmodule_search_locations
+[PIL] aannotations
+[PIL] a_version
+[PIL] a_version
+[PIL] a__version__
+[PIL] L/aAvifImagePlugin
+[PIL] aBlpImagePlugin
+[PIL] aBmpImagePlugin
+[PIL] aBufrStubImagePlugin
+[PIL] aCurImagePlugin
+[PIL] aDcxImagePlugin
+[PIL] aDdsImagePlugin
+[PIL] aEpsImagePlugin
+[PIL] aFitsImagePlugin
+[PIL] aFliImagePlugin
+[PIL] aFpxImagePlugin
+[PIL] aFtexImagePlugin
+[PIL] aGbrImagePlugin
+[PIL] aGifImagePlugin
+[PIL] aGribStubImagePlugin
+[PIL] aHdf5StubImagePlugin
+[PIL] aIcnsImagePlugin
+[PIL] aIcoImagePlugin
+[PIL] aImImagePlugin
+[PIL] aImtImagePlugin
+[PIL] aIptcImagePlugin
+[PIL] aJpegImagePlugin
+[PIL] aJpeg2KImagePlugin
+[PIL] aMcIdasImagePlugin
+[PIL] aMicImagePlugin
+[PIL] aMpegImagePlugin
+[PIL] aMpoImagePlugin
+[PIL] aMspImagePlugin
+[PIL] aPalmImagePlugin
+[PIL] aPcdImagePlugin
+[PIL] aPcxImagePlugin
+[PIL] aPdfImagePlugin
+[PIL.features] amodules
+[PIL.features] uUnknown module 
+[PIL.features] awarnings
+[PIL.features] awarn
+[PIL.features]     Checks if a module is available.
+[PIL.features]     :param feature: The module to check for.
+[PIL.features]     :returns: ``True`` if available, ``False`` otherwise.
+[PIL.features]     :raises ValueError: If the module is not defined in this version of Pillow.
+[PIL.features]     
+[PIL.features] acheck_module
+[PIL.features]     :param feature: The module to check for.
+[PIL.features]     :returns:
+[PIL.features]         The loaded version number as a string, or ``None`` if unknown or not available.
+[PIL.features]     :raises ValueError: If the module is not defined in this version of Pillow.
+[PIL.features]     
+[PIL.features]     :returns: A list of all supported modules.
+[PIL.features]     
+[PIL.features] acodecs
+[PIL.features] uUnknown codec 
+[PIL.features] a_encoder
+[PIL.features] aImage
+[PIL.features] acore
+[PIL.features]     Checks if a codec is available.
+[PIL.features]     :param feature: The codec to check for.
+[PIL.features]     :returns: ``True`` if available, ``False`` otherwise.
+[PIL.features]     :raises ValueError: If the codec is not defined in this version of Pillow.
+[PIL.features]     
+[PIL.features] acheck_codec
+[PIL.features] a_version
+[PIL.features] alibtiff
+[PIL.features] asplit
+[PIL.features] uVersion 
+[PIL.features]     :param feature: The codec to check for.
+[PIL.features]     :returns:
+[PIL.features]         The version number as a string, or ``None`` if not available.
+[PIL.features]         Checked at compile time for ``jpg``, run-time otherwise.
+[PIL.features]     :raises ValueError: If the codec is not defined in this version of Pillow.
+[PIL.features]     
+[PIL.features]     :returns: A list of all supported codecs.
+[PIL.features]     
+[PIL.features] afeatures
+[PIL.features] uUnknown feature 
+[PIL.features] aPIL
+[PIL.features]     Checks if a feature is available.
+[PIL.features]     :param feature: The feature to check for.
+[PIL.features]     :returns: ``True`` if available, ``False`` if unavailable, ``None`` if unknown.
+[PIL.features]     :raises ValueError: If the feature is not defined in this version of Pillow.
+[PIL.features]     
+[PIL.features] acheck_feature
+[PIL.features]     :param feature: The feature to check for.
+[PyInstaller._shared_with_waf] aplatform
+[PyInstaller._shared_with_waf] amachine
+[PyInstaller._shared_with_waf] asw_64
+[PyInstaller._shared_with_waf] aloongarch64
+[PyInstaller._shared_with_waf] aWindows
+[PyInstaller._shared_with_waf] astartswith
+[PyInstaller._shared_with_waf] aarm
+[PyInstaller._shared_with_waf] aarm
+[PyInstaller._shared_with_waf] aintel
+[PyInstaller._shared_with_waf] aSunOS
+[PyInstaller._shared_with_waf] ax86_64
+[PyInstaller._shared_with_waf] ax86
+[PyInstaller._shared_with_waf] ai86pc
+[PyInstaller._shared_with_waf] asparc
+[PyInstaller._shared_with_waf] aLinux
+[PyInstaller._shared_with_waf] aarm
+[PyInstaller._shared_with_waf] aaarch
+[PyInstaller._shared_with_waf] athumb
+[PyInstaller._shared_with_waf] ax86_64
+[PyInstaller._shared_with_waf] ax64
+[PyInstaller._shared_with_waf] ax86
+[PyInstaller._shared_with_waf] are
+[PyInstaller._shared_with_waf] afullmatch
+[PyInstaller._shared_with_waf] ui[1-6]86
+[PyInstaller._shared_with_waf] appc
+[PyInstaller._shared_with_waf] apowerpc
+[PyInstaller._shared_with_waf] appc
+[PyInstaller._shared_with_waf] amips64
+[PyInstaller._shared_with_waf] amips
+[PyInstaller._shared_with_waf] amips
+[PyInstaller._shared_with_waf] ariscv
+[PyInstaller._shared_with_waf] ariscv
+[PyInstaller._shared_with_waf] as390x
+[PyInstaller._shared_with_waf] aunknown
+[PyInstaller._shared_with_waf]     Choose an intentionally simplified architecture identifier to be used in the bootloader's directory name.
+[PyInstaller._shared_with_waf]     Args:
+[PyInstaller._shared_with_waf]         machine:
+[PyInstaller._shared_with_waf]             The output of ``platform.machine()`` or any known architecture alias or shorthand that may be used by a
+[PyInstaller._shared_with_waf]             C compiler.
+[PyInstaller._shared_with_waf]         system:
+[PyInstaller._shared_with_waf]             The output of ``platform.system()`` on the target machine.
+[PyInstaller._shared_with_waf]     Returns:
+[PyInstaller._shared_with_waf]         Either a string tag or, on platforms that don't need an architecture tag, ``None``.
+[PyInstaller._shared_with_waf]     Ideally, we would just use ``platform.machine()`` directly, but that makes cross-compiling the bootloader almost
+[PyInstaller._shared_with_waf]     impossible, because you need to know at compile time exactly what ``platform.machine()`` will be at run time, based
+[PyInstaller._shared_with_waf]     only on the machine name alias or shorthand reported by the C compiler at the build time. Rather, use a loose
+[PyInstaller._shared_with_waf]     differentiation, and trust that anyone mixing armv6l with armv6h knows what they are doing.
+[PyInstaller._shared_with_waf]     
+[PyInstaller._shared_with_waf] Code to be shared by PyInstaller and the bootloader/wscript file.
+[PyInstaller._shared_with_waf] This code must not assume that either PyInstaller or any of its dependencies installed. I.e., the only imports allowed
+[PyInstaller.building] ajoin
+[PyInstaller.building] aenviron
+[PyInstaller.building] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.building] u\not_existing
+[PyInstaller.building] abuilding
+[PyInstaller.building] aNUITKA_PACKAGE_PyInstaller_building
+[PyInstaller.building] u\not_existing
+[PyInstaller.building] aorigin
+[PyInstaller.building] ahas_location
+[PyInstaller.building] asubmodule_search_locations
+[PyInstaller.building] uPyInstaller\building\__init__.py
+[PyInstaller.building] u<module PyInstaller.building>
+[PyInstaller.building.utils] alogger
+[PyInstaller.building.utils] ainfo
+[PyInstaller.building.utils] uBuilding because %s changed
+[PyInstaller.building.utils]     Rebuild is required if values differ.
+[PyInstaller.building.utils]     
+[PyInstaller.building.utils] amisc
+[PyInstaller.building.utils] amtime
+[PyInstaller.building.utils]     Rebuild is required if mtimes of files listed in old TOC are newer than last_build.
+[PyInstaller.building.utils]     Use this for calculated/analysed values read from cache.
+[PyInstaller.building.utils]     
+[PyInstaller.building.utils] a_check_guts_eq
+[PyInstaller.building.utils] a_check_guts_toc_mtime
+[PyInstaller.building.utils]     Rebuild is required if either TOC content changed or mtimes of files listed in old TOC are newer than last_build.
+[PyInstaller.building.utils]     Use this for input parameters.
+[PyInstaller.building.utils]     
+[PyInstaller.building.utils] aEXTENSION
+[PyInstaller.building.utils] asplit
+[PyInstaller.building.utils] w.apathlib
+[PyInstaller.building.utils] aPath
+[PyInstaller.building.utils] ulib-dynload
+[PyInstaller.building.utils] apython
+[PyInstaller.building.utils] ulib-dynload
+[PyInstaller.building.utils] ajoin
+[PyInstaller.building.utils] adest_elements
+[PyInstaller.building.utils]     Take a TOC entry (dest_name, src_name, typecode) and determine the full destination name for the extension.
+[PyInstaller.building.utils]     
+[PyInstaller.building.utils] uPyInstaller.config
+[PyInstaller.building.utils] aCONF
+[PyInstaller.building.utils] aCONF
+[PyInstaller.building.utils] ais_darwin
+[PyInstaller.building.utils] aPurePath
+[PyInstaller.building.utils] asrc_path
+[PyInstaller.building.utils] amatch
+[PyInstaller.building.utils] uDisabling UPX for %s due to match in exclude pattern: %s
+[PyInstaller.building.utils] ais_win
+[PyInstaller.building.utils] aversioninfo
+[PyInstaller.building.utils] apefile_check_control_flow_guard
+[PyInstaller.building.utils] uDisabling UPX for %s due to CFG!
+[PyInstaller.building.utils] ais_file_qt_plugin
+[PyInstaller.building.utils] uDisabling UPX for %s due to it being a Qt plugin!
+[PyInstaller.building.utils] ais_linux
+[PyInstaller.building.utils] awith_name
+[PyInstaller.building.utils] u.hmac
+[PyInstaller.building.utils] awith_suffix
+[PyInstaller.building.utils] u.chk
+[PyInstaller.building.utils] ais_file
+[PyInstaller.building.utils] uDisabling UPX and/or strip for %s due to accompanying .hmac file!
+[PyInstaller.building.utils] uDisabling UPX and/or strip for %s due to accompanying .chk file!
+[PyInstaller.building.utils] apy
+[PyInstaller.building.utils] aplatform
+[PyInstaller.compat] amax
+[PyInstaller.compat] cWine builtin DLL
+[PyInstaller.compat] cWine placeholder DLL
+[PyInstaller.compat] aseek
+[PyInstaller.compat] l@T
+[PyInstaller.compat] nnnasignature
+[PyInstaller.compat] astartswith
+[PyInstaller.compat] cWine builtin DLL
+[PyInstaller.compat] cWine placeholder DLL
+[PyInstaller.compat]     Check if the given PE file is a Wine DLL (PE-converted built-in, or fake/placeholder one).
+[PyInstaller.compat]     Returns True if the given file is a Wine DLL, False if not (or if file cannot be analyzed or does not exist).
+[PyInstaller.compat]     
+[PyInstaller.compat] aenviron
+[PyInstaller.compat]     Returns unicode string containing value of environment variable 'name'.
+[PyInstaller.compat]     
+[PyInstaller.compat]     Accepts unicode string and set it as environment variable 'name' containing value 'value'.
+[PyInstaller.compat]     
+[PyInstaller.compat]     Delete the environment variable 'name'.
+[PyInstaller.compat]     
+[PyInstaller.compat] asubprocess
+[PyInstaller.compat] aPopen
+[PyInstaller.compat] astdout
+[PyInstaller.compat] aPIPE
+[PyInstaller.compat] acommunicate
+[PyInstaller.compat] l<T
+[PyInstaller.compat] atimeout
+[PyInstaller.compat] aerrno
+[PyInstaller.compat] aENOENT
+[PyInstaller.compat] astderr
+[PyInstaller.compat] u----------------------------------------
+[PyInstaller.compat] afile
+[PyInstaller.compat] uError running '%s':
+[PyInstaller.compat] w aExecCommandFailed
+[PyInstaller.compat] uERROR: Executing command failed!
+[PyInstaller.compat] aTimeoutExpired
+[PyInstaller.compat] akill
+[PyInstaller.compat] adecode
+[PyInstaller.compat] afsdecode
+[PyInstaller.compat] uThese are the bytes around the offending byte:
+[PyInstaller.compat]     Run the command specified by the passed positional arguments, optionally configured by the passed keyword arguments.
+[PyInstaller.compat]     .. DANGER::
+[PyInstaller.compat]        **Ignore this function's return value** -- unless this command's standard output contains _only_ pathnames, in
+[PyInstaller.compat]        which case this function returns the correct filesystem-encoded string expected by PyInstaller. In all other
+[PyInstaller.compat]        cases, this function's return value is _not_ safely usable.
+[PyInstaller.compat]        For backward compatibility, this function's return value non-portably depends on the current Python version and
+[PyInstaller.compat]        passed keyword arguments:
+[PyInstaller.compat]        * Under Python 3.x, this value is a **decoded `str` string**. However, even this value is _not_ necessarily
+[PyInstaller.compat]          safely usable:
+[PyInstaller.compat]          * If the `encoding` parameter is passed, this value is guaranteed to be safely usable.
+[PyInstaller.compat]          * Else, this value _cannot_ be safely used for any purpose (e.g., string manipulation or parsing), except to be
+[PyInstaller.config] This module holds run-time PyInstaller configuration.
+[PyInstaller.config] Variable CONF is a dict() with all configuration options that are necessary for the build phase. Build phase is done by
+[PyInstaller.config] passing .spec file to exec() function. CONF variable is the only way how to pass arguments to exec() and how to avoid
+[PyInstaller.config] using 'global' variables.
+[PyInstaller.config] NOTE: Having 'global' variables does not play well with the test suite because it does not provide isolated environments
+[PyInstaller.config] for tests. Some tests might fail in this case.
+[PyInstaller.config] NOTE: The 'CONF' dict() is cleaned after building phase to not interfere with any other possible test.
+[PyInstaller.config] To pass any arguments to build phase, just do:
+[PyInstaller.config]     from PyInstaller.config import CONF
+[PyInstaller.config]     CONF['my_var_name'] = my_value
+[PyInstaller.config] And to use this variable in the build phase:
+[PyInstaller.config]     from PyInstaller.config import CONF
+[PyInstaller.config]     foo = CONF['my_var_name']
+[PyInstaller.config] This is the list of known variables. (Please update it if necessary.)
+[PyInstaller.config] cachedir
+[PyInstaller.config] hiddenimports
+[PyInstaller.config] noconfirm
+[PyInstaller.config] pathex
+[PyInstaller.config] ui_admin
+[PyInstaller.config] ui_access
+[PyInstaller.config] upx_available
+[PyInstaller.config] upx_dir
+[PyInstaller.config] workpath
+[PyInstaller.config] tests_modgraph  - cached PyiModuleGraph object to speed up tests
+[PyInstaller.config] code_cache - dictionary associating `Analysis.pure` list instances with code cache dictionaries. Used by PYZ writer.
+[PyInstaller.config] aorigin
+[PyInstaller.config] ahas_location
+[PyInstaller.config] apathex
+[PyInstaller.config] aCONF
+[PyInstaller.config] uPyInstaller\config.py
+[PyInstaller.config] u<module PyInstaller.config>
+[PyInstaller] aenviron
+[PyInstaller] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller] u\not_existing
+[PyInstaller] aorigin
+[PyInstaller] ahas_location
+[PyInstaller] asubmodule_search_locations
+[PyInstaller] aHOMEPATH
+[PyInstaller] aPLATFORM
+[PyInstaller] a__version__
+[PyInstaller] aDEFAULT_DISTPATH
+[PyInstaller] aDEFAULT_SPECPATH
+[PyInstaller] aDEFAULT_WORKPATH
+[PyInstaller] aos
+[PyInstaller] aPyInstaller
+[PyInstaller] acompat
+[PyInstaller] acompat
+[PyInstaller] u6.19.0
+[PyInstaller] a__version__
+[PyInstaller] aPACKAGEPATH
+[PyInstaller] aHOMEPATH
+[PyInstaller] agetcwd
+[PyInstaller] aDEFAULT_SPECPATH
+[PyInstaller] ajoin
+[PyInstaller] adist
+[PyInstaller] aDEFAULT_DISTPATH
+[PyInstaller] abuild
+[PyInstaller] aDEFAULT_WORKPATH
+[PyInstaller] asystem
+[PyInstaller] w-aarchitecture
+[PyInstaller] aPLATFORM
+[PyInstaller] amachine
+[PyInstaller] ais_darwin
+[PyInstaller] ais_musl
+[PyInstaller] u-musl
+[PyInstaller] uPyInstaller\__init__.py
+[PyInstaller] u<module PyInstaller>
+[PyInstaller.depend] ajoin
+[PyInstaller.depend] aenviron
+[PyInstaller.depend] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.depend] u\not_existing
+[PyInstaller.depend] adepend
+[PyInstaller.depend] aNUITKA_PACKAGE_PyInstaller_depend
+[PyInstaller.depend] u\not_existing
+[PyInstaller.depend] aorigin
+[PyInstaller.depend] ahas_location
+[PyInstaller.depend] asubmodule_search_locations
+[PyInstaller.depend] uPyInstaller\depend\__init__.py
+[PyInstaller.depend] u<module PyInstaller.depend>
+[PyInstaller.depend.imphookapi] a_module_graph
+[PyInstaller.depend.imphookapi] amodule_basename
+[PyInstaller.depend.imphookapi] amodule_name
+[PyInstaller.depend.imphookapi] a_parent_package
+[PyInstaller.depend.imphookapi]         Current module graph.
+[PyInstaller.depend.imphookapi]         
+[PyInstaller.depend.imphookapi]         Parent Package of this node.
+[PyInstaller.depend.imphookapi]         
+[PyInstaller.depend.imphookapi] aadd_module
+[PyInstaller.depend.imphookapi] aRuntimeModule
+[PyInstaller.depend.imphookapi]         Add a graph node representing a non-package Python module with the passed name dynamically defined at runtime.
+[PyInstaller.depend.imphookapi]         Most modules are statically defined on-disk as standard Python files. Some modules, however, are dynamically
+[PyInstaller.depend.imphookapi]         defined in-memory at runtime (e.g., `gi.repository.Gst`, dynamically defined by the statically defined
+[PyInstaller.depend.imphookapi]         `gi.repository.__init__` module).
+[PyInstaller.depend.imphookapi]         This method adds a graph node representing such a runtime module. Since this module is _not_ a package,
+[PyInstaller.depend.imphookapi]         all attempts to import submodules from this module in `from`-style import statements (e.g., the `queue`
+[PyInstaller.depend.imphookapi]         submodule in `from six.moves import queue`) will be silently ignored. To circumvent this, simply call
+[PyInstaller.depend.imphookapi]         `add_runtime_package()` instead.
+[PyInstaller.depend.imphookapi]         Parameters
+[PyInstaller.depend.imphookapi]         ----------
+[PyInstaller.depend.imphookapi]         module_name : str
+[PyInstaller.depend.imphookapi]             Fully-qualified name of this module (e.g., `gi.repository.Gst`).
+[PyInstaller.depend.imphookapi]         Examples
+[PyInstaller.depend.imphookapi]         ----------
+[PyInstaller.depend.imphookapi]         This method is typically called by `pre_safe_import_module()` hooks, e.g.:
+[PyInstaller.depend.imphookapi]             def pre_safe_import_module(api):
+[PyInstaller.depend.imphookapi]                 api.add_runtime_module(api.module_name)
+[PyInstaller.depend.imphookapi]         
+[PyInstaller.depend.imphookapi] aRuntimePackage
+[PyInstaller.depend.imphookapi]         Add a graph node representing a non-namespace Python package with the passed name dynamically defined at
+[PyInstaller.depend.imphookapi]         runtime.
+[PyInstaller.depend.imphookapi]         Most packages are statically defined on-disk as standard subdirectories containing `__init__.py` files. Some
+[PyInstaller.depend.imphookapi]         packages, however, are dynamically defined in-memory at runtime (e.g., `six.moves`, dynamically defined by
+[PyInstaller.depend.imphookapi]         the statically defined `six` module).
+[PyInstaller.depend.imphookapi]         This method adds a graph node representing such a runtime package. All attributes imported from this package
+[PyInstaller.depend.imphookapi]         in `from`-style import statements that are submodules of this package (e.g., the `queue` submodule in `from
+[PyInstaller.depend.imphookapi]         six.moves import queue`) will be imported rather than ignored.
+[PyInstaller.depend.imphookapi]         Parameters
+[PyInstaller.depend.imphookapi]         ----------
+[PyInstaller.depend.imphookapi]         package_name : str
+[PyInstaller.depend.imphookapi]             Fully-qualified name of this package (e.g., `six.moves`).
+[PyInstaller.depend.imphookapi]         Examples
+[PyInstaller.depend.imphookapi]         ----------
+[PyInstaller.depend.imphookapi]         This method is typically called by `pre_safe_import_module()` hooks, e.g.:
+[PyInstaller.depend.imphookapi]             def pre_safe_import_module(api):
+[PyInstaller.depend.imphookapi]                 api.add_runtime_package(api.module_name)
+[PyInstaller.depend.imphookapi]         
+[PyInstaller.depend.imphookapi] aalias_module
+[PyInstaller.depend.imphookapi]         Alias the source module to the target module with the passed names.
+[PyInstaller.depend.imphookapi]         This method ensures that the next call to findNode() given the target module name will resolve this alias.
+[PyInstaller.exceptions] uERROR: Failed to import module {0} required by hook for module {1}. Please check whether module {0} actually exists and whether the hook is compatible with your version of {1}: You might want to read more about hooks in the manual and provide a pull-request to improve PyInstaller.
+[PyInstaller.exceptions] uERROR: Bytecode encryption was removed in PyInstaller v6.0. 
+[PyInstaller.exceptions] u For the rationale and alternatives see https://github.com/pyinstaller/pyinstaller/pull/6999
+[PyInstaller.exceptions] uERROR: Support for external executable manifest was removed in PyInstaller v6.0. 
+[PyInstaller.exceptions] uERROR: Support for collecting and processing WinSxS assemblies was removed in PyInstaller v6.0. 
+[PyInstaller.exceptions] uERROR: 
+[PyInstaller.exceptions] uERROR: Invalid (SRC, DEST_DIR) tuple: 
+[PyInstaller.exceptions] u. 
+[PyInstaller.exceptions] uERROR: PyInstaller requires importlib.metadata from python >= 3.10 stdlib or importlib_metadata from importlib-metadata >= 4.6
+[PyInstaller.exceptions] aorigin
+[PyInstaller.exceptions] ahas_location
+[PyInstaller.exceptions] ESystemExit
+[PyInstaller.exceptions] a__prepare__
+[PyInstaller.exceptions] aExecCommandFailed
+[PyInstaller.exceptions] a__getitem__
+[PyInstaller.exceptions] u%s.__prepare__() must return a mapping, not %s
+[PyInstaller.exceptions] u<metaclass>
+[PyInstaller.exceptions] uPyInstaller.exceptions
+[PyInstaller.exceptions] a__qualname__
+[PyInstaller.exceptions] a__orig_bases__
+[PyInstaller.exceptions] EException
+[PyInstaller.exceptions] aHookError
+[PyInstaller.exceptions]     Base class for hook related errors.
+[PyInstaller.exceptions]     
+[PyInstaller.exceptions] aImportErrorWhenRunningHook
+[PyInstaller.exceptions] a__str__
+[PyInstaller.exceptions] uImportErrorWhenRunningHook.__str__
+[PyInstaller.exceptions] aRemovedCipherFeatureError
+[PyInstaller.exceptions] uRemovedCipherFeatureError.__init__
+[PyInstaller.exceptions] aRemovedExternalManifestError
+[PyInstaller.exceptions] uRemovedExternalManifestError.__init__
+[PyInstaller.exceptions] aRemovedWinSideBySideSupportError
+[PyInstaller.exceptions] uRemovedWinSideBySideSupportError.__init__
+[PyInstaller.exceptions] aPythonLibraryNotFoundError
+[PyInstaller.exceptions] uPythonLibraryNotFoundError.__init__
+[PyInstaller.exceptions] aInvalidSrcDestTupleError
+[PyInstaller.exceptions] uInvalidSrcDestTupleError.__init__
+[PyInstaller.exceptions] aImportlibMetadataError
+[PyInstaller.exceptions] uImportlibMetadataError.__init__
+[PyInstaller.exceptions] uPyInstaller\exceptions.py
+[PyInstaller.exceptions] u<module PyInstaller.exceptions>
+[PyInstaller.exceptions] a__class__
+[PyInstaller.exceptions] aself
+[PyInstaller.exceptions] a__class__
+[PyInstaller.exceptions] aself
+[PyInstaller.exceptions] asrc_dest
+[PyInstaller.exceptions] amessage
+[PyInstaller.exceptions] a__class__
+[PyInstaller.exceptions] aself
+[PyInstaller.exceptions] amessage
+[PyInstaller.isolated._parent] a_create_pipe_impl
+[PyInstaller.isolated._parent]     Create a one-way pipe for sending data to child processes.
+[PyInstaller.isolated._parent]     Args:
+[PyInstaller.isolated._parent]         read_handle_inheritable:
+[PyInstaller.isolated._parent]             A boolean flag indicating whether the handle corresponding to the read end-point of the pipe should be
+[PyInstaller.isolated._parent]             marked as inheritable by subprocesses.
+[PyInstaller.isolated._parent]         write_handle_inheritable:
+[PyInstaller.isolated._parent]             A boolean flag indicating whether the handle corresponding to the write end-point of the pipe should be
+[PyInstaller.isolated._parent]             marked as inheritable by subprocesses.
+[PyInstaller.isolated._parent]     Returns:
+[PyInstaller.isolated._parent]         A read/write pair of file descriptors (which are just integers) on posix or system file handles on Windows.
+[PyInstaller.isolated._parent]     The pipe may be used either by this process or subprocesses of this process but not globally.
+[PyInstaller.isolated._parent]     
+[PyInstaller.isolated._parent] a_close_pipe_endpoint_impl
+[PyInstaller.isolated._parent]     Close the file descriptor (posix) or handle (Windows) belonging to a pipe.
+[PyInstaller.isolated._parent]     
+[PyInstaller.isolated._parent] aHANDLE
+[PyInstaller.isolated._parent] aSECURITY_ATTRIBUTES
+[PyInstaller.isolated._parent] asizeof
+[PyInstaller.isolated._parent] anLength
+[PyInstaller.isolated._parent] abInheritHandle
+[PyInstaller.isolated._parent] alpSecurityDescriptor
+[PyInstaller.isolated._parent] aCreatePipe
+[PyInstaller.isolated._parent] abyref
+[PyInstaller.isolated._parent] aWinError
+[PyInstaller.isolated._parent] aset_handle_inheritable
+[PyInstaller.isolated._parent] avalue
+[PyInstaller.isolated._parent] aCloseHandle
+[PyInstaller.isolated._parent] aenv
+[PyInstaller.isolated._parent] a_subprocess_env
+[PyInstaller.isolated._parent] aclose_fds
+[PyInstaller.isolated._parent] astartupinfo
+[PyInstaller.isolated._parent] asubprocess
+[PyInstaller.isolated._parent] aSTARTUPINFO
+[PyInstaller.isolated._parent] ahandle_list
+[PyInstaller.isolated._parent] alpAttributeList
+[PyInstaller.isolated._parent] acompat
+[PyInstaller.isolated._parent] a__wrap_python
+[PyInstaller.isolated._parent] aCHILD_PY
+[PyInstaller.isolated._parent] aPopen
+[PyInstaller.isolated._parent]     Spawn a Python subprocess sending it the two file descriptors it needs to talk back to this parent process.
+[PyInstaller.isolated._parent]     
+[PyInstaller.isolated._parent] uPyInstaller.config
+[PyInstaller.isolated._parent] aCONF
+[PyInstaller.isolated._parent] aCONF
+[PyInstaller.isolated._parent] apathex
+[PyInstaller.isolated._parent] aPYTHONPATH
+[PyInstaller.isolated._parent] aenviron
+[PyInstaller.isolated._parent] acopy
+[PyInstaller.isolated._parent] w;u
+[PyInstaller.isolated] PyInstaller hooks typically will need to import the package which they are written for but doing so may manipulate
+[PyInstaller.isolated] globals such as :data:`sys.path` or :data:`os.environ` in ways that affect the build. For example, on Windows,
+[PyInstaller.isolated] Qt's binaries are added to then loaded via ``PATH`` in such a way that if you import multiple Qt variants in one
+[PyInstaller.isolated] session then there is no guarantee which variant's binaries each variant will get!
+[PyInstaller.isolated] To get around this, PyInstaller does any such tasks in an isolated Python subprocess and ships a
+[PyInstaller.isolated] :mod:`PyInstaller.isolated` submodule to do so in hooks. ::
+[PyInstaller.isolated]     from PyInstaller import isolated
+[PyInstaller.isolated] This submodule provides:
+[PyInstaller.isolated] *   :func:`isolated.call() <call>` to evaluate functions in isolation.
+[PyInstaller.isolated] *   :func:`@isolated.decorate <decorate>` to mark a function as always called in isolation.
+[PyInstaller.isolated] *   :class:`isolated.Python() <Python>` to efficiently call many functions in a single child instance of Python.
+[PyInstaller.isolated] ajoin
+[PyInstaller.isolated] aenviron
+[PyInstaller.isolated] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.isolated] u\not_existing
+[PyInstaller.isolated] aisolated
+[PyInstaller.isolated] aNUITKA_PACKAGE_PyInstaller_isolated
+[PyInstaller.isolated] u\not_existing
+[PyInstaller.isolated] aorigin
+[PyInstaller.isolated] ahas_location
+[PyInstaller.isolated] asubmodule_search_locations
+[PyInstaller.isolated] a_parent
+[PyInstaller.isolated] aPython
+[PyInstaller.isolated] acall
+[PyInstaller.isolated] adecorate
+[PyInstaller.isolated] aSubprocessDiedError
+[PyInstaller.isolated] aPython
+[PyInstaller.isolated] acall
+[PyInstaller.isolated] adecorate
+[PyInstaller.isolated] aSubprocessDiedError
+[PyInstaller.isolated] uPyInstaller\isolated\__init__.py
+[PyInstaller.isolated] u<module PyInstaller.isolated>
+[PyInstaller.lib] ajoin
+[PyInstaller.lib] aenviron
+[PyInstaller.lib] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.lib] u\not_existing
+[PyInstaller.lib] alib
+[PyInstaller.lib] aNUITKA_PACKAGE_PyInstaller_lib
+[PyInstaller.lib] u\not_existing
+[PyInstaller.lib] aorigin
+[PyInstaller.lib] ahas_location
+[PyInstaller.lib] asubmodule_search_locations
+[PyInstaller.lib] uPyInstaller\lib\__init__.py
+[PyInstaller.lib] u<module PyInstaller.lib>
+[PyInstaller.lib.modulegraph] ajoin
+[PyInstaller.lib.modulegraph] aenviron
+[PyInstaller.lib.modulegraph] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.lib.modulegraph] u\not_existing
+[PyInstaller.lib.modulegraph] ulib\modulegraph
+[PyInstaller.lib.modulegraph] aNUITKA_PACKAGE_PyInstaller_lib
+[PyInstaller.lib.modulegraph] u\not_existing
+[PyInstaller.lib.modulegraph] amodulegraph
+[PyInstaller.lib.modulegraph] aNUITKA_PACKAGE_PyInstaller_lib_modulegraph
+[PyInstaller.lib.modulegraph] u\not_existing
+[PyInstaller.lib.modulegraph] aorigin
+[PyInstaller.lib.modulegraph] ahas_location
+[PyInstaller.lib.modulegraph] asubmodule_search_locations
+[PyInstaller.lib.modulegraph] u0.17
+[PyInstaller.lib.modulegraph] a__version__
+[PyInstaller.lib.modulegraph] uPyInstaller\lib\modulegraph\__init__.py
+[PyInstaller.lib.modulegraph] u<module PyInstaller.lib.modulegraph>
+[PyInstaller.lib.modulegraph.modulegraph] adistribution
+[PyInstaller.lib.modulegraph.modulegraph] anamespace_dirs
+[PyInstaller.lib.modulegraph.modulegraph] are
+[PyInstaller.lib.modulegraph.modulegraph] amatch
+[PyInstaller.lib.modulegraph.modulegraph] u^No module named (\S+)$
+[PyInstaller.lib.modulegraph.modulegraph] agroup
+[PyInstaller.lib.modulegraph.modulegraph] aconditional
+[PyInstaller.lib.modulegraph.modulegraph] afunction
+[PyInstaller.lib.modulegraph.modulegraph] atryexcept
+[PyInstaller.lib.modulegraph.modulegraph] aDependencyInfo
+[PyInstaller.lib.modulegraph.modulegraph] aconditional
+[PyInstaller.lib.modulegraph.modulegraph] afunction
+[PyInstaller.lib.modulegraph.modulegraph] atryexcept
+[PyInstaller.lib.modulegraph.modulegraph] afromlist
+[PyInstaller.lib.modulegraph.modulegraph] acode
+[PyInstaller.lib.modulegraph.modulegraph] afilename
+[PyInstaller.lib.modulegraph.modulegraph] agraphident
+[PyInstaller.lib.modulegraph.modulegraph] aidentifier
+[PyInstaller.lib.modulegraph.modulegraph] apackagepath
+[PyInstaller.lib.modulegraph.modulegraph] a_deferred_imports
+[PyInstaller.lib.modulegraph.modulegraph] a_global_attr_names
+[PyInstaller.lib.modulegraph.modulegraph] a_starimported_ignored_module_names
+[PyInstaller.lib.modulegraph.modulegraph] a_submodule_basename_to_node
+[PyInstaller.lib.modulegraph.modulegraph]         Initialize this graph node.
+[PyInstaller.lib.modulegraph.modulegraph]         Parameters
+[PyInstaller.lib.modulegraph.modulegraph]         ----------
+[PyInstaller.lib.modulegraph.modulegraph]         identifier : str
+[PyInstaller.lib.modulegraph.modulegraph]             Fully-qualified name of this graph node's corresponding module,
+[PyInstaller.lib.modulegraph.modulegraph]             package, or C extension.
+[PyInstaller.lib.modulegraph.modulegraph]         
+[PyInstaller.lib.modulegraph.modulegraph]         `True` only if the pure-Python module corresponding to this graph node
+[PyInstaller.lib.modulegraph.modulegraph]         defines a global attribute (e.g., class, variable) with the passed
+[PyInstaller.lib.modulegraph.modulegraph]         name.
+[PyInstaller.lib.modulegraph.modulegraph]         If this module is actually a package, this method instead returns
+[PyInstaller.lib.modulegraph.modulegraph]         `True` only if this package's pure-Python `__init__` submodule defines
+[PyInstaller.lib.modulegraph.modulegraph]         such a global attribute. In this case, note that this package may still
+[PyInstaller.lib.modulegraph.modulegraph]         contain an importable submodule of the same name. Callers should
+[PyInstaller.lib.modulegraph.modulegraph]         attempt to import this attribute as a submodule of this package
+[PyInstaller.lib.modulegraph.modulegraph]         _before_ assuming this attribute to be an ignorable global. See
+[PyInstaller.lib.modulegraph.modulegraph]         "Examples" below for further details.
+[PyInstaller.lib.modulegraph.modulegraph]         Parameters
+[PyInstaller.lib.modulegraph.modulegraph]         ----------
+[PyInstaller.lib.modulegraph.modulegraph]         attr_name : str
+[PyInstaller.lib.modulegraph.modulegraph]             Unqualified name of the attribute to be tested.
+[PyInstaller.lib.modulegraph.modulegraph]         Returns
+[PyInstaller.lib.modulegraph.modulegraph]         ----------
+[PyInstaller.lib.modulegraph.modulegraph]         bool
+[PyInstaller.lib.modulegraph.modulegraph]             `True` only if this module defines this global attribute.
+[PyInstaller.lib.modulegraph.modulegraph]         Examples
+[PyInstaller.lib.modulegraph.modulegraph]         ----------
+[PyInstaller.lib.modulegraph.util] uDelivers the byte-code instructions as a continuous stream.
+[PyInstaller.lib.modulegraph.util]     Yields `dis.Instruction`. After each code-block (`co_code`), `None` is
+[PyInstaller.lib.modulegraph.util]     yielded to mark the end of the block and to interrupt the steam.
+[PyInstaller.lib.modulegraph.util]     
+[PyInstaller.lib.modulegraph.util] adis
+[PyInstaller.lib.modulegraph.util] aget_instructions
+[PyInstaller.lib.modulegraph.util] acode_object
+[PyInstaller.lib.modulegraph.util] aco_consts
+[PyInstaller.lib.modulegraph.util] aiscode
+[PyInstaller.lib.modulegraph.util] aiterate_instructions
+[PyInstaller.lib.modulegraph.util] aopname
+[PyInstaller.lib.modulegraph.util] aEXTENDED_ARG
+[PyInstaller.lib.modulegraph.util] u<genexpr>
+[PyInstaller.lib.modulegraph.util] uiterate_instructions.<locals>.<genexpr>
+[PyInstaller.lib.modulegraph.util] aorigin
+[PyInstaller.lib.modulegraph.util] ahas_location
+[PyInstaller.lib.modulegraph.util] uPyInstaller\lib\modulegraph\util.py
+[PyInstaller.lib.modulegraph.util] a.0
+[PyInstaller.lib.modulegraph.util] wiu<module PyInstaller.lib.modulegraph.util>
+[PyInstaller.lib.modulegraph.util] acode_object
+[PyInstaller.lib.modulegraph.util] aconstant
+[PyInstaller.log] aadd_argument
+[PyInstaller.log] aLEVELS
+[PyInstaller.log] aLEVEL
+[PyInstaller.log] aloglevel
+[PyInstaller.log] uAmount of detail in build-time console messages. LEVEL may be one of %s (default: INFO). Also settable via and overrides the PYI_LOG_LEVEL environment variable.
+[PyInstaller.log] u, 
+[PyInstaller.log] u--log-level
+[PyInstaller.log] achoices
+[PyInstaller.log] ametavar
+[PyInstaller.log] adest
+[PyInstaller.log] ahelp
+[PyInstaller.log] aupper
+[PyInstaller.log] aerror
+[PyInstaller.log] uUnknown log level `%s`
+[PyInstaller.log] alogger
+[PyInstaller.log] asetLevel
+[PyInstaller.log] a_level
+[PyInstaller.log] aenviron
+[PyInstaller.log] aPYI_LOG_LEVEL
+[PyInstaller.log] Logging module for PyInstaller.
+[PyInstaller.log] aorigin
+[PyInstaller.log] ahas_location
+[PyInstaller.log] agetLogger
+[PyInstaller.log] aINFO
+[PyInstaller.log] aWARN
+[PyInstaller.log] aDEBUG
+[PyInstaller.log] aTRACE
+[PyInstaller.log] aERROR
+[PyInstaller.log] aFATAL
+[PyInstaller.log] aDEPRECATION
+[PyInstaller.log] aos
+[PyInstaller.log] alogging
+[PyInstaller.log] aDEBUG
+[PyInstaller.log] aERROR
+[PyInstaller.log] aFATAL
+[PyInstaller.log] aINFO
+[PyInstaller.log] aWARN
+[PyInstaller.log] agetLogger
+[PyInstaller.log] aDEBUG
+[PyInstaller.log] aERROR
+[PyInstaller.log] aFATAL
+[PyInstaller.log] aINFO
+[PyInstaller.log] aWARN
+[PyInstaller.log] agetLogger
+[PyInstaller.log] aTRACE
+[PyInstaller.log] aaddLevelName
+[PyInstaller.log] aDEPRECATION
+[PyInstaller.log] u%(relativeCreated)d %(levelname)s: %(message)s
+[PyInstaller.log] aFORMAT
+[PyInstaller.log] aPYI_LOG_LEVEL
+[PyInstaller.utils] ajoin
+[PyInstaller.utils] aenviron
+[PyInstaller.utils] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.utils] u\not_existing
+[PyInstaller.utils] autils
+[PyInstaller.utils] aNUITKA_PACKAGE_PyInstaller_utils
+[PyInstaller.utils] u\not_existing
+[PyInstaller.utils] aorigin
+[PyInstaller.utils] ahas_location
+[PyInstaller.utils] asubmodule_search_locations
+[PyInstaller.utils] uPyInstaller\utils\__init__.py
+[PyInstaller.utils] u<module PyInstaller.utils>
+[PyInstaller.utils.hooks.conda] aparts
+[PyInstaller.utils.hooks.conda] apathlib
+[PyInstaller.utils.hooks.conda] aPath
+[PyInstaller.utils.hooks.conda] a_json_path
+[PyInstaller.utils.hooks.conda] ETypeError
+[PyInstaller.utils.hooks.conda] EAssertionError
+[PyInstaller.utils.hooks.conda] uDistribution requires a path to a conda-meta json. Perhaps you want `distribution({})` instead?
+[PyInstaller.utils.hooks.conda] ajson
+[PyInstaller.utils.hooks.conda] aloads
+[PyInstaller.utils.hooks.conda] aread_text
+[PyInstaller.utils.hooks.conda] araw
+[PyInstaller.utils.hooks.conda] aversion
+[PyInstaller.utils.hooks.conda] afiles
+[PyInstaller.utils.hooks.conda] aPackagePath
+[PyInstaller.utils.hooks.conda] a_init_dependencies
+[PyInstaller.utils.hooks.conda] adependencies
+[PyInstaller.utils.hooks.conda] a_init_package_names
+[PyInstaller.utils.hooks.conda] apackages
+[PyInstaller.utils.hooks.conda] u{}(name="{}", packages={})
+[PyInstaller.utils.hooks.conda] adepends
+[PyInstaller.utils.hooks.conda] asplit
+[PyInstaller.utils.hooks.conda] amaxsplit
+[PyInstaller.utils.hooks.conda] unot enough values to unpack (expected at least 1, got %d)
+[PyInstaller.utils.hooks.conda]         Read dependencies from ``self.raw["depends"]``.
+[PyInstaller.utils.hooks.conda]         :return: Dependent distribution names.
+[PyInstaller.utils.hooks.conda]         :rtype: list
+[PyInstaller.utils.hooks.conda]         The names in ``self.raw["depends"]`` come with extra version constraint information which must be stripped.
+[PyInstaller.utils.hooks.conda]         
+[PyInstaller.utils.hooks.conda] a_get_package_name
+[PyInstaller.utils.hooks.conda]         Search ``self.files`` for package names shipped by this distribution.
+[PyInstaller.utils.hooks.conda]         :return: Package names.
+[PyInstaller.utils.hooks.conda]         :rtype: list
+[PyInstaller.utils.hooks.conda]         These are names you would ``import`` rather than names you would install.
+[PyInstaller.utils.hooks.conda]         
+[PyInstaller.utils.hooks.conda] adistributions
+[PyInstaller.utils.hooks.conda] uDistribution {} is either not installed or was not installed using Conda.
+[PyInstaller.utils.hooks.conda]         Get distribution information for a given distribution **name** (i.e., something you would ``conda install``).
+[PyInstaller.utils.hooks.conda]         :rtype: :class:`Distribution`
+[PyInstaller.utils.hooks.conda]         
+[PyInstaller.utils.hooks.conda] adistributions_by_package
+[PyInstaller.utils.hooks.conda] uPackage {} is either not installed or was not installed using Conda.
+[PyInstaller.utils.hooks.conda]         Get distribution information for a **package** (i.e., something you would import).
+[PyInstaller.utils.hooks.conda]         :rtype: :class:`Distribution`
+[PyInstaller.utils.hooks.conda]         For example, the package ``pkg_resources`` belongs to the distribution ``setuptools``, which contains three
+[PyInstaller.utils.hooks.conda]         packages.
+[PyInstaller.utils.hooks.conda]         >>> package_distribution("pkg_resources")
+[PyInstaller.utils.hooks.conda]         Distribution(name="setuptools",
+[PyInstaller.utils.hooks.conda]                      packages=['easy_install', 'pkg_resources', 'setuptools'])
+[PyInstaller.utils.hooks.conda]         
+[PyInstaller.utils.hooks.conda] aprefix
+[PyInstaller.utils.hooks] uPyInstaller.config
+[PyInstaller.utils.hooks] aCONF
+[PyInstaller.utils.hooks] aCONF
+[PyInstaller.utils.hooks] acopy
+[PyInstaller.utils.hooks] adeepcopy
+[PyInstaller.utils.hooks] aenviron
+[PyInstaller.utils.hooks] aupdate
+[PyInstaller.utils.hooks] w;apathex
+[PyInstaller.utils.hooks] aHOMEPATH
+[PyInstaller.utils.hooks] aPYTHONPATH
+[PyInstaller.utils.hooks] aPYTHONPATH
+[PyInstaller.utils.hooks] acompat
+[PyInstaller.utils.hooks] aexec_python
+[PyInstaller.utils.hooks] aenv
+[PyInstaller.utils.hooks] astrip
+[PyInstaller.utils.hooks] aexec_python_rc
+[PyInstaller.utils.hooks]     Executes an externally spawned Python interpreter. If capture_stdout is set to True, returns anything that was
+[PyInstaller.utils.hooks]     emitted in the standard output as a single string. Otherwise, returns the exit code.
+[PyInstaller.utils.hooks]     
+[PyInstaller.utils.hooks] atextwrap
+[PyInstaller.utils.hooks] adedent
+[PyInstaller.utils.hooks] u-c
+[PyInstaller.utils.hooks] a__exec_python_cmd
+[PyInstaller.utils.hooks] acapture_stdout
+[PyInstaller.utils.hooks] a__exec_statement
+[PyInstaller.utils.hooks] acapture_stdout
+[PyInstaller.utils.hooks]     Execute a single Python statement in an externally-spawned interpreter, and return the resulting standard output
+[PyInstaller.utils.hooks]     as a string.
+[PyInstaller.utils.hooks]     Examples::
+[PyInstaller.utils.hooks]         tk_version = exec_statement("from _tkinter import TK_VERSION; print(TK_VERSION)")
+[PyInstaller.utils.hooks]         mpl_data_dir = exec_statement("import matplotlib; print(matplotlib.get_data_path())")
+[PyInstaller.utils.hooks]         datas = [ (mpl_data_dir, "") ]
+[PyInstaller.utils.hooks]     Notes:
+[PyInstaller.utils.hooks]         As of v5.0, usage of this function is discouraged in favour of the
+[PyInstaller.utils.hooks]         new :mod:`PyInstaller.isolated` module.
+[PyInstaller.utils.hooks]     
+[PyInstaller.utils.hooks] acapture_stdout
+[PyInstaller.utils.hooks]     Executes a Python statement in an externally spawned interpreter, and returns the exit code.
+[PyInstaller.utils.hooks]     
+[PyInstaller.utils.hooks] aexec_statement
+[PyInstaller.utils.hooks] astatement
+[PyInstaller.utils.hooks] atxt
+[PyInstaller.utils.hooks] Omemoryview
+[PyInstaller.utils.hooks] u<string>
+[PyInstaller.utils.hooks] aeval
+[PyInstaller.utils.hooks]     Execute a single Python statement in an externally-spawned interpreter, and :func:`eval` its output (if any).
+[PyInstaller.utils.hooks]     Example::
+[PyInstaller.utils.hooks]       databases = eval_statement('''
+[PyInstaller.utils.hooks]          import sqlalchemy.databases
+[PyInstaller.utils.hooks]          print(sqlalchemy.databases.__all__)
+[PyInstaller.utils.misc] awalk
+[PyInstaller.utils.misc] afilelist
+[PyInstaller.utils.misc] adlls_in_dir
+[PyInstaller.utils.misc]     Returns a list *.dll, *.so, *.dylib in the given directory and its subdirectories.
+[PyInstaller.utils.misc]     
+[PyInstaller.utils.misc] afiles_in_dir
+[PyInstaller.utils.misc] u*.so
+[PyInstaller.utils.misc] u*.dll
+[PyInstaller.utils.misc] u*.dylib
+[PyInstaller.utils.misc]     Returns a list of *.dll, *.so, *.dylib in the given directory.
+[PyInstaller.utils.misc]     
+[PyInstaller.utils.misc] afiles
+[PyInstaller.utils.misc] aglob
+[PyInstaller.utils.misc] ajoin
+[PyInstaller.utils.misc] adirectory
+[PyInstaller.utils.misc]     Returns a list of files in the given directory that match the given pattern.
+[PyInstaller.utils.misc]     
+[PyInstaller.utils.misc] acurr_dir
+[PyInstaller.utils.misc] u__init__.py
+[PyInstaller.utils.misc]     Return the path to top-level directory that contains Python modules.
+[PyInstaller.utils.misc]     It will look in parent directories for __init__.py files. The first parent directory without __init__.py is the
+[PyInstaller.utils.misc]     top-level directory.
+[PyInstaller.utils.misc]     Returned directory might be used to extend the PYTHONPATH.
+[PyInstaller.utils.misc]     
+[PyInstaller.utils.misc] amakedirs
+[PyInstaller.utils.misc] uutf-8
+[PyInstaller.utils.misc] apprint
+[PyInstaller.utils.misc] nnnu
+[PyInstaller.utils.misc]     Save data into text file as Python data structure.
+[PyInstaller.utils.misc]     :param filename:
+[PyInstaller.utils.misc]     :param data:
+[PyInstaller.utils.misc]     :return:
+[PyInstaller.utils.misc]     
+[PyInstaller.utils.misc] ais_win
+[PyInstaller.utils.misc] uPyInstaller.utils.win32
+[PyInstaller.utils.misc] aversioninfo
+[PyInstaller.utils.misc] aversioninfo
+[PyInstaller.utils.misc] afilename
+[PyInstaller.utils.misc] wfT
+[PyInstaller.utils.misc] Omemoryview
+[PyInstaller.utils.misc] astrip
+[PyInstaller.utils.misc] u<string>
+[PyInstaller.utils.misc] aeval
+[PyInstaller.utils.misc]     Load data saved as python code and interpret that code.
+[PyInstaller.utils.misc]     :param filename:
+[PyInstaller.utils.misc]     :return:
+[PyInstaller.utils.misc]     
+[PyInstaller.utils.misc] asplit
+[PyInstaller.utils.misc] w.:l
+[PyInstaller.utils.misc] naprefix
+[PyInstaller.utils.osx] aget_homebrew_prefix
+[PyInstaller.utils.osx] acompat
+[PyInstaller.utils.osx] abase_prefix
+[PyInstaller.utils.osx] astartswith
+[PyInstaller.utils.osx]     Check if Python interpreter was installed via Homebrew command 'brew'.
+[PyInstaller.utils.osx]     :return: True if Homebrew else otherwise.
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] aget_macports_prefix
+[PyInstaller.utils.osx]     Check if Python interpreter was installed via Macports command 'port'.
+[PyInstaller.utils.osx]     :return: True if Macports else otherwise.
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] ashutil
+[PyInstaller.utils.osx] awhich
+[PyInstaller.utils.osx] abrew
+[PyInstaller.utils.osx]     :return: Root path of the Homebrew environment.
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] aport
+[PyInstaller.utils.osx]     :return: Root path of the Macports environment.
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] acommands
+[PyInstaller.utils.osx] acmd
+[PyInstaller.utils.osx] aLC_BUILD_VERSION
+[PyInstaller.utils.osx] aLC_VERSION_MIN_MACOSX
+[PyInstaller.utils.osx] uExpected exactly one LC_BUILD_VERSION or LC_VERSION_MIN_MACOSX command, found 
+[PyInstaller.utils.osx] w!u
+[PyInstaller.utils.osx]     Helper that finds the version command in the given MachO header.
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] aMachO
+[PyInstaller.utils.osx] aheaders
+[PyInstaller.utils.osx] a_find_version_cmd
+[PyInstaller.utils.osx] a_hex_triplet
+[PyInstaller.utils.osx] asdk
+[PyInstaller.utils.osx]     Obtain the version of macOS SDK against which the given binary was built.
+[PyInstaller.utils.osx]     NOTE: currently, version is retrieved only from the first arch slice in the binary.
+[PyInstaller.utils.osx]     :return: (major, minor, revision) tuple
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] aversions
+[PyInstaller.utils.osx] aversion
+[PyInstaller.utils.osx] aminos
+[PyInstaller.utils.osx] amin
+[PyInstaller.utils.osx]     Get the -macosx-version-min used to compile a macOS binary.
+[PyInstaller.utils.osx]     For fat binaries, the minimum version is selected.
+[PyInstaller.utils.osx]     
+[PyInstaller.utils.osx] uInvalid major version value!
+[PyInstaller.utils.osx] uInvalid minor version value!
+[PyInstaller.utils.osx] uInvalid revision value!
+[PyInstaller.utils.osx] afilename
+[PyInstaller.utils.osx] urb+
+[PyInstaller.utils.osx] awrite
+[PyInstaller.utils.osx] nnnu
+[PyInstaller.utils.win32] ajoin
+[PyInstaller.utils.win32] aenviron
+[PyInstaller.utils.win32] aNUITKA_PACKAGE_PyInstaller
+[PyInstaller.utils.win32] u\not_existing
+[PyInstaller.utils.win32] uutils\win32
+[PyInstaller.utils.win32] aNUITKA_PACKAGE_PyInstaller_utils
+[PyInstaller.utils.win32] u\not_existing
+[PyInstaller.utils.win32] awin32
+[PyInstaller.utils.win32] aNUITKA_PACKAGE_PyInstaller_utils_win32
+[PyInstaller.utils.win32] u\not_existing
+[PyInstaller.utils.win32] aorigin
+[PyInstaller.utils.win32] ahas_location
+[PyInstaller.utils.win32] asubmodule_search_locations
+[PyInstaller.utils.win32] amartin
+[PyInstaller.utils.win32] a__author__
+[PyInstaller.utils.win32] uPyInstaller\utils\win32\__init__.py
+[PyInstaller.utils.win32] u<module PyInstaller.utils.win32>
+[PyInstaller.utils.win32.versioninfo] apefile
+[PyInstaller.utils.win32.versioninfo] aPE
+[PyInstaller.utils.win32.versioninfo] afast_load
+[PyInstaller.utils.win32.versioninfo] taOPTIONAL_HEADER
+[PyInstaller.utils.win32.versioninfo] aDllCharacteristics
+[PyInstaller.utils.win32.versioninfo]     Checks if the specified PE file has CFG (Control Flow Guard) enabled.
+[PyInstaller.utils.win32.versioninfo]     Parameters
+[PyInstaller.utils.win32.versioninfo]     ----------
+[PyInstaller.utils.win32.versioninfo]     filename : str
+[PyInstaller.utils.win32.versioninfo]         Path to the PE file to inspect.
+[PyInstaller.utils.win32.versioninfo]     Returns
+[PyInstaller.utils.win32.versioninfo]     ----------
+[PyInstaller.utils.win32.versioninfo]     bool
+[PyInstaller.utils.win32.versioninfo]         True if file is a PE file with CFG enabled. False if CFG is not enabled or if file could not be processed using
+[PyInstaller.utils.win32.versioninfo]         the pefile library.
+[PyInstaller.utils.win32.versioninfo]     
+[PyInstaller.utils.win32.versioninfo] aencode
+[PyInstaller.utils.win32.versioninfo] uUTF-16LE
+[PyInstaller.utils.win32.versioninfo]     Encodes text as UTF-16LE (Microsoft 'Unicode') for use in structs.
+[PyInstaller.utils.win32.versioninfo]     
+[PyInstaller.utils.win32.versioninfo] awin32api
+[PyInstaller.utils.win32.versioninfo] aLoadLibraryEx
+[PyInstaller.utils.win32.versioninfo] aLOAD_LIBRARY_AS_DATAFILE
+[PyInstaller.utils.win32.versioninfo] aEnumResourceNames
+[PyInstaller.utils.win32.versioninfo] aRESOURCE_TYPE
+[PyInstaller.utils.win32.versioninfo] aRT_VERSION
+[PyInstaller.utils.win32.versioninfo] aLoadResource
+[PyInstaller.utils.win32.versioninfo] aVSVersionInfo
+[PyInstaller.utils.win32.versioninfo] afromRaw
+[PyInstaller.utils.win32.versioninfo] aFreeLibrary
+[PyInstaller.utils.win32.versioninfo]     Read the version information structure from the given executable's resources, and return it as an instance of
+[PyInstaller.utils.win32.versioninfo]     `VSVersionInfo` structure.
+[PyInstaller.utils.win32.versioninfo]     
+[PyInstaller.utils.win32.versioninfo]     Align `offset` to the next 4-byte boundary.
+[PyInstaller.utils.win32.versioninfo]     
+[PyInstaller.utils.win32.versioninfo] affi
+[PyInstaller.utils.win32.versioninfo] akids
+[PyInstaller.utils.win32.versioninfo] aparseCommon
+[PyInstaller.utils.win32.versioninfo] anextDWord
+[PyInstaller.utils.win32.versioninfo] aFixedFileInfo
+[PyInstaller.utils.win32.versioninfo] wiadata
+[PyInstaller.utils.win32.versioninfo] astrip
+[PyInstaller.utils.win32.versioninfo] aStringFileInfo
+[PyInstaller.utils.win32.versioninfo] aself
+[PyInstaller.utils.win32.versioninfo] aappend
+[PyInstaller.utils.win32.versioninfo] aVarFileInfo
+[PyInstaller.utils.win32.versioninfo] agetRaw
+[PyInstaller.utils.win32.versioninfo] aVS_VERSION_INFO
+[PyInstaller.utils.win32.versioninfo] atoRaw
+[PyInstaller.utils.win32.versioninfo] astruct
+[PySide6-postLoad] aim_func
+[PySide6-postLoad] a_protected
+[PySide6-postLoad] aappend
+[PySide6-postLoad] astartswith
+[PySide6-postLoad] a_pyside6_workaround_
+[PySide6-postLoad] a_pyside6_workaround_
+[PySide6-postLoad] aim_self
+[PySide6-postLoad] aorig_disconnect
+[PySide6-postLoad] aprotect
+[PySide6-postLoad] aQtCore
+[PySide6-postLoad] aQt
+[PySide6-postLoad] aConnectionType
+[PySide6-postLoad] aAutoConnection
+[PySide6-postLoad] aorig_connect
+[PySide6-postLoad] aorig_singleShot
+[PySide6-postLoad] aorig_QApplication
+[PySide6-postLoad] aargv
+[PySide6-postLoad] aHICON
+[PySide6-postLoad] awindll
+[PySide6-postLoad] ashell32
+[PySide6-postLoad] aExtractIconExW
+[PySide6-postLoad] arestype
+[PySide6-postLoad] aLPCWSTR
+[PySide6-postLoad] ac_int
+[PySide6-postLoad] aPOINTER
+[PySide6-postLoad] ac_uint
+[PySide6-postLoad] aargtypes
+[PySide6-postLoad] amain_filename
+[PySide6-postLoad] abyref
+[PySide6-postLoad] asmall_icon
+[PySide6-postLoad] alarge_icon
+[PySide6-postLoad] aicons
+[PySide6-postLoad] avalue
+[PySide6-postLoad] aQIcon
+[PySide6-postLoad] aicon
+[PySide6-postLoad] aaddPixmap
+[PySide6-postLoad] aQPixmap
+[PySide6-postLoad] afromImage
+[PySide6-postLoad] aQImage
+[PySide6-postLoad] afromHICON
+[PySide6-postLoad] asetWindowIcon
+[PySide6-postLoad] aorigin
+[PySide6-postLoad] ahas_location
+[PySide6-postLoad] napatched_disconnect
+[PySide6-postLoad] apatched_connect
+[PySide6-postLoad] aPySide6
+[PySide6-postLoad] aQtCore
+[PySide6-postLoad] aSignalInstance
+[PySide6-postLoad] adisconnect
+[PySide6-postLoad] aconnect
+[PySide6-preLoad] aorigin
+[PySide6-preLoad] ahas_location
+[PySide6-preLoad] aos
+[PySide6-preLoad] agetenv
+[PySide6-preLoad] aPATH
+[PySide6-preLoad] sastartswith
+[PySide6-preLoad] a__nuitka_binary_dir
+[PySide6-preLoad] w;aenviron
+[PySide6-preLoad] aPATH
+[PySide6-preLoad] uPySide6-preLoad.py
+[PySide6-preLoad] u<module PySide6-preLoad>
+[PySide6.QtCore-postLoad] aorigin
+[PySide6.QtCore-postLoad] ahas_location
+[PySide6.QtCore-postLoad] aabsolute_import
+[PySide6.QtCore-postLoad] uPySide6.QtCore
+[PySide6.QtCore-postLoad] aQCoreApplication
+[PySide6.QtCore-postLoad] aQCoreApplication
+[PySide6.QtCore-postLoad] aos
+[PySide6.QtCore-postLoad] uPySide6\qt-plugins
+[PySide6.QtCore-postLoad] aqt_plugins_path
+[PySide6.QtCore-postLoad] asetLibraryPaths
+[PySide6.QtCore-postLoad] ajoin
+[PySide6.QtCore-postLoad] u..
+[PySide6.QtCore-postLoad] aqml
+[PySide6.QtCore-postLoad] aenviron
+[PySide6.QtCore-postLoad] aQML2_IMPORT_PATH
+[PySide6.QtCore-postLoad] uPySide6\QtCore-postLoad.py
+[PySide6.QtCore-postLoad] u<module PySide6.QtCore-postLoad>
+[PySide6] aPath
+[PySide6] asuffix
+[PySide6] u.zip
+[PySide6] ashiboken6
+[PySide6] ais_dir
+[PySide6] alibshiboken
+[PySide6] u does not exist
+[PySide6] alibpyside
+[PySide6] alibpysideqml
+[PySide6] aenviron
+[PySide6] aPATH
+[PySide6] asplit
+[PySide6] w;uqmake.exe
+[PySide6] aresolve
+[PySide6] a_additional_dll_directories
+[PySide6] aadd_dll_directory
+[PySide6] afspath
+[PySide6] aShiboken
+[PySide6] aShiboken
+[PySide6] u, 
+[PySide6] uPySide6/__init__.py: Unable to import Shiboken from 
+[PySide6] u: 
+[PySide6] astderr
+[PySide6] afile
+[PySide6] w;aPATH
+[PySide6] aopenssl
+[PySide6] aQtNetwork
+[PySide6] aQtNetwork
+[PySide6] aQSslSocket
+[PySide6] asupportsSsl
+[PySide6] aglob
+[PySide6] uQt*.pyd
+[PySide6] afind
+[PySide6] w.aendswith
+[PySide6] a_d
+[PySide6] :nq
+[PySide6] naunordered
+[PySide6] aadd
+[PySide6] a__pre_all__
+[PySide6] aresult
+[PySide6] aremove
+[PySide6] a_find_all_qt_modules
+[PySide6] umodule 'PySide6' has no attribute '
+[PySide6] u' :)
+[PySide6] a__getattr__
+[PySide6] a__all__
+[PySide6] udict of module 'PySide6' has no key '
+[PySide6] aNUITKA_PACKAGE_PySide6
+[PySide6] u\not_existing
+[PySide6] aorigin
+[PySide6.support] ajoin
+[PySide6.support] aenviron
+[PySide6.support] aNUITKA_PACKAGE_PySide6
+[PySide6.support] u\not_existing
+[PySide6.support] asupport
+[PySide6.support] aNUITKA_PACKAGE_PySide6_support
+[PySide6.support] u\not_existing
+[PySide6.support] aorigin
+[PySide6.support] ahas_location
+[PySide6.support] asubmodule_search_locations
+[PySide6.support] aannotations
+[PySide6.support] ushiboken6.Shiboken
+[PySide6.support] aVoidPtr
+[PySide6.support] aVoidPtr
+[PySide6.support] uPySide6\support\__init__.py
+[PySide6.support] u<module PySide6.support>
+[PySide6.support.deprecated] aorigin
+[PySide6.support.deprecated] ahas_location
+[PySide6.support.deprecated] aannotations
+[PySide6.support.deprecated] uPySide6\support\deprecated.py
+[PySide6.support.deprecated] u<module PySide6.support.deprecated>
+[__main__] u%s argument after ** must be a mapping, not %s
+[__main__] u%s got multiple values for keyword argument '%s'
+[__main__] acalled
+[__main__] astar_arg_dict
+[__main__] a__getitem__
+[__main__] u%s argument after * must be an iterable, not %s
+[__main__] astar_arg_list
+[__main__] a__mro_entries__
+[__main__] abases
+[__main__] akw
+[__main__] ukeywords must be strings
+[__main__] u'%s' object is not a mapping
+[__main__] apyarmor_runtime_015394
+[__main__] a__pyarmor__
+[__main__] a__pyarmor__
+[__main__] wPY015394
+[__main__] &D=&L
+[__main__] P'Xc
+[__main__] Z@3|
+[__main__] 2qZ
+[__main__] `]ZR
+[__main__] xFF
+[__main__] Bp7
+[__main__] TK-
+[__main__] $-/
+[__main__] b}0
+[__main__] &;Q+
+[__main__] S<%<
+[__main__] ac3
+[__main__] ~KF
+[__main__] ZX_
+[__main__] 6mV
+[__main__] sYagX
+[__main__] DS8
+[__main__] O`Ey+0
+[__main__] "}[
+[__main__] (Pq
+[__main__] T>BZ
+[__main__] sA*
+[__main__] _K>
+[__main__] ;wf
+[__main__] ]n9:BhZ
+[__main__] #ZL}IS/
+[__main__] "":
+[__main__] z]x
+[__main__] - - 
+[__main__] y[b
+[__main__] $0Q3
+[__main__] ,0s
+[__main__] K1Ck
+[__parents_main__-preLoad] aorigin
+[__parents_main__-preLoad] ahas_location
+[__parents_main__-preLoad] asys
+[__parents_main__-preLoad] u--multiprocessing-fork
+[__parents_main__-preLoad] aargv
+[__parents_main__-preLoad] abuiltins
+[__parents_main__-preLoad] :nnna__nuitka_original_args
+[__parents_main__-preLoad] u__parents_main__-preLoad.py
+[__parents_main__-preLoad] u<module __parents_main__-preLoad>
+[__parents_main__] umultiprocessing.spawn
+[__parents_main__] u<lambda>
+[__parents_main__] u__nuitka_freeze_support.<locals>.<lambda>
+[__parents_main__] aspawn
+[__parents_main__] a_fixup_main_from_path
+[__parents_main__] a__nuitka_original_args
+[__parents_main__] aargv
+[__parents_main__] nnasplit
+[__parents_main__] w=apipe_handle
+[__parents_main__] aNone
+[__parents_main__] akwds
+[__parents_main__] amodules
+[__parents_main__] a__parents_main__
+[__parents_main__] aspawn_main
+[__parents_main__] aorigin
+[__parents_main__] ahas_location
+[__parents_main__] apyarmor_runtime_015394
+[__parents_main__] a__pyarmor__
+[__parents_main__] a__pyarmor__
+[__parents_main__] wPY015394
+[__parents_main__] &D=&L
+[__parents_main__] P'Xc
+[__parents_main__] Z@3|
+[__parents_main__] 2qZ
+[__parents_main__] `]ZR
+[__parents_main__] xFF
+[__parents_main__] Bp7
+[__parents_main__] TK-
+[__parents_main__] $-/
+[__parents_main__] b}0
+[__parents_main__] &;Q+
+[__parents_main__] S<%<
+[__parents_main__] ac3

@@ -1,0 +1,20 @@
+{
+  "module": "numpy._core.cversions",
+  "chunk_size": 331,
+  "strings": [
+    "uSimple script to compute the api hash of the current API.",
+    "The API has is defined by numpy_api_order and ufunc_api_order.",
+    "aorigin",
+    "ahas_location",
+    "uos.path",
+    "adirname",
+    "ucode_generators.genapi",
+    "afullapi_hash",
+    "afullapi_hash",
+    "ucode_generators.numpy_api",
+    "afull_api",
+    "afull_api",
+    "unumpy\\_core\\cversions.py",
+    "u<module numpy._core.cversions>"
+  ]
+}

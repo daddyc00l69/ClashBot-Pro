@@ -1,0 +1,23 @@
+{
+  "module": "cv2.load_config_py3",
+  "chunk_size": 192,
+  "strings": [
+    "aexec",
+    "afpath",
+    "ag_vars",
+    "al_vars",
+    "wfacode",
+    "u<string>",
+    "nnnaorigin",
+    "ahas_location",
+    "aos",
+    "asys",
+    "aexec_file_wrapper",
+    "ucv2\\load_config_py3.py",
+    "u<module cv2.load_config_py3>",
+    "afpath",
+    "ag_vars",
+    "al_vars",
+    "wfacode"
+  ]
+}

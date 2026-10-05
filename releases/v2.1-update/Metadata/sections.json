@@ -1,0 +1,181 @@
+{
+  "AutoClash.exe": [
+    {
+      "Name": ".text",
+      "VirtualAddress": "0x1000",
+      "VirtualSize": "0x1f478",
+      "RawSize": "0x1f600",
+      "Characteristics": "0x60000060"
+    },
+    {
+      "Name": ".data",
+      "VirtualAddress": "0x21000",
+      "VirtualSize": "0x130",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".rdata",
+      "VirtualAddress": "0x22000",
+      "VirtualSize": "0x2ed0",
+      "RawSize": "0x3000",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".eh_fram",
+      "VirtualAddress": "0x25000",
+      "VirtualSize": "0x4",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".pdata",
+      "VirtualAddress": "0x26000",
+      "VirtualSize": "0x954",
+      "RawSize": "0xa00",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".xdata",
+      "VirtualAddress": "0x27000",
+      "VirtualSize": "0xb28",
+      "RawSize": "0xc00",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".bss",
+      "VirtualAddress": "0x28000",
+      "VirtualSize": "0x27cd0",
+      "RawSize": "0x0",
+      "Characteristics": "0xc0000080"
+    },
+    {
+      "Name": ".idata",
+      "VirtualAddress": "0x50000",
+      "VirtualSize": "0x1008",
+      "RawSize": "0x1200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".CRT",
+      "VirtualAddress": "0x52000",
+      "VirtualSize": "0x60",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".tls",
+      "VirtualAddress": "0x53000",
+      "VirtualSize": "0x10",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".rsrc",
+      "VirtualAddress": "0x54000",
+      "VirtualSize": "0x5d1ddc0",
+      "RawSize": "0x5d1de00",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".reloc",
+      "VirtualAddress": "0x5d72000",
+      "VirtualSize": "0x94",
+      "RawSize": "0x200",
+      "Characteristics": "0x42000040"
+    }
+  ],
+  "gui.dll": [
+    {
+      "Name": ".text",
+      "VirtualAddress": "0x1000",
+      "VirtualSize": "0x4a2e5b8",
+      "RawSize": "0x4a2e600",
+      "Characteristics": "0x60000060"
+    },
+    {
+      "Name": ".data",
+      "VirtualAddress": "0x4a30000",
+      "VirtualSize": "0x11860",
+      "RawSize": "0x11a00",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".rdata",
+      "VirtualAddress": "0x4a42000",
+      "VirtualSize": "0x72420",
+      "RawSize": "0x72600",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".eh_fram",
+      "VirtualAddress": "0x4ab5000",
+      "VirtualSize": "0x4",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".pdata",
+      "VirtualAddress": "0x4ab6000",
+      "VirtualSize": "0x62c10",
+      "RawSize": "0x62e00",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".xdata",
+      "VirtualAddress": "0x4b19000",
+      "VirtualSize": "0x9f8d8",
+      "RawSize": "0x9fa00",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".bss",
+      "VirtualAddress": "0x4bb9000",
+      "VirtualSize": "0x1b026c",
+      "RawSize": "0x0",
+      "Characteristics": "0xc0000080"
+    },
+    {
+      "Name": ".edata",
+      "VirtualAddress": "0x4d6a000",
+      "VirtualSize": "0x43",
+      "RawSize": "0x200",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".idata",
+      "VirtualAddress": "0x4d6b000",
+      "VirtualSize": "0x3d18",
+      "RawSize": "0x3e00",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".CRT",
+      "VirtualAddress": "0x4d6f000",
+      "VirtualSize": "0x58",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".tls",
+      "VirtualAddress": "0x4d70000",
+      "VirtualSize": "0x10",
+      "RawSize": "0x200",
+      "Characteristics": "0xc0000040"
+    },
+    {
+      "Name": ".rsrc",
+      "VirtualAddress": "0x4d71000",
+      "VirtualSize": "0xe93070",
+      "RawSize": "0xe93200",
+      "Characteristics": "0x40000040"
+    },
+    {
+      "Name": ".reloc",
+      "VirtualAddress": "0x5c05000",
+      "VirtualSize": "0x1be0",
+      "RawSize": "0x1c00",
+      "Characteristics": "0x42000040"
+    }
+  ]
+}

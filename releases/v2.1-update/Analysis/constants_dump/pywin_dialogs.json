@@ -1,0 +1,18 @@
+{
+  "module": "pywin.dialogs",
+  "chunk_size": 214,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_pywin",
+    "u\\not_existing",
+    "adialogs",
+    "aNUITKA_PACKAGE_pywin_dialogs",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "upywin\\dialogs\\__init__.py",
+    "u<module pywin.dialogs>"
+  ]
+}

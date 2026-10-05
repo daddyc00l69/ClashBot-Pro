@@ -1,0 +1,21 @@
+{
+  "module": "cv2.misc",
+  "chunk_size": 239,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "amisc",
+    "aNUITKA_PACKAGE_cv2_misc",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "aversion",
+    "aget_ocv_version",
+    "aget_ocv_version",
+    "ucv2\\misc\\__init__.py",
+    "u<module cv2.misc>"
+  ]
+}

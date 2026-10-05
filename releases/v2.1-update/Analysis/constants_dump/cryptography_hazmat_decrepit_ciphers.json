@@ -1,0 +1,25 @@
+{
+  "module": "cryptography.hazmat.decrepit.ciphers",
+  "chunk_size": 461,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cryptography",
+    "u\\not_existing",
+    "uhazmat\\decrepit\\ciphers",
+    "aNUITKA_PACKAGE_cryptography_hazmat",
+    "u\\not_existing",
+    "udecrepit\\ciphers",
+    "aNUITKA_PACKAGE_cryptography_hazmat_decrepit",
+    "u\\not_existing",
+    "aciphers",
+    "aNUITKA_PACKAGE_cryptography_hazmat_decrepit_ciphers",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "aannotations",
+    "ucryptography\\hazmat\\decrepit\\ciphers\\__init__.py",
+    "u<module cryptography.hazmat.decrepit.ciphers>"
+  ]
+}

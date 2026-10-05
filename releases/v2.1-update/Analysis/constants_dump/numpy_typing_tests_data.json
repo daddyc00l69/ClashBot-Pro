@@ -1,0 +1,25 @@
+{
+  "module": "numpy.typing.tests.data",
+  "chunk_size": 337,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy.typing.tests.data",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "utyping\\tests\\data",
+    "aNUITKA_PACKAGE_numpy_typing",
+    "u\\not_existing",
+    "utests\\data",
+    "aNUITKA_PACKAGE_numpy_typing_tests",
+    "u\\not_existing",
+    "adata",
+    "aNUITKA_PACKAGE_numpy_typing_tests_data",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\typing\\tests\\data",
+    "aargs",
+    "akw"
+  ]
+}

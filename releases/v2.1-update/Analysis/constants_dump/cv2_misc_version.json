@@ -1,0 +1,14 @@
+{
+  "module": "cv2.misc.version",
+  "chunk_size": 121,
+  "strings": [
+    "acv2",
+    "a__version__",
+    "aunavailable",
+    "aorigin",
+    "ahas_location",
+    "aget_ocv_version",
+    "ucv2\\misc\\version.py",
+    "u<module cv2.misc.version>"
+  ]
+}

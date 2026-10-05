@@ -1,0 +1,18 @@
+{
+  "module": "PyInstaller.lib",
+  "chunk_size": 222,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_PyInstaller",
+    "u\\not_existing",
+    "alib",
+    "aNUITKA_PACKAGE_PyInstaller_lib",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "uPyInstaller\\lib\\__init__.py",
+    "u<module PyInstaller.lib>"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "module": "numpy.rec",
+  "chunk_size": 243,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "arec",
+    "aNUITKA_PACKAGE_numpy_rec",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy._core.records",
+    "a__all__",
+    "a__doc__",
+    "w*unumpy\\rec\\__init__.py",
+    "u<module numpy.rec>"
+  ]
+}

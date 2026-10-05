@@ -1,0 +1,17 @@
+{
+  "module": "cryptography.__about__",
+  "chunk_size": 232,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aannotations",
+    "a__author__",
+    "a__copyright__",
+    "a__version__",
+    "u50.0.0",
+    "uThe Python Cryptographic Authority and individual contributors",
+    "uCopyright 2013-2026 ",
+    "ucryptography\\__about__.py",
+    "u<module cryptography.__about__>"
+  ]
+}

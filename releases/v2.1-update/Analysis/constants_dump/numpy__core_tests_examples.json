@@ -1,0 +1,25 @@
+{
+  "module": "numpy._core.tests.examples",
+  "chunk_size": 355,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy._core.tests.examples",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "u_core\\tests\\examples",
+    "aNUITKA_PACKAGE_numpy__core",
+    "u\\not_existing",
+    "utests\\examples",
+    "aNUITKA_PACKAGE_numpy__core_tests",
+    "u\\not_existing",
+    "aexamples",
+    "aNUITKA_PACKAGE_numpy__core_tests_examples",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\_core\\tests\\examples",
+    "aargs",
+    "akw"
+  ]
+}

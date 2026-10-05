@@ -1,0 +1,18 @@
+{
+  "module": "PyInstaller.building",
+  "chunk_size": 242,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_PyInstaller",
+    "u\\not_existing",
+    "abuilding",
+    "aNUITKA_PACKAGE_PyInstaller_building",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "uPyInstaller\\building\\__init__.py",
+    "u<module PyInstaller.building>"
+  ]
+}

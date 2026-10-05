@@ -1,0 +1,19 @@
+{
+  "module": "numpy.lib.array_utils",
+  "chunk_size": 236,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "a_array_utils_impl",
+    "a__all__",
+    "a__doc__",
+    "abyte_bounds",
+    "anormalize_axis_index",
+    "anormalize_axis_tuple",
+    "abyte_bounds",
+    "anormalize_axis_index",
+    "anormalize_axis_tuple",
+    "unumpy\\lib\\array_utils.py",
+    "u<module numpy.lib.array_utils>"
+  ]
+}

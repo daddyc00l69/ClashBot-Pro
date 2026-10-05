@@ -1,0 +1,21 @@
+{
+  "module": "numpy.strings",
+  "chunk_size": 259,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "astrings",
+    "aNUITKA_PACKAGE_numpy_strings",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy._core.strings",
+    "a__all__",
+    "a__doc__",
+    "w*unumpy\\strings\\__init__.py",
+    "u<module numpy.strings>"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "module": "numpy.version",
+  "chunk_size": 265,
+  "strings": [
+    "Module to expose more detailed version info for the installed `numpy`",
+    "aorigin",
+    "ahas_location",
+    "u2.2.6",
+    "aversion",
+    "a__version__",
+    "afull_version",
+    "u2b686f659642080e2fc708719385de6e8be0955f",
+    "agit_revision",
+    "arelease",
+    "w+ashort_version",
+    "unumpy\\version.py",
+    "u<module numpy.version>"
+  ]
+}

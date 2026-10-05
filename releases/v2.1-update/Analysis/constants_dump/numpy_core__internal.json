@@ -1,0 +1,32 @@
+{
+  "module": "numpy.core._internal",
+  "chunk_size": 372,
+  "strings": [
+    "anumpy",
+    "andarray",
+    "andarray",
+    "a__new__",
+    "unumpy._core",
+    "a_internal",
+    "a_internal",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core._internal' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a_reconstruct",
+    "a_dtype_from_pep3118",
+    "a__getattr__",
+    "unumpy\\core\\_internal.py",
+    "u<module numpy.core._internal>",
+    "aattr_name",
+    "a_internal",
+    "a_raise_warning",
+    "aret",
+    "asubtype",
+    "ashape",
+    "adtype",
+    "andarray"
+  ]
+}

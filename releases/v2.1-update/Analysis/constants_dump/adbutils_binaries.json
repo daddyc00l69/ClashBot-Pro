@@ -1,0 +1,18 @@
+{
+  "module": "adbutils.binaries",
+  "chunk_size": 230,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_adbutils",
+    "u\\not_existing",
+    "abinaries",
+    "aNUITKA_PACKAGE_adbutils_binaries",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "uadbutils\\binaries\\__init__.py",
+    "u<module adbutils.binaries>"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "module": "numpy.core.getlimits",
+  "chunk_size": 267,
+  "strings": [
+    "unumpy._core",
+    "agetlimits",
+    "agetlimits",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core.getlimits' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a__getattr__",
+    "unumpy\\core\\getlimits.py",
+    "u<module numpy.core.getlimits>",
+    "aattr_name",
+    "agetlimits",
+    "a_raise_warning",
+    "aret"
+  ]
+}

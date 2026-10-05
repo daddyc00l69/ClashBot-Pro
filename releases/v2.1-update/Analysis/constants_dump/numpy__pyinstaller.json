@@ -1,0 +1,18 @@
+{
+  "module": "numpy._pyinstaller",
+  "chunk_size": 234,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "a_pyinstaller",
+    "aNUITKA_PACKAGE_numpy__pyinstaller",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\_pyinstaller\\__init__.py",
+    "u<module numpy._pyinstaller>"
+  ]
+}

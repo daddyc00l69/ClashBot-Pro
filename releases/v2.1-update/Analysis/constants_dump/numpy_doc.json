@@ -1,0 +1,19 @@
+{
+  "module": "numpy.doc",
+  "chunk_size": 165,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy.doc",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "adoc",
+    "aNUITKA_PACKAGE_numpy_doc",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\doc",
+    "aargs",
+    "akw"
+  ]
+}

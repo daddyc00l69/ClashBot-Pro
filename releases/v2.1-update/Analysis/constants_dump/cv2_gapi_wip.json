@@ -1,0 +1,22 @@
+{
+  "module": "cv2.gapi.wip",
+  "chunk_size": 224,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.gapi.wip",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "ugapi\\wip",
+    "aNUITKA_PACKAGE_cv2_gapi",
+    "u\\not_existing",
+    "awip",
+    "aNUITKA_PACKAGE_cv2_gapi_wip",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\gapi\\wip",
+    "aargs",
+    "akw"
+  ]
+}

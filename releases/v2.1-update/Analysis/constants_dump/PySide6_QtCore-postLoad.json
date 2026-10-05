@@ -1,0 +1,23 @@
+{
+  "module": "PySide6.QtCore-postLoad",
+  "chunk_size": 258,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aabsolute_import",
+    "uPySide6.QtCore",
+    "aQCoreApplication",
+    "aQCoreApplication",
+    "aos",
+    "uPySide6\\qt-plugins",
+    "aqt_plugins_path",
+    "asetLibraryPaths",
+    "ajoin",
+    "u..",
+    "aqml",
+    "aenviron",
+    "aQML2_IMPORT_PATH",
+    "uPySide6\\QtCore-postLoad.py",
+    "u<module PySide6.QtCore-postLoad>"
+  ]
+}

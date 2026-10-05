@@ -1,0 +1,19 @@
+{
+  "module": "cv2.cuda",
+  "chunk_size": 161,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.cuda",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "acuda",
+    "aNUITKA_PACKAGE_cv2_cuda",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\cuda",
+    "aargs",
+    "akw"
+  ]
+}

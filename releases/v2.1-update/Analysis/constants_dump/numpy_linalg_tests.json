@@ -1,0 +1,21 @@
+{
+  "module": "numpy.linalg.tests",
+  "chunk_size": 287,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "ulinalg\\tests",
+    "aNUITKA_PACKAGE_numpy_linalg",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy_linalg_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\linalg\\tests\\__init__.py",
+    "u<module numpy.linalg.tests>"
+  ]
+}

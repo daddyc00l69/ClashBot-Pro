@@ -1,0 +1,21 @@
+{
+  "module": "numpy.fft.tests",
+  "chunk_size": 272,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "ufft\\tests",
+    "aNUITKA_PACKAGE_numpy_fft",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy_fft_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\fft\\tests\\__init__.py",
+    "u<module numpy.fft.tests>"
+  ]
+}

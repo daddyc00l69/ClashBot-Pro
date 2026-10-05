@@ -1,0 +1,23 @@
+{
+  "module": "cryptography.cobblestone",
+  "chunk_size": 382,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aannotations",
+    "ucryptography.hazmat.bindings._rust",
+    "acobblestone",
+    "acobblestone",
+    "a_cobblestone",
+    "aCobblestone128Decryptor",
+    "aCobblestone128Encryptor",
+    "aCobblestone256Decryptor",
+    "aCobblestone256Encryptor",
+    "aCobblestone128Decryptor",
+    "aCobblestone128Encryptor",
+    "aCobblestone256Decryptor",
+    "aCobblestone256Encryptor",
+    "ucryptography\\cobblestone.py",
+    "u<module cryptography.cobblestone>"
+  ]
+}

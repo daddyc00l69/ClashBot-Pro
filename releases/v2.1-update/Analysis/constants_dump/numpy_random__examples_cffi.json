@@ -1,0 +1,25 @@
+{
+  "module": "numpy.random._examples.cffi",
+  "chunk_size": 361,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy.random._examples.cffi",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "urandom\\_examples\\cffi",
+    "aNUITKA_PACKAGE_numpy_random",
+    "u\\not_existing",
+    "u_examples\\cffi",
+    "aNUITKA_PACKAGE_numpy_random__examples",
+    "u\\not_existing",
+    "acffi",
+    "aNUITKA_PACKAGE_numpy_random__examples_cffi",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\random\\_examples\\cffi",
+    "aargs",
+    "akw"
+  ]
+}

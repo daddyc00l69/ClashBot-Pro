@@ -1,0 +1,21 @@
+{
+  "module": "numpy.typing.tests.data.pass.flatiter",
+  "chunk_size": 208,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "anumpy",
+    "anp",
+    "aempty",
+    "paflat",
+    "waabase",
+    "acopy",
+    "acoords",
+    "aindex",
+    ":nnna__array__",
+    "adtype",
+    "afloat64",
+    "unumpy\\typing\\tests\\data\\pass\\flatiter.py",
+    "u<module numpy.typing.tests.data.pass.flatiter>"
+  ]
+}

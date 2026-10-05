@@ -1,0 +1,25 @@
+{
+  "module": "cv2.gapi.wip.draw",
+  "chunk_size": 301,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.gapi.wip.draw",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "ugapi\\wip\\draw",
+    "aNUITKA_PACKAGE_cv2_gapi",
+    "u\\not_existing",
+    "uwip\\draw",
+    "aNUITKA_PACKAGE_cv2_gapi_wip",
+    "u\\not_existing",
+    "adraw",
+    "aNUITKA_PACKAGE_cv2_gapi_wip_draw",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\gapi\\wip\\draw",
+    "aargs",
+    "akw"
+  ]
+}

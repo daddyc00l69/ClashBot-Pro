@@ -1,0 +1,11 @@
+{
+  "module": "win32ctypes.core._winerrors",
+  "chunk_size": 115,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aERROR_NOT_FOUND",
+    "uwin32ctypes\\core\\_winerrors.py",
+    "u<module win32ctypes.core._winerrors>"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "module": "win32ctypes",
+  "chunk_size": 191,
+  "strings": [
+    "aenviron",
+    "aNUITKA_PACKAGE_win32ctypes",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "aversion",
+    "a__version__",
+    "a__version__",
+    "uwin32ctypes\\__init__.py",
+    "u<module win32ctypes>"
+  ]
+}

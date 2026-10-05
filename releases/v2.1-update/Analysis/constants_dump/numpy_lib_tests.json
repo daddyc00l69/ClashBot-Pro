@@ -1,0 +1,21 @@
+{
+  "module": "numpy.lib.tests",
+  "chunk_size": 272,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "ulib\\tests",
+    "aNUITKA_PACKAGE_numpy_lib",
+    "u\\not_existing",
+    "atests",
+    "aNUITKA_PACKAGE_numpy_lib_tests",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "unumpy\\lib\\tests\\__init__.py",
+    "u<module numpy.lib.tests>"
+  ]
+}

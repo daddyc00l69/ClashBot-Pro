@@ -1,0 +1,13 @@
+{
+  "module": "PIL._version",
+  "chunk_size": 99,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aannotations",
+    "u12.1.0",
+    "a__version__",
+    "uPIL\\_version.py",
+    "u<module PIL._version>"
+  ]
+}

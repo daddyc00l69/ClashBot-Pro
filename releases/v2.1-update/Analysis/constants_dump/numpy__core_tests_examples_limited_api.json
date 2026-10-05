@@ -1,0 +1,28 @@
+{
+  "module": "numpy._core.tests.examples.limited_api",
+  "chunk_size": 500,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy._core.tests.examples.limited_api",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "u_core\\tests\\examples\\limited_api",
+    "aNUITKA_PACKAGE_numpy__core",
+    "u\\not_existing",
+    "utests\\examples\\limited_api",
+    "aNUITKA_PACKAGE_numpy__core_tests",
+    "u\\not_existing",
+    "uexamples\\limited_api",
+    "aNUITKA_PACKAGE_numpy__core_tests_examples",
+    "u\\not_existing",
+    "alimited_api",
+    "aNUITKA_PACKAGE_numpy__core_tests_examples_limited_api",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\_core\\tests\\examples\\limited_api",
+    "aargs",
+    "akw"
+  ]
+}

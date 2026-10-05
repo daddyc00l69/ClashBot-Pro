@@ -1,0 +1,26 @@
+{
+  "module": "numpy.core.multiarray",
+  "chunk_size": 315,
+  "strings": [
+    "unumpy._core",
+    "amultiarray",
+    "amultiarray",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core.multiarray' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a_reconstruct",
+    "ascalar",
+    "aitem",
+    "a_ARRAY_API",
+    "a__getattr__",
+    "unumpy\\core\\multiarray.py",
+    "u<module numpy.core.multiarray>",
+    "aattr_name",
+    "amultiarray",
+    "a_raise_warning",
+    "aret"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "module": "cryptography.hazmat.backends.openssl",
+  "chunk_size": 527,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cryptography",
+    "u\\not_existing",
+    "uhazmat\\backends\\openssl",
+    "aNUITKA_PACKAGE_cryptography_hazmat",
+    "u\\not_existing",
+    "ubackends\\openssl",
+    "aNUITKA_PACKAGE_cryptography_hazmat_backends",
+    "u\\not_existing",
+    "aopenssl",
+    "aNUITKA_PACKAGE_cryptography_hazmat_backends_openssl",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "aannotations",
+    "ucryptography.hazmat.backends.openssl.backend",
+    "abackend",
+    "abackend",
+    "ucryptography\\hazmat\\backends\\openssl\\__init__.py",
+    "u<module cryptography.hazmat.backends.openssl>"
+  ]
+}

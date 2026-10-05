@@ -1,0 +1,26 @@
+{
+  "module": "numpy.matrixlib",
+  "chunk_size": 392,
+  "strings": [
+    "uSub-package containing the matrix class and related functions.",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "amatrixlib",
+    "aNUITKA_PACKAGE_numpy_matrixlib",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "adefmatrix",
+    "adefmatrix",
+    "w*unumpy._pytesttester",
+    "aPytestTester",
+    "aPytestTester",
+    "unumpy.matrixlib",
+    "atest",
+    "unumpy\\matrixlib\\__init__.py",
+    "u<module numpy.matrixlib>"
+  ]
+}

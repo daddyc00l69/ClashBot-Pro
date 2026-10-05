@@ -1,0 +1,19 @@
+{
+  "module": "cv2.fisheye",
+  "chunk_size": 173,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.fisheye",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "afisheye",
+    "aNUITKA_PACKAGE_cv2_fisheye",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\fisheye",
+    "aargs",
+    "akw"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "module": "PyInstaller.utils.win32",
+  "chunk_size": 332,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_PyInstaller",
+    "u\\not_existing",
+    "uutils\\win32",
+    "aNUITKA_PACKAGE_PyInstaller_utils",
+    "u\\not_existing",
+    "awin32",
+    "aNUITKA_PACKAGE_PyInstaller_utils_win32",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "amartin",
+    "a__author__",
+    "uPyInstaller\\utils\\win32\\__init__.py",
+    "u<module PyInstaller.utils.win32>"
+  ]
+}

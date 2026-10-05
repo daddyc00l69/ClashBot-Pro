@@ -1,0 +1,30 @@
+{
+  "module": "certifi.core",
+  "chunk_size": 346,
+  "strings": [
+    "a_CACERT_CTX",
+    "nnna_CACERT_PATH",
+    "aget_path",
+    "acertifi",
+    "ucacert.pem",
+    "aatexit",
+    "aexit_cacert_ctx",
+    "aread_text",
+    "acertifi",
+    "ucacert.pem",
+    "astrict",
+    "certifi.py",
+    "~~~~~~~~~~",
+    "This module returns the installation location of cacert.pem or its contents.",
+    "aorigin",
+    "ahas_location",
+    "asys",
+    "areturn",
+    "areturn",
+    "Ostr",
+    "awhere",
+    "acontents",
+    "ucertifi\\core.py",
+    "u<module certifi.core>"
+  ]
+}

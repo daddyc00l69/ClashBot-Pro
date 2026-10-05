@@ -1,0 +1,18 @@
+{
+  "module": "numpy._utils._convertions",
+  "chunk_size": 229,
+  "strings": [
+    "adecode",
+    "alatin1",
+    "aencode",
+    "A set of methods retained from np.compat module that",
+    "are still used across codebase.",
+    "aorigin",
+    "ahas_location",
+    "aasunicode",
+    "aasbytes",
+    "unumpy\\_utils\\_convertions.py",
+    "u<module numpy._utils._convertions>",
+    "ws."
+  ]
+}

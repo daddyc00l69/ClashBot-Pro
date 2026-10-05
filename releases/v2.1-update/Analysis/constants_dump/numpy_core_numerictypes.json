@@ -1,0 +1,22 @@
+{
+  "module": "numpy.core.numerictypes",
+  "chunk_size": 285,
+  "strings": [
+    "unumpy._core",
+    "anumerictypes",
+    "anumerictypes",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core.numerictypes' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a__getattr__",
+    "unumpy\\core\\numerictypes.py",
+    "u<module numpy.core.numerictypes>",
+    "aattr_name",
+    "anumerictypes",
+    "a_raise_warning",
+    "aret"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "module": "numpy.core.einsumfunc",
+  "chunk_size": 273,
+  "strings": [
+    "unumpy._core",
+    "aeinsumfunc",
+    "aeinsumfunc",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core.einsumfunc' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a__getattr__",
+    "unumpy\\core\\einsumfunc.py",
+    "u<module numpy.core.einsumfunc>",
+    "aattr_name",
+    "aeinsumfunc",
+    "a_raise_warning",
+    "aret"
+  ]
+}

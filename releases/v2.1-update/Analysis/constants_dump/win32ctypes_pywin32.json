@@ -1,0 +1,25 @@
+{
+  "module": "win32ctypes.pywin32",
+  "chunk_size": 331,
+  "strings": [
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_win32ctypes",
+    "u\\not_existing",
+    "apywin32",
+    "aNUITKA_PACKAGE_win32ctypes_pywin32",
+    "u\\not_existing",
+    "aorigin",
+    "ahas_location",
+    "asubmodule_search_locations",
+    "uwin32ctypes.pywin32",
+    "apywintypes",
+    "apywintypes",
+    "awin32api",
+    "awin32api",
+    "awin32cred",
+    "awin32cred",
+    "uwin32ctypes\\pywin32\\__init__.py",
+    "u<module win32ctypes.pywin32>"
+  ]
+}

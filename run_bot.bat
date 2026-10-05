@@ -1,8 +1,8 @@
 @echo off
-title Auto Clash - Recovered Source Launcher
-echo ===================================================
-echo   Launching Auto Clash from Recovered Python Source
-echo ===================================================
-cd /d "%~dp0Recovered_Source\Source"
-python "%~dp0Recovered_Source\Project\run.py"
+title Auto Clash - Release v2.1 (Update) Launcher
+echo =========================================================
+echo   Launching Auto Clash Release v2.1 (Update) from Source
+echo =========================================================
+cd /d "%~dp0releases\v2.1-update\Source"
+python "%~dp0releases\v2.1-update\Project\run.py"
 pause

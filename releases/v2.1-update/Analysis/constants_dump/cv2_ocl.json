@@ -1,0 +1,19 @@
+{
+  "module": "cv2.ocl",
+  "chunk_size": 157,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.ocl",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "aocl",
+    "aNUITKA_PACKAGE_cv2_ocl",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\ocl",
+    "aargs",
+    "akw"
+  ]
+}

@@ -20,6 +20,7 @@
 </div>
 
 ## 📑 Table of Contents
+- [Available Releases & Updates](#-available-releases--updates)
 - [Overview](#-overview)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
@@ -31,6 +32,18 @@
 - [Localization](#-localization)
 - [Author & Credits](#-author--credits)
 - [Disclaimer & License](#-disclaimer--license)
+
+---
+
+## 📦 Available Releases & Updates
+
+| Release Version | Directory | Application Modules | New Features & Changes | Dedicated Documentation |
+|---|---|---|---|---|
+| **Base Release (v1.0)** | [`releases/v1.0-base/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v1.0-base/) | 76 Modules | 992 Templates, 862 Anchors, Core Automation Engine | [Base README](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v1.0-base/README.md) • [Report](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/docs/RECOVERY_REPORT_v1.0.md) |
+| **New Update (v2.1)** | [`releases/v2.1-update/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v2.1-update/) | 80 Modules (+4 New) | 1,026 Templates (+35), 906 Anchors (+44), Blacksmith Hero Equipment, BH Rush, Startup Modals | [Update README](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v2.1-update/README.md) • [New Modules](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v2.1-update/New_Application_Modules/README.md) • [Report](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/docs/RECOVERY_REPORT_v2.1.md) |
+
+> [!TIP]
+> Each update has its own dedicated `README.md` and self-contained workspace under `releases/`. The new update also provides an isolated [`New_Application_Modules/`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v2.1-update/New_Application_Modules/) folder detailing the 4 newly added modules.
 
 ---
 
@@ -71,9 +84,15 @@ The system operates externally through Android Debug Bridge (`ADB`) and screen c
 - **Clock Tower Boost:** Scheduled daily activation to accelerate production.
 - **Automated Battles:** Auto-deployment of Baby Dragons/Barbs for star bonuses.
 - **Gem Mine & Cart Collector:** Continuous passive resource harvesting.
+- **Builder Hall Rush (`rush_bh.py`):** Automated B.O.B unlock path for 6th builder.
 
-### 👁️ 5. Vision & Optical Intelligence
-- **OpenCV Pattern Recognition (`vision.py`):** 992+ indexed game templates across all resolutions.
+### 👑 5. Hero Equipment & Blacksmith (`equipment_upgrade.py`)
+- **Multi-Hero Support:** Barbarian King, Archer Queen, Minion Prince, Grand Warden, Royal Champion.
+- **Ore Management:** Shiny Ore, Glowy Ore, Starry Ore allocation.
+- **Dual Upgrade Modes:** Common vs. Epic equipment tier prioritization.
+
+### 👁️ 6. Vision & Optical Intelligence
+- **OpenCV Pattern Recognition (`vision.py`):** 1,026+ indexed game templates across all resolutions.
 - **OCR Timer & Resource Recognition:** Tesseract-powered reading of countdown timers, shield remaining, and upgrade costs.
 - **Pinch-to-Zoom Calibration (`ui2_zoom.py`):** Automatic zoom resets and anchor realignment upon village load.
 
@@ -104,47 +123,48 @@ graph TD
 
 ```text
 ClashBot-Pro/
-├── Recovered_Source/
-│   ├── Source/                           # Application source code
-│   │   ├── attack/                       # Combat deployment scripts & coordinates
-│   │   │   ├── attacklogic.py            # Battle state machine & sequencing
-│   │   │   ├── barchgob.py               # Barbarian / Archer / Goblin strategy
-│   │   │   ├── dragon.py                 # Dragon assault automation
-│   │   │   ├── edragon.py                # Electro Dragon chain-lightning logic
-│   │   │   ├── geometry.py               # Screen tile mathematics & coordinates
-│   │   │   └── war_twothreestar.py       # War strategy planner
-│   │   ├── builder_base/                 # Builder Base subsystem
-│   │   │   ├── functions.py              # Clock tower, gem mine, cart collection
-│   │   │   └── main.py                   # Builder Base loop orchestrator
-│   │   ├── profiles/                     # Multi-village profile & config management
-│   │   ├── ui/                           # PySide6 (Qt6) GUI application
-│   │   │   ├── main_window.py            # Main application dashboard
-│   │   │   ├── mini_window.py            # Compact floating overlay widget
-│   │   │   └── bot_worker.py             # Asynchronous bot execution thread
-│   │   ├── utils/                        # Runtime helpers & multitouch generators
-│   │   ├── adb.py                        # ADB socket communication bridge
-│   │   ├── farming.py                    # Multiplayer search & loot evaluation
-│   │   ├── vision.py                     # OpenCV template matching & OCR engine
-│   │   └── walls.py                      # Automatic wall upgrade engine
-│   ├── Resources/
-│   │   ├── assets/                       # UI icons, stylesheets, and branding
-│   │   ├── templates/                    # 992 OpenCV visual template images
-│   │   └── locales/                      # Multi-language translation packs (.json)
-│   ├── Config/
-│   │   └── profiles/                     # User village configurations
-│   ├── Dependencies/
-│   │   ├── Tools/                        # Embedded adb & tesseract binaries
-│   │   └── requirements.txt              # Production Python package manifest
-│   ├── Metadata/                         # Binary analysis, PE headers, and hashes
-│   └── Project/
-│       ├── run.py                        # Python application entry point
-│       └── setup_env.bat                 # Virtual environment bootstrap script
+├── releases/
+│   ├── v1.0-base/                        # Base Release Source Code & Assets
+│   │   ├── README.md                     # Dedicated v1.0 Documentation
+│   │   ├── Source/                       # 76 Operational Python Modules
+│   │   ├── Resources/                    # 992 Templates, Assets, 11 Locales
+│   │   ├── Config/                       # bot.config, profiles, treasureloot
+│   │   ├── Dependencies/                 # Tools (adb, tesseract), manifests
+│   │   ├── Analysis/                     # Module hierarchy & constants dumps
+│   │   ├── Metadata/                     # PE headers, section maps, sha256 hashes
+│   │   └── Project/                      # run.py, test_suite.py, pyproject.toml
+│   │
+│   └── v2.1-update/                      # New Update Source Code & Assets
+│       ├── README.md                     # Dedicated v2.1 Documentation
+│       ├── New_Application_Modules/      # Showcase of 4 new modules + docs
+│       │   ├── equipment_upgrade.py      # Hero equipment auto-upgrader
+│       │   ├── rush_bh.py                # Builder Hall rush algorithm
+│       │   ├── startup_checks.py         # Event chest & dialogue resolver
+│       │   ├── ranked_unlock.py          # Ranked battle unlock macro
+│       │   └── README.md                 # Deep-dive technical specifications
+│       ├── Source/                       # 80 Operational Python Modules (including 4 new)
+│       ├── Resources/                    # 1,026 Templates (+35 new), Assets, Locales
+│       ├── Config/                       # bot.config, profiles, treasureloot
+│       ├── Dependencies/                 # Tools (adb, tesseract), manifests
+│       ├── Analysis/                     # Module hierarchy & constants dumps
+│       ├── Metadata/                     # PE headers, section maps, sha256 hashes
+│       └── Project/                      # run.py, test_suite.py, pyproject.toml
+│
+├── binaries/
+│   └── v2.1-update/                      # Original Untouched Executables
+│       └── AutoClash.exe                 # Preserved Binary (97,794,560 bytes)
+│
+├── docs/
+│   ├── ANALYSIS.md                       # Reverse engineering technical report
+│   ├── DEPENDENCIES.md                   # Dependencies and toolchain audit
+│   ├── RECOVERY_REPORT_v1.0.md           # Base release recovery audit report
+│   └── RECOVERY_REPORT_v2.1.md           # New update comparative recovery report
+│
 ├── .gitignore                            # Standard Git ignore rules
-├── ANALYSIS.md                           # In-depth reverse engineering documentation
-├── DEPENDENCIES.md                       # Comprehensive toolchain and package audit
-├── RECOVERY_REPORT.md                    # Verification and decompilation report
-├── README.md                             # Project documentation (this file)
-└── run_bot.bat                           # 1-Click portable launcher
+├── README.md                             # Master project documentation
+├── run_v1_base.bat                       # 1-Click launcher for Release v1.0
+├── run_v2_update.bat                     # 1-Click launcher for Release v2.1
+└── run_bot.bat                           # 1-Click launcher (defaults to latest v2.1)
 ```
 
 ---
@@ -160,20 +180,30 @@ ClashBot-Pro/
 
 ---
 
-## 🚀 Quick Start & Installation
+## 🚀 Quick Start & Execution
 
-### Option 1: Automated 1-Click Setup (Recommended)
+### 1-Click Batch Launchers:
+- **Latest Version (v2.1 Update):** Double-click [`run_bot.bat`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/run_bot.bat) or [`run_v2_update.bat`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/run_v2_update.bat).
+- **Base Version (v1.0):** Double-click [`run_v1_base.bat`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/run_v1_base.bat).
 
-1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/AradhyeTushar/ClashBot-Pro.git
-   cd ClashBot-Pro
-   ```
-2. Double-click **`run_bot.bat`** or run:
-   ```cmd
-   .\run_bot.bat
-   ```
-   *The launcher automatically resolves all local project paths and boots the GUI.*
+### Command Line Execution:
+```cmd
+# Run latest v2.1 update
+cd releases\v2.1-update\Source
+python ..\Project\run.py
+
+# Run base v1.0 version
+cd releases\v1.0-base\Source
+python ..\Project\run.py
+```
+
+### Git Clone & Setup:
+```bash
+git clone https://github.com/AradhyeTushar/ClashBot-Pro.git
+cd ClashBot-Pro
+.\run_bot.bat
+```
+*The launcher automatically resolves all local project paths and boots the GUI.*
 
 ---
 

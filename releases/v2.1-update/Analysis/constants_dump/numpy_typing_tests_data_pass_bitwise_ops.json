@@ -1,0 +1,27 @@
+{
+  "module": "numpy.typing.tests.data.pass.bitwise_ops",
+  "chunk_size": 246,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "anumpy",
+    "anp",
+    "aint64",
+    "ai8",
+    "auint64",
+    "au8",
+    "aint32",
+    "ai4",
+    "auint32",
+    "au4",
+    "abool",
+    "ab_",
+    "wiaarray",
+    "adtype",
+    "aAR",
+    "asetflags",
+    "awrite",
+    "unumpy\\typing\\tests\\data\\pass\\bitwise_ops.py",
+    "u<module numpy.typing.tests.data.pass.bitwise_ops>"
+  ]
+}

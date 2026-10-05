@@ -1,0 +1,15 @@
+{
+  "module": "adbutils._version",
+  "chunk_size": 180,
+  "strings": [
+    "uCreated on Fri May 06 2022 10:54:04 by codeskyblue",
+    "aorigin",
+    "ahas_location",
+    "aversion",
+    "aPackageNotFoundError",
+    "u2.12.0",
+    "a__version__",
+    "uadbutils\\_version.py",
+    "u<module adbutils._version>"
+  ]
+}

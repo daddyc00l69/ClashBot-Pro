@@ -1,0 +1,28 @@
+{
+  "module": "requests.__version__",
+  "chunk_size": 377,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "arequests",
+    "a__title__",
+    "uPython HTTP for Humans.",
+    "a__description__",
+    "uhttps://requests.readthedocs.io",
+    "a__url__",
+    "u2.32.5",
+    "a__version__",
+    "a__build__",
+    "uKenneth Reitz",
+    "a__author__",
+    "ume@kennethreitz.org",
+    "a__author_email__",
+    "uApache-2.0",
+    "a__license__",
+    "uCopyright Kenneth Reitz",
+    "a__copyright__",
+    "a__cake__",
+    "urequests\\__version__.py",
+    "u<module requests.__version__>"
+  ]
+}

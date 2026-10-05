@@ -1,0 +1,19 @@
+{
+  "module": "cv2.videoio_registry",
+  "chunk_size": 209,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.videoio_registry",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "avideoio_registry",
+    "aNUITKA_PACKAGE_cv2_videoio_registry",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\videoio_registry",
+    "aargs",
+    "akw"
+  ]
+}

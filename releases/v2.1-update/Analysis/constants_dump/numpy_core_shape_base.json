@@ -1,0 +1,22 @@
+{
+  "module": "numpy.core.shape_base",
+  "chunk_size": 273,
+  "strings": [
+    "unumpy._core",
+    "ashape_base",
+    "ashape_base",
+    "a_utils",
+    "a_raise_warning",
+    "a_raise_warning",
+    "umodule 'numpy.core.shape_base' has no attribute ",
+    "aorigin",
+    "ahas_location",
+    "a__getattr__",
+    "unumpy\\core\\shape_base.py",
+    "u<module numpy.core.shape_base>",
+    "aattr_name",
+    "ashape_base",
+    "a_raise_warning",
+    "aret"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "module": "cv2.barcode",
+  "chunk_size": 173,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.barcode",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "abarcode",
+    "aNUITKA_PACKAGE_cv2_barcode",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\barcode",
+    "aargs",
+    "akw"
+  ]
+}

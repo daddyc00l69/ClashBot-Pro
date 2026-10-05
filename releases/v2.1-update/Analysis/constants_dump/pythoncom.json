@@ -1,0 +1,13 @@
+{
+  "module": "pythoncom",
+  "chunk_size": 116,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "apywintypes",
+    "a__import_pywin32_system_module__",
+    "apythoncom",
+    "upythoncom.py",
+    "u<module pythoncom>"
+  ]
+}

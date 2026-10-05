@@ -1,0 +1,28 @@
+{
+  "module": "numpy.typing.tests.data.pass",
+  "chunk_size": 430,
+  "strings": [
+    "a_NamespacePath",
+    "unumpy.typing.tests.data.pass",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_numpy",
+    "u\\not_existing",
+    "utyping\\tests\\data\\pass",
+    "aNUITKA_PACKAGE_numpy_typing",
+    "u\\not_existing",
+    "utests\\data\\pass",
+    "aNUITKA_PACKAGE_numpy_typing_tests",
+    "u\\not_existing",
+    "udata\\pass",
+    "aNUITKA_PACKAGE_numpy_typing_tests_data",
+    "u\\not_existing",
+    "apass",
+    "aNUITKA_PACKAGE_numpy_typing_tests_data_pass",
+    "u\\not_existing",
+    "u<lambda>",
+    "unumpy\\typing\\tests\\data\\pass",
+    "aargs",
+    "akw"
+  ]
+}

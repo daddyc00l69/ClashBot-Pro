@@ -1,0 +1,19 @@
+{
+  "module": "cv2.Error",
+  "chunk_size": 165,
+  "strings": [
+    "a_NamespacePath",
+    "ucv2.Error",
+    "ajoin",
+    "aenviron",
+    "aNUITKA_PACKAGE_cv2",
+    "u\\not_existing",
+    "aError",
+    "aNUITKA_PACKAGE_cv2_Error",
+    "u\\not_existing",
+    "u<lambda>",
+    "ucv2\\Error",
+    "aargs",
+    "akw"
+  ]
+}

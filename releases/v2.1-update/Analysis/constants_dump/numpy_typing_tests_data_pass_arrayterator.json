@@ -1,0 +1,30 @@
+{
+  "module": "numpy.typing.tests.data.pass.arrayterator",
+  "chunk_size": 315,
+  "strings": [
+    "aorigin",
+    "ahas_location",
+    "aannotations",
+    "aAny",
+    "anumpy",
+    "anp",
+    "aarange",
+    "aAR_i8",
+    "unp.ndarray[Any, np.dtype[np.int_]]",
+    "alib",
+    "aArrayterator",
+    "aar_iter",
+    "avar",
+    "abuf_size",
+    "astart",
+    "astop",
+    "astep",
+    "ashape",
+    "aflat",
+    "a__array__",
+    "wi:nnnT",
+    "ppT",
+    ":nnnunumpy\\typing\\tests\\data\\pass\\arrayterator.py",
+    "u<module numpy.typing.tests.data.pass.arrayterator>"
+  ]
+}
