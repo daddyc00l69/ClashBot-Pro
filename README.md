@@ -211,7 +211,7 @@ cd ClashBot-Pro
 
 1. **Navigate to the Project directory:**
    ```bash
-   cd Recovered_Source/Project
+   cd releases/v2.1-update/Project
    ```
 
 2. **Create and activate a virtual environment:**
