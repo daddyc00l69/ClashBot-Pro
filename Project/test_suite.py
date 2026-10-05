@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Auto Clash - Integrity and Verification Test Suite (New Update)
+ClashBot-Pro - Integrity and Verification Test Suite (New Update)
 """
 import os
 import sys

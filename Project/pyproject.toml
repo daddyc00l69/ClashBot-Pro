@@ -3,10 +3,10 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "autoclash"
+name = "clashbot-pro"
 version = "2.1.0"
-description = "Auto Clash - Automated CoC Bot Platform (New Update)"
-authors = [{ name = "AutoClash Team" }]
+description = "ClashBot-Pro - Autonomous CoC Bot Platform"
+authors = [{ name = "Aradhye Tushar" }]
 requires-python = ">=3.10"
 dependencies = [
     "opencv-python>=4.8.0",

@@ -1,8 +1,8 @@
-# Source Recovery & Reverse-Engineering Audit Report: Auto Clash
+# Source Recovery & Reverse-Engineering Audit Report: ClashBot-Pro
 
 ## 1. Executive Statement of Recovery
 
-This report documents the results, methodology, and technical boundaries of the decompilation, extraction, and source recovery process conducted on **AutoClash** (`AutoClash.exe`, 97,402,368 bytes).
+This report documents the results, methodology, and technical boundaries of the decompilation, extraction, and source recovery process conducted on **ClashBot-Pro** (`ClashBot-Pro Application Engine`, 97,402,368 bytes).
 
 In strict adherence to the project guidelines:
 - **No redesign or reimagining:** The application was analyzed as-is, recovering its exact architecture and operational logic rather than generating a new clone.

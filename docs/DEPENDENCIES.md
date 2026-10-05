@@ -1,8 +1,8 @@
-# Comprehensive Dependencies & Runtime Audit: Auto Clash
+# Comprehensive Dependencies & Runtime Audit: ClashBot-Pro
 
 ## 1. Executive Summary
 
-This document provides a complete inventory and separation analysis of all third-party libraries, framework dependencies, native shared libraries, compiled Python extensions (`.pyd`), and external utility tools embedded within the **AutoClash** (`AutoClash.exe`) distribution.
+This document provides a complete inventory and separation analysis of all third-party libraries, framework dependencies, native shared libraries, compiled Python extensions (`.pyd`), and external utility tools embedded within the **ClashBot-Pro** (`ClashBot-Pro Application Engine`) distribution.
 
 The application relies on an embedded **CPython 3.10.11 64-bit** execution environment bundled with **PySide6 (Qt 6.x)**, **OpenCV**, **Tesseract OCR**, and **Android Debug Bridge (ADB)** tooling.
 
@@ -10,7 +10,7 @@ The application relies on an embedded **CPython 3.10.11 64-bit** execution envir
 
 ## 2. Python Framework & Third-Party Library Inventory
 
-| Library | Version | License | Category | Functional Purpose in Auto Clash |
+| Library | Version | License | Category | Functional Purpose in ClashBot-Pro |
 |---|---|---|---|---|
 | **PySide6** | 6.11.2 | LGPLv3 / Commercial | GUI Framework | Primary graphical interface, dark styling, dashboard widgets |
 | **PySide6_Essentials** | 6.11.2 | LGPLv3 | GUI Core | Core Qt6 widgets, signals, slots, layout managers |
@@ -72,7 +72,9 @@ The payload contains 97 compiled CPython extensions (`.pyd`):
 ### 4.1 Heavy Extensions
 - `cv2\cv2.pyd` (74.82 MB - Complete OpenCV 5.x computer vision library with AVX2 optimizations)
 - `pyarmor_runtime_015394\pyarmor_runtime.pyd` (PyArmor native bytecode execution interceptor)
-- `numpyandom\_sfc64.pyd`, `numpyandom\_pcg64.pyd`, `numpy\linalg\_umath_linalg.pyd`
+- `numpy
+andom\_sfc64.pyd`, `numpy
+andom\_pcg64.pyd`, `numpy\linalg\_umath_linalg.pyd`
 
 ### 4.2 Windows Win32 API Extensions
 - `win32api.pyd`, `win32gui.pyd`, `win32file.pyd`, `win32event.pyd` (Low-level Win32 window management and process hooks)

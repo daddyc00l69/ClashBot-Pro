@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Auto Clash - Recovered Project Launcher (New Update)
+ClashBot-Pro Application Launcher
 """
 import os
 import sys
@@ -12,7 +12,7 @@ if SOURCE_DIR not in sys.path:
     sys.path.insert(0, SOURCE_DIR)
 
 print("=" * 60)
-print("  Auto Clash - Launching Recovered Project (New Update)")
+print("  ClashBot-Pro - Launching Application")
 print("=" * 60)
 print(f"Base Directory:   {BASE_DIR}")
 print(f"Source Directory: {SOURCE_DIR}")

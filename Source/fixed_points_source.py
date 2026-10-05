@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Auto Clash - Recovered Fixed Points & Region Constants (New Update)
+ClashBot-Pro - Recovered Fixed Points & Region Constants (New Update)
 Total Constants: 906
 """
 

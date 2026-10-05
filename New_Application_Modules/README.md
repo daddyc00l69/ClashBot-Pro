@@ -1,6 +1,6 @@
 # 🌟 New Application Modules (Update v2.1)
 
-This directory isolates and documents the **4 brand new application modules** introduced in this update, recovered directly from `New_Updated_exe\AutoClash.exe`.
+This directory isolates and documents the **4 brand new application modules** introduced in this update, introduced in the latest ClashBot-Pro v2.1 update.
 
 ---
 

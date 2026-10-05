@@ -1,14 +1,14 @@
-# In-Depth Reverse-Engineering & Architectural Analysis: Auto Clash
+# In-Depth Reverse-Engineering & Architectural Analysis: ClashBot-Pro
 
 ## 1. Executive Summary
 
-This report provides a comprehensive technical analysis of the Windows executable **AutoClash** (`AutoClash.exe`, 97,402,368 bytes).
+This report provides a comprehensive technical analysis of the Windows executable **ClashBot-Pro** (`ClashBot-Pro Application Engine`, 97,402,368 bytes).
 
 Through static analysis, PE header inspection, resource carving, and Nuitka/PyArmor introspection, the application has been determined to be a **Python 3.10-based automation platform** compiled to native x86-64 machine code using **Nuitka**, packaged as a **Nuitka Onefile** self-extracting payload, and protected by **PyArmor 7/8**.
 
 | Attribute | Technical Value |
 |---|---|
-| **Binary Name** | `AutoClash.exe` |
+| **Binary Name** | `ClashBot-Pro Application Engine` |
 | **File Size** | 97,402,368 bytes (92.89 MB) |
 | **Architecture** | x86-64 / AMD64 (Machine `0x8664`, PE32+) |
 | **Subsystem** | Windows GUI (Subsystem 2) |
@@ -25,10 +25,10 @@ Through static analysis, PE header inspection, resource carving, and Nuitka/PyAr
 
 ## 2. Executable Packaging & Binary Architecture
 
-### 2.1 The Outer Launcher: `AutoClash.exe`
-The outer executable `AutoClash.exe` is a Nuitka Onefile bootstrap binary whose primary responsibility is to decompress and mount the standalone Python application environment into a transient directory at runtime.
+### 2.1 The Outer Launcher: `ClashBot-Pro Application Engine`
+The outer executable `ClashBot-Pro Application Engine` is a Nuitka Onefile bootstrap binary whose primary responsibility is to decompress and mount the standalone Python application environment into a transient directory at runtime.
 
-The PE structure of `AutoClash.exe` contains 12 sections:
+The PE structure of `ClashBot-Pro Application Engine` contains 12 sections:
 - `.text` (Raw Size: `0x1F600`): Bootstrap extraction C runtime code.
 - `.data`, `.rdata`, `.pdata`, `.xdata`: Standard C runtime and exception unwind tables.
 - `.rsrc` (Raw Size: `0x5CBE200` = 97,247,744 bytes): Houses the entire application payload.
@@ -150,7 +150,7 @@ The application incorporates a defense-in-depth protection scheme combining nati
 
 ```
 +-------------------------------------------------------------------+
-| AutoClash.exe (PE32+ x86-64 Nuitka Onefile Bootstrap)             |
+| ClashBot-Pro Application Engine (PE32+ x86-64 Nuitka Onefile Bootstrap)             |
 |   |-- RT_RCDATA ID 27 (Zstandard Compressed Archive, KAY signature)|
 +-------------------------------------------------------------------+
                                   |
@@ -216,7 +216,7 @@ The combined string is hashed with SHA-256 and formatted for server validation.
 
 ## 6. Android Emulator Automation Architecture
 
-Auto Clash is designed to interface with Android emulators through ADB:
+ClashBot-Pro is designed to interface with Android emulators through ADB:
 - **Default Emulators:** BlueStacks 5 (`bluestacks:custom`), LDPlayer 9 (`ldplayer`), or any generic ADB device.
 - **Connection Transport:** TCP loopback connection to `127.0.0.1:5556` (BlueStacks) or `127.0.0.1:5555` (LDPlayer).
 - **Control Interface:**

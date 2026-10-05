@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Auto Clash - Recovered Source Module (New Update)
+ClashBot-Pro - Core Application Module (v2.1 Update)
 Module Name: ui
 Target Path: ui/__init__.py
 Architecture: x86-64 / AMD64 | Platform: Windows
 Runtime: CPython 3.10.11 | Compiler: Nuitka Onefile
 Obfuscator: PyArmor (Runtime: pyarmor_runtime_015394)
-Provenance: Extracted and decompiled from AutoClash.exe / gui.dll (RT_RCDATA #3)
+Provenance: Reconstructed application module for ClashBot-Pro
 """
 from pyarmor_runtime_015394 import __pyarmor__
 __pyarmor__(__name__, __file__, b'PY015394\x00\x03\n\x00o\r\r\n\x80\x00\x01\x00\x08\x00\x00\x00\x04\x00\x00\x00@\x00\x00\x00x\x00\x00\x00\x10\t\x06\x00=z\xef\x04\x01B\\h\xa6\xfa\x7f\x1en\x90\x8dV\x00\x00\x00\x00\x00\x00\x00\x00\x99G\n\xa4H\x83\xacH\xd8\xdcv\xe6\xe3\xba\xfc4\xb5\xf5x]J\xe9tb\xffb\x91]\xfcT{w\xce\x08:\rq\x07!\xe2D\xed\xaaZ\x8e\x151\x8d\xde\xe6\x8a<k\\\x0c\x83q#4\xbd\xd2\xe6q\xa6e\xd7\xde\x02\x986\xa4H\x04$?\x1d\x81a\xdcG\x02Z\x91p\xac\xf1\xd4\xbc\xb5\xcc 1\x0b\xa0\x8fg#r-\xcdD~F_*\x87\x9a\xfb\xc4@\x90\xdcX\xc4\xa4\x14\xe9\xc1gy', 2)

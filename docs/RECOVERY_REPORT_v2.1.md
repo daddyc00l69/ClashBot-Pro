@@ -1,11 +1,11 @@
-# Source Recovery & Reverse-Engineering Audit Report: Auto Clash (New Update)
+# Source Recovery & Reverse-Engineering Audit Report: ClashBot-Pro (New Update)
 
 ## 1. Executive Statement of Recovery
 
-This report documents the decompilation, carving, asset extraction, and source recovery process conducted on the updated **AutoClash** binary (`New_Updated_exe\AutoClash.exe`, 97,794,560 bytes).
+This report documents the decompilation, carving, asset extraction, and source recovery process conducted on the updated **ClashBot-Pro** binary (`ClashBot-Pro Application Engine`, 97,794,560 bytes).
 
 In accordance with strict reverse-engineering principles:
-- **Zero modification to binaries:** Both the original binary and `New_Updated_exe\AutoClash.exe` remain strictly untouched with original byte size and SHA-256 hashes preserved.
+- **Zero modification to binaries:** Both the original binary and `ClashBot-Pro Application Engine` remain strictly untouched with original byte size and SHA-256 hashes preserved.
 - **Byte-accurate carving:** All 80 application modules were carved from Nuitka constants blob #3 in `gui.dll` (at offset `0x04C13F50`, size 14,910,416 bytes) with exact `PY015394` PyArmor container payloads.
 - **100% Syntax & Import Validation:** All 80 Python source modules in `Recovered_Source_New_Update\Source\` pass `python -m py_compile` with 0 errors and load cleanly under CPython 3.10 with `pyarmor_runtime_015394`.
 
@@ -15,7 +15,7 @@ In accordance with strict reverse-engineering principles:
 
 | Component / Subsystem | Previous Version | New Update Version | Delta / Changes |
 |---|---|---|---|
-| **Outer Binary (`AutoClash.exe`)** | 97,402,368 bytes | **97,794,560 bytes** | +392,192 bytes (+383 KB) |
+| **Outer Binary (`ClashBot-Pro Application Engine`)** | 97,402,368 bytes | **97,794,560 bytes** | +392,192 bytes (+383 KB) |
 | **Outer Binary SHA-256** | `6886e8ea3f3f...` | `37189aa94101e4ee99c727181c0c0576390a78fc7bb35cbb2c73eb26ae4624b4` | Updated payload |
 | **Carved Payload Size (Uncompressed)**| 314.43 MB (1,202 files)| **314.86 MB (1,237 files)** | **+35 files** (+440 KB) |
 | **Core Native DLL (`gui.dll`)** | 94,558,208 bytes | **94,692,864 bytes** | +134,656 bytes (+131.5 KB) |
@@ -147,7 +147,7 @@ The recovered new update source is organized under:
 
 - **Source Tree:** [`releases/v2.1-update`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v2.1-update)
 - **New Application Modules:** [`releases/v2.1-update/New_Application_Modules`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/releases/v2.1-update/New_Application_Modules)
-- **Original Binary:** [`binaries/v2.1-update/AutoClash.exe`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/binaries/v2.1-update/AutoClash.exe)
+- **Original Binary:** [`binaries/v2.1-update/ClashBot-Pro Application Engine`](file:///c:/Users/aradh/Desktop/Auto%20Clash%20clone%20Vip/binaries/v2.1-update/ClashBot-Pro Application Engine)
 
 ### Quickstart Execution
 To run the updated bot from source:
