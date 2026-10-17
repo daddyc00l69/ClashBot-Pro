@@ -1,6 +1,7 @@
 # Logs
 *.log
 launch.log
+Source/logs/
 
 # Build & Dist artifacts
 [Bb]in/
@@ -11,6 +12,10 @@ dist/
 binaries/
 releases/
 New_Updated_exe/
+Updated_Exe_Code/
+ACBot.exe
+*.bak
+*.zip
 
 # IDE & Editor files
 .vs/
@@ -33,4 +38,3 @@ venv/
 Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
-
