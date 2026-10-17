@@ -33,6 +33,9 @@ __pycache__/
 venv/
 .env
 
+# Exception: required runtime binary extension
+!Source/pyarmor_runtime_015394/pyarmor_runtime.pyd
+
 # OS generated files
 .DS_Store
 Thumbs.db
