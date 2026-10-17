@@ -9,9 +9,12 @@ import os
 import traceback
 from datetime import datetime
 
+# 1. Suppress noisy Qt QThreadStorage warnings
+os.environ["QT_LOGGING_RULES"] = "qt.core.qthreadstorage.warning=false;qt.qpa.*=false"
+
 print("[*] Starting ClashBot-Pro v2.2.6...", flush=True)
 
-# Set working directory and path resolution
+# 2. Set working directory and path resolution
 root_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(root_dir)
 
@@ -26,7 +29,7 @@ tools_adb = os.path.join(root_dir, 'Tools', 'adb')
 if os.path.exists(tools_adb):
     os.environ['PATH'] = tools_adb + os.pathsep + os.environ.get('PATH', '')
 
-# Setup crash logger
+# 3. Setup crash logger
 crash_log_file = os.path.join(root_dir, 'crash.log')
 def log_unhandled_exception(exc_type, exc_value, exc_traceback):
     if issubclass(exc_type, KeyboardInterrupt):
@@ -47,7 +50,7 @@ print("[*] Initializing VIP engine & license bypass...", flush=True)
 import license_manager
 import gui
 
-# Hook LicenseSplash to automatically validate without prompting for login key
+# 4. Hook LicenseSplash to automatically validate without prompting for login key
 orig_splash_init = gui.LicenseSplash.__init__
 def _unlocked_splash_init(self, *args, **kwargs):
     orig_splash_init(self, *args, **kwargs)
@@ -63,7 +66,7 @@ def _bypass_splash_exec(self):
 gui.LicenseSplash.exec = _bypass_splash_exec
 gui.LicenseSplash.exec_ = _bypass_splash_exec
 
-# Hook ui.main_window to protect against fatal license closures or forced update exits
+# 5. Hook ui.main_window to protect against fatal license closures or forced update exits
 try:
     import ui.main_window
     ui.main_window.MainWindow.handle_fatal_license = lambda self, *args, **kwargs: print("[VIP Hook] Ignored license recheck error")
@@ -71,6 +74,53 @@ try:
     ui.main_window.launch_self_update = lambda *args, **kwargs: False
 except Exception as e:
     print(f"[!] Warning hooking ui.main_window: {e}")
+
+# 6. Enhance Recovery & Village Detection for New Game UI and slow PCs
+try:
+    import recovery
+    # Give the game up to 75s (instead of 40s) to fully boot on slower PCs
+    recovery.ARMY_BUTTON_WAIT_SECONDS = 75
+    print("[+] Configured recovery wait timeout: 75s")
+except Exception as e:
+    print(f"[!] Warning hooking recovery: {e}")
+
+try:
+    import vision
+    orig_find_army_button = vision.Vision.find_army_button
+    def _enhanced_find_army_button(self, *args, **kwargs):
+        res = orig_find_army_button(self, *args, **kwargs)
+        if not res:
+            # Check if New UI intro/tutorial is on screen and tap through it
+            try:
+                import new_ui_intro
+                new_ui_intro.run_new_ui_intro_if_present()
+            except Exception:
+                pass
+            res = orig_find_army_button(self, *args, **kwargs)
+        return res
+    vision.Vision.find_army_button = _enhanced_find_army_button
+except Exception as e:
+    print(f"[!] Warning hooking vision: {e}")
+
+# 7. Auto-save screenshot when home village is not found before relaunching
+try:
+    import adb
+    orig_force_stop = adb.force_stop
+    def _debug_force_stop(pkg, *args, **kwargs):
+        if pkg == "com.supercell.clashofclans":
+            try:
+                screen = adb.screenshot()
+                if screen is not None:
+                    import cv2
+                    shot_path = os.path.join(root_dir, 'failed_village_screen.png')
+                    cv2.imwrite(shot_path, screen)
+                    print(f"[Debug] Saved emulator screen capture to: failed_village_screen.png")
+            except Exception:
+                pass
+        return orig_force_stop(pkg, *args, **kwargs)
+    adb.force_stop = _debug_force_stop
+except Exception as e:
+    print(f"[!] Warning hooking adb: {e}")
 
 print("[+] Launching ClashBot-Pro window...", flush=True)
 
