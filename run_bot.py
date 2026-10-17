@@ -78,7 +78,6 @@ except Exception as e:
 # 6. Enhance Recovery & Village Detection for New Game UI and slow PCs
 try:
     import recovery
-    # Give the game up to 75s (instead of 40s) to fully boot on slower PCs
     recovery.ARMY_BUTTON_WAIT_SECONDS = 75
     print("[+] Configured recovery wait timeout: 75s")
 except Exception as e:
@@ -86,19 +85,86 @@ except Exception as e:
 
 try:
     import vision
+    import cv2
+    import numpy as np
+
     orig_find_army_button = vision.Vision.find_army_button
-    def _enhanced_find_army_button(self, *args, **kwargs):
-        res = orig_find_army_button(self, *args, **kwargs)
-        if not res:
-            # Check if New UI intro/tutorial is on screen and tap through it
-            try:
-                import new_ui_intro
-                new_ui_intro.run_new_ui_intro_if_present()
-            except Exception:
-                pass
+
+    def _smart_find_army_button(self, *args, **kwargs):
+        # 1. Try original match first
+        try:
             res = orig_find_army_button(self, *args, **kwargs)
-        return res
-    vision.Vision.find_army_button = _enhanced_find_army_button
+            if res:
+                return res
+        except Exception:
+            pass
+
+        # 2. Grab current frame
+        img = self.grab()
+        if img is None:
+            return None
+
+        # Convert to grayscale
+        if len(img.shape) == 3:
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        else:
+            gray = img
+
+        # 3. Relaxed army_button match (threshold 0.68 instead of 0.90)
+        tmpl_data = self.templates.get('army_button')
+        if tmpl_data and 'img' in tmpl_data:
+            t_img = tmpl_data['img']
+            if len(t_img.shape) == 3 and t_img.shape[2] == 4:
+                t_gray = cv2.cvtColor(t_img, cv2.COLOR_BGRA2GRAY)
+            elif len(t_img.shape) == 3:
+                t_gray = cv2.cvtColor(t_img, cv2.COLOR_BGR2GRAY)
+            else:
+                t_gray = t_img
+            
+            crop_gray = gray[300:895, 0:800]
+            if crop_gray.shape[0] >= t_gray.shape[0] and crop_gray.shape[1] >= t_gray.shape[1]:
+                res_mat = cv2.matchTemplate(crop_gray, t_gray, cv2.TM_CCOEFF_NORMED)
+                _, max_v, _, max_l = cv2.minMaxLoc(res_mat)
+                if max_v >= 0.68:
+                    return (max_l[0] + tmpl_data['w'] // 2, 300 + max_l[1] + tmpl_data['h'] // 2)
+
+        # 4. Check attack_button (always at bottom-left on Home Village)
+        atk_data = self.templates.get('attack_button')
+        if atk_data and 'img' in atk_data:
+            t_img = atk_data['img']
+            t_gray = cv2.cvtColor(t_img, cv2.COLOR_BGRA2GRAY) if (len(t_img.shape) == 3 and t_img.shape[2] == 4) else (cv2.cvtColor(t_img, cv2.COLOR_BGR2GRAY) if len(t_img.shape) == 3 else t_img)
+            crop_atk = gray[650:900, 0:400]
+            if crop_atk.shape[0] >= t_gray.shape[0] and crop_atk.shape[1] >= t_gray.shape[1]:
+                res_mat = cv2.matchTemplate(crop_atk, t_gray, cv2.TM_CCOEFF_NORMED)
+                _, max_v, _, max_l = cv2.minMaxLoc(res_mat)
+                if max_v >= 0.65:
+                    print(f"[Vision] Detected Home Village via Attack Button (score: {max_v:.2f})")
+                    return (215, 843)
+
+        # 5. Check shop_button (bottom-right on Home Village)
+        shop_data = self.templates.get('shop_button')
+        if shop_data and 'img' in shop_data:
+            t_img = shop_data['img']
+            t_gray = cv2.cvtColor(t_img, cv2.COLOR_BGRA2GRAY) if (len(t_img.shape) == 3 and t_img.shape[2] == 4) else (cv2.cvtColor(t_img, cv2.COLOR_BGR2GRAY) if len(t_img.shape) == 3 else t_img)
+            crop_shop = gray[700:900, 1300:1600]
+            if crop_shop.shape[0] >= t_gray.shape[0] and crop_shop.shape[1] >= t_gray.shape[1]:
+                res_mat = cv2.matchTemplate(crop_shop, t_gray, cv2.TM_CCOEFF_NORMED)
+                _, max_v, _, _ = cv2.minMaxLoc(res_mat)
+                if max_v >= 0.65:
+                    print(f"[Vision] Detected Home Village via Shop Button (score: {max_v:.2f})")
+                    return (215, 843)
+
+        # 6. Check if New UI intro/tutorial is on screen and tap through it
+        try:
+            import new_ui_intro
+            new_ui_intro.run_new_ui_intro_if_present()
+        except Exception:
+            pass
+
+        return None
+
+    vision.Vision.find_army_button = _smart_find_army_button
+    print("[+] Enabled Smart Home Village & New Game UI Detection")
 except Exception as e:
     print(f"[!] Warning hooking vision: {e}")
 
