@@ -150,13 +150,13 @@ def get_license_error_message(res=None):
 
 
 def load_key():
-    """Load license key - returns empty as no key is required."""
-    return ''
+    """Load license key - returns VIP lifetime key."""
+    return 'VIP-LIFETIME-UNLOCKED'
 
 
 def load_saved_key():
-    """Load saved license key - returns empty as no key is required."""
-    return ''
+    """Load saved license key - returns VIP lifetime key."""
+    return 'VIP-LIFETIME-UNLOCKED'
 
 
 def save_key(key):
