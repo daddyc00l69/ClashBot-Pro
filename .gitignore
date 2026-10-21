@@ -1,43 +1,30 @@
-# Logs
-*.log
-launch.log
-Source/logs/
-
-# Build & Dist artifacts
-[Bb]in/
-[Oo]bj/
-[Dd]ebug/
-[Rr]elease/
-dist/
-binaries/
-releases/
-New_Updated_exe/
-Updated_Exe_Code/
-ACBot.exe
-*.bak
-*.zip
-
-# IDE & Editor files
-.vs/
-.vscode/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Python artifacts
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
-*$py.class
-*.manifest
-venv/
-.env
-
-# Exception: required runtime binary extension
+*.py[co]
 !Source/pyarmor_runtime_015394/pyarmor_runtime.pyd
+*$py.class
 
-# OS generated files
+# Runtime logs and crash dumps
+crash.log
+logs/
+*.log
+
+# User session configurations & secrets
+profiles/user_data/
+*.tmp
+*.temp
+
+# OS / Editor artifacts
 .DS_Store
 Thumbs.db
-ehthumbs.db
-[Dd]esktop.ini
+.vscode/
+.idea/
+
+# Scratch & Development artifacts
+scratch/
+scratch_icons/
+scratch_*
+screenshots/
+solid-glass/
+ui_preview.html
+apply_and_screenshot.py

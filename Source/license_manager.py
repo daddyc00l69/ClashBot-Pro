@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-ClashBot-Pro - License Manager (VIP Unlocked Engine)
+Clash Bot AI v2.2.7 - License Manager (VIP Offline Engine)
 Module Name: license_manager
 Target Path: license_manager.py
-Architecture: x86-64 / AMD64 | Platform: Windows
 Runtime: CPython 3.10.11
 
-Autonomous license bypass module:
-- Completely removes login key requirement
+Autonomous license validation engine:
+- Removes external server validation calls
 - Provides offline local authentication with Lifetime Unlimited validity
 - Decrypts and supplies the AES fixed points coordinate data key
 - Bypasses remote telemetry and network heartbeat checks
@@ -28,11 +27,11 @@ import uuid
 # Base paths and environment definitions
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 LICENSE_FILE = os.path.join(BASE_PATH, '..', 'Config', 'license.key')
-CURRENT_VERSION = '2.2.6'
-SERVER_URL = 'https://api.acbot.site/validate'
+CURRENT_VERSION = '2.2.7'
+SERVER_URL = 'https://api.clashbotai.site/validate'
 TRANSIENT_FAILURE_GRACE_SECONDS = 900
-_ANDROID_ID_ENV_VAR = 'AUTOCLASH_ANDROID_ID'
-_DATA_KEY_ENV_VAR = 'AUTOCLASH_DATA_KEY'
+_ANDROID_ID_ENV_VAR = 'CLASHBOTAI_ANDROID_ID'
+_DATA_KEY_ENV_VAR = 'CLASHBOTAI_DATA_KEY'
 _RETRY_INTERVAL_SECONDS = 180
 _HWID_V3_PLACEHOLDER_VALUES = {'', 'none', 'unknown', 'to be filled by o.e.m.', 'default string'}
 
@@ -49,7 +48,6 @@ license_meta_cache = {}
 
 # Compatibility classes and exceptions
 class InvalidSignature(Exception):
-    """Raised on invalid signature (compatibility stub)."""
     pass
 
 Ed25519PublicKey = None
@@ -57,12 +55,10 @@ _SERVER_PUBLIC_KEY = None
 
 
 def version_tuple(v):
-    """Parse version string into tuple of integers."""
     return tuple(int(x) for x in str(v).replace('v', '').split('.') if x.isdigit())
 
 
 def resolve_writable_path(name):
-    """Resolve writable configuration file path."""
     config_dir = os.path.join(BASE_PATH, '..', 'Config')
     os.makedirs(config_dir, exist_ok=True)
     return os.path.join(config_dir, name)
@@ -101,7 +97,6 @@ def _cache_data_key(k):
 
 
 def get_cached_data_key():
-    """Return decoded AES key for decrypting assets & fixed_points."""
     return _data_key_cache
 
 
@@ -128,7 +123,6 @@ def _remove_legacy_session_file():
 
 
 def format_remaining(seconds):
-    """Format remaining license duration for UI display."""
     return 'Lifetime Unlimited'
 
 
@@ -145,37 +139,30 @@ def get_hwid_v3_components():
 
 
 def get_license_error_message(res=None):
-    """Return empty error string since license is always valid."""
     return ''
 
 
 def load_key():
-    """Load license key - returns VIP lifetime key."""
     return 'VIP-LIFETIME-UNLOCKED'
 
 
 def load_saved_key():
-    """Load saved license key - returns VIP lifetime key."""
     return 'VIP-LIFETIME-UNLOCKED'
 
 
 def save_key(key):
-    """No-op: do not write any login key."""
     pass
 
 
 def clear_key():
-    """Clear key."""
     pass
 
 
 def clear_saved_key():
-    """Clear saved key."""
     pass
 
 
 def load_license_meta():
-    """Return active license metadata dict."""
     return {
         'valid': True,
         'status': 'valid',
@@ -187,7 +174,6 @@ def load_license_meta():
 
 
 def save_license_meta(meta):
-    """No-op metadata storage."""
     pass
 
 
@@ -241,10 +227,8 @@ def validate_license_details(key=None, *args, **kwargs):
 
 
 def start_license_heartbeat(*args, **kwargs):
-    """Heartbeat stub: keeps license alive without network polling."""
     _heartbeat_stop_event.clear()
 
 
 def stop_license_heartbeat(*args, **kwargs):
-    """Stop heartbeat stub."""
     _heartbeat_stop_event.set()
